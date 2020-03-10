@@ -6,27 +6,27 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{10}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Introdução}{10}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}Objetivos}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}\textbf {Geral}}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}\textbf {Espec\IeC {\'\i }ficos}}{11}{section.2.2}
+\contentsline {chapter}{\chapternumberline {2}Objetivos}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textbf {Geral}}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\textbf {Específicos}}{11}{section.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}Fundamenta\IeC {\c c}\IeC {\~a}o te\IeC {\'o}rica e revis\IeC {\~a}o da Literatura}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}\textbf {Manuten\IeC {\c c}\IeC {\~a}o}}{12}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}\textbf {Manuten\IeC {\c c}\IeC {\~a}o preditiva}}{13}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}\textbf {Fundamentos e aplica\IeC {\c c}\IeC {\~o}es de rolamentos}}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}\textbf {Tipos de rolamentos}}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}\textbf {Processos de fabrica\IeC {\c c}\IeC {\~a}o de rolamentos}}{16}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}\textbf {Carga e vida \IeC {\'u}til de rolamentos}}{17}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}\textbf {Falhas em rolamentos}}{19}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}\textbf {Fundamentos de an\IeC {\'a}lise de vibra\IeC {\c c}\IeC {\~o}es em rolamentos}}{26}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\textbf {T\IeC {\'e}cnicas de an\IeC {\'a}lise de vibra\IeC {\c c}\IeC {\~o}es}}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}\textbf {Fluroreto de polivinilideno}}{32}{subsection.3.3.2}
+\contentsline {chapter}{\chapternumberline {3}Fundamentação teórica e revisão da Literatura}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\textbf {Manutenção}}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}\textbf {Manutenção preditiva}}{13}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}\textbf {Fundamentos e aplicações de rolamentos}}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}\textbf {Tipos de rolamentos}}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}\textbf {Processos de fabricação de rolamentos}}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}\textbf {Carga e vida útil de rolamentos}}{17}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}\textbf {Falhas em rolamentos}}{19}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}\textbf {Fundamentos de análise de vibrações em rolamentos}}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}\textbf {Técnicas de análise de vibrações}}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}\textbf {Fluroreto de polivinilideno}}{33}{subsection.3.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}Materiais e m\IeC {\'e}todos}{37}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}Materiais e métodos}{38}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{40}{section*.10}
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{41}{chapter*.12}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{Anexo \space }

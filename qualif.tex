@@ -207,7 +207,7 @@ Proposta de qualificação apresentada ao Departamento de Engenharia Mecânica d
 %DISPERATI, Giovani Fonseca Ravagnani. \imprimirtitulo. \imprimirdata. \pageref{LastPage} f. Proposta de qualificação (Mestrado em Ciências) %– Departamento de Engenharia Mecânica, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, São Paulo, 2018.
 %\end{flushleft}
 
-A manutenção preditiva é uma área de grande relevância tendo em vista os fatores econômicos e de segurança associados. Nos maquinários, rolamentos são partes imprescindíveis para seu funcionamento. Propõe-se, neste trabalho, o estudo da possibilidade de realização de análise preditiva de falhas em rolamentos com utilização de filmes de Difluoreto de Polivinilideno, PVDF, material que apresenta elevados níveis de piezoeletricidade e propriedades de resistência à corrosão, maleabilidade e alto espectro de frequências, além de baixo custo. Para a condução dos experimentos será fabricada uma bancada de testes e um sistema de aquisição de dados afim de validar a viabilidade de utilização do sensor para a aplicação proposta. 
+A manutenção preditiva é uma área de grande relevância tendo em vista os fatores econômicos e de segurança associados. Nos maquinários, rolamentos são partes imprescindíveis para seu funcionamento. Propõe-se, neste trabalho, o estudo da possibilidade de realização de análise preditiva de falhas em rolamentos com utilização de filmes de Difluoreto de Polivinilideno, PVDF, material que apresenta elevados níveis de piezoeletricidade e propriedades de resistência à corrosão, maleabilidade e alto espectro de frequências, além de baixo custo. Para a condução dos experimentos será fabricada uma bancada de testes e um sistema de aquisição de dados afim de validar a viabilidade de utilização do sensor para a aplicação proposta.
 
 Palavras-chaves: Manutenção preditiva. Rolamentos. Análise de vibração. PVDF.
 \end{resumo}
@@ -740,12 +740,19 @@ Onde $p(x)$ é a função de densidade de probabilidade e $\overline{x}$ o valor
 
 Os métodos descritos, de análise de falhas no domínio do tempo, são capazes de indicar o surgimento da falha. Entretanto, tais métodos não são capazes de apontar onde se localiza tal falha. Para isto, faz-se necessário a utilização de análise no domínio da frequência. 
 
-Tendo em vista que os mancais possuem frequências características de defeitos, espera-se que, ao apresentar falhas em seus componentes, tais falhas possam ser determinadas a partir das frequências por elas geradas. Desta forma, técnicas de análise espectral tal como a transformada rápida de Fourier podem mostrar, teoricamente, onde se localiza o defeito. Mesquita et. al, 2002, entretanto, apontam para o fato de que podem ocorrer pequenos deslizamentos entre as pistas, o que pode ocasionar desvios nas frequências de defeitos em relação ao que se espera. Portanto, recomendam que tais frequências características sejam utilizadas como referência. Além disso, ainda, Mesquita et. al, 2002, atentam para o fato de que tais frequências podem ser mascaradas por elementos rolantes 
+Tendo em vista que os mancais possuem frequências características de defeitos, espera-se que, ao apresentar falhas em seus componentes, tais falhas possam ser determinadas a partir das frequências por elas geradas. Desta forma, técnicas de análise espectral tal como a transformada rápida de Fourier podem mostrar, teoricamente, onde se localiza o defeito. Mesquita et. al, 2002, entretanto, apontam para o fato de que podem ocorrer pequenos deslizamentos entre as pistas, o que pode ocasionar desvios nas frequências de defeitos em relação ao que se espera. Portanto, recomendam que tais frequências características sejam utilizadas como referência. Além disso, ainda, Mesquita et. al, 2002, atentam para o fato de que tais frequências podem ser mascaradas por outros elementos da máquina, tornando-se difícil a identificação das frequências de defeitos em uma análise espectral tradicional.
+
+Outra forma de detecção de frequências caraterísticas de defeitos é a análise de envelope. Mesquita et. al, 2002, descrevem a processo de análise de envelope através da transformada de Hilbert. Nesta, é levado em consideração principalmente as frequências de ressonância dos impactos oriundos do defeito do rolamento, que encontram-se em algum componente do rolamento ou da máquina. Os componentes têm frequência muito mais alta do que a faixa em que geralmente surgem as frequências características de defeitos, sendo que no espectro estas frequências surgem flanqueadas por bandas laterais. Mesquita et. al, 2002, afirmam que
+
+\begin{citacao}
+Estas bandas laterais surgem nos espectros devido a uma modulação no sinal, que pode ser na amplitude (AM) ou na freqüência (FM). Modulação na amplitude é uma variação de amplitude em um sinal de freqüência constante, enquanto que modulação na freqüência é uma variação em freqüência de um sinal de amplitude constante. Além disto, tais bandas laterais nos sinais de vibração em rolamentos defeituosos surgem em torno de uma freqüência de ressonância (freqüência portadora). Modulações em amplitude são comuns nestes sinais. Freqüências naturais podem ser moduladas em amplitude pela freqüência do defeito, e esta, por sua vez, pode ser modulada pela freqüência da rotação da máquina, devido à variação da amplitude de vibração quando o defeito na pista interna, ou do elemento rolante, entra e sai da zona de carga.
+\end{citacao}
+
+
 
 \subsection{\textbf{Fluroreto de polivinilideno}}
 
 O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui grande um grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (Chatigny e Robb, 1987).
-
 
 Decorrente desta descoberta o interesse no estudo do PVDF se dá, dentre outras caraterísticas, por suas propriedades piezo e piroelétricas. 
 
@@ -927,8 +934,12 @@ Ajustes e entrega da versão final~ ~ ~ ~ ~                                    &
 \bibitem{Slack2008}
  SLACK, Nigel.
   \textbf{Administração da Produção}.
-  2.ed. São Paulo, Atlas, 2008.
-  
+  2.ed. São Paulo: Atlas, 2008.
+ 
+ \bibitem{Rao2008}
+ RAO, Singiresu S.
+  \textbf{Mechanical Vibrations}.
+  4.ed. São Paulo: Pearson Prentice Hall, 2008.
 
   
 
