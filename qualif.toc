@@ -27,6 +27,6 @@
 \contentsline {chapter}{\chapternumberline {4}Materiais e métodos}{38}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{41}{chapter*.12}%
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{42}{chapter*.12}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{Anexo \space }
