@@ -288,35 +288,64 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 %-------------------------------------------------------------------------
 
 \chapter{Introdução}
-De acordo com a Conferação Nacional das Indústrias, o setor industrial representa, em outubro de 2019, 21,6\% do produto interno bruto do Brasil. Também responde por 70,8\% das exportações nacionais, 67,4\% dos investimentos empresariais em pesquisa  e 34,2\% dos tributos federais, excetuando-se receitas previdenciárias (CNI, 2019). Neste âmbito, destaca-se, portanto, a importância da manutenção como ferramenta econômica para a indústria e, consequentemente, para a economia nacional. Um processo de manutenção preventiva, ou preditiva, tem por finalidade mitigar a ocorrência de falhas catastróficas, diminuindo perdas econômicas por paradas inesperadas ou, mesmo, por custos de seguridade social decorrentes de acidentes de trabalho causados por máquinário defeituoso.
+De acordo com a Confederação Nacional das Indústrias, o setor industrial representa, em outubro de 2019, 21,6\% do produto interno bruto do Brasil. Também responde por 70,8\% das exportações nacionais, 67,4\% dos investimentos empresariais em pesquisa  e 34,2\% dos tributos federais, excetuando-se receitas previdenciárias (CNI, 2019). 
 
-Neste trabalho 
+Neste âmbito destaca-se, portanto, a importância da manutenção como ferramenta econômica para a indústria e, consequentemente, para a economia nacional. Processos de manutenção preventiva, ou de manutenção preditiva, tem por finalidade mitigar a ocorrência de falhas catastróficas, diminuindo perdas econômicas por paradas inesperadas ou, mesmo, por custos de seguridade social decorrentes de acidentes de trabalho causados por máquinário defeituoso.
+
+De acordo com a NBR 5462, manutenção preventiva é uma "manutenção efetuada em intervalos pré-determinados, ou de acordo com critérios prescritos, destinada a reduzir a probabilidade de falha ou a degradação do funcionamento de um item" (NBR 5462, p. 7). Já a manutenção preditiva, é definida como uma manutenção que "permite garantir uma qualidade de serviço desejada, com base na aplicação sistemática de técnicas de análise, utilizando-se meios de supervisão centralizados ou de amostragem, para reduzir ao mínimo a manutenção preventiva e diminuir a manutenção corretiva" (NBR 5462, p. 7). 
+
+Para que o processo de manutenção preditiva possa ocorrer é necessário, como estabelecido pela NBR 5462, a aplicação sistemática de técnicas de análise. Para tanto, a coleta de informações relativas ao estado dos elementos de máquina é pré-requisito, sendo, para isto, utilizado uma vasta gama de sensores com diferentes propósitos e especificidades afim de aferir os mais distintos parâmetros destes elementos. 
+
+Dentre os diversos elementos de máquina um dos mais comuns são os rolamentos, com utilização em virtualmente todas as áreas da indústria. Esta categoria de elemento de máquina, portanto, foi escolhida como objeto de testes e estudo afim de verificar a viabilidade de uma tecnologia  de sensores com finalidade, dentre outras, de manutenção preditiva: o filme de fluoreto de polivinilideno. 
 
 Tem-se vários tipos de polímeros, sendo os de maior interesse tecnológico os eletroativos, capazes de realizar a conversão entre energia elétrica e energia mecânica. Em outras palavras, estes polímeros apresentam alteração em seu tamanho e/ou forma quando são sujeitos a um campo elétrico. Alguns  materiais dentro desta família apresentam também outro efeito: geram um sinal elétrico quando sujeitos a uma força. Devido a estas caraterísticas, os polímeros eletroativos são ideais para a aplicação em sensores e atuadores, onde por sua baixa massa especifica, substituem sistemas pesados e complexos, possibilitando projetos de novas aplicações devido a uma mais simples implementação e miniaturização (Bar-Cohen, 2002).
 
-O fluoreto de polivinilideno – PVDF, apresenta características piezo e piroelétricas, além de elevada estabilidade e resistência química e física que, combinadas ao fácil processamento deste material, o tornam um excelente elemento para utilização tecnológica cuja principal aplicação se dá em sensores. O PVDF é um material semicristalino flexível e de baixo custo de fabricação, de fácil usinagem, múltiplas aplicações e com grande resistência química (Fukada, 2000; Lang, 2006). A sua cristalização ocorre em pelo menos quatro fases distintas, $\alpha$, $\beta$, $\gamma$ e $\delta$ (Silva, 2009). A fase beta é de interesse tecnológico por possuir características piezo e piroelétrica.
+O fluoreto de polivinilideno, conhecido pela sigla PVDF, apresenta características piezo e piroelétricas, além de elevada estabilidade e resistência química e física que, combinadas ao fácil processamento deste material, o tornam um excelente elemento para utilização tecnológica. O PVDF é um material semicristalino flexível e de baixo custo de fabricação, de fácil usinagem, múltiplas aplicações e com grande resistência química (Fukada, 2000; Lang, 2006). O PVDF foi descoberto em 1969 por Kawai, sendo um material novo com utilização perpassando uma variedade de , desde sensores para medição de vibrações mecânicas até a construção de canos e dutos para transporte de água ultrapura. A sua cristalização ocorre em pelo menos quatro fases distintas, $\alpha$, $\beta$, $\gamma$ e $\delta$ (Silva, 2009). A fase $\beta$ é caracterizada por possuir comportamento piezo e piroelétrico (Wisnieski, 2002).
 
-O PVDF, foi descoberto em 1969 por Kawai, sendo um material novo, sabe-se que as suas propriedades piezeletricidade, após ser mecanicamente tracionado e submetido à ação de um campo elétrico (Wisnieski, 2002).
+O tema deste trabalho surge da proposta de se avaliar o filme PVDF como sensor de vibração com finalidades de manutenção preditiva, em particular em falhas de rolamentos, uma vez que este sensor possui baixo custo e, desta forma, mostra-se como possível alternativa aos acelerômetros cerâmicos costumeiramente utilizados para esta finalidade. O componente econômico, portanto, se faz basilar neste trabalho. 
+
+A análise de vibração é uma das técnicas de manutenção preditiva empregadas na indústria. Nesta, é possível que se realize a medição do estado do componente, sendo considerado um método efetivo para monitoração de elementos rolantes - incluindo-se, aí, rolamentos (Kern et al, 2014). 
+
+Dadas estas características do material, o filme PVDF, objeto de estudo deste trabalho, é utilizado como conversor de vibrações mecânicas em tensão elétrica de saída. Uma vez que a tensão de saída é proporcional a força mecânica aplicada, pode-se avaliar a severidade da vibração sofrida pelo rolamento e assim realizar-se a detecção de padrões que indiquem o comprometimento do elemento, bem como apontar qual o problema em potencial.
+
+Verifica-se a possibilidade de utilização deste como alternativa aos acelerômetros cerâmicos normalmente utilizados para análise de vibração.    
+
+Esta tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e estes dados armazenados através de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, bem como tendem a possuir baixa voltagem, é necessário o condicionamento deste sinal com um circuito eletrônico específico para tanto. 
+
+Agora, falar sobre como vamos usar o pvdf 
+
+sobre a construção de um sistema de aquisição de dados afim de análise das informações capturadas pelo sensor
+
+dos métodos para análise dos dados capturados
+
+para finalizar a introdução, do que a gente espera conseguir com este trabalho
+
+, sabendo-se que as suas propriedades de piezoeletricidade surgem após ser mecanicamente tracionado e submetido à ação de um campo elétrico 
+
 
 \chapter{Objetivos}
 
 \section{\textbf {Geral}}
 
-Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva.
+Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva. A partir disto será possível avaliar a viabilidade de um sistema de sensores PVDF para monitoramento das condições de rolamentos em maquinários, afim de possibilitar uma alternativa mais barata em relação aos sensores atualmente utilizados para este fim.
 
 \section{\textbf {Específicos}}
 
 Os objetivos específicos do trabalho podem ser sumarizados em:
 
 \begin{itemize}
-	\item Diferenciar um sinal de falha de rolamento de esfera com uma, com as seguintes falhas:1- desgaste da pista do anel interno, 2- desgaste na pista do anel externo e 3- desgaste no elemento rolante.
+	\item Construir uma bancada experimental em que o sensor PVDF possa ser acoplado aos rolamentos escolhidos.
+	\item Realizar o tratamento do sinal de saída do sensor, de forma a ser capturado por um sistema de aquisição de dados.
+	\item Desenvolver um sistema de aquisição de dados para o sensor PVDF, quando trabalhando com sinais de falha de rolamento.
+	\item Desenvolver um sistema de análise dos dados capturados.
+	\item Diferenciar um sinal de falha de rolamento de esfera com uma, com as seguintes falhas: 1 - desgaste da pista do anel interno, 2 - desgaste na pista do anel externo e 3 - desgaste no elemento rolante.
 	\item Determinar um nível de alarme, indicativo de uma situação pré falha.
-	\item Encontrar o melhor posicionamento do sensor para captar os sinais de falha.\
-	\item Fabricar um sistema de aquisição de dados para o sensor PVDF, quando trabalhando com sinais de falha de rolamento.
+	\item Encontrar o melhor posicionamento do sensor para captar os sinais de falha.
+
 \end{itemize}
 
 \chapter{Fundamentação teórica e revisão da Literatura}
-Neste capítulo abordamos os conceitos essenciais que embasam este projeto, a saber: os fundamentos da manutenção preditiva, tópico focal de nosso projeto; os fundamentos, aplicações e revisão de falhas de mancais de rolamentos, em particular considerando os que serão abordados nos experimentos práticos que serão conduzidos; os fundamentos de vibração mecânicas, afim de embasar a aquisição de sinais vibracionais para análise preditiva de falhas nos mancais de rolamentos; fundamentos da aquisição, análise de sinais e algoritmos para processamento destes sinais aquisitados, que será implementada no software supervisor.
+Neste capítulo serão abordados os conceitos essenciais que embasam este projeto, a saber: os fundamentos da manutenção preditiva, tópico focal de nosso projeto; os fundamentos, aplicações e revisão de falhas de mancais de rolamentos, em particular considerando os que serão abordados nos experimentos práticos que serão conduzidos; os fundamentos de vibração mecânicas, afim de embasar a aquisição de sinais vibracionais para análise preditiva de falhas nos mancais de rolamentos; fundamentos da aquisição, análise de sinais e algoritmos para processamento destes sinais aquisitados, que será implementada no software supervisor.
 
 \section{\textbf{Manutenção}}
 Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios que permitam a produção (Nepomuceno, 1989), estes meios podem variar desde instrumentos simples, como tesouras, agulhas e novelos de lã, até maquinário industrial de alta complexidade. 
@@ -742,7 +771,7 @@ Os métodos descritos, de análise de falhas no domínio do tempo, são capazes 
 
 Tendo em vista que os mancais possuem frequências características de defeitos, espera-se que, ao apresentar falhas em seus componentes, tais falhas possam ser determinadas a partir das frequências por elas geradas. Desta forma, técnicas de análise espectral, tal como a transformada rápida de Fourier, podem mostrar onde se localiza o defeito. Mesquita et. al, 2002, entretanto, apontam para o fato de que podem ocorrer pequenos deslizamentos entre as pistas, o que pode ocasionar desvios nas frequências de defeitos em relação ao que se espera. Portanto, recomendam que tais frequências características sejam utilizadas como referência. Além disso, ainda, Mesquita et. al, 2002, atentam para o fato de que tais frequências podem ser mascaradas por outros elementos da máquina, dificultando a identificação das frequências de defeitos através de análise espectral tradicional.
 
-\subsection{\textbf{Fluroreto de polivinilideno}}
+\section{\textbf{Fluroreto de polivinilideno}}
 
 O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui grande um grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (Chatigny e Robb, 1987).
 
