@@ -11,7 +11,7 @@
 	brazil				
 	]{abntex2ppgsi}
 
-% ---
+% ---s
 % Pacotes básicos 
 
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
@@ -89,7 +89,7 @@
 \local{São Paulo}
 
 %-------------------------------------------------------------------------
-\data{2020}
+\data{2021}
 
 
 %-------------------------------------------------------------------------
@@ -217,7 +217,10 @@ Palavras-chaves: Manutenção preditiva. Rolamentos. Análise de vibração. PVD
 \begin{resumo}[Abstract]
 \begin{otherlanguage*}{english}
 
-Predictive maintenance is an area of great relevance in view of the associated economic and safety factors. In machinery, bearings are essential parts for its operation. It is proposed, in this work, the study of the possibility of performing predictive analysis of failure in bearings using polyvinylidene difluoride films, PVDF, a material with high levels of piezoelectricity and properties of resistance to corrosion, malleability and high spectrum of frequencies, in addition to low cost. For the conduction of the experiments a bench of tests and a data acquisition system will be made.
+Polyvinylidene fluoride, known by the acronym PVDF, is a polymer with piezo and pyroelectric characteristics, in addition to high chemical and physical stability and resistance that, combined with the easy processing of this material, make it an excellent element for technological use. PVDF is a flexible semi-crystalline material, low in manufacturing cost and easy to machine. Its use goes through a variety of applications, from sensors to the construction of pipes and ducts for the transport of ultrapure water. Its crystallization occurs in at least four distinct phases, alpha, beta, gamma and delta, and the beta phase is characterized by having the aforementioned piezo and pyroelectric behaviors.
+Given these characteristics, works have been developed using films made of this material as sensors for predictive maintenance based on vibration analysis. The theme of this work arises from the proposal to evaluate the PVDF film as a sensor applied in the detection of failures in bearing housings, one of the most common machine elements, since the PVDF has characteristics that make it a candidate to be an alternative to the ceramic sensors customarily used for this purpose. The PVDF also has a much lower cost compared to them and this economic component, therefore, is the motivation for this investigation.
+The objective of this work is to acquire a vibration signal using a PVDF sensor, so that the detection of bearing failures in a supervisory software with predictive maintenance applications is performed. Based on the signals captured from this sensor, it will be possible to assess the viability of a PVDF sensor system for monitoring bearing conditions. For this purpose, an experimental bench was built in which the PVDF sensor is coupled to the bearings chosen as the object of study. A circuit was also built-in order to condition and amplify the sensor's output signal, so that it can be captured by a data acquisition system. From this output it is expected to find the best positioning of the sensor to capture the failure signals, in order to differentiate signals from a spherical roller bearing with the following failures: wear of the inner ring raceway, wear on the outer ring raceway and wear on the rolling element. It is expected that this culminates in the possibility of determining an alarm level indicative of a pre-failure situation.
+
 
 Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 \end{otherlanguage*}
@@ -253,6 +256,9 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 %-------------------------------------------------------------------------
 \begin{siglas}
   \item[PVDF] Fluoreto de Polivinilideno
+  \item[BPFI] Ball Pass Frequency Inner Race
+  \item[BPFO] Ball Pass Frequency Outer Race
+  \item[BSF] Ball Spin Frequency 
 \end{siglas}
 % ---
 
@@ -261,9 +267,17 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 % ---
 
 \begin{simbolos}
-  \item[$ \infty $] Letra grega Gama
-  \item[$ \Lambda $] Lambda
-  \item[$ \zeta $] Letra grega minúscula zeta
+  \item[$ \alpha $] Letra grega Alfa
+  \item[$ \beta $] Letra grega Beta
+  \item[$ \gamma $] Letra grega Gama
+  \item[$ \delta $] Letra grega Delta
+  \item[$ \theta $] Letra grega Teta  
+  \item[$ \mu $] Letra grega Mi  
+  \item[$ \sigma $] Letra grega Sigma
+  \item[$ \upphi $] Letra grega Phi maiúscula
+  \item[$ \omega $] Letra grega Omega
+  \item[\SI{}{\metre}] Metro  
+  \item[\SI{}{\micro\metre}] Micrometro
   \item[$ \in $] Pertence
 \end{simbolos}
 % ---
@@ -275,7 +289,7 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 \tableofcontents*
 \cleardoublepage
 % ---
-
+s
 
 
 % ----------------------------------------------------------
@@ -345,13 +359,12 @@ Os objetivos específicos do trabalho podem ser sumarizados em:
 	\item Diferenciar um sinal de falha de rolamento de esfera com uma, com as seguintes falhas: 1 - desgaste da pista do anel interno, 2 - desgaste na pista do anel externo e 3 - desgaste no elemento rolante.
 	\item Determinar um nível de alarme, indicativo de uma situação pré falha.
 	\item Encontrar o melhor posicionamento do sensor para captar os sinais de falha.
-
 \end{itemize}
 
 \chapter{Revisão Bibliográfica}
 %Neste capítulo serão abordados os conceitos essenciais que embasam este projeto, a saber: os fundamentos da manutenção preditiva; os fundamentos, aplicações e revisão de falhas de mancais de rolamentos; os fundamentos de vibração mecânicas; a aquisição de sinais vibracionais para análise preditiva de falhas nos mancais de rolamentos; os fundamentos da aquisição, análise de sinais e algoritmos para processamento destes sinais aquisitados, que será implementada no software supervisor.
 
-Neste capítulo abordamos os conceitos essenciais que embasam este projeto, a saber: os fundamentos da manutenção preditiva, tópico focal de nosso projeto; os fundamentos, aplicações e revisão de falhas de mancais de rolamentos, em particular considerando os que serão abordados nos experimentos práticos que serão conduzidos; os fundamentos de vibração mecânicas, afim de embasar a aquisição de sinais vibracionais para análise preditiva de falhas nos mancais de rolamentos; fundamentos da aquisição, análise de sinais e algoritmos para processamento destes sinais aquisitados, que será implementada no software supervisor.
+Neste capítulo são abordados os principais conceitos que embasam o projeto, a saber: os fundamentos da manutenção preditiva, tópico focal de nosso projeto; os fundamentos, aplicações e revisão de falhas de mancais de rolamentos, em particular considerando os que serão abordados nos experimentos práticos que serão conduzidos; os fundamentos de vibração mecânicas, afim de embasar a aquisição de sinais vibracionais para análise preditiva de falhas nos mancais de rolamentos; fundamentos da aquisição, análise de sinais e algoritmos para processamento destes sinais aquisitados, que será implementada no software supervisor.
 
 Também será feita uma revisão acerca do fenômeno piezoelétrico presente no PVDF, material escolhido para os sensores utilizados na aquisição dos sinais vibracionais dos mancais de rolamentos que serão utilizados neste trabalho. 
 
@@ -415,11 +428,13 @@ Para a condução de um processo de manutenção preditiva existem diferentes t�
 	\item análise de vibrações, técnica que permite o monitoramento do desenvolvimento de falhas em maquinário e peças através de medições de suas assinaturas vibracionais. 
 \end{itemize}
 
-Destes, a manutenção preditiva baseada em análise de vibrações, aplicada à mancais de rolamentos, será abordada em maiores detalhes por se tratar da técnica escolhida dadas as características do sensor objeto de estudo deste trabalho.
+Cada elemento de máquina possui características particulares que influenciam os métodos de manutenção preditiva adotados. No caso dos mancais de rolamentos estes geram vibrações mesmo quando geometricamente perfeitos, uma vez que possuem um número finito de elementos rolantes afim de suportar a carga. Ainda, quando ocorre um defeito em um dos componentes de um mancal de rolamentos, há aumento considerável nos níveis de vibração do mesmo. (Barilli, 2013, p. 8)
+
+Assim, a manutenção preditiva baseada em análise de vibrações, aplicada à mancais de rolamentos, será abordada em maiores detalhes por se tratar da técnica escolhida dadas as características dos rolamentos, bem como do sensor objeto de estudo deste trabalho.
 
 \section{\textbf{Análise de vibrações}}
 
-Uma vez abordada a importância de rolamentos para a indústria e a relevância da manutenção preditiva, aborda-se a questão dos fundamentos da manutenção preditiva de rolamentos baseada em análise de vibrações e suas vantagens. Para que se possa sobre manutenção preditiva baseada em análise de vibrações, entretanto, se faz necessário primeiramente um entendimento relativo ao fenômeno das vibrações mecânicas. 
+Para que se possa abordar as técnicas de manutenção preditiva baseada em análise de vibrações faz-se necessário, primeiramente, um breve entendimento relativo ao fenômeno das vibrações mecânicas. 
 
 Segundo Rao, 2008, p.5
 
@@ -433,20 +448,18 @@ Ainda, segundo Holanda, 2016, as vibrações mecânicas são fenômenos que acon
 \,[...]um tipo de movimento no qual se considera uma massa reduzida a um ponto submetido a uma força. A ação dessa força obriga o ponto a executar um movimento oscilatório. Para que o movimento oscilatório do ponto se constitua numa vibração, ele deverá percorrer uma trajetória denominada trajetória completa ou ciclo, conhecida pelo nome de período de oscilação. (Holanda, 2016)
 \end{citacao}
 
-Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos observados quando uma partícula realiza um movimento entorno uma posição de equilíbrio. Assim, quando há troca de energia cinética em energia potencial e vice-versa, ocorre a vibração. 
+Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos observados quando uma partícula realiza um movimento entorno uma posição de equilíbrio. Assim, quando há troca de energia cinética em energia potencial e vice-versa, ocorre a vibração. Quando um corpo oscila em períodos determinados ao redor de uma posição de equilíbrio, caracteriza-se este movimento como Movimento Harmônico, forma mais simples que a vibração pode se apresentar (Holanda, 2016). Holanda, 2016, apresenta como exemplo disto o movimento do pêndulo de um relógio, que oscila da máxima posição à direita até a máxima posição à esquerda, passando pelo ponto central de equilíbrio. 
 
-Para que se compreenda as vibrações mecânicas, há de se abordar alguns conceitos fundamentais. 
+%Este movimento é graficamente representado como uma senoide, conforme mostrado na Figura 16, abaixo.
 
-Quando um corpo oscila em períodos determinados ao redor de uma posição de equilíbrio, caracteriza-se este movimento como Movimento Harmônico, forma mais simples que a vibração pode se apresentar (Holanda, 2016). Holanda, 2016, apresenta como exemplo disto o movimento do pêndulo de um relógio, que oscila da máxima posição à direita até a máxima posição à esquerda, passando pelo ponto central de equilíbrio. Este movimento é graficamente representado como uma senoide, conforme mostrado na Figura 16, abaixo.
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics{Figura16}
+%\caption {Representação do movimento harmônico simples através do pêndulo de um relógio. A senóide representa graficamente o movimento. Retirado de Holanda, 2016, p.20}
+%\label{Figura16}
+%\end{figure}
 
-\begin{figure}[!htb]
-\centering
-\includegraphics{Figura16}
-\caption {Representação do movimento harmônico simples através do pêndulo de um relógio. A senóide representa graficamente o movimento. Retirado de Holanda, 2016, p.20}
-\label{Figura16}
-\end{figure}
-
-Ressalta-se que o tempo que a massa demora para realizar uma oscilação, ou movimento harmônico simples, é chamado de período. Uma oscilação por segundo constitui uma medida de frequência denominada Hertz (Nepomuceno, 1989). 
+Ressalta-se que o tempo que a massa demora para realizar uma oscilação, ou movimento harmônico simples, é chamado de período. Uma oscilação por segundo, ou um ciclo por segundo, CPS, constitui uma medida de frequência denominada Hertz (Nepomuceno, 1989). 
 
 Em relação ao movimento harmônico simples, ou oscilação, Nepomuceno, 1989, p.233 ressalta que
 
@@ -454,35 +467,37 @@ Em relação ao movimento harmônico simples, ou oscilação, Nepomuceno, 1989, 
 Nos casos práticos, existem inúmeros osciladores mecânicos que são dispositivos que dão origem a oscilações simples, principalmente às amplitudes pequenas ou então fornecem combinações de oscilações. É importante observar que todo e qualquer sistema que obedeça a Lei de Hooke é apto a oferecer tal tipo de vibrações. (Nepomuceno, 1989, p.233)
 \end{citacao}
 
-Importantes conceitos para a compreensão das vibrações mecânicas são a amplitude, frequência e fase. A amplitude, A, se relaciona com a quantidade de energia contida no sinal vibratório, ou seja, a severidade do movimento, e é medida em milímetros (mm). Pode ser tomada em forma de deslocamento, velocidade e aceleração.  A frequência, f, conforme anteriormente mencionado, é medida em Hertz e representa o número de vezes em que ocorre um ciclo completo de movimento. A fase, $\upphi$, representa “o ângulo inicial do argumento da função senoidal que descreve o movimento harmônico” (Holanda, 2016).
- 
-Para que se mensure os níveis de vibração, utiliza-se parâmetros expressos em termos de deslocamento, velocidade e aceleração (Holanda, 2016). Segundo Kardec e Nascif, 2009, p.244 todos os três parâmetros representam “o quanto o equipamento está vibrando”. A ISO 10816 de 1995 define e fornece a limitação destes parâmetros. 
+Para que se mensure os níveis de vibração, utiliza-se parâmetros expressos em termos de deslocamento, velocidade e aceleração (Holanda, 2016). Segundo Holanda, 2016, p. 21 \textit{apud} Kardec e Nascif, 2009, p.244 todos os três parâmetros representam “o quanto o equipamento está vibrando”. 
 
-O Deslocamento é medido em micrometros (\SI{}{\micro\metre}). De acordo com Holanda, 2016, p.21 o deslocamento pode ser medido pelo nível de distanciamento do ponto relativo à sua posição de repouso, sendo a “unidade mais óbvia para se mensurar a vibração, pois é aquela que mais se aproxima da ideia de oscilação em torno de um ponto médio”. O deslocamento é recomendado para medições abaixo de 10Hz (Holanda, 2016). A fórmula abaixo representa o deslocamento, x:
+Além disso, estes parâmetros possuem amplitude, frequência e fase. A amplitude, A, se relaciona com a quantidade de energia contida no sinal vibratório, ou seja, a severidade do movimento, sendo medida em milímetros (mm). Pode ser tomada em forma de deslocamento, velocidade e aceleração. A frequência, f, conforme anteriormente mencionado, é representada em Hertz e indica o número de vezes em que ocorre um ciclo completo de movimento. Já a fase, $\upphi$, representa “o ângulo inicial do argumento da função senoidal que descreve o movimento harmônico” (Holanda, 2016, p. 22).
+
+Já em relação às formas de mensuração, o Deslocamento é medido em micrometros (\SI{}{\micro\metre}). De acordo com Holanda, 2016, p.21 o deslocamento pode ser medido pelo nível de distanciamento do ponto relativo à sua posição de repouso, sendo a “unidade mais óbvia para se mensurar a vibração, pois é aquela que mais se aproxima da ideia de oscilação em torno de um ponto médio”. O deslocamento é recomendado para medições abaixo de 10Hz (Holanda, 2016). A fórmula abaixo representa o deslocamento, x:
 
 \[x = A \,sen (\omega t + \upphi)\]
 
-A velocidade, por sua vez, é medida em milímetros por segundo ($mm/s$). Segundo Holanda, 2016, o deslocamento implica na existência de uma velocidade que, por sua vez, pode ser variável. A função de velocidade, v:
+A velocidade, por sua vez, é medida em milímetros por segundo ($mm/s$). O deslocamento implica na existência de uma velocidade que, por sua vez, pode ser variável. A função de velocidade, v, é dada por:
 
 \[v = A\omega \,cos (\omega t + \upphi)\]
 
 Holanda, 2016, p.21 afirma que a velocidade de vibração é parâmetro “menos representativo para componentes tanto de baixa como de alta frequência, sendo o parâmetro normalmente escolhido para avaliação da severidade de vibração entre 10 Hz e 1000 Hz”.
-A aceleração, por sua vez, é medida em metros por segundo ao quadrado ($m/s^{2}$). Se a velocidade for variável, implica-se a existência de uma aceleração no movimento. 
 
-A fórmula que representa a aceleração, a, é:
+A aceleração, por sua vez, é medida em metros por segundo ao quadrado ($m/s^{2}$). Com velocidade variável, implica-se a existência de uma aceleração no movimento. A fórmula que representa a aceleração, a, é:
 
 \[a = -A^{2} \omega \,sen (\omega t + \upphi)\]
 
-Limitando-se o escopo de abrangência, este fenômeno das vibrações, na engenharia, é um item de alta relevância para estudo visto que os efeitos das vibrações podem ser nocivos, ou mesmo catastróficos, ao se considerar maquinário industrial. Fatores como desgaste precoce de elementos mecânicos e falhas por fadiga causadas por movimentos cíclicos podem ser mensurados ao se monitorar a assinatura vibracional de maquinário e equipamento. 
+Limitando-se o escopo de abrangência, este fenômeno das vibrações, na engenharia, é um item de alta relevância para estudo visto que os efeitos das vibrações podem ser nocivos, ou mesmo catastróficos, ao se considerar maquinário industrial. 
+
+Fatores como desgaste precoce de elementos mecânicos e falhas por fadiga causadas por movimentos cíclicos podem ser mensurados ao monitorar a assinatura vibracional dos componentes de máquina. A partir disto são aplicadas, então, técnicas específicas que permitam a adequada mensuração do estado dos componentes. 
+
 
 \subsection{\textbf{Técnicas de análise de vibrações}}
 
-Esclarecidos os conceitos  fundamentais relativos as vibrações mecânicas, faz-se necessário entender como as vibrações podem ser medidas e analisadas sob a ótica do interesse tecnológico na manutenção preditiva. Nepomuceno, 1989, p.206 afirma que a medida e monitoramento da vibração é uma das atividades de manutenção preditiva que apresenta melhores resultados. 
-Mesquita et. al, 2002, afirmam que análise destas vibrações pode se dar nos domínios do tempo, da frequência e no domínio conjunto tempo-frequência.
-Em relação à análise no domínio do tempo, Segundo Spamer, 2009, p.62 apud Holanda, 2016, p.22 a amplitude de vibração em função do tempo pode ser medida em valores de pico a pico, valor de pico e valor RMS. 
-Meola, 2005, afirma que o valor de pico a pico sinaliza a excursão máxima da onda, medida relevante para definição de quando um elemento da máquina atinge valores críticos. 
-Já o valor de pico, de acordo com Meola, 2005, indica níveis máximos de sinais transientes, sem considerar a cronologia da onda. 
-O valor médio, por sua vez, indica o quanto o sinal está deslocado quanto à sua referência tendo pouca relevância quanto ao monitoramento da vibração. 
+Esclarecidos os conceitos  fundamentais relativos as vibrações mecânicas, faz-se necessário entender como as vibrações podem ser medidas e analisadas sob a ótica do interesse tecnológico na manutenção preditiva. 
+
+Nepomuceno, 1989, p.206 afirma que a medida e monitoramento da vibração é uma das atividades de manutenção preditiva que apresenta melhores resultados. Mesquita et. al, 2002, afirmam que análise destas vibrações pode se dar nos domínios do tempo, da frequência e no domínio conjunto tempo-frequência.
+
+Em relação à análise no domínio do tempo, Segundo Spamer, 2009, p.62 apud Holanda, 2016, p.22 a amplitude de vibração em função do tempo pode ser medida em valores de pico a pico, valor de pico e valor RMS. Meola, 2005, afirma que o valor de pico a pico sinaliza a excursão máxima da onda, medida relevante para definição de quando um elemento da máquina atinge valores críticos. Já o valor de pico, de acordo com Meola, 2005, indica níveis máximos de sinais transientes, sem considerar a cronologia da onda. O valor médio, por sua vez, indica o quanto o sinal está deslocado quanto à sua referência tendo pouca relevância quanto ao monitoramento da vibração. 
+
 Já o valor RMS, ou eficaz, é, de acordo com Meola, 2005, p.9
 
 \begin{citacao}
@@ -510,9 +525,9 @@ De acordo com Tandon, 1999 apud Meola, 2005, os métodos mais comuns de detecç�
 
 \[20log_{10} \left ( \frac{Nivel \,Pico}{Nivel \, RMS} \right ) \]
 
-Esta diferença vai aumentando progressivamente com o surgimento de defeitos, até atingir valor aproximado de 18dB quando, devido ao desgaste geral do rolamento, tal diferença volta a diminuir (Meola, 2005). Assim, ao retornar para aproximadamente 3dB a falha é iminente e o rolamento deverá ser trocado. 
+Esta diferença aumenta progressivamente com o surgimento de defeitos, até atingir valor aproximado de 18dB quando, devido ao desgaste geral do rolamento, tal diferença volta a diminuir (Meola, 2005). Assim, ao retornar para aproximadamente 3dB a falha é iminente e o rolamento deverá ser trocado. 
 
-A Figura 18, abaixo, demonstra esta relação entre os valores de Pico e RMS mencionado.  
+A Figura 18, abaixo, demonstra esta relação entre os valores de Pico e RMS.  
 
 \begin{figure}[!htb]
 \centering
@@ -530,14 +545,14 @@ Já a Figura 19, abaixo, demonstra o comportamento do Fator de Crista no tempo c
 \label{Figura19}
 \end{figure}	
 
-Também descrito por Meola, 2005, é o método da curtose. Neste, os momentos estatísticos são utilizados para descrever o comportamento de variáveis aleatórias. A curtose é utilizada na detecção de falhas incipientes em rolamentos. Segundo Mesquita et al., 2002
+Outro relevante método para detecção de falhas é a curtose. Neste, os momentos estatísticos são utilizados para descrever o comportamento de variáveis aleatórias. A curtose é utilizada na detecção de falhas incipientes em rolamentos. Segundo Mesquita et al., 2002
 
 \begin{citacao}
 A Densidade de Probabilidade do sinal de aceleração de um rolamento também pode ser usada para a detecção de falhas em rolamentos. Um rolamento em boas condições possui uma distribuição Gaussiana de aceleração, enquanto que o rolamento defeituoso produz uma distribuição não-gaussiana devido ao aumento no número dos altos níveis de aceleração.
-Vários momentos estatísticos podem ser usados para indicar a forma da densidade de probabilidade. Dyer e Stewart4 propuseram o Fator de Curtose, que é o quarto momento estatístico, normalizado em relação ao desvio padrão elevado a quarta potência.
+Vários momentos estatísticos podem ser usados para indicar a forma da densidade de probabilidade. Dyer e Stewart propuseram o Fator de Curtose, que é o quarto momento estatístico, normalizado em relação ao desvio padrão elevado a quarta potência.
 \end{citacao}
 
-A curtose é descrita, portanto, da seguinte forma:
+A curtose é descrita da seguinte forma:
 
 \[K = \frac{ \int_{-\infty}^{+\infty} (x - \overline{x})^{4}p(x)dx } {\sigma^{4}} \]
 
@@ -861,6 +876,10 @@ Além disso:
 Também deve-se considerar a constante hidrostática piezoelétrica, $dh$, que representa a razão de carga de curto-circuito por área unitária da superfície dos eletrodos pelo estresse hidrostático aplicado igualmente ao longo dos três eixos. 
 
 A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdutores piezoelétricos. Estes absorvem energia térmica, aumentando assim a sua temperatura e induzindo sinais elétricos. Em filmes piezo o sinal de saída é proporcional à taxa de mudança de temperatura em vez de níveis de temperatura. A constante piroelétrica $p$, assim, relaciona a carga por unidade de área dos eletrodos pela unidade de troca de temperatura. Logo, $p = C/m^{2} K$.
+
+
+\subsection{\textbf{Aplicações do Fluroreto de polivinilideno}}
+
 
 
 
