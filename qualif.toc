@@ -6,29 +6,29 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}Introdução}{9}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}Introdução}{10}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}Objetivos}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\textbf {Geral}}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\textbf {Específicos}}{12}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {2}Objetivos}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textbf {Geral}}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\textbf {Específicos}}{13}{section.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}Revisão Bibliográfica}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\textbf {Manutenção}}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}\textbf {Manutenção preditiva}}{14}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}\textbf {Análise de vibrações}}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}\textbf {Técnicas de análise de vibrações}}{18}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}\textbf {Fundamentos e aplicações de rolamentos}}{22}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}\textbf {Tipos de rolamentos}}{23}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}\textbf {Processos de fabricação de rolamentos}}{23}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}\textbf {Carga e vida útil de rolamentos}}{24}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}\textbf {Falhas em rolamentos}}{26}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}\textbf {Frequências características de defeitos dos rolamentos}}{33}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}\textbf {Fluroreto de polivinilideno}}{34}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}\textbf {Aplicações do Fluroreto de polivinilideno}}{38}{subsection.3.4.1}%
+\contentsline {chapter}{\chapternumberline {3}Revisão Bibliográfica}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\textbf {Manutenção}}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}\textbf {Manutenção preditiva}}{15}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}\textbf {Análise de vibrações}}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}\textbf {Técnicas de análise de vibrações}}{19}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}\textbf {Fundamentos e aplicações de rolamentos}}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}\textbf {Tipos de rolamentos}}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}\textbf {Processos de fabricação de rolamentos}}{24}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}\textbf {Carga e vida útil de rolamentos}}{26}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}\textbf {Falhas em rolamentos}}{28}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}\textbf {Frequências características de defeitos dos rolamentos}}{38}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}\textbf {Fluroreto de polivinilideno}}{38}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}\textbf {Aplicações do Fluroreto de Polivinilideno}}{42}{subsection.3.4.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}Materiais e métodos}{39}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}Materiais e métodos}{43}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{43}{chapter*.12}%
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{50}{chapter*.12}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{Anexo \space }

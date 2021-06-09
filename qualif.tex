@@ -93,7 +93,9 @@
 
 
 %-------------------------------------------------------------------------
-\orientador{Prof. Dr. Wilson Carlos da Silva Junior}
+\orientador{Prof. Dr. Wilson Carlos da Silva Junior \newline 
+Coorientadora: Profa. Dra. Vanesssa Seriacopi}
+
 
 \tipotrabalho{Qualificação (Mestrado)}
 
@@ -207,7 +209,10 @@ Proposta de qualificação apresentada ao Departamento de Engenharia Mecânica d
 %DISPERATI, Giovani Fonseca Ravagnani. \imprimirtitulo. \imprimirdata. \pageref{LastPage} f. Proposta de qualificação (Mestrado em Ciências) %– Departamento de Engenharia Mecânica, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, São Paulo, 2018.
 %\end{flushleft}
 
-A manutenção preditiva é uma área de grande relevância tendo em vista os fatores econômicos e de segurança associados. Nos maquinários, rolamentos são partes imprescindíveis para seu funcionamento. Propõe-se, neste trabalho, o estudo da possibilidade de realização de análise preditiva de falhas em rolamentos com utilização de filmes de Difluoreto de Polivinilideno, PVDF, material que apresenta elevados níveis de piezoeletricidade e propriedades de resistência à corrosão, maleabilidade e alto espectro de frequências, além de baixo custo. Para a condução dos experimentos será fabricada uma bancada de testes e um sistema de aquisição de dados afim de validar a viabilidade de utilização do sensor para a aplicação proposta.
+O fluoreto de polivinilideno, conhecido pela sigla PVDF, é um polímero com características piezo e piroelétricas, além de alta estabilidade e resistência química e física que, aliadas ao fácil processamento desse material, o tornam um excelente elemento para uso tecnológico. PVDF é um material semicristalino flexível, de baixo custo de fabricação e fácil de usinar. Seu uso passa por diversas aplicações, desde sensores até a construção de tubos e dutos para o transporte de água ultrapura. Sua cristalização ocorre em pelo menos quatro fases distintas, alfa, beta, gama e delta, sendo que a fase beta é caracterizada por apresentar os comportamentos piezo e piroelétricos já mencionados.
+Dadas estas características, trabalhos têm sido desenvolvidos utilizando filmes feitos deste material como sensores para manutenção preditiva baseada em análise de vibração. O tema deste trabalho surge da proposta de avaliar o filme PVDF como um sensor aplicado na detecção de falhas em mancais de rolamentos, um dos elementos de máquina mais comuns, uma vez que o PVDF possui caracteríticas que o tornam candidato a ser uuma alternativa aos sensores habitualmente utilizados para este fim. O PVDF tem menor custo em relação a estes e, portanto, o componente econômico é a motivação para esta investigação.
+O objetivo deste trabalho é adquirir um sinal de vibração utilizando um sensor PVDF, para que seja realizada a detecção de falhas em mancais em um software supervisório com aplicações de manutenção preditiva. Com base nos sinais captados deste sensor, será possível avaliar a viabilidade de um sistema de sensor PVDF para monitoramento das condições dos mancais. Para tanto, foi construída uma bancada experimental na qual o sensor PVDF é acoplado aos mancais escolhidos como objeto de estudo. Um circuito também foi construído para condicionar e amplificar o sinal de saída do sensor, de forma que ele possa ser capturado por um sistema de aquisição de dados. A partir desta saída espera-se encontrar o melhor posicionamento do sensor para capturar os sinais de falha, a fim de diferenciar os sinais de um rolamento autocompensador de rolos com as seguintes falhas: desgaste da pista do anel interno, desgaste da pista do anel externo e desgaste no elemento rotativo. Espera-se que isso culmine na possibilidade de determinar um nível de alarme indicativo de uma situação de pré-falha.
+
 
 Palavras-chaves: Manutenção preditiva. Rolamentos. Análise de vibração. PVDF.
 \end{resumo}
@@ -289,7 +294,6 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 \tableofcontents*
 \cleardoublepage
 % ---
-s
 
 
 % ----------------------------------------------------------
@@ -318,27 +322,21 @@ O fluoreto de polivinilideno, conhecido pela sigla PVDF, apresenta característi
 
 O tema deste trabalho surge da proposta de se avaliar o filme PVDF como sensor de vibração com finalidades de manutenção preditiva, em particular, aqui, aplicado a falhas de rolamentos, uma vez que este sensor possui baixo custo e, desta forma, mostra-se como possível alternativa aos acelerômetros cerâmicos costumeiramente utilizados para esta finalidade. O componente econômico, portanto, se faz basilar neste trabalho. 
 
-Dadas estas características do material, o filme PVDF, objeto de estudo deste trabalho, é utilizado como conversor de vibrações mecânicas em tensão elétrica de saída. Uma vez que a tensão de saída é proporcional a força mecânica aplicada é possível avaliar a severidade da vibração sofrida pelo rolamento e, assim, realizar-se a detecção de padrões que indiquem o comprometimento do elemento, bem como apontar qual o problema em potencial.
+Dadas estas características do material, o filme PVDF foi utilizado como sensor de vibração. Uma vez que a tensão de saída é proporcional a força mecânica aplicada é possível avaliar a severidade da vibração sofrida pelo rolamento e, assim, realizar-se a detecção de padrões que indiquem o comprometimento do elemento, bem como apontar qual o problema em potencial.
 
-A análise de vibração é uma das técnicas de manutenção preditiva empregadas na indústria. Nesta, é possível que se realize a medição do estado do componente, sendo este considerado um método efetivo para monitoração de elementos rolantes - incluindo-se, aí, rolamentos (Kern et al, 2014). 
+%Sabendo-se que as suas propriedades de piezoeletricidade surgem após esforço mecânico, verifica-se a possibilidade de utilização deste como alternativa aos acelerômetros cerâmicos normalmente utilizados para análise de vibração.    
 
-Verifica-se a possibilidade de utilização deste como alternativa aos acelerômetros cerâmicos normalmente utilizados para análise de vibração.    
+Esta tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e estes dados armazenados através de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, bem como tendem a possuir baixa voltagem de saída, é necessário o condicionamento deste sinal com um circuito eletrônico específico para tanto. 
 
-Esta tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e estes dados armazenados através de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, bem como tendem a possuir baixa voltagem, é necessário o condicionamento deste sinal com um circuito eletrônico específico para tanto. 
+%Desta forma, o sensor filme PVDF foi utilizado pois possui as supracitadas características que o tornam tecnologicamente e economicamente viável para a aplicação proposta. 
 
-Desta forma, o sensor filme PVDF foi utilizado pois possui as supracitadas características que o tornam tecnologicamente e economicamente viável para a aplicação proposta. 
+Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados afim de análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. 
 
-Sobre a construção de um sistema de aquisição de dados afim de análise das informações capturadas pelo sensor
+A fim de testar , foi construída bancada experimental com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido por empresa parceira WEG/Cestari. 
 
-Além disso, um sistema próprio de aquisição de dados será utilizado 
+Espera-se que, a partir dos experimentos, possa se obter uma resposta inicial quanto a viabilidade de utilização do filme PVDF para fins de manutenção preditiva.
 
-Também faz-se necessário o tratamento do sinal e, para tanto, foi construído um circuito eletrônico afim de condicionar o sinal adquirido a partir dos mancais de rolamentos instalados na bancada experimental. 
-
-A partir destes, dos métodos para análise dos dados capturados
-
-Para finalizar a introdução, do que a gente espera conseguir com este trabalho
-
-Sabendo-se que as suas propriedades de piezoeletricidade surgem após ser mecanicamente tracionado e submetido à ação de um campo elétrico 
+%A análise de vibração é uma das técnicas de manutenção preditiva empregadas na indústria; Nesta, é possível que se realize a medição do estado do componente, sendo este considerado um método efetivo para monitoração de elementos rolantes - incluindo-se, aí, rolamentos (Kern et al, 2014). 
 
 
 \chapter{Objetivos}
@@ -512,13 +510,13 @@ Já o nível eficaz, ou nível RMS, de um sinal harmônico é dado por:
 
 \[Nivel \, RMS = \sqrt{ \frac{1}{T} \int_{0}^{T} x^{2}(t)dt }  \]
 
-A Figura 17, abaixo, exemplifica a relação estes níveis.
+A Figura~\ref{RelacaoSinalHarmonico}, abaixo, exemplifica a relação estes níveis.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics{Figura17}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura17}
 \caption {Representação dos níveis de um sinal harmônico. Retirado de Meola, 2005.}
-\label{Figura17}
+\label{RelacaoSinalHarmonico}
 \end{figure}
 
 De acordo com Tandon, 1999 apud Meola, 2005, os métodos mais comuns de detecção de falhas no domínio do tempo são o nível RMS e o Fator de Crista, que representa a razão entre o valor de pico e o valor RMS de aceleração. O Fator de Crista, FC, considera a variação do pico e do valor RMS. Considerando-se mancais de rolamentos, Meola afirma que a diferença entre estes é de aproximadamente 3dB, dada por:
@@ -527,22 +525,22 @@ De acordo com Tandon, 1999 apud Meola, 2005, os métodos mais comuns de detecç�
 
 Esta diferença aumenta progressivamente com o surgimento de defeitos, até atingir valor aproximado de 18dB quando, devido ao desgaste geral do rolamento, tal diferença volta a diminuir (Meola, 2005). Assim, ao retornar para aproximadamente 3dB a falha é iminente e o rolamento deverá ser trocado. 
 
-A Figura 18, abaixo, demonstra esta relação entre os valores de Pico e RMS.  
+A Figura~\ref{RelacaoPicoaPicoeRMS}, abaixo, demonstra esta relação entre os valores de Pico e RMS.  
 
 \begin{figure}[!htb]
 \centering
-\includegraphics{Figura18}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura18}
 \caption {Relação entre os valores de Pico e RMS com o desgaste progressivo de rolamentos. Retirado de Meola, 2005.}
-\label{Figura18}
+\label{RelacaoPicoaPicoeRMS}
 \end{figure}	
 
-Já a Figura 19, abaixo, demonstra o comportamento do Fator de Crista no tempo com o desgaste do rolamento.
+Já a Figura~\ref{FatorCrista}, abaixo, demonstra o comportamento do Fator de Crista no tempo com o desgaste do rolamento.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics{Figura19}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura19}
 \caption {Fator de Crista no tempo.}
-\label{Figura19}
+\label{FatorCrista}
 \end{figure}	
 
 Outro relevante método para detecção de falhas é a curtose. Neste, os momentos estatísticos são utilizados para descrever o comportamento de variáveis aleatórias. A curtose é utilizada na detecção de falhas incipientes em rolamentos. Segundo Mesquita et al., 2002
@@ -566,13 +564,13 @@ Tendo em vista que os mancais possuem frequências características de defeitos,
 \section{\textbf{Fundamentos e aplicações de rolamentos}}
 Rolamentos são dispositivos para transmissão de movimentos rotacionais ou lineares, com finalidade de redução de atrito entre partes móveis (Santos et al., 2007). Rolamentos são compostos, geralmente, de dois anéis, elementos rolantes e uma gaiola, sendo classificados como rolamentos radiais ou axiais, dependendo da direção da carga principal (NSK, 2018). Adicionalmente, os rolamentos são classificados como rolamentos de esferas e rolamentos de rolos, em função do tipo de elemento rolante, e segregados quanto seus propósitos específicos (NSK, 2018).
 
-A Figura 1, abaixo, demonstra os componentes de um rolamento de uma carreira esferas e suas dimensões. 
+A Figura~\ref{ComponentesRolamentos}, abaixo, demonstra os componentes de um rolamento de uma carreira esferas e suas dimensões. 
 
 \begin{figure}[!htb]
 \centering
-\includegraphics{Figura1}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura1}
 \caption{a) Componentes de um rolamento. (b) Dimensões do rolamento. Mesquita et al. 2002 apud Santos et al. 2017}
-\label{Figura1}
+\label{ComponentesRolamentos}
 \end{figure}
 
 Segundo a NSK (2018), 
@@ -583,42 +581,43 @@ Atualmente, os rolamentos são uma das peças de máquina mais comumente usadas 
 
 Em comparação aos mancais de deslizamento, os rolamentos apresentam vantagens como: torque de partido e atrito baixos, com diferença entre torque de partida de partida e torque de funcionamento pequenos; grande padronização internacional, facilitando sua substituição; dentre outras (NSK, 2018).
 
-A seguir apresenta-se uma revisão sobre tipos de rolamentos, suas principais características, propriedades e tipos de falhas.
-
-%Neste âmbito justifica-se o estudo dos rolamentos, suas principais características, propriedades e falhas.
+%A seguir apresenta-se uma revisão sobre tipos de rolamentos, suas principais características, propriedades e tipos de falhas.
 
 \subsection{\textbf{Tipos de rolamentos}}
 
 Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  e que servem para redução de atrito entre eles e a superfície (Abecom, 2019). Existem distintos tipos de rolamentos, dentre os quais cita-se:
 
 \begin{itemize}
-	\item Rolamentos de rolos cilíndricos, constituídos por uma carreira de rolos em uma gaiola; 
+	\item Rolamentos de rolos cilíndricos, constituídos por uma carreira de rolos em uma gaiola
 	\item Rolamentos de rolos cônicos, contrítudos por pistas de anel interno e externo, cônicas e rolos cônicos
-	\item Rolamentos autocompensadores, que possuem duas carreiras de esferas ou rolos com uma pista esférica comum no anel externo e duas pistas no anel interno 
+	\item Rolamentos autocompensadores, que possuem duas carreiras de esferas ou rolos com uma pista esférica comum no anel externo e duas pistas no anel interno 	
 	\item Rolamentos rígidos de esfera, que são rolamentos versáteis de concepção simples e tipo não separáveis
 	\item Rolamentos de esfera de contato angular, que possui pistas nos anéis interno e externo
-	\item Rolamentos axiais
+	\item Rolamentos axiais de esferas, que são são projetados para cargas axiais]
 \end{itemize}
+
+Cada tipo de rolamento possui suas aplicações e a escolha de rolamento depende de uma série de fatores específicos, tais como a carga a ser suportada, a velocidade de funcionamento, temperatura de trabalho, folga interna, alinhamento e desalinhamento do eixo, espaço disponível, dentre outros. 
+
 
 \subsection{\textbf{Processos de fabricação de rolamentos}}
 
-Nos rolamentos rígidos de esferas, modelo comum de rolamentos e objeto de estudo deste trabalho, segrega-se o processo de fabricação em: fabricação dos anéis interno e externo; fabricação das esferas; fabricação das gaiolas e, por fim, montagem (Dos Santos et al., 2017).   
+Nos rolamentos usualmente segrega-se o processo de fabricação em: fabricação dos anéis interno e externo; fabricação das esferas; fabricação das gaiolas e, por fim, montagem (Dos Santos et al., 2017).   
 
-As esferas são feitas a partir de barras de aço cortadas em comprimentos específicos. Um processo de forjamento destes fragmentos de barra confere às peças um formato esférico, mas ainda com rebarbas. É realizado, então, o desbaste destas rebarbas. Após o processo de desbaste as esferas passam por tratamento térmico de têmpera. Por fim, é realizado o polimento. 
+As esferas, ou rolos, são feitas a partir de barras de aço cortadas em comprimentos específicos. Um processo de forjamento destes fragmentos de barra confere às peças o formato desejado, mas ainda com rebarbas. É realizado, então, o desbaste destas rebarbas. Após o processo de desbaste as esferas passam por tratamento térmico de têmpera. Por fim, é realizado o polimento. 
 
 Os anéis interno e externo, por sua vez, são criados pelos mesmos processos, a saber: forjamento, torneamento, tratamento térmico, polimento e super-acabamento. No  primeiro processo, forjamento, os lingotes de aço são aquecidos e, através de prensagem, são formados os anéis interno e externo em cada movimento da prensa. Os processos decorrem, portanto, simultaneamente e no mesmo equipamento. Após o forjamento, se dá o processo de torneamento. Neste, o torneamento do anel interno e externo se dá pelos mesmos passos. Primeiramente é torneada uma face lateral, a largura do anel. Em seguida, a outra face lateral é torneada. O próximo passo do processamento do anel é o torneamento do perfil da pista e largura. Simultaneamente é usinado o chanfro do anel. Em sequência ao processo de torneamento, se dá o tratamento térmico dos anéis por tempera, onde estes são aquecidos a temperaturas superiores aos 800ºC, bruscamente resfriados em óleo, reaquecidos em temperaturas de 150ºC e resfriados ao ar. Por fim, há o processo de acabamento onde processos abrasivos e de polimento são utilizados para atingir acabamento fino e exatidão de dimensão das peças (Dos Santos et al., 2017). 
 
-A Figura 2, abaixo, demonstra o fluxo de ordenação destes processos acima descritos.
+A Figura~\ref{FiguraProcessoFabricacao}, abaixo, demonstra o fluxo de ordenação destes processos acima descritos.
 \begin{figure}[!htb]
 \centering
-\includegraphics{Figura2}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura2}
 \caption{a) Processo de fabricação dos anéis internos e externos. Retirado de Dos Santos et al., 2017.}
-\label{Figura2}
+\label{FiguraProcessoFabricacao}
 \end{figure}
 
 As gaiolas, por sua vez, são produzidas com lâminas de aço que recebem a forma de anéis planos através de estampagem, sendo, então, prensadas para receber forma ondulada afim de manter as esferas na posição, feitos os furos para rebites e tratamento térmico da peça. (Dos Santos et al., 2017).
  
-Com todas as partes produzidas é realizada, então, a montagem do rolamento. Primeiro, os anéis interno e externo são colocados concentricamente na linha de produção com as esferas preenchendo os espaços entre estes. O tamanho das esferas é calculado a partir do diâmetro da ranhura do anel interno. As esferas, então, são uniformemente organizadas por um divisor e uma metade da gaiola é adicionada com os furos para rebites. Em sequência outra máquina adiciona a metade restante da gaiola, que possui os rebites, e finaliza a montagem da peça. (Santos et al., 2017). 
+Com todas as partes produzidas é realizada, então, a montagem do rolamento. Primeiro, os anéis interno e externo são colocados concentricamente na linha de produção com as esferas preenchendo os espaços entre estes. O tamanho dos elementos rolantes se dá por calculo a partir do diâmetro da ranhura do anel interno. Estes são, então, uniformemente organizados por um divisor e uma metade da gaiola é adicionada. Em sequência outra máquina adiciona a metade restante da gaiola e finaliza-se, assim, a montagem da peça. (Santos et al., 2017). 
 
 
 \subsection{\textbf{Carga e vida útil de rolamentos}}
@@ -661,133 +660,193 @@ Dentro de cada intervalo de trabalho, a carga e as condições operacionais do r
 
 \subsection{\textbf{Falhas em rolamentos}}
 
-Quando há correto manuseio dos rolamentos, usualmente estes podem ser utilizados por longos períodos de tempo antes de surgirem sinais de fadiga. Entretanto, devido a seleção incorreta do rolamento, lubrificação inadequada ou mesmo falhas de manuseio ou de condição de serviço, podem ocorrer falhas prematuras (NTN, 2018).
+Quando há correto manuseio dos rolamentos, usualmente estes podem ser utilizados por longos períodos de tempo antes de surgirem sinais de fadiga. Entretanto, devido a seleção incorreta do rolamento, lubrificação inadequada ou mesmo falhas de manuseio ou de condição de serviço, podem ocorrer falhas prematuras (NSK, 2014).
 
-Ainda que a operação se dê de forma adequada, entretanto, a ação das tensões cíclicas de cisalhamento causa o aparecimento de microfissuras que, em sua maioria, surgem em pontos de pouca resistência, ou onde o material é anisotrópico  ou em pontos onde ocorrem inclusões de materiais não metálicos. Assim, com o tempo, estas microfissuras evoluem para a superfície da pista onde surgirão microtrincas que evoluem gradativamente (Harris, Juvinall e Marshek).
+Ainda que a operação se dê de forma adequada, entretanto, a ação das tensões cíclicas de cisalhamento causa o aparecimento de microfissuras que, em sua maioria, surgem em pontos de pouca resistência, ou onde o material é anisotrópico  ou em pontos onde ocorrem inclusões de materiais não metálicos. Assim, com o tempo, estas microfissuras evoluem para a superfície da pista onde surgirão microtrincas que evoluem gradativamente (Harris, 1991; Juvinall e Marshek, 1991).
 
-Dentre as falhas mais comuns em rolamentos temos as seguintes: descascamento, travamento, trinca e lascamento, gaiola danificada, desgaste irregular, manchas e asperezas superficiais, oxidação e corrosão, corrosão por atrito, desgaste regular, corrosão eletrolítica, amassados e arranhamentos, deformação, manchas e descorolação.
+Dentre as falhas mais comuns em rolamentos temos as seguintes: escamamento, descascamento, arranhadura, escorregamento, fraturas, trinca e lascamento, gaiola danificada, impressões, \textit{pitting}, desgaste, corrosão por atrito, falso brinel, deslizamento, superaquecimento, corrosão eletrolítica, oxidação e corrosão, falha na instalação e alteração na coloração.
 
-Descascamento é o processo em que a superfície da pista começa a descascar, logo sem seguida sendo percebidas ondulações. Dentre as possíveis causas para esta falha estão: excesso de carga ou manejo inadequado, montagem inadequada, precisão incorreta no eixo ou alojamento, folga insuficiente, contaminação, oxidação, lubrificação inadequada ou mesmo queda de dureza devido temperaturas altas anormais (NTN, 2018). A Figura 3, abaixo, mostra uma pista com descascamento.
+%manchas e asperezas superficiais,  desgaste regular,  amassados e arranhamentos, deformação, manchas e descorolação.
 
-\begin{figure}[!htb]
+Escamamento é o processo em que regiões com textura áspera e grosseira são formadas por separação de pequenas partes de material dos rolamentos devido a fadiga do mesmo. Dentre as possíveis causas estão: carga excessiva, falha na instalação, carga de momento elevada, contaminação por partículas ou por água, lubrificação dificiente ou folga inapropiada (NSK, 2014). A Figura~\ref{escamemento_nsk} mostra anéis internos de rolamentos com escamamento. 
+
+\begin{figure}[H]
 \centering
-\includegraphics{Figura3}
-\caption {Pista de rolamento com descascamento. Retirado de NTN, 2018.}
-\label{Figura3}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{escamamento_nsk}
+\caption {Anéis internos de rolamentos apresentando escamamento. Retirado de NSK, 2014.}
+\label{escamemento_nsk}
 \end{figure}
 
-Travamento, por sua vez, diz respeito ao processo em que o rolamento se aquece e descolora, eventualmente travando. Dentre as possíveis causas para esta falha estão folga insuficiente no rolamento, incluindo-se folgas que diminuem em razão de deformações locais, lubrificação insuficiente ou imprópria, cargas excessivas ou ainda corpos rolantes afinados nas extremidades (NTN, 2018). A Figura 4, abaixo, mostra o dano em um rolamento que travou.
+Descascamento, por sua vez, é o processo em que a superfície da pista começa a descascar, logo sem seguida sendo percebidas ondulações. Dentre as possíveis causas para esta falha estão: excesso de carga ou manejo inadequado, montagem inadequada, precisão incorreta no eixo ou alojamento, folga insuficiente, contaminação, oxidação, lubrificação inadequada ou mesmo queda de dureza devido temperaturas altas anormais (NSK, 2014). A Figura~\ref{descascamento_nsk} mostra uma pista com descascamento.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura4}
-\caption {Dano causado por trava em rolamento. Retirado de NTN, 2018.}
-\label{Figura4}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{descascamento_nsk}
+\caption {Pista de rolamento com descascamento. Retirado de NSK, 2014.}
+\label{descascamento_nsk}
+\end{figure}
+
+Amassados e arranhaduras são riscos durante a montagem, arranhamentos em razão de objetos estranhos e duros, além de amassados superficiais devido a impactos. As causas são presença de objetos estranhos, penetração por impacto no lado descascado, quedas e choques devido manejo inadequado além de montagem desalinhada (NSK, 2014). A Figura~\ref{arranhaduras_nsk} mostra amassados e arranhaduras. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{arranhaduras_nsk}
+\caption {Rolamentos com amassados e arranhaduras. Retirado de NSK, 2014.}
+\label{arranhaduras_nsk}
+\end{figure}
+
+Escorregamento refere-se ao dano causado na superficíe das pistas e elementos rolantes causados pelo rompimento do filme de lubrificação. As causas são alta velocidade e baixa carga, acelerações e desacelerações repentinas, lubrificante inadequado e entrada de água. A Figura~\ref{escorregamento_nsk} mostra um anel interno e um anel externo que sofreram escorregamento. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{escorregamento_nsk}
+\caption {Aneís interno e externo com danos por escorregamento. Retirado de NSK, 2014.}
+\label{escorregamento_nsk}
+\end{figure}
+
+Fraturas, por sua vez, referem-se à corpos rolantes partidos, anel interno ou externo partidos ou, mesmo, a gaiolas danificadas. As causas usualmente são carga de anormal na gaiola por problema na instalação ou deficiência de lubrificantes, avanço do processo de escamamento ou, ainda, carga excessiva de choque e desenvolvimento de trinca de fricção. A Figura~\ref{fraturas_nsk} mostra três exemplos de anéis interno e um de anel externo com fraturas. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{fraturas_nsk}
+\caption {Anéis internos e anel externo com fraturas. Retirado de NSK, 2014.}
+\label{fraturas_nsk}
 \end{figure}
 
 
-O aparecimento de trinca e lascamento se dá quando ocorre um descascamento localizado, nisto surgem pequenas trincas ou lascamentos, dentre as possíveis causas para esta falha estão excessivas cargas de choque, excessiva interferência, formação de grandes descascamentos, formação de descascamento por atritos, encostos ou chanfros inadequados ou, ainda, manejo inadequado (NTN, 2018). A Figura 5, abaixo, mostra rolamento com trincas e lascamentos. 
+O aparecimento de trinca e lascamento se dá quando ocorre um descascamento localizado, nisto surgem pequenas trincas ou lascamentos, dentre as possíveis causas para esta falha estão excessivas cargas de choque, excessiva interferência, formação de grandes descascamentos, formação de descascamento por atritos, encostos ou chanfros inadequados ou, ainda, manejo inadequado (NSK, 2014). A Figura~\ref{trinca_nsk} mostra rolamento com trincas e lascamentos. 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura5}
-\caption {Rolamento com lasca e trincas. Retirado de NTN, 2018.}
-\label{Figura5}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{trinca_nsk}
+\caption {Rolamento com lasca e trincas. Retirado de NSK, 2014.}
+\label{trinca_nsk}
 \end{figure}
 
-Em relação a gaiola danificada, esta falha acontece quando os rebites  soltam ou se quebram. Isto resulta na quebra da gaiola. As possíveis causas para esta falha são carga de momento, altas rotações ou excesso de variação de rotação, lubrificação inadequada, impacto com objetos estranhos, vibração excessiva, montagem inadequada ou, mesmo, aumento anormal da temperatura (NTN, 2018). A Figura 6, abaixo, mostra gaiolas danificadas. 
+Em relação a gaiola danificada, esta falha acontece quando há fratura do pilar da gaiola. Isto resulta na quebra da gaiola. As possíveis causas para esta falha são falha de instalação, carga de momento elevada, altas rotações ou excesso de variação de rotação, lubrificação inadequada, impacto com objetos estranhos, vibração excessiva ou, mesmo, aumento anormal da temperatura (NSK, 2014). A Figura~\ref{gaiola_nsk} mostra gaiolas danificadas. 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura6}
-\caption {Gaiolas danificadas. Retirado de NTN, 2018.}
-\label{Figura6}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{gaiola_nsk}
+\caption {Gaiolas danificadas. Retirado de NSK, 2014.}
+\label{gaiola_nsk}
 \end{figure}
 
-Padrões de desgaste irregulares ou abrasão, por sua vez, ocorrem pela ação dos corpos rolantes ao longo das superfícies das pistas. Causas para esta falha incluem eixo ou alojamento com precisão insuficiente, instalação imprópria, insuficiência de rigidez do eixo ou alojamento, ou, mesmo, giro do eixo causado pelo excesso de folga interna do rolamento (NTN, 2018). A Figura 7, abaixo, mostra padrões de desgastes nas pistas do rolamento.
+Impressões referem-se ao ao contato de particulas com os elementos rolantes, marcando a superfície da pista e dos próprios elementos. Dentre as possíveis causas estão a contaminação por partículas, carga excerssiva ou impactos durante transporte e instalação. A Figura ~\ref{impressoes_nsk} mostra um anel interno e elementos rolantes do tipo rolos com impressões.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura7}
-\caption {Rolamentos com padrões de desgaste irregulares. Retirado de NTN, 2018.}
-\label{Figura7}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{impressoes_nsk}
+\caption {Anel interno e rolos com impressões. Retirado de NSK, 2014.}
+\label{impressoes_nsk}
 \end{figure}
 
-Outra falha comum, manchas e asperezas superficiais, ocorre quando a superfície se torna áspera e se formam pequenos depósitos. As causas incluem lubrificação inadequada, presença de partículas estranhas, afinamento das pontas dos corpos rolantes em razão de um desalinhamento, ruptura da película lubrificante devido excesso de cargas axiais, rugosidade superficial ou, ainda, deslizamento excessivo dos corpos rolantes (NTN, 2018). A Figura 8, abaixo, apresenta rolamentos com manchas e asperezas superficiais.
+Outra falha comum, \textit{Pitting}, ocorre quando a superfície se torna áspera e os elementos apresentam uma coloração fosca. As causas incluem lubrificação inadequada, presença de partículas estranhas, afinamento das pontas dos corpos rolantes em razão de um desalinhamento, ruptura da película lubrificante devido excesso de cargas axiais (NSK, 2014). A Figura~\ref{pitting_nsk} apresenta um anel interno e uma esfera com \textit{pitting}.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura8}
-\caption {Rolamentos com manchas e asperezas. Retirado de NTN, 2018.}
-\label{Figura8}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{pitting_nsk}
+\caption {Anel interno e esfera com \textit{pitting}. Retirado de NSK, 2014.}
+\label{pitting_nsk}
 \end{figure}
 
-Oxidação e corrosão é uma falha que ocorre quando a superfície se torna parcial ou totalmente oxidada, e ocasionalmente óxido também surge ao longo das linhas do passo dos elementos rolantes. Causas para esta falha incluem condições inadequadas de armazenamento, embalagem inadequada, óleo protetivo insuficiente, penetração de água ou ácido, dentre outros elementos, ou, ainda, manuseio inadequado (NTN, 2018). A Figura 9, abaixo, mostra um rolamento oxidado e corroído.
+Desgaste, por sua vez, é o processo em que as superfícies se desgastam e produzem uma deformação dimensional. O desgaste frequentemente acompanha rugosidade e riscos. As causas para o desgaste incluem presença de partículas estranhas no lubrificante, lubrificação inadequada e rolos afinados nas pontas (NSK, 2014). A Figura ~\ref{desgaste_nsk} mostra pistas de rolamentos com desgaste.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura9}
-\caption {Rolamentos com manchas e asperezas. Retirado de NTN, 2018.}
-\label{Figura9}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{desgaste_nsk}
+\caption {Anel interno e externo com desgaste. Retirado de NSK, 2014.}
+\label{desgaste_nsk}
 \end{figure}
 
-Corrosão por atrito é um tipo de desgaste por raspagem corrosiva. Há duas formas de corrosão por atrito: no primeiro, forma-se um pó de óxido sobre as superfícies de contato; no segundo, ocorre afundamentos nas pistas ao longo do passo dos corpos rolantes. As causas para estas falhas incluem ângulo de oscilação pequeno do rolamento, lubrificação insuficiente, cargas variáveis, vibração durante transporte e, ainda, interferência insuficiente (NTN, 2018). A Figura 10, abaixo, mostra corrosão por atrito.
+%Padrões de desgaste, por sua vez, ocorrem pela ação dos corpos rolantes ao longo das superfícies das pistas. Causas para esta falha incluem eixo ou alojamento com precisão insuficiente, instalação imprópria, insuficiência de rigidez do eixo ou alojamento, ou, mesmo, giro do eixo causado pelo excesso de folga interna do rolamento (NSK, 2014). A Figura ~\ref{desgaste_nsk} mostra padrões de desgastes nas pistas do rolamento.
 
-\begin{figure}[!htb]
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{desgaste_irregular_nsk}
+%\caption {Rolamentos com padrões de desgaste. Retirado de NSK, 2014.}
+%\label{desgaste_nsk}
+%\end{figure}
+
+
+Corrosão por contato, ou corrosão por atrito, é um tipo de desgaste por raspagem corrosiva. Há duas formas de corrosão por atrito: no primeiro, forma-se um pó de óxido sobre as superfícies de contato; no segundo, ocorre afundamentos nas pistas ao longo do passo dos corpos rolantes. As causas para estas falhas incluem ângulo de oscilação pequeno do rolamento, lubrificação insuficiente, cargas variáveis, vibração durante transporte e, ainda, interferência insuficiente (NSK, 2014). A Figura~\ref{corrosao_nsk} mostra corrosão por contato.
+
+\begin{figure}[H]
 \centering
-\includegraphics{Figura10}
-\caption {Rolamentos com manchas e asperezas. Retirado de NTN, 2018.}
-\label{Figura10}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{corrosao_nsk}
+\caption {Rolamentos com corrosão por contato. Retirado de NSK, 2014.}
+\label{corrosao_nsk}
 \end{figure}
 
-Desgaste, por sua vez, é o processo em que as superfícies se desgastam e produzem uma deformação dimensional. O desgaste frequentemente acompanha rugosidade e riscos. As causas para o desgaste incluem presença de partículas estranhas no lubrificante, lubrificação inadequada e rolos afinados nas pontas. A Figura 11, abaixo, mostra um rolamento com desgaste (NTN, 2018).
+Falso brinel refere-se ao esmagamento nas pistas e elementos rolantes por vibração ou oscilação entre os pontos de contato. Dentre as possíveis causas estão lubrificante deficiente ou pequena amplitude no movimento de oscilação (NSK, 2014). A Figura~\ref{esmagamento_nsk} mostra um anel interno e um externo com esmagamento em suas pistas.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura11}
-\caption {Rolamento com desgaste. Retirado de NTN, 2018.}
-\label{Figura11}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{esmagamento_nsk}
+\caption {Pistas com esmagamento. Retirado de NSK, 2014.}
+\label{esmagamento_nsk}
 \end{figure}
 
-Corrosão eletrolítica diz respeito a formação de afundamentos sobre as pistas. Estes afundamentos transformam-se gradualmente em ondulações. A causa para isto é a corrente elétrica passando através dos corpos rolantes (NTN, 2018). A Figura 12 mostra a corrosão eletrolítica. 
+Deformação de deslizamento é acompanhada de superfícies brilhantes ou de superfícies descoloridas no anel interno ou externo, também podendo ocorrer desgaste abrasivo. As causas são interferência insuficiente na seção sem brilho, bucha de montagem não fixada apropriadamente, aumento anormal de temperatura ou, ainda, cargas excessivas (NSK, 2014). A Figura~\ref{deslizamento_nsk} mostra deformação de deslizamento.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura12}
-\caption {Corrosão eletrolítica em rolamentos. Retirado de NTN, 2018.}
-\label{Figura12}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{deslizamento_nsk}
+\caption {Deformação de deslizamento. NSK, 2014.}
+\label{deslizamento_nsk}
 \end{figure}
 
-Amassados e arranhamentos são: riscos durante a montagem, arranhamentos em razão de objetos estranhos e duros, além de amassados superficiais devido a impactos. As causas são presença de objetos estranhos, penetração por impacto no lado descascado, quedas e choques devido manejo inadequado além de montagem desalinhada (NTN, 2018). A Figura 13 mostra amassados e arranhamentos. 
 
-\begin{figure}[!htb]
+Superaquecimento, por sua vez, diz respeito ao processo em que o rolamento se aquece e descolora, eventualmente travando. Dentre as possíveis causas para esta falha estão folga insuficiente no rolamento, incluindo-se folgas que diminuem em razão de deformações locais, lubrificação insuficiente ou imprópria, cargas excessivas ou ainda corpos rolantes afinados nas extremidades (NSK, 2014). A Figura~\ref{superaquecimento_nsk} mostra o dano em um rolamento que superaqueceu.
+
+\begin{figure}[H]
 \centering
-\includegraphics{Figura13}
-\caption {Rolamentos com amassados e arranhamentos. Retirado de NTN, 2018.}
-\label{Figura13}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{superaquecimento_nsk}
+\caption {Dano causado superaquecimento. Retirado de NSK, 2014.}
+\label{superaquecimento_nsk}
 \end{figure}
 
-Deformação de deslizamento é acompanhada de superfícies brilhantes ou de superfícies brilhantes ou de superfícies descoloridas no anel interno ou externo, também podendo ocorrer desgaste abrasivo. As causas são interferência insuficiente na seção sem brilho, bucha de montagem não fixada apropriadamente, aumento anormal de temperatura ou, ainda, cargas excessivas (NTN, 2018). A Figura 14 mostra deformação de deslizamento.
 
-\begin{figure}[!htb]
+Corrosão eletrolítica diz respeito a formação de afundamentos sobre as pistas. Estes afundamentos transformam-se gradualmente em ondulações. A causa para isto é a corrente elétrica passando através dos corpos rolantes (NSK, 2014). A Figura~\ref{corrosao_eletrolitica_nsk} mostra a corrosão eletrolítica em na pista de um anel interno de um rolamento, com dano ampliado na foto para facilitação da visualização, bem como o dano em um anel externo. 
+
+\begin{figure}[H]
 \centering
-\includegraphics{Figura14}
-\caption {Deformação de deslizamento. NTN, 2018.}
-\label{Figura14}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{corrosao_eletrolitica_nsk}
+\caption {Corrosão eletrolítica em rolamentos. Retirado de NSK, 2014.}
+\label{corrosao_eletrolitica_nsk}
 \end{figure}
 
-Por fim, manchas e descoloração demonstram superfícies sem brilho, a superfície está fosca, rugosa ou eventualmente deformada, também estando coberta de pequenas depressões. As causas são infiltração de substancia estranha ou mesmo lubrificação insuficiente (NTN, 2018). A Figura 15 mostra manchas e descoloração em rolamentos.
 
-\begin{figure}[!htb]
+Oxidação e corrosão é uma falha que ocorre quando a superfície se torna parcial ou totalmente oxidada, e ocasionalmente óxido também surge ao longo das linhas do passo dos elementos rolantes. Causas para esta falha incluem condições inadequadas de armazenamento, embalagem inadequada, óleo protetivo insuficiente, penetração de água ou ácido, dentre outros elementos, ou, ainda, manuseio inadequado (NSK, 2014). A Figura~\ref{oxidacao_nsk} mostra um rolamento oxidado e corroído.
+
+\begin{figure}[H]
 \centering
-\includegraphics{Figura15}
-\caption {Manchas e descoloração em rolamentos. Retirado de NTN, 2018.}
-\label{Figura15}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{oxidacao_nsk}
+\caption {Rolamentos com oxidações e corrosões. Retirado de NSK, 2014.}
+\label{oxidacao_nsk}
 \end{figure}
 
-Ao verificar-se que houve o contato entre a superfície defeituosa de um elemento rolante e outra superfície sem defeito, o choque entre estes elementos, causa um impulso que causa uma excitação tanto na máquina, quanto no rolamento. 
 
-Para detecção das falhas pode-se utilizar análise de vibrações. Para tanto, os conceitos fundamentais de vibrações mecânicas, bem como particularidades de rolamentos, são apresentados.
+Falhas na instalação têm como suas principais decorrências longo riscos na superfície das pistas ou dos elementos rolantes. As causas mais comuns são inclinação dos anéis ou impactos durante instalação ou remoção. A Figura~\ref{falha_instalacao_nsk} mostra um anel interno e externo com riscos decorrentes de falha de instalação.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{falha_instalacao_nsk}
+\caption {Rolamentos com falhas de instalação. Retirado de NSK, 2014.}
+\label{falha_instalacao_nsk}
+\end{figure}
+
+Por fim, manchas e descoloração demonstram superfícies sem brilho, a superfície está fosca, rugosa ou eventualmente deformada, também estando coberta de pequenas depressões. As causas são infiltração de substância estranha ou mesmo lubrificação insuficiente (NSK, 2014). A Figura~\ref{manchas_nsk} mostra manchas e descoloração em rolamentos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{manchas_nsk}
+\caption {Manchas e descoloração em rolamentos. Retirado de NSK, 2014.}
+\label{manchas_nsk}
+\end{figure}
+
+Ao verificar-se que houve o contato entre a superfície defeituosa de um elemento rolante e outra superfície sem defeito, o choque entre estes elementos causa um impulso que promove uma excitação tanto na máquina, quanto no rolamento. Assim, para detecção de falhas pode-se utilizar análise de vibrações, uma vez que os defeitos nos componentes dos rolamentos apresentam frequências características que podem ser calculadas a partir das especificações do rolamento. 
 
 
 \subsection{\textbf{Frequências características de defeitos dos rolamentos}}
@@ -812,6 +871,7 @@ BSF, por sua vez, é o indicativo da frequência de defeito do elemento rolante 
 
 Onde, nestas fórmulas, temos $f_{r}$, que é a subtração da frequência de rotação da pista interna pela frequência de rotação da pista externa; $D$ é diâmetro primitivo; $d$ é o diâmetro dos elementos rolantes; $N$ é o número de elementos rolantes; e, por fim, $\theta$ é o ângulo de contato.
 
+Logo, a partir destas frequências características de defeito e das especificações dos rolamentos e de suas propriedades de trabalho - número de elementos rolantes, diâmetros, ângulo de contato e velocidade de rotação -, os componentes podem ser monitorados quanto ao surgimento de falhas.  
 
 \section{\textbf{Fluroreto de polivinilideno}}
 
@@ -878,55 +938,114 @@ Também deve-se considerar a constante hidrostática piezoelétrica, $dh$, que r
 A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdutores piezoelétricos. Estes absorvem energia térmica, aumentando assim a sua temperatura e induzindo sinais elétricos. Em filmes piezo o sinal de saída é proporcional à taxa de mudança de temperatura em vez de níveis de temperatura. A constante piroelétrica $p$, assim, relaciona a carga por unidade de área dos eletrodos pela unidade de troca de temperatura. Logo, $p = C/m^{2} K$.
 
 
-\subsection{\textbf{Aplicações do Fluroreto de polivinilideno}}
+\subsection{\textbf{Aplicações do Fluroreto de Polivinilideno}}
 
-
+Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
 
 
 \chapter{Materiais e métodos}
 
-Para a realização dos experimentos serão utilizados dois rolamentos de rolos autocompensadores da NSK, modelo 21306CD. Este modelo apresenta como principais características uma alta capacidade de carga, gaiola de aço prensado e desalinhamento permissível entre $1^{\circ}$ e $2.5^{\circ}$. Suas dimensões são mostradas na tabela abaixo.  
+Para a realização dos experimentos serão utilizados dois rolamentos de rolos autocompensadores da NSK, modelo 21306CD. Este modelo apresenta como principais características uma alta capacidade de carga, gaiola de aço prensado e desalinhamento permissível entre $1^{\circ}$ e $2.5^{\circ}$. Esta categoria de rolamento foi escolhida pois possibilita uma maior facilidade para inserção manual de defeitos, o que possibilita a comparação entre os distintos estados de saúde do mesmo. 
 
-A Figura 21, abaixo, mostra o modelo do rolamento utilizado na bancada experimental.
+As dimensões do rolamento escolhido são:
 
-\begin{figure}[!htb]
+\begin{itemize}
+	\item Número de elementos rolantes:
+
+\end{itemize}
+
+A Figura~\ref{Figura24} mostra o modelo do rolamento utilizado na bancada experimental.
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=50mm]{Figura24}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Figura24}
 \caption {Rolamento utilizado na bancada de testes. Retirado de NSK, 2018.}
 \label{Figura24}
 \end{figure} 
 
-Estas amostras são novas e isentas de qualquer tipo de falha. Tais amostras são montadas em uma bancada experimental, construída para condução dos experimentos. Nestes experimentos, estas terão registradas as suas assinaturas de vibração, tanto no domínio da frequência, quanto no tempo. 
+Algumas das medidas necessárias para o cálculo das frequências características de defeito, a saber o ângulo de contato e o diâmetro dos elementos rolantes, não foram encontradas no manual do rolamento. Assim, a partir de pesquisa foi encontrado no site da NSK Japão um modelo CAD do mesmo, onde a partir deste calcularam-se os seguintes valores:
 
-O aparato experimental é composto por um motoredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura 22, abaixo, mostra o projeto da bancada experimental.
+\begin{itemize}
+	\item Diâmetro dos elementos rolantes: 10.1\si{\mm}
+	\item Ângulo dos elementos rolantes: 14\textdegree
+\end{itemize}
 
-\begin{figure}[!htb]
+A Figura~\ref{angulo_de_contato} mostra o CAD do rolamento NSK 21306CD com vista frontal, estando com as marcações para mensuração do ângulo de contato. 
+
+\begin{figure}[H]
 \centering
-\includegraphics{Figura22}
-\caption {Bancada experimental. Elaborado pelos autores.}
-\label{Figura22}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{angulo_de_contato}
+\caption {Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}
+\label{angulo_de_contato}
 \end{figure} 
 
-Em relação ao sistema de validação do 
+Já a Figura~\ref{diametro_rolamento} apresenta o diâmetro do elemento rolante, calculado a partir do raio de um dos elementos rolantes visto a partir da face direita do rolamento. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{diametro_rolamento}
+\caption {Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelos autores.}
+\label{diametro_rolamento}
+\end{figure} 
+
+As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falha. Estas foram montadas em uma bancada experimental, construída para condução dos experimentos, onde terão terão registradas as suas assinaturas de vibração tanto no domínio da frequência, quanto do tempo para posterior análise. 
+
+O aparato experimental é composto por um motoredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22}, abaixo, mostra o projeto da bancada experimental. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura22}
+\caption {Bancada experimental. Elaborado pelos autores.}
+\label{Figura22}
+\end{figure}
+
+Em relação a construção da bancada experimental, a mesma se deu durante o ano de 2019 no período imediatamente a pandemia de COVID-19. Foi utilizado um torno mecânico do IFSP Câmpus Guarulhos para usinagem do eixo, foi utilizada prensa afim de realizar o acoplamento dos mancais de rolamentos ao eixo usinado e posteriormente este foi ligado ao motoredutor. 
+
+O motor utilizado na bancada de testes possui como características um torque de \SI{400}{\newton\metre}, velocidade de 1750 RPM com taxa de redução de 48,90 vezes, resultante em velocidade de saída para o eixo de 35,8 RPM.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{bancada_de_testes}
+\caption {Bancada experimental. Elaborado pelos autores.}
+\label{bancada_de_testes}
+\end{figure}
+
+
+A partir destes dados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. 
+
+
+\[FTF = \frac{35}{2} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )  \]
+
+O sistema de 
 
 Serão utilizadas amostras com falhas na pista do anel interno, falhas na pista do anel externo e falhas nos elementos rolantes. Serão aquisitados sinais de todas as amostras com defeitos, com a utilização de sensores fabricados com o polímero PVDF, com terminais que permitem a medição da sua diferença de potencial, quando estes estiverem sujeitos a um esforço mecânico. Tendo em vista se tratarem de sensores de alta impedância, se faz necessário isolamento elétrico, afim de mitigar as interferências da fase da rede elétrica e de sinais de rádio incidentes sobre o local de testes, bem como tratamento da tensão resultante de esforço mecânico através de amplificação do sinal. Para tanto, utiliza-se um encapsulamento construído em alumínio, onde se acomoda o filme PVDF, além de amplificador operacional Texas Instruments TL-082. 
 
 Tal amplificador de instrumentação foi utilizado por possuir ganho de até .... 
 
-A Figura 21, abaixo, mostra o sensor de vibração. 
+A Figura~\ref{Figura21}, abaixo, mostra o sensor de vibração. 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
-\includegraphics{Figura21}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Figura21}
 \caption {Sensor de vibração piezoelétrico.}
 \label{Figura21}
 \end{figure} 
 
-A montagem dos sensores no encapsulmento de alumínio se dá nos sentidos longitudinal e transversal. Estes são acoplados com cola acrílica, afim de que não ocorra amortecimento da vibração devido ao elemento colante. Uma vez montado o aparto, os sinais decorrentes da vibração são comparados com os sinais característicos dos rolamentos sem defeitos para determinação da severidade da falha.
+A montagem dos sensores no encapsulmento de alumínio . Estes são acoplados com cola acrílica, afim de que não ocorra amortecimento da vibração devido ao elemento colante. Uma vez montado o aparto, os sinais decorrentes da vibração são comparados com os sinais característicos dos rolamentos sem defeitos para determinação da severidade da falha.
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{encapsulamento_sensor}
+\caption {Sensor de vibração piezoelétrico.}
+\label{encapsulamento_sensor}
+\end{figure} 
+
 
 Os modelos matemáticos de identificação de frequências características de defeitos serão utilizados para a análise dos sinais no domínio do tempo e da frequência, que terão a finalidade de calibragem dos níveis de alarme. A análise se dará através de nível RMS, Curtose e Transformada de Fourier.  
 
-Por fim, os custos dos sensores fabricados em PVDF serão calculados e comparados com os equipamentos atualmente disponíveis para aferição do custo vs benefício e um procedimento será elaborado para que pequenas empresas possam utilizar desta metodologia para realização de planos de manutenção preditiva, visando com esta ação reduzir a ocorrência de falhas catastróficas, que são um grande risco tanto para a segurança dos operadores de máquinas quanto para saúde financeira das empresas pela parada não programada da produção.
+%Por fim, os custos dos sensores fabricados em PVDF serão calculados e comparados com os equipamentos atualmente disponíveis para aferição do custo vs benefício, visando com esta ação reduzir a ocorrência de falhas catastróficas, que são um grande risco tanto para a segurança dos operadores de máquinas quanto para a saúde financeira das empresas pela parada não programada da produção.
 
 A análise dos resultados obtidos se dará à luz da revisão bibliográfica e comparativamente com os resultados encontrados em outros artigos. 
 
@@ -988,10 +1107,45 @@ Ajustes e entrega da versão final~ ~ ~ ~ ~                                    &
 
 \begin{thebibliography}{9}
 
+\bibitem{ABNT1994}
+  ABNT, Associação Brasileira de Normas Técnicas.
+  \textbf{NBR 5462: Confiabilidade e mantenabilidade}.
+  Rio de Janeiro, 1994, 37p.
+
+\bibitem{BARCOHEN2002}
+  BAR-COHEN, Y.
+  \textbf{Electroactive Polimers as Artificial Muscles: a review}.
+  Journal of Spacecraft and Rockets, 39 (8), pg. 322-328, 2002.
+    
+\bibitem{CNI2019}
+ CNI, Confederação Nacional das Indústrias.
+  \textbf{Perfil da Indústria Brasileira}.
+  Brasil, 2019. Disponível em: Disponível em: https://industriabrasileira.portaldaindustria.com.br/grafico/total/producao/industria-total. Acesso em: 07/06/2021.
+ 
+\bibitem{FUKADA2000}
+  FUKADA E.
+  \textbf{History and recent progress in piezoeletric polymers}.
+  IEE transactions on ultrasonics, ferroelectrics, and frequency control, vol. 47, 2000.
+
+\bibitem{HARRIS1991}
+  HARRIS, T. A.
+  \textbf{Rolling Bearing Analysis}.
+  3ªed. New York, John Wiley \& Sons, EEUU, 1991.
+
+\bibitem{JUVINALL1991}
+  JUVINALL, R.C., MARSHEK, K.M.
+  \textbf{Fundamentals of Machine Component Design}.
+  2ª ed. New York, John Wiley \& Sons, EEUU, 1991.
+
 \bibitem{kardec2009}
   KARDEC, Alan; NASCIF, Júlio.
   \textbf{Manutenção: Função Estratégica}.
   3.ed. Rio de Janeiro: Qualitymark: Petrobras, 2009.
+
+\bibitem{LANG2006}
+  LANG S. B.; MUENSIT S.
+  \textbf{Review of some lesser-known applications of piezoelectric and pyroeletric polymers}.
+  Journal of applied physics. v. 85, p.125- 134, 2006.
 
 \bibitem{Nepomuceno1989}
  NEPOMUCENO, Lauro Xavier.
@@ -1003,15 +1157,23 @@ Ajustes e entrega da versão final~ ~ ~ ~ ~                                    &
   \textbf{Mechanical Vibrations}.
   4.ed. São Paulo: Pearson Prentice Hall, 2008.
   
+\bibitem{SILVA2009}
+    SILVA, ALINE BRUNA da.
+  \textbf{Processamento, caracterização e determinação do perfil de polarização do Poli(fluoreto de vinilideno)}.
+  São Carlos: UFSCar, 2009.
+
 \bibitem{Slack2008}
  SLACK, Nigel.
   \textbf{Administração da Produção}.
   2.ed. São Paulo: Atlas, 2008.
  
- \bibitem{Rao2008}
- RAO, Singiresu S.
-  \textbf{Mechanical Vibrations}.
-  4.ed. São Paulo: Pearson Prentice Hall, 2008.
+\bibitem{WISNIEWSKI2002}
+    WISNIEWSKI, C; FERREIRA, G. F. L.; FARIA, R. M.; GIACOMETTI, J. A.
+  \textbf{Stable and metastable ferroelectric polarization analysed by the ramp voltage technique.}
+  Proceedings of 11th International Symposium on Electrets. Melbourne: Piscatway, p.215 – 218, 2002.
+
+
+
 
   
 
