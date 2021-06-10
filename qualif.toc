@@ -27,8 +27,10 @@
 \contentsline {subsection}{\numberline {3.4.1}\textbf {Aplicações do Fluroreto de Polivinilideno}}{42}{subsection.3.4.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}Materiais e métodos}{43}{chapter.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}Conclusões e próximos passos}{51}{chapter.5}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{50}{chapter*.12}%
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{52}{chapter*.12}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{Anexo \space }

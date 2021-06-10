@@ -869,7 +869,7 @@ BSF, por sua vez, é o indicativo da frequência de defeito do elemento rolante 
 
 \[BSF = \frac{D}{2d}f_{r} \Bigg[  1 - \left ( \frac{d}{D} \,cos \, \theta \right ) ^{2}  \Bigg] \]
 
-Onde, nestas fórmulas, temos $f_{r}$, que é a subtração da frequência de rotação da pista interna pela frequência de rotação da pista externa; $D$ é diâmetro primitivo; $d$ é o diâmetro dos elementos rolantes; $N$ é o número de elementos rolantes; e, por fim, $\theta$ é o ângulo de contato.
+Onde, nestas fórmulas, temos $f_{r}$, que é a subtração da frequência de rotação da pista interna pela frequência de rotação da pista externa; $D$ é diâmetro primitivo, calculado a partir da soma do diâmetro externo pelo diâmetro interno e divisão do resultado por dois; $d$ é o diâmetro dos elementos rolantes; $N$ é o número de elementos rolantes; e, por fim, $\theta$ é o ângulo de contato.
 
 Logo, a partir destas frequências características de defeito e das especificações dos rolamentos e de suas propriedades de trabalho - número de elementos rolantes, diâmetros, ângulo de contato e velocidade de rotação -, os componentes podem ser monitorados quanto ao surgimento de falhas.  
 
@@ -940,7 +940,21 @@ A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdu
 
 \subsection{\textbf{Aplicações do Fluroreto de Polivinilideno}}
 
-Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
+Dentre as distintas aplicações do PVDF, Xin et al., 2016, fizeram uma revisão de literatura quanto ao seu uso enquanto sensor de vibrações. Nesta, apresentam as seguintes aplicações:
+
+\begin{itemize}
+	\item PVDF como sensor aplicado a dispositivos médicos portáteis: com utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos; 
+	 
+	\item PVDF como sensor aplicados a monitoramento de saúde estrutural:
+
+	\item PVDF como sensor aplicado a medição de vibrações em maquinário:
+
+	\item PDVF como sensor aplicado em outras áreas:
+	
+\end{itemize}
+
+
+%Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
 
 
 \chapter{Materiais e métodos}
@@ -950,8 +964,10 @@ Para a realização dos experimentos serão utilizados dois rolamentos de rolos 
 As dimensões do rolamento escolhido são:
 
 \begin{itemize}
-	\item Número de elementos rolantes:
-
+	\item Número de elementos rolantes: 20 (10 por fileira)
+	\item Diâmetro externo: 72\si{\mm}
+	\item Diâmetro interno: 30\si{\mm}
+	\item Limite de rotação: 4500 RPM lubrificado a graxa, 6000 RPM lubrificado a óleo
 \end{itemize}
 
 A Figura~\ref{Figura24} mostra o modelo do rolamento utilizado na bancada experimental.
@@ -974,8 +990,8 @@ A Figura~\ref{angulo_de_contato} mostra o CAD do rolamento NSK 21306CD com vista
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{angulo_de_contato}
-\caption {Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=150mm,keepaspectratio]{angulo_de_contato}
+\caption {Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK.}
 \label{angulo_de_contato}
 \end{figure} 
 
@@ -984,7 +1000,7 @@ Já a Figura~\ref{diametro_rolamento} apresenta o diâmetro do elemento rolante,
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=100mm,keepaspectratio]{diametro_rolamento}
-\caption {Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelos autores.}
+\caption {Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK.}
 \label{diametro_rolamento}
 \end{figure} 
 
@@ -995,7 +1011,7 @@ O aparato experimental é composto por um motoredutor cedido pela empresa parcei
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura22}
-\caption {Bancada experimental. Elaborado pelos autores.}
+\caption {Bancada experimental.}
 \label{Figura22}
 \end{figure}
 
@@ -1010,19 +1026,40 @@ O motor utilizado na bancada de testes possui como características um torque de
 \label{bancada_de_testes}
 \end{figure}
 
+A partir destes dados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. O diâmetro primitivo $D$ se dá por  
 
-A partir destes dados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. 
+
+\[D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm} \]  
+
+Logo, para a \textit{Fundamental Train Frequency} temos, aproximadamente:
+
+\[FTF = \frac{35}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~14}{{\hertz}} \]  
+
+Para a \textit{Ball Pass Frequency of The Inner Race} temos, aproximadamente:
+
+\[BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}} \]
 
 
-\[FTF = \frac{35}{2} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )  \]
+Para a \textit{Ball Pass Frequency of The Outer Race} temos, aproximadamente:
 
-O sistema de 
+\[BPFO = \frac{10}{2}35 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~141}{{\hertz}} \]
 
-Serão utilizadas amostras com falhas na pista do anel interno, falhas na pista do anel externo e falhas nos elementos rolantes. Serão aquisitados sinais de todas as amostras com defeitos, com a utilização de sensores fabricados com o polímero PVDF, com terminais que permitem a medição da sua diferença de potencial, quando estes estiverem sujeitos a um esforço mecânico. Tendo em vista se tratarem de sensores de alta impedância, se faz necessário isolamento elétrico, afim de mitigar as interferências da fase da rede elétrica e de sinais de rádio incidentes sobre o local de testes, bem como tratamento da tensão resultante de esforço mecânico através de amplificação do sinal. Para tanto, utiliza-se um encapsulamento construído em alumínio, onde se acomoda o filme PVDF, além de amplificador operacional Texas Instruments TL-082. 
+Por fim, para a \textit{Ball Spin Frequency} temos, aproximadamente:
+
+\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
+
+
+A partir destas frequências pode-se estimar as áreas para análise do sinal aquisitado, bem como realizar o tratamento e filtragem do sinal resultante do sensor afim de eliminação de interferências eletromagnéticas. 
+
+Serão aquisitados sinais de todas as amostras com defeitos, com a utilização de sensores fabricados com o polímero PVDF, com terminais que permitem a medição da sua diferença de potencial, quando estes estiverem sujeitos a um esforço mecânico. 
+
+Tendo em vista se tratarem de sensores de alta impedância, se faz necessário isolamento elétrico, afim de mitigar as interferências da fase da rede elétrica e de sinais de rádio incidentes sobre o local de testes, bem como tratamento da tensão resultante de esforço mecânico através de amplificação do sinal. 
+
+Para tanto, utiliza-se um encapsulamento construído em alumínio, onde se acomoda o filme PVDF, além de amplificador operacional Texas Instruments TL-082. 
 
 Tal amplificador de instrumentação foi utilizado por possuir ganho de até .... 
 
-A Figura~\ref{Figura21}, abaixo, mostra o sensor de vibração. 
+A Figura~\ref{Figura21} mostra o sensor de vibração. 
 
 \begin{figure}[H]
 \centering
@@ -1031,9 +1068,7 @@ A Figura~\ref{Figura21}, abaixo, mostra o sensor de vibração.
 \label{Figura21}
 \end{figure} 
 
-A montagem dos sensores no encapsulmento de alumínio . Estes são acoplados com cola acrílica, afim de que não ocorra amortecimento da vibração devido ao elemento colante. Uma vez montado o aparto, os sinais decorrentes da vibração são comparados com os sinais característicos dos rolamentos sem defeitos para determinação da severidade da falha.
-
-
+A montagem dos sensores se deu em um encapsulamento de alumínio. Estes são acoplados com cola acrílica, afim de que não ocorra amortecimento da vibração devido ao elemento colante. Uma vez montado o aparato, os sinais decorrentes da vibração são aquisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos afim de que se determine a severidade da falha.
 
 \begin{figure}[H]
 \centering
@@ -1042,17 +1077,23 @@ A montagem dos sensores no encapsulmento de alumínio . Estes são acoplados com
 \label{encapsulamento_sensor}
 \end{figure} 
 
+Os modelos matemáticos de identificação de frequências características de defeitos serão utilizados para a análise dos sinais no domínio do tempo e da frequência, que terão a finalidade de calibragem dos níveis de alarme. A análise se dará através de nível RMS, Curtose e Transformada rápida de Fourier.  
 
-Os modelos matemáticos de identificação de frequências características de defeitos serão utilizados para a análise dos sinais no domínio do tempo e da frequência, que terão a finalidade de calibragem dos níveis de alarme. A análise se dará através de nível RMS, Curtose e Transformada de Fourier.  
+Para a análise, utilizam-se as plataformas Pandas, construída na linguagem de programação python e Octave. São ferramentas gratuitas e de código aberto. 
 
 %Por fim, os custos dos sensores fabricados em PVDF serão calculados e comparados com os equipamentos atualmente disponíveis para aferição do custo vs benefício, visando com esta ação reduzir a ocorrência de falhas catastróficas, que são um grande risco tanto para a segurança dos operadores de máquinas quanto para a saúde financeira das empresas pela parada não programada da produção.
 
 A análise dos resultados obtidos se dará à luz da revisão bibliográfica e comparativamente com os resultados encontrados em outros artigos. 
 
+\chapter{Conclusões e próximos passos}
+
+A partir da revisão bibliográfica realizada e dos passos já tomados, pretende-se o início dos experimentos entre Julho e Setembro de 2021. 
+
+Com os dados colhidos, será possível avaliar o sinal e definir
+
 A Tabela 1 mostra o cronograma de desenvolvimento.
 
-
-\begin{table}
+\begin{table}[H]
 \centering
 \caption{Cronograma de desenvolvimento}
 \resizebox{\textwidth}{!}

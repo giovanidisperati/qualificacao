@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.9)  8 JUN 2021 23:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.9)  10 JUN 2021 00:42
 entering extended mode
 **./qualif.tex
 (qualif.tex
@@ -1015,9 +1015,9 @@ l.195
 
 ] (qualif.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 32.
+(Font)              <5> on input line 34.
 )
 [9
 
@@ -1035,7 +1035,7 @@ Overfull \hbox (7.98895pt too wide) in paragraph at lines 394--395
  []
 
 [15] [16] [17] [18] [19]
-<Figura17.png, id=229, 379.4175pt x 211.54031pt>
+<Figura17.png, id=233, 379.4175pt x 211.54031pt>
 File: Figura17.png Graphic file (type png)
 <use Figura17.png>
 Package pdftex.def Info: Figura17.png  used on input line 517.
@@ -1046,12 +1046,12 @@ Package pdftex.def Info: Figura17.png  used on input line 517.
                                                   
 l.523 
        <./Figura17.png>]
-<Figura18.png, id=237, 340.27126pt x 167.12437pt>
+<Figura18.png, id=241, 340.27126pt x 167.12437pt>
 File: Figura18.png Graphic file (type png)
 <use Figura18.png>
 Package pdftex.def Info: Figura18.png  used on input line 532.
 (pdftex.def)             Requested size: 455.02652pt x 223.48645pt.
-<Figura19.png, id=239, 364.36125pt x 161.10187pt>
+<Figura19.png, id=243, 364.36125pt x 161.10187pt>
 File: Figura19.png Graphic file (type png)
 <use Figura19.png>
 Package pdftex.def Info: Figura19.png  used on input line 541.
@@ -1068,7 +1068,7 @@ ed
                                                   
 l.562 
        <./Figura19.png>]
-<Figura1.png, id=250, 403.5075pt x 153.57375pt>
+<Figura1.png, id=254, 403.5075pt x 153.57375pt>
 File: Figura1.png Graphic file (type png)
 <use Figura1.png>
 Package pdftex.def Info: Figura1.png  used on input line 571.
@@ -1079,7 +1079,7 @@ Package pdftex.def Info: Figura1.png  used on input line 571.
                                                   
 l.580 \end{citacao}
                     <./Figura1.png>] [24]
-<Figura2.png, id=261, 454.69875pt x 45.92157pt>
+<Figura2.png, id=265, 454.69875pt x 45.92157pt>
 File: Figura2.png Graphic file (type png)
 <use Figura2.png>
 Package pdftex.def Info: Figura2.png  used on input line 613.
@@ -1090,18 +1090,18 @@ Package pdftex.def Info: Figura2.png  used on input line 613.
                                                   
 l.621 
        <./Figura2.png>] [26] [27]
-<escamamento_nsk.png, id=277, 572.1375pt x 167.12437pt>
+<escamamento_nsk.png, id=281, 572.1375pt x 167.12437pt>
 File: escamamento_nsk.png Graphic file (type png)
 <use escamamento_nsk.png>
 Package pdftex.def Info: escamamento_nsk.png  used on input line 675.
 (pdftex.def)             Requested size: 455.00429pt x 132.90913pt.
  [28]
-<descascamento_nsk.png, id=283, 786.68906pt x 230.36063pt>
+<descascamento_nsk.png, id=287, 786.68906pt x 230.36063pt>
 File: descascamento_nsk.png Graphic file (type png)
 <use descascamento_nsk.png>
 Package pdftex.def Info: descascamento_nsk.png  used on input line 684.
 (pdftex.def)             Requested size: 455.00755pt x 133.23665pt.
-<arranhaduras_nsk.png, id=285, 1240.635pt x 367.3725pt>
+<arranhaduras_nsk.png, id=289, 1240.635pt x 367.3725pt>
 File: arranhaduras_nsk.png Graphic file (type png)
 <use arranhaduras_nsk.png>
 Package pdftex.def Info: arranhaduras_nsk.png  used on input line 693.
@@ -1117,12 +1117,12 @@ l.697
                                                   
 l.697 
        <./escamamento_nsk.png> <./descascamento_nsk.png>]
-<escorregamento_nsk.png, id=291, 671.50874pt x 194.97844pt>
+<escorregamento_nsk.png, id=295, 671.50874pt x 194.97844pt>
 File: escorregamento_nsk.png Graphic file (type png)
 <use escorregamento_nsk.png>
 Package pdftex.def Info: escorregamento_nsk.png  used on input line 702.
 (pdftex.def)             Requested size: 455.00098pt x 132.1135pt.
-<fraturas_nsk.png, id=293, 504.38437pt x 296.60812pt>
+<fraturas_nsk.png, id=297, 504.38437pt x 296.60812pt>
 File: fraturas_nsk.png Graphic file (type png)
 <use fraturas_nsk.png>
 Package pdftex.def Info: fraturas_nsk.png  used on input line 711.
@@ -1138,7 +1138,7 @@ l.715
                                                   
 l.715 
        <./arranhaduras_nsk.png> <./escorregamento_nsk.png>]
-<trinca_nsk.png, id=300, 786.68906pt x 225.84375pt>
+<trinca_nsk.png, id=304, 786.68906pt x 225.84375pt>
 File: trinca_nsk.png Graphic file (type png)
 <use trinca_nsk.png>
 Package pdftex.def Info: trinca_nsk.png  used on input line 721.
@@ -1154,17 +1154,17 @@ l.727
                                                   
 l.727 
        <./fraturas_nsk.png> <./trinca_nsk.png>]
-<gaiola_nsk.png, id=306, 790.45313pt x 231.11343pt>
+<gaiola_nsk.png, id=310, 790.45313pt x 231.11343pt>
 File: gaiola_nsk.png Graphic file (type png)
 <use gaiola_nsk.png>
 Package pdftex.def Info: gaiola_nsk.png  used on input line 730.
 (pdftex.def)             Requested size: 455.00153pt x 133.03377pt.
-<impressoes_nsk.png, id=308, 1173.63469pt x 347.79938pt>
+<impressoes_nsk.png, id=312, 1173.63469pt x 347.79938pt>
 File: impressoes_nsk.png Graphic file (type png)
 <use impressoes_nsk.png>
 Package pdftex.def Info: impressoes_nsk.png  used on input line 739.
 (pdftex.def)             Requested size: 454.99365pt x 134.83455pt.
-<pitting_nsk.png, id=310, 907.89188pt x 271.0125pt>
+<pitting_nsk.png, id=314, 907.89188pt x 271.0125pt>
 File: pitting_nsk.png Graphic file (type png)
 <use pitting_nsk.png>
 Package pdftex.def Info: pitting_nsk.png  used on input line 748.
@@ -1180,12 +1180,12 @@ l.752
                                                   
 l.752 
        <./gaiola_nsk.png> <./impressoes_nsk.png>]
-<desgaste_nsk.png, id=316, 906.38625pt x 271.0125pt>
+<desgaste_nsk.png, id=320, 906.38625pt x 271.0125pt>
 File: desgaste_nsk.png Graphic file (type png)
 <use desgaste_nsk.png>
 Package pdftex.def Info: desgaste_nsk.png  used on input line 757.
 (pdftex.def)             Requested size: 455.00378pt x 136.04764pt.
-<corrosao_nsk.png, id=318, 909.3975pt x 270.25969pt>
+<corrosao_nsk.png, id=322, 909.3975pt x 270.25969pt>
 File: corrosao_nsk.png Graphic file (type png)
 <use corrosao_nsk.png>
 Package pdftex.def Info: corrosao_nsk.png  used on input line 776.
@@ -1201,12 +1201,12 @@ l.780
                                                   
 l.780 
        <./pitting_nsk.png> <./desgaste_nsk.png>]
-<esmagamento_nsk.png, id=324, 935.74594pt x 280.79906pt>
+<esmagamento_nsk.png, id=328, 935.74594pt x 280.79906pt>
 File: esmagamento_nsk.png Graphic file (type png)
 <use esmagamento_nsk.png>
 Package pdftex.def Info: esmagamento_nsk.png  used on input line 785.
 (pdftex.def)             Requested size: 455.00706pt x 136.53871pt.
-<deslizamento_nsk.png, id=326, 1023.825pt x 305.64188pt>
+<deslizamento_nsk.png, id=330, 1023.825pt x 305.64188pt>
 File: deslizamento_nsk.png Graphic file (type png)
 <use deslizamento_nsk.png>
 Package pdftex.def Info: deslizamento_nsk.png  used on input line 794.
@@ -1222,12 +1222,12 @@ l.798
                                                   
 l.798 
        <./corrosao_nsk.png> <./esmagamento_nsk.png>]
-<superaquecimento_nsk.png, id=332, 773.13844pt x 237.13594pt>
+<superaquecimento_nsk.png, id=336, 773.13844pt x 237.13594pt>
 File: superaquecimento_nsk.png Graphic file (type png)
 <use superaquecimento_nsk.png>
 Package pdftex.def Info: superaquecimento_nsk.png  used on input line 804.
 (pdftex.def)             Requested size: 455.00342pt x 139.558pt.
-<corrosao_eletrolitica_nsk.png, id=334, 1014.03844pt x 286.06876pt>
+<corrosao_eletrolitica_nsk.png, id=338, 1014.03844pt x 286.06876pt>
 File: corrosao_eletrolitica_nsk.png Graphic file (type png)
 <use corrosao_eletrolitica_nsk.png>
 Package pdftex.def Info: corrosao_eletrolitica_nsk.png  used on input line 814.
@@ -1244,12 +1244,12 @@ l.818
                                                   
 l.818 
        <./deslizamento_nsk.png> <./superaquecimento_nsk.png>]
-<oxidacao_nsk.png, id=340, 1313.6578pt x 389.20406pt>
+<oxidacao_nsk.png, id=344, 1313.6578pt x 389.20406pt>
 File: oxidacao_nsk.png Graphic file (type png)
 <use oxidacao_nsk.png>
 Package pdftex.def Info: oxidacao_nsk.png  used on input line 824.
 (pdftex.def)             Requested size: 454.99641pt x 134.8041pt.
-<falha_instalacao_nsk.png, id=342, 1086.30844pt x 324.46219pt>
+<falha_instalacao_nsk.png, id=346, 1086.30844pt x 324.46219pt>
 File: falha_instalacao_nsk.png Graphic file (type png)
 <use falha_instalacao_nsk.png>
 Package pdftex.def Info: falha_instalacao_nsk.png  used on input line 835.
@@ -1265,7 +1265,7 @@ l.839
                                                   
 l.839 
        <./corrosao_eletrolitica_nsk.png> <./oxidacao_nsk.png>]
-<manchas_nsk.png, id=349, 1012.5328pt x 297.36093pt>
+<manchas_nsk.png, id=353, 1012.5328pt x 297.36093pt>
 File: manchas_nsk.png Graphic file (type png)
 <use manchas_nsk.png>
 Package pdftex.def Info: manchas_nsk.png  used on input line 844.
@@ -1283,7 +1283,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.23})
 l.856 F
        TF (\textit{fundamental train frequency}) indica a frequência de def...
  <./falha_instalacao_nsk.png> <./manchas_nsk.png>] [38] [39]
-<Figura20.png, id=362, 454.69875pt x 217.5628pt>
+<Figura20.png, id=366, 454.69875pt x 217.5628pt>
 File: Figura20.png Graphic file (type png)
 <use Figura20.png>
 Package pdftex.def Info: Figura20.png  used on input line 892.
@@ -1295,10 +1295,10 @@ Package pdftex.def Info: Figura20.png  used on input line 892.
 l.910 D
        evemos considerar o filme piezoelétrico como um material dinâmico q...
  <./Figura20.png>] [41] [42]
-<Figura24.png, id=381, 449.42906pt x 548.0475pt>
+<Figura24.png, id=389, 449.42906pt x 548.0475pt>
 File: Figura24.png Graphic file (type png)
 <use Figura24.png>
-Package pdftex.def Info: Figura24.png  used on input line 961.
+Package pdftex.def Info: Figura24.png  used on input line 976.
 (pdftex.def)             Requested size: 233.33412pt x 284.53476pt.
  [43
 
@@ -1306,107 +1306,110 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.25})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.970 	\item �
-              �ngulo dos elementos rolantes: 14\textdegree <./Figura24.png>]
-<angulo_de_contato.png, id=387, 172.39406pt x 573.64313pt>
+l.982 
+       <./Figura24.png>]
+<angulo_de_contato.png, id=395, 172.39406pt x 573.64313pt>
 File: angulo_de_contato.png Graphic file (type png)
 <use angulo_de_contato.png>
-Package pdftex.def Info: angulo_de_contato.png  used on input line 977.
-(pdftex.def)             Requested size: 85.50761pt x 284.52754pt.
-<diametro_rolamento.png, id=389, 500.62032pt x 432.86719pt>
+Package pdftex.def Info: angulo_de_contato.png  used on input line 992.
+(pdftex.def)             Requested size: 128.26405pt x 426.80008pt.
+<diametro_rolamento.png, id=397, 500.62032pt x 432.86719pt>
 File: diametro_rolamento.png Graphic file (type png)
 <use diametro_rolamento.png>
-Package pdftex.def Info: diametro_rolamento.png  used on input line 986.
+Package pdftex.def Info: diametro_rolamento.png  used on input line 1001.
 (pdftex.def)             Requested size: 329.07362pt x 284.53734pt.
-
-[44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
-6}) has been already used, duplicate ignored
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+26}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.990 
-       <./angulo_de_contato.png>]
-<Figura22.png, id=395, 392.21532pt x 276.28218pt>
+l.1005 
+        <./angulo_de_contato.png>]
+<Figura22.png, id=403, 392.21532pt x 276.28218pt>
 File: Figura22.png Graphic file (type png)
 <use Figura22.png>
-Package pdftex.def Info: Figura22.png  used on input line 997.
+Package pdftex.def Info: Figura22.png  used on input line 1012.
 (pdftex.def)             Requested size: 455.02992pt x 320.5297pt.
  [45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 27}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1001 
+l.1016 
         <./diametro_rolamento.png>]
-<bancada_de_testes.png, id=400, 629.35126pt x 511.15968pt>
+<bancada_de_testes.png, id=408, 629.35126pt x 511.15968pt>
 File: bancada_de_testes.png Graphic file (type png)
 <use bancada_de_testes.png>
-Package pdftex.def Info: bancada_de_testes.png  used on input line 1008.
+Package pdftex.def Info: bancada_de_testes.png  used on input line 1023.
 (pdftex.def)             Requested size: 454.99556pt x 369.5478pt.
  [46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1012 
+l.1027 
         <./Figura22.png>] [47pdfTeX warning (ext4): destination with the same i
 dentifier (name{figure.4.29}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1023 T
-        al amplificador de instrumentação foi utilizado por possuir ganho ...
+l.1048 \[
+         BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos...
  <./bancada_de_testes.png>]
-<Figura21.png, id=410, 325.215pt x 324.46219pt>
+<Figura21.png, id=418, 325.215pt x 324.46219pt>
 File: Figura21.png Graphic file (type png)
 <use Figura21.png>
-Package pdftex.def Info: Figura21.png  used on input line 1029.
+Package pdftex.def Info: Figura21.png  used on input line 1065.
 (pdftex.def)             Requested size: 285.20753pt x 284.54732pt.
-<encapsulamento_sensor.png, id=411, 731.73375pt x 419.31656pt>
+ [48]
+<encapsulamento_sensor.png, id=424, 731.73375pt x 419.31656pt>
 File: encapsulamento_sensor.png Graphic file (type png)
 <use encapsulamento_sensor.png>
-Package pdftex.def Info: encapsulamento_sensor.png  used on input line 1040.
+Package pdftex.def Info: encapsulamento_sensor.png  used on input line 1074.
 (pdftex.def)             Requested size: 454.99892pt x 260.73495pt.
- [48pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [49pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 30}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1044 
-        <./Figura21.png>] (qualif.brf)
+l.1078 
+        <./Figura21.png>] [50pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.4.31}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1087 \chapter
+               {Conclusões e próximos passos} <./encapsulamento_sensor.png>]
+(qualif.brf)
 \tf@brf=\write5
 \openout5 = `qualif.brf'.
 
- [49pdfTeX warning (ext4): destination with the same identifier (name{table.4.1
-}) has been already used, duplicate ignored
+ [51
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
+as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1108 \begin{thebibliography}{9}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{figure.4.31}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1108 \begin{thebibliography}{9}
-                                  <./encapsulamento_sensor.png>]
+l.1148 \begin{thebibliography}{9}
+                                 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 1108.
+(hyperref)                removing `\@ifnextchar' on input line 1148.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1108.
+(hyperref)                removing `\<let>-command' on input line 1148.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nextToken' on input line 1108.
+(hyperref)                removing `\nextToken' on input line 1148.
 
 bibitemlist
 
-Underfull \hbox (badness 1383) in paragraph at lines 1124--1124
+Underfull \hbox (badness 1383) in paragraph at lines 1164--1164
 \OT1/cmr/bx/n/12 Bra-si-leira\OT1/cmr/m/n/12 (+20) . Bra-sil, 2019. Dis-ponve
 l em: Dis-ponvel em: 
  []
 
-[50
+[52
 
 ] 
 AED: lastpage setting LastPage
-[51]
+[53]
 \tf@lof=\write6
 \openout6 = `qualif.lof'.
 
@@ -1419,17 +1422,13 @@ AED: lastpage setting LastPage
  (qualif.aux)
 Package rerunfilecheck Info: File `qualif.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 17430 strings out of 479799
- 293710 string characters out of 2886237
- 682059 words of memory out of 3000000
- 33822 multiletter control sequences out of 15000+200000
- 549163 words of font info for 138 fonts, out of 3000000 for 9000
+ 17442 strings out of 479799
+ 293819 string characters out of 2886237
+ 681184 words of memory out of 3000000
+ 33826 multiletter control sequences out of 15000+200000
+ 549502 words of font info for 139 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,13n,85p,1251b,914s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Giovani\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
@@ -1443,9 +1442,9 @@ ts/type1/public/amsfonts/cm/cmr12.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm
 ype1/public/amsfonts/cm/cmr8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Miktex/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb><D:/Miktex/fonts/type1/urw/symbol/usyr.pfb>
-Output written on qualif.pdf (52 pages, 19048082 bytes).
+Output written on qualif.pdf (54 pages, 19054103 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 20340 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 20860 words of extra memory for PDF output out of 24883 (max. 10000000)
 
