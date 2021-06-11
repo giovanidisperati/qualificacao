@@ -877,6 +877,16 @@ Logo, a partir destas frequências características de defeito e das especifica�
 
 O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui grande um grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (Chatigny e Robb, 1987).
 
+A Figura~\ref{pvdf_cadeia} mostra a estrutura molecular do PVDF.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{pvdf_cadeia}
+\caption {Estrutura molecular do PVDF. Retirado de Xin, 2016.}
+\label{pvdf_cadeia}
+\end{figure}
+
+
 Decorrente desta descoberta o interesse no estudo do PVDF se dá, dentre outras caraterísticas, por suas propriedades piezo e piroelétricas. 
 
 Piezoeletricidade é a capacidade de certos materiais, altamente polares, de alterar suas dimensões quando expostos a um campo elétrico, ou, inversamente, gerar sinal elétrico quando mecanicamente deformados (Halvorsen, 1986). A piezoeletricidade foi descoberta em 1880 pelos irmãos franceses Jacques e Pierre Curie, que a observaram em cristais de Quartzo (Manbacchi e Cobbold, 2011). Uma de suas primeiras aplicações tecnológicas foi feita por outro francês, Langevin, que desenvolveu um transmissor e receptor de quartzo para sons submarinos por volta de 1917 - o primeiro sonar (Halvorsen, 1986). Segundo Loussert et al., 2013, p.204 a piezoeletricidade se manifesta pela polarização da célula unitária com o aspecto de momento dipolar $\mu = q \,x \, d$, onde $q$ é a carga elétrica do dípolo e $d$ é a distância entre os centroides.  
@@ -938,22 +948,36 @@ Também deve-se considerar a constante hidrostática piezoelétrica, $dh$, que r
 A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdutores piezoelétricos. Estes absorvem energia térmica, aumentando assim a sua temperatura e induzindo sinais elétricos. Em filmes piezo o sinal de saída é proporcional à taxa de mudança de temperatura em vez de níveis de temperatura. A constante piroelétrica $p$, assim, relaciona a carga por unidade de área dos eletrodos pela unidade de troca de temperatura. Logo, $p = C/m^{2} K$.
 
 
-\subsection{\textbf{Aplicações do Fluroreto de Polivinilideno}}
+\subsection{\textbf{Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}
 
-Dentre as distintas aplicações do PVDF, Xin et al., 2016, fizeram uma revisão de literatura quanto ao seu uso enquanto sensor de vibrações. Nesta, apresentam as seguintes aplicações:
+Dentre as distintas aplicações do PVDF, Xin et al., 2016, fizeram uma revisão de literatura quanto ao seu uso enquanto sensor de vibrações. Nesta, apresentam, dentre outras, aplicações para dispositivos médicos portáteis, monitoramento de saúde estrutural, monitoramento de maquinário, dentre outras aplicações diversas.
+
+Em particular no que tange PVDF como sensor aplicado a dispositivos médicos portáteis, citam:
 
 \begin{itemize}
-	\item PVDF como sensor aplicado a dispositivos médicos portáteis: com utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos; 
-	 
-	\item PVDF como sensor aplicados a monitoramento de saúde estrutural:
-
-	\item PVDF como sensor aplicado a medição de vibrações em maquinário:
-
-	\item PDVF como sensor aplicado em outras áreas:
+	\item utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos 
+	\item monitoramento de sinais cardíacos 
+	\item monitoramento de ronco 
+\end{itemize}
 	
+Em relação ao PVDF como sensor aplicado a monitoramento de saúde estrutural, citam:
+
+Já O PVDF como sensor aplicado a medição de vibrações em maquinário, as principais aplicações citadas são:
+
+\begin{itemize}
+	\item utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos 
+	\item monitoramento de sinais cardíacos
+	\item monitoramento de ronco 
 \end{itemize}
 
+Por fim, citam algumas aplicações do PDVF como sensor aplicado em outras áreas:
 
+\begin{itemize}
+	\item utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos 
+	\item monitoramento de sinais cardíacos
+	\item monitoramento de ronco 
+\end{itemize}
+	
 %Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
 
 
@@ -1026,7 +1050,7 @@ O motor utilizado na bancada de testes possui como características um torque de
 \label{bancada_de_testes}
 \end{figure}
 
-A partir destes dados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. O diâmetro primitivo $D$ se dá por  
+A partir destes dados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. O diâmetro primitivo $D$ se dá por: 
 
 
 \[D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm} \]  
@@ -1038,7 +1062,6 @@ Logo, para a \textit{Fundamental Train Frequency} temos, aproximadamente:
 Para a \textit{Ball Pass Frequency of The Inner Race} temos, aproximadamente:
 
 \[BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}} \]
-
 
 Para a \textit{Ball Pass Frequency of The Outer Race} temos, aproximadamente:
 
