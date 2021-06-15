@@ -326,15 +326,13 @@ Dadas estas características do material, o filme PVDF foi utilizado como sensor
 
 %Sabendo-se que as suas propriedades de piezoeletricidade surgem após esforço mecânico, verifica-se a possibilidade de utilização deste como alternativa aos acelerômetros cerâmicos normalmente utilizados para análise de vibração.    
 
-Esta tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e estes dados armazenados através de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, bem como tendem a possuir baixa voltagem de saída, é necessário o condicionamento deste sinal com um circuito eletrônico específico para tanto. 
+Esta tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e estes dados armazenados através de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, bem como tende a possuir baixa voltagem de saída, é necessário o condicionamento deste sinal com um circuito eletrônico específico para tanto. 
 
 %Desta forma, o sensor filme PVDF foi utilizado pois possui as supracitadas características que o tornam tecnologicamente e economicamente viável para a aplicação proposta. 
 
-Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados afim de análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. 
+Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados afim de análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. Tal bancada experimental foi construída com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido pela empresa parceira WEG/Cestari. 
 
-A fim de testar , foi construída bancada experimental com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido por empresa parceira WEG/Cestari. 
-
-Espera-se que, a partir dos experimentos, possa se obter uma resposta inicial quanto a viabilidade de utilização do filme PVDF como sensor de baixo custo para fins de manutenção preditiva.
+Espera-se que, a partir dos experimentos e análise dos dados, se possa obter uma resposta inicial quanto a viabilidade de utilização do filme PVDF como sensor de baixo custo para fins de manutenção preditiva.
 
 %A análise de vibração é uma das técnicas de manutenção preditiva empregadas na indústria; Nesta, é possível que se realize a medição do estado do componente, sendo este considerado um método efetivo para monitoração de elementos rolantes - incluindo-se, aí, rolamentos (Kern et al, 2014). 
 
@@ -343,7 +341,7 @@ Espera-se que, a partir dos experimentos, possa se obter uma resposta inicial qu
 
 \section{\textbf {Geral}}
 
-Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva. A partir disto será possível avaliar a viabilidade de um sistema de sensores PVDF para monitoramento das condições de rolamentos em maquinários, afim de possibilitar uma alternativa mais barata em relação aos sensores atualmente utilizados para este fim.
+Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva. A partir disto espera-se possível avaliar a viabilidade de um sistema de sensores PVDF para monitoramento das condições de rolamentos em maquinários, afim de possibilitar uma alternativa mais barata em relação aos sensores atualmente utilizados para este fim.
 
 \section{\textbf {Específicos}}
 
@@ -357,6 +355,7 @@ Os objetivos específicos do trabalho podem ser sumarizados em:
 	\item Diferenciar um sinal de falha de rolamento autocompensador de rolos, com as seguintes falhas: 1 - desgaste da pista do anel interno, 2 - desgaste na pista do anel externo e 3 - desgaste no elemento rolante.
 	\item Determinar um nível de alarme, indicativo de uma situação pré falha.
 	\item Encontrar o melhor posicionamento do sensor para captar os sinais de falha.
+	\item Comparar o custo do sistema proposto com os atualmente disponíveis no mercado.
 \end{itemize}
 
 \chapter{Revisão Bibliográfica}
@@ -884,7 +883,7 @@ A Figura~\ref{pvdf_cadeia} mostra a estrutura molecular do PVDF.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{pvdf_cadeia}
+\includegraphics[width=\textwidth,height=40mm,keepaspectratio]{pvdf_cadeia}
 \caption {Estrutura molecular do PVDF. Retirado de Xin, 2016.}
 \label{pvdf_cadeia}
 \end{figure}
@@ -1203,7 +1202,11 @@ Atualmente o trabalho possui as seguintes etapas em estágio de finalização ou
 	\item Desenvolvimento do sistema de aquisição de dados com STM32
 \end{itemize}
 
-A partir da revisão bibliográfica realizada e dos passos já tomados, pretende-se o início dos experimentos. Com estes será possível avaliar o trabalho a partir da coleta inicial de dados. Com os dados colhidos, será possível avaliar os sinais aquisitados, verificando-se a corretude do sistema de aquisição, os ajustes de posicionamento dos sensores e introdução de falhas nos rolamentos afim de que se diferencie os sinais de um rolamento em bom estado dos sinais de um defeituoso. Espera-se, com isso, que a questão central possa ser respondida quanto a possibilidade de utilização do sensor PVDF para detecção de falhas em rolamentos.
+A partir da revisão bibliográfica realizada e dos passos já tomados, pretende-se o início dos experimentos. 
+
+Com os dados colhidos e os experimentos realizados, será possível avaliar os sinais aquisitados, verificando-se a corretude do sistema de aquisição, os ajustes de posicionamento dos sensores e, por fim, introdução de falhas nos rolamentos afim de que se diferencie os sinais de um rolamento em bom estado dos sinais de um defeituoso. 
+
+Espera-se, assim, que a questão quanto a possibilidade de utilização do sensor PVDF para detecção de falhas em rolamentos possa ser respondida.
 
 
 %A Tabela 1 mostra o cronograma de desenvolvimento.
@@ -1234,7 +1237,12 @@ A partir da revisão bibliográfica realizada e dos passos já tomados, pretende
   BAR-COHEN, Y.
   \textbf{Electroactive Polimers as Artificial Muscles: a review}.
   Journal of Spacecraft and Rockets, 39 (8), pg. 322-328, 2002.
-    
+
+\bibitem{BARILLI2013}
+  BARILLI, Rodrigo J. de C.
+  \textbf{Análise de Falhas em Mancais de Rolamento Utilizando a Técnica do Envelope}.
+  Dissertação. Universidade Federal do Rio de Janeiro. Rio de janeiro, 2013.
+  
 \bibitem{CNI2019}
  CNI, Confederação Nacional das Indústrias.
   \textbf{Perfil da Indústria Brasileira}.
@@ -1250,6 +1258,11 @@ A partir da revisão bibliográfica realizada e dos passos já tomados, pretende
   \textbf{Rolling Bearing Analysis}.
   3ªed. New York, John Wiley \& Sons, EEUU, 1991.
 
+\bibitem{HOLANDA2016}
+  HOLANDA, Sandra M. S.
+  \textbf{Aplicação da manutenção preditiva por análise de vibrações em equipamentos de trens urbanos com plano de manutenção proposto}.
+  Dissertação. Universidade Federal de Pernambuco. Recife, 2016.
+
 \bibitem{JUVINALL1991}
   JUVINALL, R.C., MARSHEK, K.M.
   \textbf{Fundamentals of Machine Component Design}.
@@ -1264,6 +1277,17 @@ A partir da revisão bibliográfica realizada e dos passos já tomados, pretende
   LANG S. B.; MUENSIT S.
   \textbf{Review of some lesser-known applications of piezoelectric and pyroeletric polymers}.
   Journal of applied physics. v. 85, p.125- 134, 2006.
+
+\bibitem{MEOLA2005}
+  MEOLA, Tatiana.
+  \textbf{Monitoramente em tempo real da qualidade de sinais de vibrações, utilizando inteligência artificial}.
+  Dissertação. Universidade Federal de Uberlândia. Uberlândia, 2005.
+
+\bibitem{MESQUITA2002}
+  MESQUITA, Alexandre L. A.; SANTIAGO, Darley F. A.; BEZERRA, Roberto A.; MIRANDA, Ubatan A.; 
+DIAS JR, Milton; PEDERIVA, Robson.
+  \textbf{Detecção de falhas em rolamentos usando transformadas tempo-frequência - comparação com análise de envelope}.
+  Mecánica Computacional, v. XXI, p.1938 - 1954. Argentina, 2006.
 
 \bibitem{Nepomuceno1989}
  NEPOMUCENO, Lauro Xavier.
@@ -1284,16 +1308,12 @@ A partir da revisão bibliográfica realizada e dos passos já tomados, pretende
  SLACK, Nigel.
   \textbf{Administração da Produção}.
   2.ed. São Paulo: Atlas, 2008.
- 
+
 \bibitem{WISNIEWSKI2002}
     WISNIEWSKI, C; FERREIRA, G. F. L.; FARIA, R. M.; GIACOMETTI, J. A.
   \textbf{Stable and metastable ferroelectric polarization analysed by the ramp voltage technique.}
   Proceedings of 11th International Symposium on Electrets. Melbourne: Piscatway, p.215 – 218, 2002.
 
-
-
-
-  
 
 \end{thebibliography}
 
