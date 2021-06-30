@@ -29,7 +29,9 @@
 \usepackage[Symbol]{upgreek}    %pacote para letras gregas maiúsculas
 \usepackage{siunitx}		
 \usepackage{multirow}	
-		
+\usepackage{amsmath}
+\usepackage{tocloft}
+
 % ---
 % Pacotes de citações
 % ---
@@ -94,7 +96,7 @@
 
 %-------------------------------------------------------------------------
 \orientador{Prof. Dr. Wilson Carlos da Silva Junior \newline 
-Coorientadora: Profa. Dra. Vanesssa Seriacopi}
+Coorientadora: Profa. Dra. Vanessa Seriacopi}
 
 
 \tipotrabalho{Qualificação (Mestrado)}
@@ -109,9 +111,9 @@ Coorientadora: Profa. Dra. Vanesssa Seriacopi}
 %-------------------------------------------------------------------------
 . \newline \newline \newline 
 %-------------------------------------------------------------------------
-Proposta de qualificação apresentada ao Departamento de Engenharia Mecânica do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo como requisito parcial para a obtenção do título de Mestre em Ciências em Engenharia Mecânica. 
+Texto de qualificação apresentado ao Departamento de Engenharia Mecânica do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo como requisito parcial para a obtenção do título de Mestre em Engenharia Mecânica. 
 %
-\newline \newline Área de concentração: Engenharia Mecânica
+\newline \newline Área de concentração: Materiais e Processos de Fabricação
 %-------------------------------------------------------------------------
 % 
 % 
@@ -264,6 +266,7 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
   \item[BPFI] Ball Pass Frequency Inner Race
   \item[BPFO] Ball Pass Frequency Outer Race
   \item[BSF] Ball Spin Frequency 
+  \item[DAQ] Data Acquisition
 \end{siglas}
 % ---
 
@@ -272,20 +275,29 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 % ---
 
 \begin{simbolos}
-  \item[$ \alpha $] Letra grega Alfa
-  \item[$ \beta $] Letra grega Beta
-  \item[$ \gamma $] Letra grega Gama
-  \item[$ \delta $] Letra grega Delta
-  \item[$ \theta $] Letra grega Teta  
-  \item[$ \mu $] Letra grega Mi  
-  \item[$ \sigma $] Letra grega Sigma
-  \item[$ \upphi $] Letra grega Phi maiúscula
-  \item[$ \omega $] Letra grega Omega
+  \item[$ \alpha $] Letra Alfa, indicando fase cristalina Alfa do PVDF
+  \item[$ \beta $] Letra Beta, indicando fase cristalina Beta do PVDF
+  \item[$ \gamma $] Letra Gama, indicando fase cristalina Gama do PVDF
+  \item[$ \delta $] Letra Delta, indicando cristalina fase Delta do PVDF
+  \item[$ \theta $] Letra Teta, indicando ângulo de contato dos elementos rolantes
+  \item[$ \mu $] Letra Mi, indicando momento dipolar 
+  \item[$ \sigma $] Letra Sigma, indicando desvio-padrão
+  \item[$ \upphi $] Letra Phi maiúscula, indicando fase inicial
+  \item[$ \omega $] Letra Omega, indicando velocidade angular 
   \item[\SI{}{\metre}] Metro  
   \item[\SI{}{\micro\metre}] Micrometro
   \item[$ \in $] Pertence
 \end{simbolos}
 % ---
+
+%\newcommand{\listadeequacoesnome}{\center{\textbf{Lista de Equações}} \\}
+%\newlistof{equations}{equ}{\listadeequacoesnome}
+%\newcommand{\listadeequacoes}[1]{%
+%\addcontentsline{equ}{listadeequacoes}{\protect\numberline{\theequation}#1}\par}
+%\setlength{\cftequationsnumwidth}{2.5em}% Width of equation number in List of Equations
+
+%\listadeequacoesnome
+%\cleardoublepage
 
 % ---
 % inserir o sumario
@@ -306,19 +318,19 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 %-------------------------------------------------------------------------
 
 \chapter{Introdução}
-De acordo com a Confederação Nacional das Indústrias, o setor industrial representa, em outubro de 2019, 21,6\% do produto interno bruto do Brasil. Também responde por 70,8\% das exportações nacionais, 67,4\% dos investimentos empresariais em pesquisa  e 34,2\% dos tributos federais, excetuando-se receitas previdenciárias (CNI, 2019). 
+De acordo com a Confederação Nacional das Indústrias, o setor industrial representava, em outubro de 2019, 21,6\% do produto interno bruto do Brasil. Também respondia por 70,8\% das exportações nacionais, 67,4\% dos investimentos empresariais em pesquisa  e 34,2\% dos tributos federais, excetuando-se receitas previdenciárias (CNI, 2019). 
 
 Neste âmbito destaca-se, portanto, a importância da manutenção como ferramenta econômica para a indústria e, consequentemente, para a economia nacional. Processos de manutenção preventiva, ou de manutenção preditiva, tem por finalidade mitigar a ocorrência de falhas catastróficas, diminuindo perdas econômicas por paradas inesperadas ou, mesmo, por custos de seguridade social decorrentes de acidentes de trabalho causados por máquinário defeituoso.
 
 De acordo com a NBR 5462, manutenção preventiva é uma "manutenção efetuada em intervalos pré-determinados, ou de acordo com critérios prescritos, destinada a reduzir a probabilidade de falha ou a degradação do funcionamento de um item" (NBR 5462, p. 7). Já a manutenção preditiva, é definida como uma manutenção que "permite garantir uma qualidade de serviço desejada, com base na aplicação sistemática de técnicas de análise, utilizando-se meios de supervisão centralizados ou de amostragem, para reduzir ao mínimo a manutenção preventiva e diminuir a manutenção corretiva" (NBR 5462, p. 7). 
 
-Para que o processo de manutenção preditiva possa ocorrer é necessário, como estabelecido pela NBR 5462, a aplicação sistemática de técnicas de análise. Para tanto, a coleta de informações relativas ao estado dos elementos de máquina é pré-requisito, sendo, para isto, utilizado uma vasta gama de sensores com diferentes propósitos e especificidades afim de aferir os mais distintos parâmetros destes elementos. 
+Para que o processo de manutenção preditiva possa ocorrer é necessário, como estabelecido pela NBR 5462, a aplicação sistemática de técnicas de análise. Para tanto, a coleta de informações relativas ao estado dos elementos de máquina é pré-requisito, sendo, para isto, utilizado uma vasta gama de sensores com diferentes propósitos e especificidades a fim de aferir os mais distintos parâmetros destes elementos. 
 
-Dentre os diversos elementos de máquina um dos mais comuns são os rolamentos, com utilização em virtualmente todas as áreas da indústria. Esta categoria de elemento de máquina, portanto, foi escolhida como objeto de testes e estudo afim de verificar a viabilidade de uma tecnologia  de sensores com finalidade, dentre outras, de manutenção preditiva: o filme de fluoreto de polivinilideno. 
+Dentre os diversos elementos de máquina um dos mais comuns são os rolamentos, com utilização em virtualmente todas as áreas da indústria. Esta categoria de elemento de máquina, portanto, foi escolhida como objeto de testes e estudo a fim de verificar a viabilidade de uma tecnologia  de sensores com finalidade, dentre outras, de manutenção preditiva: o filme de fluoreto de polivinilideno. 
 
-Tem-se vários tipos de polímeros, sendo os de maior interesse tecnológico os eletroativos, capazes de realizar a conversão entre energia elétrica e energia mecânica. Em outras palavras, estes polímeros apresentam alteração em seu tamanho e/ou forma quando são sujeitos a um campo elétrico. Alguns  materiais dentro desta família apresentam também outro efeito: geram um sinal elétrico quando sujeitos a uma força. Devido a estas caraterísticas, os polímeros eletroativos são ideais para a aplicação em sensores e atuadores, onde por sua baixa massa especifica, substituem sistemas pesados e complexos, possibilitando projetos de novas aplicações devido a uma mais simples implementação e miniaturização (Bar-Cohen, 2002).
+Tem-se vários tipos de polímeros, sendo os de maior interesse tecnológico os eletroativos, capazes de realizar a conversão entre energia elétrica e energia mecânica. Em outras palavras, estes polímeros apresentam alteração em seu tamanho e/ou forma quando são sujeitos a um campo elétrico. Alguns  materiais dentro desta família apresentam também outro efeito: geram um sinal elétrico quando sujeitos a uma força. Devido a estas caraterísticas, os polímeros eletroativos são ideais para a aplicação em sensores e atuadores, onde por sua baixa massa especifica, substituem sistemas pesados e complexos, possibilitando projetos de novas aplicações devido a uma implementação e miniaturização mais simples (BAR-COHEN, 2002).
 
-O fluoreto de polivinilideno, conhecido pela sigla PVDF, apresenta características piezo e piroelétricas, além de elevada estabilidade e resistência química e física que, combinadas ao fácil processamento deste material, o tornam um excelente elemento para utilização tecnológica. O PVDF é um material semicristalino flexível e de baixo custo de fabricação, de fácil usinagem, múltiplas aplicações e com grande resistência química (Fukada, 2000; Lang, 2006). O PVDF foi descoberto em 1969 por Kawai, sendo um material novo com utilização perpassando uma variedade de campos, desde sensores para medição de vibrações mecânicas até a construção de canos e dutos para transporte de água ultrapura. A sua cristalização ocorre em pelo menos quatro fases distintas, $\alpha$, $\beta$, $\gamma$ e $\delta$ (Silva, 2009). A fase $\beta$ é caracterizada por possuir comportamento piezo e piroelétrico (Wisniewski, 2002).
+O fluoreto de polivinilideno, conhecido pela sigla PVDF, apresenta características piezo e piroelétricas, além de elevada estabilidade e resistência química e física que, combinadas ao fácil processamento deste material, o tornam um excelente elemento para utilização tecnológica. O PVDF é um material semicristalino flexível e de baixo custo de fabricação, de fácil usinagem, múltiplas aplicações e com grande resistência química (Fukada, 2000; Lang, 2006). O PVDF foi descoberto em 1969 por Kawai, sendo um material novo com utilização perpassando uma variedade de campos, desde sensores para medição de vibrações mecânicas até a construção de canos e dutos para transporte de água ultrapura. A sua cristalização ocorre em pelo menos quatro fases distintas, $\alpha$, $\beta$, $\gamma$ e $\delta$ (SILVA, 2009). A fase $\beta$ é caracterizada por possuir comportamento piezo e piroelétrico (WISNIEWSKI, 2002).
 
 O tema deste trabalho surge da proposta de se avaliar o filme PVDF como sensor de vibração com finalidades de manutenção preditiva, em particular, aqui, aplicado a falhas de rolamentos, uma vez que este sensor possui baixo custo e, desta forma, mostra-se como possível alternativa aos acelerômetros cerâmicos costumeiramente utilizados para esta finalidade. O componente econômico, portanto, se faz basilar neste trabalho. 
 
@@ -330,7 +342,7 @@ Esta tensão então, a partir de sua aquisição e conversão por um conversor a
 
 %Desta forma, o sensor filme PVDF foi utilizado pois possui as supracitadas características que o tornam tecnologicamente e economicamente viável para a aplicação proposta. 
 
-Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados afim de análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. Tal bancada experimental foi construída com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido pela empresa parceira WEG/Cestari. 
+Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados a fim da análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. Tal bancada experimental foi construída com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido pela empresa parceira WEG/Cestari. 
 
 Espera-se que, a partir dos experimentos e análise dos dados, se possa obter uma resposta inicial quanto a viabilidade de utilização do filme PVDF como sensor de baixo custo para fins de manutenção preditiva.
 
@@ -341,7 +353,7 @@ Espera-se que, a partir dos experimentos e análise dos dados, se possa obter um
 
 \section{\textbf {Geral}}
 
-Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva. A partir disto espera-se possível avaliar a viabilidade de um sistema de sensores PVDF para monitoramento das condições de rolamentos em maquinários, afim de possibilitar uma alternativa mais barata em relação aos sensores atualmente utilizados para este fim.
+Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva. A partir disto espera-se possível avaliar a viabilidade de um sistema de sensores PVDF para monitoramento das condições de rolamentos em maquinários, a fim de possibilitar uma alternativa mais barata em relação aos sensores atualmente utilizados para este fim.
 
 \section{\textbf {Específicos}}
 
@@ -370,21 +382,21 @@ Neste capítulo propõe-se uma revisão bibliográfica acerca dos principais con
 Estes tópicos embasam o posterior desenvolvimento do trabalho e os experimentos que serão apresentados nos capítulos seguintes.
 
 \section{\textbf{Manutenção}}
-Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios que permitam a produção (Nepomuceno, 1989), estes meios podem variar desde instrumentos simples, como tesouras, agulhas e novelos de lã, até maquinário industrial de alta complexidade. Em qualquer destes casos sempre surgem as questões de desgaste, enguiços, quebras e fraturas, dentre outros possíveis problemas. Portanto, em toda atividade produtiva  há necessidade de manutenção, sem a qual a produção colapsa (Nepomuceno, 1989).
+Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios que permitam a produção (Nepomuceno, 1989), estes meios podem variar desde instrumentos simples, como tesouras, agulhas e novelos de lã, até maquinário industrial de alta complexidade. Em qualquer destes casos sempre surgem as questões de desgaste, avarias, quebras e fraturas, dentre outros possíveis problemas. Portanto, em toda atividade produtiva  há necessidade de manutenção, sem a qual a produção colapsa (NEPOMUCENO, 1989).
 
-	Usualmente classifica-se a manutenção em três formas distintas: corretiva, preventiva e preditiva (Holanda, 2016). 
+	Usualmente classifica-se a manutenção em três formas distintas: corretiva, preventiva e preditiva (HOLANDA, 2016). 
 
-	A manutenção corretiva, também conhecida por manutenção reativa, diz respeito a prática correspondente a primeira geração das técnicas de manutenção. A manutenção corretiva foi utilizada desde as primeiras industrias até, aproximadamente, o final dos anos 40 do século XX – período em que a indústria era pouco mecanizada e com maquinário comparativamente mais simples. Seu princípio é a utilização do equipamento até sua quebra, sendo apenas então realizado o reparo (Holanda, 2016). 
+	A manutenção corretiva, também conhecida por manutenção reativa, diz respeito a prática correspondente a primeira geração das técnicas de manutenção. A manutenção corretiva foi utilizada desde as primeiras industrias até, aproximadamente, o final dos anos 40 do século XX – período em que a indústria era pouco mecanizada e com maquinário comparativamente mais simples. Seu princípio é a utilização do equipamento até sua quebra, sendo apenas então realizado o reparo (HOLANDA, 2016). 
 	
 	Entretanto, de acordo com Holanda, 2016	
 
 \begin{citacao}
 
-	Este tipo de manutenção baseada no tempo, porém, não elimina a possibilidade de ocorrência de falhas inesperadas no período, visto que a taxa de falha de 	muitas máquinas não é melhorada com a substituição regular de partes gastas. Pelo contrário, frequentemente a confiança nas máquinas recém-trabalhadas é 		reduzida, temporariamente, devido à interferência humana. (Holanda, 2016)
+	Este tipo de manutenção baseada no tempo, porém, não elimina a possibilidade de ocorrência de falhas inesperadas no período, visto que a taxa de falha de 	muitas máquinas não é melhorada com a substituição regular de partes gastas. Pelo contrário, frequentemente a confiança nas máquinas recém-trabalhadas é reduzida, temporariamente, devido à interferência humana. (HOLANDA, 2016)
 
 \end{citacao}
 
-Assim, faz-se necessária uma forma de manutenção que particularize cada máquina, de forma a avaliar sistematicamente suas condições. Isto começa a ocorrer nos 70 do século XX, com os avanços da automação e elevação das exigências de confiabilidade e disponibilidade. A este método de manutenção chama-se de manutenção preditiva. (Holanda, 2016).  
+Assim, faz-se necessária uma forma de manutenção que particularize cada máquina, de forma a avaliar sistematicamente suas condições. Isto começa a ocorrer nos anos 70 do século XX, com os avanços da automação e elevação das exigências de confiabilidade e disponibilidade. A este método de manutenção chama-se de manutenção preditiva. (HOLANDA, 2016).  
 
 
 \subsection{\textbf{Manutenção preditiva}}
@@ -393,11 +405,11 @@ Para Nepomuceno, 1989, p.41 a manutenção preditiva tem por finalidade
 
 \begin{citacao}
 
-[...]estabelecer, numa instalação industrial qualquer, quais são os parâmetros que devem ser escolhidos em cada tipo de máquina ou equipamento, em função das informações que as alterações de tais parâmetros sobre o estado mecânico de um determinado componente (pistões, dilatação, rolamentos, vasão, particulado, etc.). Em base a tais informações, a análise dos mesmos permitirá que sejam tomadas providências visando evitar estragos de monta ou mesmo situações catastróficas irreversíveis. (Nepomuceno, 1989, p.41)
+[...]estabelecer, numa instalação industrial qualquer, quais são os parâmetros que devem ser escolhidos em cada tipo de máquina ou equipamento, em função das informações que as alterações de tais parâmetros sobre o estado mecânico de um determinado componente (pistões, dilatação, rolamentos, vasão, particulado, etc.). Com base em tais informações, a análise dos mesmos permitirá que sejam tomadas providências visando evitar estragos de monta ou mesmo situações catastróficas irreversíveis. (NEPOMUCENO, 1989, p.41)
 
 \end{citacao}
 
-Assim, portanto, “a manutenção preditiva visa realizar manutenção somente quando as instalações precisarem dela” (Slack, 2008, p.645). 
+Assim, portanto, “a manutenção preditiva visa realizar manutenção somente quando as instalações precisarem dela” (SLACK, 2008, p.645). 
 
 De acordo com Nepomuceno, 1989, quando se estuda a manutenção preditiva esta, em uma análise superficial, parece demasiadamente dispendiosa, há a evidente necessidade de medição e análise de diversos parâmetros e, para tanto, é necessários instrumentos de análise e medição, além de alteração de processos convencionais de medição e controle da condição do maquinário. Entretanto, ainda de acordo com Nepomuceno, 1989, analisando mais detalhadamente esta questão percebe-se que a manutenção preditiva apresenta vantagens que a tornam economicamente viável. Dentre outras, cita-se: 
 
@@ -428,7 +440,7 @@ Para a condução de um processo de manutenção preditiva existem diferentes t�
 	\item análise de vibrações, técnica que permite o monitoramento do desenvolvimento de falhas em maquinário e peças através de medições de suas assinaturas vibracionais. 
 \end{itemize}
 
-Cada elemento de máquina possui características particulares que influenciam os métodos de manutenção preditiva adotados. No caso dos mancais de rolamentos estes geram vibrações mesmo quando geometricamente perfeitos, uma vez que possuem um número finito de elementos rolantes afim de suportar a carga. Ainda, quando ocorre um defeito em um dos componentes de um mancal de rolamentos, há aumento considerável nos níveis de vibração do mesmo. (Barilli, 2013, p. 8)
+Cada elemento de máquina possui características particulares que influenciam os métodos de manutenção preditiva adotados. No caso dos mancais de rolamentos estes geram vibrações mesmo quando geometricamente perfeitos, uma vez que possuem um número finito de elementos rolantes a fim de suportar a carga. Ainda, quando ocorre um defeito em um dos componentes de um mancal de rolamentos, há aumento considerável nos níveis de vibração do mesmo. (BARILLI, 2013)
 
 Assim, a manutenção preditiva baseada em análise de vibrações, aplicada à mancais de rolamentos, será abordada em maiores detalhes por se tratar da técnica escolhida dadas as características dos rolamentos, bem como do sensor objeto de estudo deste trabalho.
 
@@ -436,19 +448,19 @@ Assim, a manutenção preditiva baseada em análise de vibrações, aplicada à 
 
 Para que se possa abordar as técnicas de manutenção preditiva baseada em análise de vibrações faz-se necessário, primeiramente, um breve entendimento relativo ao fenômeno das vibrações mecânicas. 
 
-Segundo Rao, 2008, p.5
+Segundo Rao, 2008
 
 \begin{citacao}
-A maioria das atividades humanas envolve vibração de uma forma ou outra. Por exemplo, ouvimos porque nossos tímpanos vibram, e vemos porque as ondas de luz sofrem vibração. A respiração está associada à vibração dos pulmões, e andar envolve movimento oscilatório (periódicos de pernas e mãos). Falamos devido ao movimento oscilatório da laringe (e da língua). (Rao, 2008)
+A maioria das atividades humanas envolve vibração de uma forma ou outra. Por exemplo, ouvimos porque nossos tímpanos vibram, e vemos porque as ondas de luz sofrem vibração. A respiração está associada à vibração dos pulmões, e andar envolve movimento oscilatório (periódicos de pernas e mãos). Falamos devido ao movimento oscilatório da laringe (e da língua). (RAO, 2008)
 \end{citacao}
 
 Ainda, segundo Holanda, 2016, as vibrações mecânicas são fenômenos que acontecem constantemente na natureza e no cotidiano humano. Holanda define vibração mecânica como
 
 \begin{citacao}
-\,[...]um tipo de movimento no qual se considera uma massa reduzida a um ponto submetido a uma força. A ação dessa força obriga o ponto a executar um movimento oscilatório. Para que o movimento oscilatório do ponto se constitua numa vibração, ele deverá percorrer uma trajetória denominada trajetória completa ou ciclo, conhecida pelo nome de período de oscilação. (Holanda, 2016)
+\,[...]um tipo de movimento no qual se considera uma massa reduzida a um ponto submetido a uma força. A ação dessa força obriga o ponto a executar um movimento oscilatório. Para que o movimento oscilatório do ponto se constitua numa vibração, ele deverá percorrer uma trajetória denominada trajetória completa ou ciclo, conhecida pelo nome de período de oscilação. (HOLANDA, 2016)
 \end{citacao}
 
-Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos observados quando uma partícula realiza um movimento entorno uma posição de equilíbrio. Assim, quando há troca de energia cinética em energia potencial e vice-versa, ocorre a vibração. Quando um corpo oscila em períodos determinados ao redor de uma posição de equilíbrio, caracteriza-se este movimento como Movimento Harmônico, forma mais simples que a vibração pode se apresentar (Holanda, 2016). Holanda, 2016, apresenta como exemplo disto o movimento do pêndulo de um relógio, que oscila da máxima posição à direita até a máxima posição à esquerda, passando pelo ponto central de equilíbrio. 
+Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos observados quando uma partícula realiza um movimento entorno uma posição de equilíbrio. Assim, quando há mudança de energia cinética para energia potencial e vice-versa, ocorre a vibração. Quando um corpo oscila em períodos determinados ao redor de uma posição de equilíbrio, caracteriza-se este movimento como Movimento Harmônico, forma mais simples que a vibração pode se apresentar (HOLANDA, 2016). Holanda, 2016, apresenta como exemplo disto o movimento do pêndulo de um relógio, que oscila da máxima posição à direita até a máxima posição à esquerda, passando pelo ponto central de equilíbrio. 
 
 %Este movimento é graficamente representado como uma senoide, conforme mostrado na Figura 16, abaixo.
 
@@ -459,7 +471,7 @@ Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos obs
 %\label{Figura16}
 %\end{figure}
 
-Ressalta-se que o tempo que a massa demora para realizar uma oscilação, ou movimento harmônico simples, é chamado de período. Uma oscilação por segundo, ou um ciclo por segundo, CPS, constitui uma medida de frequência denominada Hertz (Nepomuceno, 1989). 
+Ressalta-se que o tempo que a massa demora para realizar uma oscilação, ou movimento harmônico simples, é chamado de período. Uma oscilação por segundo, ou um ciclo por segundo, CPS, constitui uma medida de frequência denominada Hertz (NEPOMUCENO, 1989). 
 
 Em relação ao movimento harmônico simples, ou oscilação, Nepomuceno, 1989, p.233 ressalta que
 
@@ -467,15 +479,20 @@ Em relação ao movimento harmônico simples, ou oscilação, Nepomuceno, 1989, 
 Nos casos práticos, existem inúmeros osciladores mecânicos que são dispositivos que dão origem a oscilações simples, principalmente às amplitudes pequenas ou então fornecem combinações de oscilações. É importante observar que todo e qualquer sistema que obedeça a Lei de Hooke é apto a oferecer tal tipo de vibrações. (Nepomuceno, 1989, p.233)
 \end{citacao}
 
-Para que se mensure os níveis de vibração, utiliza-se parâmetros expressos em termos de deslocamento, velocidade e aceleração (Holanda, 2016). Segundo Holanda, 2016, p. 21 \textit{apud} Kardec e Nascif, 2009, p.244 todos os três parâmetros representam “o quanto o equipamento está vibrando”. 
+Para que se mensure os níveis de vibração, utiliza-se parâmetros expressos em termos de deslocamento, velocidade e aceleração (Holanda, 2016). Segundo Kardec e Nascif, 2009 \textit{apud} Holanda, 2016 todos os três parâmetros representam “o quanto o equipamento está vibrando”. 
 
-Além disso, estes parâmetros possuem amplitude, frequência e fase. A amplitude, A, se relaciona com a quantidade de energia contida no sinal vibratório, ou seja, a severidade do movimento, sendo medida em milímetros (mm). Pode ser tomada em forma de deslocamento, velocidade e aceleração. A frequência, f, conforme anteriormente mencionado, é representada em Hertz e indica o número de vezes em que ocorre um ciclo completo de movimento. Já a fase, $\upphi$, representa “o ângulo inicial do argumento da função senoidal que descreve o movimento harmônico” (Holanda, 2016, p. 22).
+Além disso, estes parâmetros possuem amplitude, frequência e fase. A amplitude, A, se relaciona com a quantidade de energia contida no sinal vibratório, ou seja, a severidade do movimento, sendo medida em milímetros (mm). Pode ser medida em forma de deslocamento, velocidade e aceleração. A frequência, f, conforme anteriormente mencionado, é representada em Hertz e indica o número de vezes em que ocorre um ciclo completo de movimento. Já a fase, $\upphi$, representa “o ângulo inicial do argumento da função senoidal que descreve o movimento harmônico” (HOLANDA, 2016, p. 22).
 
-Já em relação às formas de mensuração, o Deslocamento é medido em micrometros (\SI{}{\micro\metre}). De acordo com Holanda, 2016, p.21 o deslocamento pode ser medido pelo nível de distanciamento do ponto relativo à sua posição de repouso, sendo a “unidade mais óbvia para se mensurar a vibração, pois é aquela que mais se aproxima da ideia de oscilação em torno de um ponto médio”. O deslocamento é recomendado para medições abaixo de 10Hz (Holanda, 2016). A fórmula abaixo representa o deslocamento, x:
+Já em relação às formas de mensuração, o Deslocamento é medido em micrometros (\SI{}{\micro\metre}). De acordo com Holanda, 2016, p.21 o deslocamento pode ser medido pelo nível de distanciamento do ponto relativo à sua posição de repouso, sendo a “unidade mais óbvia para se mensurar a vibração, pois é aquela que mais se aproxima da ideia de oscilação em torno de um ponto médio”. O deslocamento é recomendado para medições abaixo de 10Hz (HOLANDA, 2016). A fórmula abaixo representa o deslocamento, x:
+
+%\begin{equation}\label{eq:Eq1}
+%   x = A \,sen (\omega t + \upphi)
+%\end{equation}
+%\listadeequacoes{Equation number \ref{eq:Eq1}}
 
 \[x = A \,sen (\omega t + \upphi)\]
 
-A velocidade, por sua vez, é medida em milímetros por segundo ($mm/s$). O deslocamento implica na existência de uma velocidade que, por sua vez, pode ser variável. A função de velocidade, v, é dada por:
+A velocidade, por sua vez, é medida em milímetros por segundo ($mm/s$). A velocidade é a derivada primeira do deslocamento. O deslocamento implica na existência de uma velocidade que, por sua vez, pode ser variável. A função de velocidade, v, é dada por:
 
 \[v = A\omega \,cos (\omega t + \upphi)\]
 
@@ -496,12 +513,12 @@ Esclarecidos os conceitos  fundamentais relativos as vibrações mecânicas, faz
 
 Nepomuceno, 1989, p.206 afirma que a medida e monitoramento da vibração é uma das atividades de manutenção preditiva que apresenta melhores resultados. Mesquita et. al, 2002, afirmam que análise destas vibrações pode se dar nos domínios do tempo, da frequência e no domínio conjunto tempo-frequência.
 
-Em relação à análise no domínio do tempo, Segundo Spamer, 2009, p.62 apud Holanda, 2016, p.22 a amplitude de vibração em função do tempo pode ser medida em valores de pico a pico, valor de pico e valor RMS. Meola, 2005, afirma que o valor de pico a pico sinaliza a excursão máxima da onda, medida relevante para definição de quando um elemento da máquina atinge valores críticos. Já o valor de pico, de acordo com Meola, 2005, indica níveis máximos de sinais transientes, sem considerar a cronologia da onda. O valor médio, por sua vez, indica o quanto o sinal está deslocado quanto à sua referência tendo pouca relevância quanto ao monitoramento da vibração. 
+Em relação à análise no domínio do tempo, Segundo Spamer, 2009, p.62 \textit{apud} Holanda, 2016, p.22 a amplitude de vibração em função do tempo pode ser medida em valores de pico a pico, valor de pico e valor RMS. Meola, 2005, afirma que o valor de pico a pico sinaliza a excursão máxima da onda, medida relevante para definição de quando um elemento da máquina atinge valores críticos. Já o valor de pico, de acordo com Meola, 2005, indica níveis máximos de sinais transientes, sem considerar a cronologia da onda. O valor médio, por sua vez, indica o quanto o sinal está deslocado à sua referência tendo pouca relevância quanto ao monitoramento da vibração. 
 
 Já o valor RMS, ou eficaz, é, de acordo com Meola, 2005, p.9
 
 \begin{citacao}
-\,[...]uma das medidas mais importantes de amplitude, uma vez que quantifica a energia que está diretamente ligado ao fenômeno estudado, no caso é um indicativo do poder destrutivo da vibração. É muito utilizado como parâmetro global para determinação de níveis de alerta e alarme usados em procedimentos de manutenção preditiva.
+\,[...]uma das medidas mais importantes de amplitude, uma vez que quantifica a energia que está diretamente ligada ao fenômeno estudado, no caso é um indicativo do poder destrutivo da vibração. É muito utilizado como parâmetro global para determinação de níveis de alerta e alarme usados em procedimentos de manutenção preditiva.
 \end{citacao}
 
 A relação entre os níveis de pico, o nível médio, é dada por:
@@ -512,7 +529,7 @@ Já o nível eficaz, ou nível RMS, de um sinal harmônico é dado por:
 
 \[Nivel \, RMS = \sqrt{ \frac{1}{T} \int_{0}^{T} x^{2}(t)dt }  \]
 
-A Figura~\ref{RelacaoSinalHarmonico}, abaixo, exemplifica a relação estes níveis.
+A Figura~\ref{RelacaoSinalHarmonico} exemplifica a relação estes níveis.
 
 \begin{figure}[!htb]
 \centering
@@ -525,9 +542,9 @@ De acordo com Meola, 2005 \textit{apud} Tandon, 1999 os métodos mais comuns de 
 
 \[20log_{10} \left ( \frac{Nivel \,Pico}{Nivel \, RMS} \right ) \]
 
-Esta diferença aumenta progressivamente com o surgimento de defeitos, até atingir valor aproximado de 18dB quando, devido ao desgaste geral do rolamento, tal diferença volta a diminuir (Meola, 2005). Assim, ao retornar para aproximadamente 3dB a falha é iminente e o rolamento deverá ser trocado. 
+Esta diferença aumenta progressivamente com o surgimento de defeitos, até atingir valor aproximado de 18dB quando, devido ao desgaste geral do rolamento, tal diferença volta a diminuir (MEOLA, 2005). Assim, ao retornar para aproximadamente 3dB a falha é iminente e o rolamento deverá ser trocado. 
 
-A Figura~\ref{RelacaoPicoaPicoeRMS}, abaixo, demonstra esta relação entre os valores de Pico e RMS.  
+A Figura~\ref{RelacaoPicoaPicoeRMS} demonstra esta relação entre os valores de Pico e RMS.  
 
 \begin{figure}[!htb]
 \centering
@@ -536,7 +553,7 @@ A Figura~\ref{RelacaoPicoaPicoeRMS}, abaixo, demonstra esta relação entre os v
 \label{RelacaoPicoaPicoeRMS}
 \end{figure}	
 
-Já a Figura~\ref{FatorCrista}, abaixo, demonstra o comportamento do Fator de Crista no tempo com o desgaste do rolamento.
+Já a Figura~\ref{FatorCrista} demonstra o comportamento do Fator de Crista no tempo com o desgaste do rolamento.
 
 \begin{figure}[!htb]
 \centering
@@ -560,19 +577,19 @@ Onde $p(x)$ é a função de densidade de probabilidade e $\overline{x}$ o valor
 
 Os métodos descritos, de análise de falhas no domínio do tempo, são capazes de indicar o surgimento da falha. Entretanto, tais métodos não são capazes de apontar onde se localiza tal falha. Para isto, faz-se necessário a utilização de análise no domínio da frequência. 
 
-Tendo em vista que os mancais possuem frequências características de defeitos, espera-se que, ao apresentar falhas em seus componentes, tais falhas possam ser determinadas a partir das frequências por elas geradas. Desta forma, técnicas de análise espectral, tal como a transformada rápida de Fourier, podem mostrar onde se localiza o defeito. Mesquita et. al, 2002, entretanto, apontam para o fato de que podem ocorrer pequenos deslizamentos entre as pistas, o que pode ocasionar desvios nas frequências de defeitos em relação ao que se espera. Portanto, recomendam que tais frequências características sejam utilizadas como referência, não como determinantes. Além disso, ainda, Mesquita et. al, 2002, atentam para o fato de que tais frequências podem ser mascaradas por outros elementos da máquina.
+Tendo em vista que os mancais possuem frequências características de defeitos, espera-se que, ao apresentar falhas em seus componentes, tais falhas possam ser determinadas a partir das frequências por elas geradas. Desta forma, técnicas de análise espectral, tal como a transformada rápida de Fourier, podem mostrar onde se localiza o defeito. Mesquita et. al, 2002, entretanto, apontam para o fato de que podem ocorrer pequenos deslizamentos entre as pistas, o que pode ocasionar desvios nas frequências de defeitos em relação ao que se espera. Portanto, se recomenda que tais frequências características sejam utilizadas como referência, não como determinantes. Além disso, ainda, Mesquita et. al, 2002, atentam para o fato de que tais frequências podem ser mascaradas por outros elementos da máquina.
 
 Dentre as técnicas de análise espectral, a mencionada transformada rápida de Fourier, conhecida pela sigla FFT, é uma das mais largamente empregadas. 
 
 \section{\textbf{Fundamentos e aplicações de rolamentos}}
-Rolamentos são dispositivos para transmissão de movimentos rotacionais ou lineares, com finalidade de redução de atrito entre partes móveis (Santos et al., 2007). Rolamentos são compostos, geralmente, de dois anéis, elementos rolantes e uma gaiola, sendo classificados como rolamentos radiais ou axiais, dependendo da direção da carga principal (NSK, 2018). Adicionalmente, os rolamentos são classificados como rolamentos de esferas e rolamentos de rolos, em função do tipo de elemento rolante, e segregados quanto seus propósitos específicos (NSK, 2018).
+Rolamentos são dispositivos para transmissão de movimentos rotacionais ou lineares, com finalidade de redução de atrito entre partes móveis. Rolamentos são compostos, geralmente, de dois anéis, elementos rolantes e uma gaiola, sendo classificados como rolamentos radiais ou axiais, dependendo da direção da carga principal (NSK, 2018). Adicionalmente, os rolamentos são classificados, em função do tipo de elemento rolante, como rolamentos de esferas e rolamentos de rolos, que podem assumir forma cilíndrica, de agulhas ou cônicos, bem como são segregados quanto seus propósitos específicos (NSK, 2018).
 
-A Figura~\ref{ComponentesRolamentos}, abaixo, demonstra os componentes de um rolamento de uma carreira esferas e suas dimensões. 
+A Figura~\ref{ComponentesRolamentos} demonstra os componentes de um rolamento de uma carreira esferas e suas dimensões. 
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura1}
-\caption{a) Componentes de um rolamento. (b) Dimensões do rolamento. Mesquita et al. 2002 apud Santos et al. 2017}
+\caption{a) Componentes de um rolamento. (b) Dimensões do rolamento. Retirado de Mesquita et al. 2002}
 \label{ComponentesRolamentos}
 \end{figure}
 
@@ -582,13 +599,13 @@ Segundo a NSK (2018),
 Atualmente, os rolamentos são uma das peças de máquina mais comumente usadas porque seu movimento de rolamento torna quase todos os movimentos mais fáceis e ajudam a reduzir a fricção. Rolamentos têm duas funções-chave: transferem movimento, isto é, suportam e guiam componentes que giram um em relação ao outro; transmitem forças.
 \end{citacao}
 
-Em comparação aos mancais de deslizamento, os rolamentos apresentam vantagens como: torque de partido e atrito baixos, com diferença entre torque de partida de partida e torque de funcionamento pequenos; grande padronização internacional, facilitando sua substituição; dentre outras (NSK, 2018).
+Em comparação aos mancais de deslizamento, os rolamentos apresentam vantagens como: torque de partida e atrito baixos, com diferença entre torque de partida e torque de funcionamento pequenos; grande padronização internacional, facilitando sua substituição; dentre outras (NSK, 2018).
 
 %A seguir apresenta-se uma revisão sobre tipos de rolamentos, suas principais características, propriedades e tipos de falhas.
 
 \subsection{\textbf{Tipos de rolamentos}}
 
-Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  e que servem para redução de atrito entre eles e a superfície (Abecom, 2019). Existem distintos tipos de rolamentos, dentre os quais cita-se:
+Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  e que servem para redução de atrito entre eles e a superfície (ABECOM, 2019). Existem distintos tipos de rolamentos, dentre os quais cita-se:
 
 \begin{itemize}
 	\item Rolamentos de rolos cilíndricos, constituídos por uma carreira de rolos em uma gaiola
@@ -596,7 +613,7 @@ Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  
 	\item Rolamentos autocompensadores, que possuem duas carreiras de esferas ou rolos com uma pista esférica comum no anel externo e duas pistas no anel interno 	
 	\item Rolamentos rígidos de esfera, que são rolamentos versáteis de concepção simples e tipo não separáveis
 	\item Rolamentos de esfera de contato angular, que possui pistas nos anéis interno e externo
-	\item Rolamentos axiais de esferas, que são são projetados para cargas axiais]
+	\item Rolamentos axiais de esferas, que são são projetados para cargas axiais não devendo ser submetidos a cargas radiais
 \end{itemize}
 
 Cada tipo de rolamento possui suas aplicações e a escolha de rolamento depende de uma série de fatores específicos, tais como a carga a ser suportada, a velocidade de funcionamento, temperatura de trabalho, folga interna, alinhamento e desalinhamento do eixo, espaço disponível, dentre outros. 
@@ -604,23 +621,25 @@ Cada tipo de rolamento possui suas aplicações e a escolha de rolamento depende
 
 \subsection{\textbf{Processos de fabricação de rolamentos}}
 
-Nos rolamentos usualmente segrega-se o processo de fabricação em: fabricação dos anéis interno e externo; fabricação das esferas; fabricação das gaiolas e, por fim, montagem (Dos Santos et al., 2017).   
+Nos rolamentos usualmente segrega-se o processo de fabricação em: fabricação dos anéis interno e externo; fabricação das esferas; fabricação das gaiolas e, por fim, montagem (SANTOS et al., 2017).   
 
 As esferas, ou rolos, são feitas a partir de barras de aço cortadas em comprimentos específicos. Um processo de forjamento destes fragmentos de barra confere às peças o formato desejado, mas ainda com rebarbas. É realizado, então, o desbaste destas rebarbas. Após o processo de desbaste as esferas passam por tratamento térmico de têmpera. Por fim, é realizado o polimento. 
 
-Os anéis interno e externo, por sua vez, são criados pelos mesmos processos, a saber: forjamento, torneamento, tratamento térmico, polimento e super-acabamento. No  primeiro processo, forjamento, os lingotes de aço são aquecidos e, através de prensagem, são formados os anéis interno e externo em cada movimento da prensa. Os processos decorrem, portanto, simultaneamente e no mesmo equipamento. Após o forjamento, se dá o processo de torneamento. Neste, o torneamento do anel interno e externo se dá pelos mesmos passos. Primeiramente é torneada uma face lateral, a largura do anel. Em seguida, a outra face lateral é torneada. O próximo passo do processamento do anel é o torneamento do perfil da pista e largura. Simultaneamente é usinado o chanfro do anel. Em sequência ao processo de torneamento, se dá o tratamento térmico dos anéis por tempera, onde estes são aquecidos a temperaturas superiores aos 800ºC, bruscamente resfriados em óleo, reaquecidos em temperaturas de 150ºC e resfriados ao ar. Por fim, há o processo de acabamento onde processos abrasivos e de polimento são utilizados para atingir acabamento fino e exatidão de dimensão das peças (Dos Santos et al., 2017). 
+Os anéis interno e externo, por sua vez, são criados pelos mesmos processos, a saber: forjamento, torneamento, tratamento térmico, polimento e super-acabamento. No  primeiro processo, forjamento, os lingotes de aço são aquecidos e, através de prensagem, são formados os anéis interno e externo em cada movimento da prensa. Os processos ocorrem, portanto, simultaneamente e no mesmo equipamento. Após o forjamento, se dá o processo de torneamento. Neste, o torneamento do anel interno e externo se dá pelos mesmos passos. Primeiramente é torneada uma face lateral, a largura do anel. Em seguida, a outra face lateral é torneada. O próximo passo do processamento do anel é o torneamento do perfil da pista e largura. Simultaneamente é usinado o chanfro do anel. Em sequência ao processo de torneamento, se dá o tratamento térmico dos anéis por tempera, onde estes são aquecidos a temperaturas superiores aos \SI{800}{\celsius}, bruscamente resfriados em óleo, reaquecidos em temperaturas de \SI{150}{\celsius} e resfriados ao ar. Por fim, há o processo de acabamento onde processos abrasivos e de polimento são utilizados para atingir acabamento fino e exatidão de dimensão das peças (SANTOS et al., 2017). 
 
-A Figura~\ref{FiguraProcessoFabricacao}, abaixo, demonstra o fluxo de ordenação destes processos acima descritos.
+%Dar uma olhada no santos vs dos santos, arrumar essas referências
+
+A Figura~\ref{FiguraProcessoFabricacao} demonstra o fluxo de ordenação destes processos acima descritos.
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura2}
-\caption{a) Processo de fabricação dos anéis internos e externos. Retirado de Dos Santos et al., 2017.}
+\caption{a) Processo de fabricação dos anéis internos e externos. Retirado de SANTOS et al., 2017.}
 \label{FiguraProcessoFabricacao}
 \end{figure}
 
-As gaiolas, por sua vez, são produzidas com lâminas de aço que recebem a forma de anéis planos através de estampagem, sendo, então, prensadas para receber forma ondulada afim de manter as esferas na posição, feitos os furos para rebites e tratamento térmico da peça. (Dos Santos et al., 2017).
+As gaiolas, por sua vez, são produzidas com lâminas de aço que recebem a forma de anéis planos através de estampagem, sendo, então, prensadas para receber forma ondulada a fim de manter as esferas na posição, feitos os furos para rebites e tratamento térmico da peça. (Dos Santos et al., 2017).
  
-Com todas as partes produzidas é realizada, então, a montagem do rolamento. Primeiro, os anéis interno e externo são colocados concentricamente na linha de produção com as esferas preenchendo os espaços entre estes. O tamanho dos elementos rolantes se dá por calculo a partir do diâmetro da ranhura do anel interno. Estes são, então, uniformemente organizados por um divisor e uma metade da gaiola é adicionada. Em sequência outra máquina adiciona a metade restante da gaiola e finaliza-se, assim, a montagem da peça. (Santos et al., 2017). 
+Com todas as partes produzidas é realizada, então, a montagem do rolamento. Primeiro, os anéis interno e externo são colocados concentricamente na linha de produção com as esferas preenchendo os espaços entre estes. O tamanho dos elementos rolantes se dá por calculo a partir do diâmetro da ranhura do anel interno. Estes são, então, uniformemente organizados por um divisor e uma metade da gaiola é adicionada. Em sequência outra máquina adiciona a metade restante da gaiola e finaliza-se, assim, a montagem da peça. (SANTOS et al., 2017). 
 
 \subsection{\textbf{Carga e vida útil de rolamentos}}
 
@@ -662,15 +681,15 @@ Dentro de cada intervalo de trabalho, a carga e as condições operacionais do r
 
 \subsection{\textbf{Falhas em rolamentos}}
 
-Quando há correto manuseio dos rolamentos, usualmente estes podem ser utilizados por longos períodos de tempo antes de surgirem sinais de fadiga. Entretanto, devido a seleção incorreta do rolamento, lubrificação inadequada ou mesmo falhas de manuseio ou de condição de serviço, podem ocorrer falhas prematuras (NSK, 2014).
+Quando há o correto manuseio dos rolamentos, usualmente estes podem ser utilizados por longos períodos de tempo antes de surgirem sinais de fadiga. Entretanto, devido a seleção incorreta do rolamento, lubrificação inadequada ou mesmo falhas de manuseio ou de condição de serviço, podem ocorrer falhas prematuras (NSK, 2014).
 
-Ainda que a operação se dê de forma adequada, entretanto, a ação das tensões cíclicas de cisalhamento causa o aparecimento de microfissuras que, em sua maioria, surgem em pontos de pouca resistência, ou onde o material é anisotrópico  ou em pontos onde ocorrem inclusões de materiais não metálicos. Assim, com o tempo, estas microfissuras evoluem para a superfície da pista onde surgirão microtrincas que evoluem gradativamente (Harris, 1991; Juvinall e Marshek, 1991).
+Ainda que a operação se dê de forma adequada, entretanto, a ação das tensões cíclicas de cisalhamento causa o aparecimento de microfissuras que, em sua maioria, surgem em pontos de pouca resistência, ou onde o material é anisotrópico  ou em pontos onde ocorrem inclusões de materiais não metálicos. Assim, com o tempo, estas microfissuras evoluem para a superfície da pista onde surgirão microtrincas que evoluem gradativamente (HARRIS, 1991; JUVINALL e MARSHEK, 1991).
 
 Dentre as falhas mais comuns em rolamentos temos as seguintes: escamamento, descascamento, arranhadura, escorregamento, fraturas, trinca e lascamento, gaiola danificada, impressões, \textit{pitting}, desgaste, corrosão por atrito, falso brinel, deslizamento, superaquecimento, corrosão eletrolítica, oxidação e corrosão, falha na instalação e alteração na coloração.
 
 %manchas e asperezas superficiais,  desgaste regular,  amassados e arranhamentos, deformação, manchas e descorolação.
 
-Escamamento é o processo em que regiões com textura áspera e grosseira são formadas por separação de pequenas partes de material dos rolamentos devido a fadiga do mesmo. Dentre as possíveis causas estão: carga excessiva, falha na instalação, carga de momento elevada, contaminação por partículas ou por água, lubrificação dificiente ou folga inapropiada (NSK, 2014). A Figura~\ref{escamemento_nsk} mostra anéis internos de rolamentos com escamamento. 
+Escamamento é o processo em que regiões com textura áspera e grosseira são formadas por separação de pequenas partes de material dos rolamentos devido a fadiga do mesmo. Dentre as possíveis causas estão: carga excessiva, falha na instalação, carga de momento elevada, contaminação por partículas ou por água, lubrificação deficiente ou folga inapropiada (NSK, 2014). A Figura~\ref{escamemento_nsk} mostra anéis internos de rolamentos com escamamento. 
 
 \begin{figure}[H]
 \centering
@@ -688,7 +707,7 @@ Descascamento, por sua vez, é o processo em que a superfície da pista começa 
 \label{descascamento_nsk}
 \end{figure}
 
-Amassados e arranhaduras são riscos durante a montagem, arranhamentos em razão de objetos estranhos e duros, além de amassados superficiais devido a impactos. As causas são presença de objetos estranhos, penetração por impacto no lado descascado, quedas e choques devido manejo inadequado além de montagem desalinhada (NSK, 2014). A Figura~\ref{arranhaduras_nsk} mostra amassados e arranhaduras. 
+Arranhaduras trata-se de riscos que podem ocorrer durante a montagem, arranhões em razão de objetos estranhos e duros, além de amassados superficiais devido a impactos. As causas são presença de objetos estranhos, penetração por impacto no lado descascado, quedas e choques devido manejo inadequado além de montagem desalinhada (NSK, 2014). A Figura~\ref{arranhaduras_nsk} mostra amassados e arranhaduras. 
 
 \begin{figure}[H]
 \centering
@@ -706,7 +725,7 @@ Escorregamento refere-se ao dano causado na superficíe das pistas e elementos r
 \label{escorregamento_nsk}
 \end{figure}
 
-Fraturas, por sua vez, referem-se à corpos rolantes partidos, anel interno ou externo partidos ou, mesmo, a gaiolas danificadas. As causas usualmente são carga de anormal na gaiola por problema na instalação ou deficiência de lubrificantes, avanço do processo de escamamento ou, ainda, carga excessiva de choque e desenvolvimento de trinca de fricção. A Figura~\ref{fraturas_nsk} mostra três exemplos de anéis interno e um de anel externo com fraturas. 
+Fraturas, por sua vez, referem-se à corpos rolantes partidos, anel interno ou externo partidos ou, mesmo, a gaiolas danificadas. As causas usualmente são carga anormal na gaiola por problema na instalação ou deficiência de lubrificantes, avanço do processo de escamamento ou, ainda, carga excessiva de choque e desenvolvimento de trinca de fricção. A Figura~\ref{fraturas_nsk} mostra três exemplos de anéis interno e um de anel externo com fraturas. 
 
 \begin{figure}[H]
 \centering
@@ -809,7 +828,7 @@ Superaquecimento, por sua vez, diz respeito ao processo em que o rolamento se aq
 \end{figure}
 
 
-Corrosão eletrolítica diz respeito a formação de afundamentos sobre as pistas. Estes afundamentos transformam-se gradualmente em ondulações. A causa para isto é a corrente elétrica passando através dos corpos rolantes (NSK, 2014). A Figura~\ref{corrosao_eletrolitica_nsk} mostra a corrosão eletrolítica em na pista de um anel interno de um rolamento, com dano ampliado na foto para facilitação da visualização, bem como o dano em um anel externo. 
+Corrosão eletrolítica diz respeito a formação de afundamentos sobre as pistas. Estes afundamentos transformam-se gradualmente em ondulações. A causa para isto é a corrente elétrica passando através dos corpos rolantes (NSK, 2014). A Figura~\ref{corrosao_eletrolitica_nsk} mostra a corrosão eletrolítica na pista de um anel interno de um rolamento, com dano ampliado na foto para facilitação da visualização, bem como o dano em rolos. 
 
 \begin{figure}[H]
 \centering
@@ -877,7 +896,7 @@ Logo, a partir destas frequências características de defeito e das especifica�
 
 \section{\textbf{Fluroreto de polivinilideno}}
 
-O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui grande um grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (Chatigny e Robb, 1987).
+O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui um grande grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (CHATIGNY e ROBB, 1987).
 
 A Figura~\ref{pvdf_cadeia} mostra a estrutura molecular do PVDF.
 
@@ -891,11 +910,11 @@ A Figura~\ref{pvdf_cadeia} mostra a estrutura molecular do PVDF.
 
 Decorrente desta descoberta o interesse no estudo do PVDF se dá, dentre outras caraterísticas, por suas propriedades piezo e piroelétricas. 
 
-Piezoeletricidade é a capacidade de certos materiais, altamente polares, de alterar suas dimensões quando expostos a um campo elétrico, ou, inversamente, gerar sinal elétrico quando mecanicamente deformados (Halvorsen, 1986). A piezoeletricidade foi descoberta em 1880 pelos irmãos franceses Jacques e Pierre Curie, que a observaram em cristais de Quartzo (Manbacchi e Cobbold, 2011). Uma de suas primeiras aplicações tecnológicas foi feita por outro francês, Langevin, que desenvolveu um transmissor e receptor de quartzo para sons submarinos por volta de 1917 - o primeiro sonar (Halvorsen, 1986). Segundo Loussert et al., 2013, p.204 a piezoeletricidade se manifesta pela polarização da célula unitária com o aspecto de momento dipolar $\mu = q \,x \, d$, onde $q$ é a carga elétrica do dípolo e $d$ é a distância entre os centroides.  
+Piezoeletricidade é a capacidade de certos materiais, altamente polares, de alterar suas dimensões quando expostos a um campo elétrico, ou, inversamente, gerar sinal elétrico quando mecanicamente deformados (Halvorsen, 1986). A piezoeletricidade foi descoberta em 1880 pelos irmãos franceses Jacques e Pierre Curie, que a observaram em cristais de Quartzo (Manbacchi e Cobbold, 2011). Uma de suas primeiras aplicações tecnológicas foi feita por outro francês, Langevin, que desenvolveu um transmissor e receptor de quartzo para sons submarinos por volta de 1917 - o primeiro sonar (Halvorsen, 1986). Segundo Loussert et al., 2013, p.204 a piezoeletricidade se manifesta pela polarização da célula unitária com o aspecto de momento dipolar $\mu = q\times d$, onde $q$ é a carga elétrica do dípolo e $d$ é a distância entre os centroides.  
 
-As propriedades do PVDF, incluindo a piezoeletricidade, são altamente influenciadas pelo seu grau e tipo de estrutura de cristalina. Chatigny e Robb, 1987, fazem uma revisão relacionada ao processo de fabricação de filmes PVDF para obtenção das características desejadas em cada possível estrutura cristalina deste material. Nesta, afirmam que existem três formas distintas de estrutura cristalina no PVDF. A mais comum é centrossimétrica e não polar, obtida quando o polímero é resfriado a partir de seu ponto de derretimento, chamada de fase alfa. A deformação de grãos tipo alfa, com o stretching de filmes obtidos através de extrusão em temperaturas abaixo de 80ºC, faz com que as células unitárias se alinhem em planos paralelos, criando uma fase polar chamada de fase beta. Uma terceira configuração possível é a fase gama, que, ainda que polar, é intermediária em termos de centrossimetria entre as configurações de fases alfa e beta (Chatigny e Robb, 1987).
+As propriedades do PVDF, incluindo a piezoeletricidade, são altamente influenciadas pelo seu grau e tipo de estrutura de cristalina. Chatigny e Robb, 1987, fazem uma revisão relacionada ao processo de fabricação de filmes PVDF para obtenção das características desejadas em cada possível estrutura cristalina deste material. Nesta, afirmam que existem três formas distintas de estrutura cristalina no PVDF. A mais comum é centrossimétrica e não polar, obtida quando o polímero é resfriado a partir de seu ponto de derretimento, chamada de fase alfa. A deformação de grãos tipo alfa, com o \textit{stretching} de filmes obtidos através de extrusão em temperaturas abaixo de \SI{80}{\celsius}, faz com que as células unitárias se alinhem em planos paralelos, criando uma fase polar chamada de fase beta. Uma terceira configuração possível é a fase gama, que, ainda que polar, é intermediária em termos de centrossimetria entre as configurações de fases alfa e beta (Chatigny e Robb, 1987).
 
-Para obtenção de níveis significativos de atividade piezoelétrica no material, o polímero em fase beta deve exposto a um campo elétrico de 500 a 1000KV/cm em temperaturas de 80 a 110ºC. Este processo é chamado de \textit{poling}. O nível de atividade piezo depende do tempo de exposição a este campo elétrico, além da força do campo e da temperatura. Quando conduzido adequadamente, este processo provê orientação permanente para os dípolos no polímero (Chatigny e Robb, 1987). 
+Para obtenção de níveis significativos de atividade piezoelétrica no material, o polímero em fase beta deve ser exposto a um campo elétrico de 500 a 1000kV/cm em temperaturas de \SI{80}{\celsius} a \SI{110}{\celsius}. Este processo é chamado de \textit{poling}. O nível de atividade piezo depende do tempo de exposição a este campo elétrico, além da força do campo e da temperatura. Quando conduzido adequadamente, este processo provê orientação permanente para os dípolos no polímero (CHATIGNY e ROBB, 1987). 
 
 %A Figura 20, abaixo, mostra as configurações alfa, gama e beta.
 
@@ -906,24 +925,24 @@ Para obtenção de níveis significativos de atividade piezoelétrica no materia
 %\label{Figura20}
 %\end{figure}
 
-Chatigny e Robb, 1987, descrevem um processo típico de preparação de um filme piezo pode ser resumido da seguinte forma:
+Chatigny e Robb, 1987, descrevem um processo típico de preparação de um filme piezo, podendo ser resumido da seguinte forma:
 
 \begin{enumerate}
 	\item Extrusão do PVDF em filmes fase alfa; 
-	\item Orientação, uniaxial ou biaxial, a 80ºC e uma relação de stretch de 4:5 para fase beta do filme;
+	\item Orientação, uniaxial ou biaxial, a \SI{80}{\celsius} e uma relação de \textit{stretch} de 4:5 para fase beta do filme;
 	\item Deposição de eletrodos por algum de vários métodos;
-	\item \textit{Poling} térmico a 600KV/cm a 100ºC, por aproximadamente trinta minutos.
+	\item \textit{Poling} térmico a 600kV/cm a \SI{100}{\celsius}, por aproximadamente trinta minutos.
 \end{enumerate}
 
-Durante este processo, os dípolos são alinhados relativos à direção do campo de \textit{poling}. Quando o filme piezo está operando em modo eletromecânico, o filme se alonga e contrai quando a polaridade dos campos se alterna. Quando operando de forma mecânico-elétrica, por sua vez, forças externas aplicadas produzem tensões de compressão e tração (Chatigny e Robb, 1987). 
+Durante este processo, os dípolos são alinhados relativos à direção do campo de \textit{poling}. Quando o filme piezo está operando em modo eletromecânico, ele se alonga e contrai quando a polaridade dos campos se alterna. Quando operando de forma mecânico-elétrica, por sua vez, forças externas aplicadas produzem tensões de compressão e tração (CHATIGNY e ROBB, 1987). 
 
 Os filmes PVDF são flexíveis e leves, produzidos em uma variedade de espessuras e áreas. Algumas das vantagens dos filmes PVDF incluem elevada resistência química até temperaturas elevadas , 
 
 Devemos considerar o filme piezoelétrico como um material dinâmico que desenvolve uma carga elétrica proporcional a mudança no stress mecânico. O piezo não opera em condições estáticas devido ao rápido decaimento da carga induzida, sendo sua constante de tempo determinada pela constante dielétrica do filme e sua resistência interna. 	Uma possível analogia, fornecida por Chatigny e Robb, 1987, é a de uma esponja despejando e absorvendo um fluido, conforme uma pressão externa é aplicada e então liberada. O filme age como uma esponja liberando uma carga elétrica na frequência que a deformação tem lugar. Uma vez que a deformação cessa, nenhuma carga é transferida. 
 
-O PVDF é um material anisotrópico.  Suas propriedades elétricas, mecânicas e eletromecânicas diferem para as excitações elétricas e mecânicas nas diferentes direções. Desta forma, para uma tabulação sistemáticas das propriedades, utilizamos três eixos identificados por números: 1, correspondente ao comprimento; 2, correspondente a altura; e, por fim, 3, correspondente a espessura (Chatigny e Robb, 1987). 
+O PVDF é um material anisotrópico.  Suas propriedades elétricas, mecânicas e eletromecânicas diferem para as excitações elétricas e mecânicas nas diferentes direções. Desta forma, para uma tabulação sistemáticas das propriedades, utilizamos três eixos identificados por números: 1, correspondente ao comprimento; 2, correspondente a altura; e, por fim, 3, correspondente a espessura (CHATIGNY e ROBB, 1987). 
 
-Em relação a polarização do material, podemos dizer que tensões positivas são elásticas, enquanto tensões negativas são compressivas. Ação elétrica positiva é causada por um aumento na polarização e vice-versa. Para os filmes piezo, o eixo de polarização é sempre a espessura, uma vez que há alinhamento do campo nesta direção. O estresse mecânico, de qualquer forma, pode ser aplicado nas três direções. 
+Em relação a polarização do material, podemos dizer que tensões positivas são de tração, enquanto tensões negativas são compressivas. Ação elétrica positiva é causada por um aumento na polarização e vice-versa. Para os filmes piezo, o eixo de polarização é sempre a espessura, uma vez que há alinhamento do campo nesta direção. O estresse mecânico, de qualquer forma, pode ser aplicado nas três direções. 
 
 Usualmente utiliza-se algumas constantes para caracterizar as atividades de materiais piezoativos. 
 
@@ -937,7 +956,7 @@ Além disso:
 
 \[d_{31} = \frac{Carga \,por \,area \,de \,eletrodo}{Estresse \,aplicado \,no \,eixo \,1} = \frac{C/m^{2}}{N/m^{2}} = \frac{C}{N} \]
 
-Outra constante é a constante de estresse piezoelétrico $g$, que expressa a razão do campo elétrico ao longo de um eixo especifico pelo estresse aplicado ao mesmo ou outro eixo. A constante g também expressa a tensão ao longo de um especifico pela carga elétrica por área unitária de eletrodos (Chattigny e Robb, 1987). Assim:
+Outra constante é a constante de estresse piezoelétrico $g$, que expressa a razão do campo elétrico ao longo de um eixo especifico pelo estresse aplicado ao mesmo ou outro eixo. A constante g também expressa a tensão ao longo de um eixo específico pela carga elétrica por área unitária de eletrodos (CHATIGNY e ROBB, 1987). Assim:
 
 \[g_{33} = \frac{Campo \,aplicado \,ao \,longo \,do \,eixo \,3}{Estresse \,aplicado \,ao \,longo ,\do \,eixo \,3} = \frac{V/m}{N/m^{2}} = \frac{Vm}{N} \]
 
@@ -951,7 +970,7 @@ A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdu
 
 \subsection{\textbf{Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}
 
-Dentre as distintas aplicações do PVDF, Xin et al., 2016, fizeram uma revisão de literatura quanto ao seu uso como sensor de vibrações. Nesta, apresentam suas aplicações para dispositivos médicos portáteis, monitoramento de saúde estrutural, monitoramento de maquinário, dentre outras diversas.
+Dentre as distintas aplicações do PVDF uma revisão de literatura é desenvolvida com base em Xin et al., 2016, quanto ao seu uso como sensor de vibrações. Nesta, apresentam suas aplicações para dispositivos médicos portáteis, monitoramento de saúde estrutural, monitoramento de maquinário, dentre outras diversas.
 
 Em particular no que tange PVDF como sensor aplicado a dispositivos médicos portáteis, citam:
 
@@ -961,7 +980,7 @@ Em particular no que tange PVDF como sensor aplicado a dispositivos médicos por
 	\item monitoramento de ronco 
 \end{itemize}
 
-Estas utilizações se dão pois a respiração e os batimentos cardíacos, de humanos e muitos outros animais, geram vibrações das superfícies corporais. Estas vibrações, em diversos casos, refletem as condições de saúde de humanos e animais, podendo ser medidas através de sensores colocados na pele. Neste sentido os sensores PVDF têm como vantagem característica sua flexibilidade, baixo custo e leveza. Isto o torna bom candidato para esta área e muitos pesquisadores têm feito esforços neste sentido.
+Estas utilizações se dão pois a respiração e os batimentos cardíacos, de humanos e muitos outros animais, geram vibrações das superfícies corporais. Estas vibrações, em diversos casos, refletem as condições de saúde de humanos e animais, podendo ser medidas através de sensores colocados na pele. Neste sentido os sensores PVDF têm como vantagem característica sua flexibilidade, baixo custo e leveza. Isto o torna bom candidato para a aplicação nesta área da saúde e muitos pesquisadores têm feito esforços em relação ao seu estudo e desenvolvimento.
 
 Em relação ao PVDF como sensor aplicado a monitoramento de integridade estrutural, citam:
 
@@ -978,7 +997,7 @@ Já no PVDF como sensor aplicado a medição de vibrações em maquinário, cita
 Kern et al., 2016, publicaram o artigo "Development of a Solid-Borne Sound Sensor
 to Detect Bearing Faults Based on a MEMS Sensor and a PVDF Foil Sensor". Neste os autores comparam o filme PVDF com um acelerômetro microeletromecânico para aplicação de monitoramento de rolamentos de aplicação automotiva. Os autores aquisitaram os sinais de ambos sensores e fizeram a comparação entre eles, utilizando como ferramentas para análise do sinal os métodos de curtose, valor RMS e densidade espectral de potência. Após os ensaios, os autores chegaram a conclusão que foi possível diferenciar com o sensor PVDF os sinais de um rolamento em bom estado para um rolamento com defeitos, ainda que apontem as interferências eletromagnéticas como um fator de inclusão de ruído no sinal quando comparado ao sensor microeletromecânico.
 
-Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation method for piezoelectric PVDF sensors". Neste os autores buscaram as características elétricas, de frequência e deriva térmica do filme PVDF afim de verificar sua potencial utilidade como material para sensores de ruídos estruturais, bem como seus limites de aplicabilidade. Para tanto os autores testaram dez amostras de sensor filme pvdf em vinte e sete pontos entre \SI{50}{\hertz} e \SI{2}{\kilo\hertz}, repetindo vinte vezes cada medida afim de garantir validade estatística. Os autores mostraram que a constante piezoelétrica e o módulo de elasticidade do material podem ser influenciados por variações de temperatura. Ainda assim, os autores também chegam em conclusões de que o PVDF possui potencial para ser um material central de novos sensores de monitoramento de ruídos estruturais, não apenas em pesquisas, mas também em aplicações industriais.
+Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation method for piezoelectric PVDF sensors". Neste os autores buscaram as características elétricas, de frequência e deriva térmica do filme PVDF a fim de verificar sua potencial utilidade como material para sensores de ruídos estruturais, bem como seus limites de aplicabilidade. Para tanto os autores testaram dez amostras de sensor filme pvdf em vinte e sete pontos entre \SI{50}{\hertz} e \SI{2}{\kilo\hertz}, repetindo vinte vezes cada medida a fim de garantir validade estatística. Os autores mostraram que a constante piezoelétrica e o módulo de elasticidade do material podem ser influenciados por variações de temperatura. Ainda assim, os autores também chegam em conclusões de que o PVDF possui potencial para ser um material central de novos sensores de monitoramento de ruídos estruturais, não apenas em pesquisas, mas também em aplicações industriais.
 
 %Para que se possa utilizar os sensores, entretanto, é necessário que seja possível aquisitar os seus sinais.
 
@@ -986,7 +1005,7 @@ Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation met
 
 \section{\textbf{Aquisição de dados}}
 
-Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que
+Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que 
 
 \begin{citacao}
 \,[...]um sistema de aquisição de dados é um conjunto de elementos inter-relacionados que se coloca entre um processo e seu observador, visando a aquisição, análise e apresentação dos dados sobre o processo.
@@ -994,33 +1013,21 @@ Para que possa analisar os dados provenientes de sensores é necessário um sist
 
 Percebe-se, portanto, que um sistema de aquisição de dados é composto por diversos elementos. França, 1997, afirma que a estrutura básica de um sistema de aquisição de dados é composta por um transdutor, condicionador, pela aquisição dos dados, pela análise dos dados e, por fim, por sua apresentação.
 
-Em especial quanto ao condicionamento e aquisição de sinais, destaca-se em particular as questões de amplificação e atenuação do sinal, essenciais em sistemas baseados em conversores analógico-digitais, A/D, onde obtém-se um sinal analógico - tal qual a tensão elétrica de um sensor de filme PVDF - e este é discretizado para representação digital. De acordo com a Omega, 2021, o conversor analógico-digital é "[...]um dispositivo eletrônico que converte sinais analógicos em um formato digital equivalente. O conversor analógico-digital é o centro da maioria dos sistemas de aquisição de dados.".
+Em especial quanto ao condicionamento e aquisição de sinais, destaca-se em particular as questões de amplificação e atenuação do sinal, essenciais em sistemas baseados em conversores analógico-digitais, A/D, onde obtém-se um sinal analógico - tal qual a tensão elétrica de um sensor de filme PVDF - e este é discretizado para representação digital. De acordo com a Omega, 2021, o conversor analógico-digital trata-se de um "dispositivo eletrônico que converte sinais analógicos em um formato digital equivalente". Este dispositivo é central na grande parte dos sistemas de aquisição de dados, uma vez que é o responsável pela representação digital dos sinais analógicos de interesse. 
 
 %Em relação a filtragem destes sinais, França, 1997, p. 7, afirma que "o espectro de frequências do sinal na saída dos transdutores pode ser muito mais amplo do que é de interesse". Neste sentido, aplicam-se filtros para atenuação de sinais indesejados.
 
 Usualmente os conversores analógico-digitais estão disponíveis em DAQs, sigla para \textit{Data Acquisition}, que podem tomar formas desde dispotivos específicos para a aquisição de dados até microcontroladores com conversores A/D embarcados. Ao lidarmos com sistemas de aquisição de dados, alguns dos principais aspectos a se considerar são: número de canais, resolução, faixa de conversão e taxa de amostragem.
 
-O número de canais de um trata-se da quantidade de entradas disponíveis para aquisição de dados. 
+O número de canais de um DAQ trata-se da quantidade de entradas disponíveis para aquisição de dados. As faixas de conversão, de acordo com França, 1997, p. 15, são os limites de tensão máximo e mínimo que um conversor analógico-digital está apto a quantizar.
 
-Já a resolução, de acordo com a Omega, 2021, trata-se de: 
+Já a resolução, de acordo com a Omega, 2021, trata-se do "menor incremento de sinal que pode ser detectado por um sistema de aquisição de dados", em relação a uma faixa de conversão estabelecida. A resolução é expressa em bits, porcentagem ou fundo de escala. Para um DAQ com resolução de 12 bits e faixa de conversão de \SI{5}{\volt}, temos \[\frac{\SI{5}{\volt}}{2^{12}} = \SI{1,22}{\milli\volt} \]  
 
-\begin{citacao}
-O menor incremento de sinal que pode ser detectado por um sistema de aquisição de dados. A resolução pode ser expressa em bits, em proporções ou em porcentagem do fundo de escala. Por exemplo, um sistema tem resolução de 12 bits, uma parte em resolução de 4.096 e 0,0244\% do fundo de escala.
-\end{citacao}
+Percebe-se, portanto, que quanto maior a resolução, menores estes incrementos. 
 
-As faixas de conversão, de acordo com França, 1997, p. 15, são os limites de tensão máximo e mínimo que um conversor analógico-digital está apto a quantizar.
+Já a velocidade, de acordo com a Omega, 2021, trata-se de "a velocidade na qual um sistema de aquisição de dados coleta os dados. Normalmente, a velocidade é expressa em amostras por segundo". 
 
-Já a velocidade, de acordo com a Omega, 2021, trata-se de
-
-\begin{citacao}
-A velocidade na qual um sistema de aquisição de dados coleta os dados. Normalmente, a velocidade é expressa em amostras por segundo. 
-\end{citacao}
-
-Ainda, de acordo com a Omega, 2021
-
-\begin{citacao}
-Para dispositivos multicanais de aquisição de dados, a taxa de amostragem geralmente é a velocidade do conversor analógico para digital (A/D). Para obter a taxa de amostragem de um canal individual, é preciso dividir a velocidade de A/D pelo número de canais amostrados.
-\end{citacao}
+Para dispositivos multicanais, a taxa de amostragem é geralmente, mas não sempre, a velocidade do conversor analógico digital dividida pelo número de canais amostrados. 
 
 Iazzetta, 2021, afirma ainda em relação as taxas de amostragem que 
 
@@ -1040,21 +1047,21 @@ As dimensões do rolamento escolhido são:
 
 \begin{itemize}
 	\item Número de elementos rolantes: 20 (10 por fileira)
-	\item Diâmetro externo: 72\si{\mm}
-	\item Diâmetro interno: 30\si{\mm}
+	\item Diâmetro externo: 72 \si{\mm}
+	\item Diâmetro interno: 30 \si{\mm}
 	\item Limite de rotação: 4500 RPM lubrificado a graxa, 6000 RPM lubrificado a óleo
 \end{itemize}
 
-A Figura~\ref{Figura24} mostra o modelo do rolamento utilizado na bancada experimental.
+A Figura~\ref{Figura24} mostra um modelo de rolamento autocompensador de rolos, tal como utilizado na bancada experimental.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Figura24}
-\caption {Rolamento utilizado na bancada de testes. Retirado de NSK, 2018.}
+\caption {Rolamento autocompensador de rolos. Retirado de NSK, 2018.}
 \label{Figura24}
 \end{figure} 
 
-Algumas das medidas necessárias para o cálculo das frequências características de defeito, a saber o ângulo de contato e o diâmetro dos elementos rolantes, não foram encontradas no manual do rolamento. Assim, a partir de pesquisa foi encontrado no site da NSK Japão um modelo CAD do mesmo, onde a partir deste calcularam-se os seguintes valores:
+Algumas das medidas do rolamento necessárias para o cálculo das frequências características de defeito, a saber o ângulo de contato e o diâmetro dos elementos rolantes, estão disponíveis no site da NSK Japão em um modelo CAD do mesmo, onde a partir deste calcularam-se os seguintes valores:
 
 \begin{itemize}
 	\item Diâmetro dos elementos rolantes: 10.1\si{\mm}
@@ -1066,7 +1073,7 @@ A Figura~\ref{angulo_de_contato} mostra o CAD do rolamento NSK 21306CD com vista
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=150mm,keepaspectratio]{angulo_de_contato}
-\caption {Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK.}
+\caption {Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}
 \label{angulo_de_contato}
 \end{figure} 
 
@@ -1075,29 +1082,39 @@ Já a Figura~\ref{diametro_rolamento} apresenta o diâmetro do elemento rolante,
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=100mm,keepaspectratio]{diametro_rolamento}
-\caption {Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK.}
+\caption {Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}
 \label{diametro_rolamento}
 \end{figure} 
 
 As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falha. Estas foram montadas em uma bancada experimental, construída para condução dos experimentos, onde terão terão registradas as suas assinaturas de vibração tanto no domínio da frequência, quanto do tempo para posterior análise. 
 
-O aparato experimental é composto por um motoredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22}, abaixo, mostra o projeto da bancada experimental. 
+O aparato experimental é composto por um motoredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22} mostra o projeto da bancada experimental. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura22}
-\caption {Bancada experimental.}
+\caption {Projeto da bancada experimental. Elaborado pelo autor.}
 \label{Figura22}
 \end{figure}
 
-Em relação a construção da bancada experimental, a mesma se deu durante o ano de 2019 no período imediatamente a pandemia de COVID-19. Foi utilizado um torno mecânico do IFSP Câmpus Guarulhos para usinagem do eixo, foi utilizada prensa afim de realizar o acoplamento dos mancais de rolamentos ao eixo usinado e posteriormente este foi ligado ao motoredutor. 
+A Figura~\ref{dispositivo_teste_visto_de_lado} mostra uma visão lateral do dispositivo que será utilizado. Os sensores com seus respectivos acoplamentos serão afixados nos mancais. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{dispositivo_teste_visto_de_lado}
+\caption {Projeto da bancada experimental visto lateralmente. Elaborado pelo autor.}
+\label{dispositivo_teste_visto_de_lado}
+\end{figure}
+
+
+Em relação a construção da bancada experimental, a mesma se deu durante o ano de 2019. Foi utilizado um torno mecânico do IFSP Câmpus Guarulhos para usinagem do eixo, e foi utilizada prensa a fim de realizar o acoplamento dos mancais de rolamentos ao eixo usinado e posteriormente este foi ligado ao motoredutor. 
 
 O motor utilizado na bancada de testes possui como características um torque de \SI{400}{\newton\metre}, velocidade de 1750 RPM com taxa de redução de 48,90 vezes, resultante em velocidade de saída para o eixo de 35,8 RPM.  
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{bancada_de_testes}
-\caption {Bancada experimental. Elaborado pelos autores.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{bancada_de_testes}
+\caption {Bancada experimental. Elaborado pelo autor.}
 \label{bancada_de_testes}
 \end{figure}
 
@@ -1121,11 +1138,11 @@ Por fim, para a \textit{Ball Spin Frequency} temos, aproximadamente:
 
 \[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
 
-A partir destas frequências pode-se estimar as áreas para análise do sinal aquisitado, bem como realizar o tratamento e filtragem do sinal resultante do sensor afim de eliminação de interferências eletromagnéticas. 
+A partir destas frequências pode-se estimar as áreas para análise do sinal aquisitado, bem como realizar o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas. 
 
 Serão aquisitados sinais de todas as amostras com defeitos, com a utilização de sensores fabricados com o polímero PVDF, com terminais que permitem a medição da sua diferença de potencial, quando estes estiverem sujeitos a um esforço mecânico. 
 
-Tendo em vista se tratarem de sensores de alta impedância, se faz necessário isolamento elétrico, afim de mitigar as interferências da fase da rede elétrica e de sinais de rádio incidentes sobre o local de testes, bem como tratamento da tensão resultante de esforço mecânico através de amplificação do sinal. 
+Tendo em vista se tratarem de sensores de alta impedância, se faz necessário isolamento elétrico, a fim de mitigar as interferências da fase da rede elétrica e de sinais de rádio incidentes sobre o local de testes, bem como tratamento da tensão resultante de esforço mecânico através de amplificação do sinal. 
 
 Para tanto, utiliza-se um encapsulamento construído em alumínio, onde se acomoda o filme PVDF, além de amplificador operacional Texas Instruments LM2904, filtro passa alta e filtro passa baixa com regulagem de frequências variáveis. A Figura~\ref{Figura21} mostra o sensor de vibração. 
 
@@ -1136,30 +1153,39 @@ Para tanto, utiliza-se um encapsulamento construído em alumínio, onde se acomo
 \label{Figura21}
 \end{figure} 
 
-A montagem dos sensores se deu em um encapsulamento de alumínio. Estes são acoplados com cola acrílica, afim de que não ocorra amortecimento da vibração devido ao elemento colante. Uma vez montado o aparato, os sinais decorrentes da vibração são aquisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos afim de que se determine a severidade da falha. A Figura~\ref{encapsulamento_sensor} mostra uma montagem do sensor em seu encapsulamento.
+A montagem dos sensores se deu em um encapsulamento de alumínio. Estes são acoplados com cola acrílica, a fim de que não ocorra amortecimento da vibração devido ao elemento colante. Uma vez montado o aparato, os sinais decorrentes da vibração são aquisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos a fim de que se determine a severidade da falha. A Figura~\ref{encapsulamento_sensor} mostra uma montagem do sensor em seu encapsulamento.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=75mm,keepaspectratio]{encapsulamento_sensor}
-\caption {Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelos autores.}
+\caption {Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelo autor.}
 \label{encapsulamento_sensor}
 \end{figure} 
 
-A Figura~\ref{circuito_sensor} mostra o circuito preliminar de condicionamento do sensor piezoelétrico. Neste buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral Texas Instruments LM2904, uma vez que este possui dois canais e larga banda de \SI{1}{\mega\hertz} (Texas Instruments, 2021).
+A Figura~\ref{circuito_sensor} mostra o circuito preliminar de condicionamento do sensor piezoelétrico, elaborado no \textit{software} Proteus. Neste buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral Texas Instruments LM2904, uma vez que este possui dois canais e larga banda de \SI{1}{\mega\hertz} (Texas Instruments, 2021).
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{circuito_sensor}
-\caption {Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelos autores.}
+\caption {Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}
 \label{circuito_sensor}
 \end{figure} 
 
-Para a aquisição de dados, foi construído software de aquisição baseado no microcontrolador STM32, modelo stm32f103. Este foi utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. O software foi desenvolvido em linguagem C, com manipulação dos registradores do microcontrolador e testado com dispositivo gerador de função. A Figura~\ref{medidas_sistema_aquisicao_stm32} mostra a aquisição de um sinal de \SI{5}{\kilo\hertz}, representado através de forma de onda. Para a aquisição do sinal dos rolamentos optou-se por uma taxa de \SI{51,6}{\kilo\hertz}, ou seja, 2,56 vezes a frequência limite de interesse. 
+Para a aquisição de dados, foi construído software de aquisição baseado no microcontrolador STM32, modelo stm32f103, também conhecido como \textit{bluepill}. Este foi utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=50mm,keepaspectratio]{stm32}
+\caption {Microcontrolador STM32F103. Retirado de ST, 2021.}
+\label{stm32}
+\end{figure}
+
+O software foi desenvolvido em linguagem C, com utilização dos registradores do microcontrolador e testado com dispositivo gerador de função. A Figura~\ref{medidas_sistema_aquisicao_stm32} mostra a aquisição de um sinal de \SI{5}{\kilo\hertz}, representado através de forma de onda. Para a aquisição do sinal dos rolamentos optou-se por uma taxa de \SI{51,6}{\kilo\hertz}, ou seja, 2,56 vezes a frequência limite de interesse de \SI{20}{\kilo\hertz} inicialmente adotada. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{medidas_sistema_aquisicao_stm32}
-\caption {Sinal de \SI{5}{\kilo\hertz} capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelos autores.}
+\caption {Sinal de \SI{5}{\kilo\hertz} capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelo autor.}
 \label{medidas_sistema_aquisicao_stm32}
 \end{figure} 
 
@@ -1168,11 +1194,20 @@ Os modelos matemáticos de identificação de frequências características de d
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{sistema_labview}
-\caption {Sistema de aquisição desenvolvido com LabView. Elaborado pelos autores.}
+\caption {Sistema de aquisição desenvolvido com LabView. Elaborado pelo autor.}
 \label{sistema_labview}
 \end{figure} 
 
 Após a captura dos dados, a análise se dará através de nível RMS e Transformada rápida de Fourier. Para a análise dos dados aquisitados através do sistema desenvolvido com o STM32 será utilizada a plataforma Pandas, construída na linguagem de programação python, bem como também mantém-se aberta a possibilidade de utilização da plataforma Octave, alternative livre ao sistema Matlab. Estas são ferramentas de software livre, com licenças do tipo BSD. 
+
+A Figura~\ref{fluxograma_aquisicao} apresenta o fluxo de como se dará o processo.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{fluxograma_funcionamento_sistema}
+\caption {Fluxo de aquisição e processamento. Elaborado pelo autor.}
+\label{fluxograma_aquisicao}
+\end{figure} 
 
 %A depender da qualidade dos resultados preliminares, em particular os níveis de sinal obtidos e quantidade de ruído capturada, admite-se a possibilidade de se fazer necessário empregar os níveis de Curtose e Densidade espectral de potência.  
 
@@ -1180,18 +1215,18 @@ Após a captura dos dados, a análise se dará através de nível RMS e Transfor
 
 A análise dos resultados obtidos se dará à luz da revisão bibliográfica e comparativamente com os resultados encontrados em outros artigos. 
 
-\chapter{Conclusões e próximos passos}
+\chapter{Próximos passos}
 
 Com base na revisão bibliográfica realizada, prevê-se o início dos experimentos seguindo um processo tal qual ilustrado na Figura~\ref{fluxograma_testes}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{fluxograma_testes}
-\caption {Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelos autores.}
+\caption {Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}
 \label{fluxograma_testes}
 \end{figure} 
 
-A partir da montagem da bancada de testes e fixação dos sensores, será possível a aquisição dos dados e análise preliminar destes. Com esta análise, abre-se a possibilidade de um ciclo de possíveis ajustes nos sistemas de aquisição - incluindo-se, aí, o condicionamento do sinal. É esperado, com isso, que se possa consolidar a caracterízação do sinal em relação ao rolamento sadio e que, disto, decorram-se os testes subsequentes com os rolamentos com falhas.
+A partir da montagem da bancada de testes e fixação dos sensores, será possível a aquisição dos dados e análise preliminar destes. Com esta análise, abre-se a possibilidade de um ciclo de possíveis ajustes nos sistemas de aquisição - incluindo-se, o condicionamento do sinal. É esperado, com isso, que se possa consolidar a caracterização do sinal em relação ao rolamento sadio e que, disto, decorram-se os testes subsequentes com os rolamentos com falhas.
 
 Atualmente o trabalho possui as seguintes etapas em estágio de finalização ou finalizadas
 
@@ -1204,13 +1239,33 @@ Atualmente o trabalho possui as seguintes etapas em estágio de finalização ou
 
 A partir da revisão bibliográfica realizada e dos passos já tomados, pretende-se o início dos experimentos. 
 
-Com os dados colhidos e os experimentos realizados, será possível avaliar os sinais aquisitados, verificando-se a corretude do sistema de aquisição, os ajustes de posicionamento dos sensores e, por fim, introdução de falhas nos rolamentos afim de que se diferencie os sinais de um rolamento em bom estado dos sinais de um defeituoso. 
+Com os dados coletados e os experimentos realizados, será possível avaliar os sinais aquisitados, verificando-se a adequação do sistema de aquisição de dados elaborado, os ajustes de posicionamento dos sensores e, por fim, introdução de falhas nos rolamentos a fim de que se diferencie os sinais de um rolamento em bom estado dos sinais de um defeituoso. 
 
 Espera-se, assim, que a questão quanto a possibilidade de utilização do sensor PVDF para detecção de falhas em rolamentos possa ser respondida.
 
+A Tabela~\ref{tab:tabelaCronograma} mostra o cronograma proposto para finalização do trabalho.
+
 
 %A Tabela 1 mostra o cronograma de desenvolvimento.
+\begin{table}[ht]
+\caption {Cronograma proposto para o trabalho. Elaborado pelo autor.}
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
 
+\hline
+Atividade / Mês                        & Junho                  & Jullho                 & Agosto                 & Setembro               & Outubro                & Novembro               & Dezembro               \\ \hline
+Qualificação                           & \multicolumn{1}{c|}{X} &                        &                        &                        &                        &                        &                        \\ \hline
+Ajustes Metodológicos pós qualificação & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} &                        &                        &                        &                        &                        \\ \hline
+Início e condução dos experimentos     &                        & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} &                        &                        &                        \\ \hline
+Análise dos Resultados                 &                        &                        &                        & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} &                        &                        \\ \hline
+Escrita da dissertação                 & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{}  \\ \hline
+Defesa                                 &                        &                        &                        &                        &                        & \multicolumn{1}{c|}{X} &                        \\ \hline
+Revisões e entrega final                &                        &                        &                        &                        &                        &                        & \multicolumn{1}{c|}{X} \\ \hline
+\end{tabular}}
+\label{tab:tabelaCronograma}
+\source{Elaborado pelo autor.}
+\end{table}
 
 
 % ----------------------------------------------------------
@@ -1247,11 +1302,21 @@ Espera-se, assim, que a questão quanto a possibilidade de utilização do senso
  CNI, Confederação Nacional das Indústrias.
   \textbf{Perfil da Indústria Brasileira}.
   Brasil, 2019. Disponível em: Disponível em: https://industriabrasileira.portaldaindustria.com.br/grafico/total/producao/industria-total. Acesso em: 07/06/2021.
- 
+  
+\bibitem{CHATIGNY1987}
+ CHATIGNY, J. V.; ROBB, L. E.
+  \textbf{Sensors: making the most of piezo film}.
+  Sensor Review, Vol. 7, Issue: 1, p.15-20. Reino Unido, 1987.
+  
 \bibitem{FUKADA2000}
   FUKADA E.
   \textbf{History and recent progress in piezoeletric polymers}.
   IEE transactions on ultrasonics, ferroelectrics, and frequency control, vol. 47, 2000.
+
+\bibitem{HALVORSEN1986}
+  HALVORSEN, D. L.
+  \textbf{Properties and applications of piezo film transducers}.
+  Electronics \& power, vol. 32, issue 10, p. 744-746. Reino Unido, 1986.
 
 \bibitem{HARRIS1991}
   HARRIS, T. A.
@@ -1268,6 +1333,11 @@ Espera-se, assim, que a questão quanto a possibilidade de utilização do senso
   \textbf{Fundamentals of Machine Component Design}.
   2ª ed. New York, John Wiley \& Sons, EEUU, 1991.
 
+\bibitem{KABIR2017}
+  KABIR, E.; KHATUN, M.; NASRIN, L.; RAIHAN, M. J.; RAHMAN, M.
+  \textbf{Pure [$ \beta $]-phase formation in polyvinylidene fluoride (PVDF)-carbon nanotube composites}.
+  Journal of Physics D: Applied Physics, vol. 50, n. 16. Reino Unido, 2017.
+
 \bibitem{kardec2009}
   KARDEC, Alan; NASCIF, Júlio.
   \textbf{Manutenção: Função Estratégica}.
@@ -1276,7 +1346,12 @@ Espera-se, assim, que a questão quanto a possibilidade de utilização do senso
 \bibitem{LANG2006}
   LANG S. B.; MUENSIT S.
   \textbf{Review of some lesser-known applications of piezoelectric and pyroeletric polymers}.
-  Journal of applied physics. v. 85, p.125- 134, 2006.
+  Journal of applied physics. v. 85, p.125-134, 2006.
+
+\bibitem{MARUTAKE1995}
+  MARUTAKE, M.
+  \textbf{The days when piezoelectric PVDF was discovered}.
+  Ferroelectrics, v. 171, p.5-6. Reino Unido, 1995.
 
 \bibitem{MEOLA2005}
   MEOLA, Tatiana.
@@ -1294,13 +1369,33 @@ DIAS JR, Milton; PEDERIVA, Robson.
   \textbf{Técnicas de Manutenção Preditiva}.
   Editora Edgard.1 ed. São Paulo: Blücher, 1989. 1 v.
 
+\bibitem{NSK2014}
+ NSK BRASIL.
+  \textbf{NSK Bearing Doctor, Diagnóstico Rápido de Ocorrências em Rolamentos}.
+  São Paulo, 2014. 36p.
+  
+\bibitem{NSK2018}
+ NSK.
+  \textbf{NSK New Bearing Doctor. Diagnosis of bearing problems. Objective: Smooth \& reliable operation}.
+  Japão, 2018. 23p.
+ 
+\bibitem{omega2021}
+ OMEGA.
+  \textbf{Aquisição de Dados}.
+  Brasil, 2021. Disponível em: https://br.omega.com/prodinfo/aquisicao-de-dados.html. Acesso em: 07/06/2021.
+
 \bibitem{Rao2008}
  RAO, Singiresu S.
   \textbf{Mechanical Vibrations}.
   4.ed. São Paulo: Pearson Prentice Hall, 2008.
+
+\bibitem{SANTOS2017}
+    SANTOS, Ana P. A. dos; BATISTA, Fabiana R. R.; PINTO, Juliana de O.; BENINI, Lucas.
+  \textbf{Processos de Fabricação: rolamentos rígidos de esferas}.
+  The Journal of Engineering and Exact Sciences, "Eu, a Indústria e o Mundo", vol. 03. Brasil, 2017.  
   
 \bibitem{SILVA2009}
-    SILVA, ALINE BRUNA da.
+    SILVA, Aline Bruna da.
   \textbf{Processamento, caracterização e determinação do perfil de polarização do Poli(fluoreto de vinilideno)}.
   São Carlos: UFSCar, 2009.
 
@@ -1308,6 +1403,11 @@ DIAS JR, Milton; PEDERIVA, Robson.
  SLACK, Nigel.
   \textbf{Administração da Produção}.
   2.ed. São Paulo: Atlas, 2008.
+  
+  \bibitem{SKF2021}
+ SKF.
+  \textbf{Vida nominal do rolamento}.
+  Brasil, 2021. Disponível em https://www.skf.com/br/products/rolling-bearings/principles-of-rolling-bearing-selection/bearing-selection-process/bearing-size/size-selection-based-on-rating-life/bearing-rating-life. Acesso em: 07/06/2021.
 
 \bibitem{WISNIEWSKI2002}
     WISNIEWSKI, C; FERREIRA, G. F. L.; FARIA, R. M.; GIACOMETTI, J. A.

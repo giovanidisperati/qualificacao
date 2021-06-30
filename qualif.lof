@@ -2,8 +2,8 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Representação dos níveis de um sinal harmônico. Retirado de Meola, 2005.}}{20}{figure.3.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Relação entre os valores de Pico e RMS com o desgaste progressivo de rolamentos. Retirado de Meola, 2005.}}{21}{figure.3.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Fator de Crista no tempo.}}{21}{figure.3.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces a) Componentes de um rolamento. (b) Dimensões do rolamento. Mesquita et al. 2002 apud Santos et al. 2017}}{23}{figure.3.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces a) Processo de fabricação dos anéis internos e externos. Retirado de Dos Santos et al., 2017.}}{25}{figure.3.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces a) Componentes de um rolamento. (b) Dimensões do rolamento. Retirado de Mesquita et al. 2002}}{23}{figure.3.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces a) Processo de fabricação dos anéis internos e externos. Retirado de SANTOS et al., 2017.}}{25}{figure.3.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Anéis internos de rolamentos apresentando escamamento. Retirado de NSK, 2014.}}{28}{figure.3.6}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Pista de rolamento com descascamento. Retirado de NSK, 2014.}}{29}{figure.3.7}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Rolamentos com amassados e arranhaduras. Retirado de NSK, 2014.}}{29}{figure.3.8}%
@@ -22,15 +22,18 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces Rolamentos com oxidações e corrosões. Retirado de NSK, 2014.}}{36}{figure.3.21}%
 \contentsline {figure}{\numberline {22}{\ignorespaces Rolamentos com falhas de instalação. Retirado de NSK, 2014.}}{36}{figure.3.22}%
 \contentsline {figure}{\numberline {23}{\ignorespaces Manchas e descoloração em rolamentos. Retirado de NSK, 2014.}}{37}{figure.3.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Estrutura molecular do PVDF. Retirado de Xin, 2016.}}{38}{figure.3.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Rolamento utilizado na bancada de testes. Retirado de NSK, 2018.}}{46}{figure.4.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK.}}{47}{figure.4.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK.}}{48}{figure.4.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Bancada experimental.}}{49}{figure.4.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Bancada experimental. Elaborado pelos autores.}}{50}{figure.4.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{51}{figure.4.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelos autores.}}{52}{figure.4.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelos autores.}}{52}{figure.4.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Sinal de \SI {5}{\kilo \hertz } capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelos autores.}}{53}{figure.4.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Sistema de aquisição desenvolvido com LabView. Elaborado pelos autores.}}{54}{figure.4.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelos autores.}}{55}{figure.5.35}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Estrutura molecular do PVDF. Retirado de Xin, 2016.}}{39}{figure.3.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{46}{figure.4.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{47}{figure.4.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{48}{figure.4.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Projeto da bancada experimental. Elaborado pelo autor.}}{49}{figure.4.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Projeto da bancada experimental visto lateralmente. Elaborado pelo autor.}}{49}{figure.4.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Bancada experimental. Elaborado pelo autor.}}{50}{figure.4.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{51}{figure.4.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelo autor.}}{52}{figure.4.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{52}{figure.4.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{53}{figure.4.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Sinal de \SI {5}{\kilo \hertz } capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelo autor.}}{53}{figure.4.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Sistema de aquisição desenvolvido com LabView. Elaborado pelo autor.}}{54}{figure.4.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Fluxo de aquisição e processamento. Elaborado pelo autor.}}{55}{figure.4.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{56}{figure.5.38}%
