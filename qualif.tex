@@ -8,7 +8,7 @@
 	oneside,			
 	a4paper,			
 	english,			
-	brazil				
+	brazil,			
 	]{abntex2ppgsi}
 
 % ---s
@@ -30,7 +30,8 @@
 \usepackage{siunitx}		
 \usepackage{multirow}	
 \usepackage{amsmath}
-\usepackage{tocloft}
+\usepackage{float}
+\usepackage{blindtext}
 
 % ---
 % Pacotes de citações
@@ -81,8 +82,9 @@
 
 %
 %-------------------------------------------------------------------------
-\titulo{Análise de falha em rolamentos por análise de vibração com utilização de sensor piezoelétrico polimérico}
+%\titulo{Análise de falha em rolamentos por análise de vibração com utilização de sensor piezoelétrico polimérico}
 
+\titulo{Monitoramento de danos em rolamentos por análise de vibração com utilização de sensor filme PVDF}
 
 %-------------------------------------------------------------------------
 \autor{\uppercase{GIOVANI FONSECA RAVAGNANI DISPERATI}}
@@ -172,6 +174,27 @@ Texto de qualificação apresentado ao Departamento de Engenharia Mecânica do I
 % ----
 % Início do documento
 % ----
+
+\renewcommand{\theequation}{\arabic{equation}}
+
+\newcommand{\listequationsname}{Lista de Equações}
+\newlistof{listofequations}{equ}{\listequationsname}
+%\setlength{\cftmyequationsindent}{1.5em}
+\newcommand{\myequation}[1]{%
+	\addcontentsline{equ}{equation}{\protect\numberline{\theequation}#1}\par
+	%\setlength{\cftmyequationnumwidth}{2em}% Width of equation number in List of Equations
+}
+%\LetLtxMacro{\LaTeXEquation}{\equation}%
+%\let\LaTeXEndEquation\endequation%
+%\renewenvironment{equation}[1][]{%
+%\LaTeXEquation%
+%\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}%
+%}%
+%{\LaTeXEndEquation}
+\makeatletter
+\let\l@equation\l@toc
+\makeatother
+
 \begin{document}
 
 % Retira espaço extra obsoleto entre as frases.
@@ -249,6 +272,15 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 % ---
 
 % ---
+% inserir lista de equações
+% ---
+\listofequations*
+\cleardoublepage
+
+
+% ---
+
+% ---
 % inserir lista de abreviaturas e siglas
 % ---
 %-------------------------------------------------------------------------
@@ -262,11 +294,11 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 %
 %-------------------------------------------------------------------------
 \begin{siglas}
-  \item[PVDF] Fluoreto de Polivinilideno
   \item[BPFI] Ball Pass Frequency Inner Race
   \item[BPFO] Ball Pass Frequency Outer Race
   \item[BSF] Ball Spin Frequency 
   \item[DAQ] Data Acquisition
+  \item[PVDF] Fluoreto de Polivinilideno
 \end{siglas}
 % ---
 
@@ -289,15 +321,6 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
   \item[$ \in $] Pertence
 \end{simbolos}
 % ---
-
-%\newcommand{\listadeequacoesnome}{\center{\textbf{Lista de Equações}} \\}
-%\newlistof{equations}{equ}{\listadeequacoesnome}
-%\newcommand{\listadeequacoes}[1]{%
-%\addcontentsline{equ}{listadeequacoes}{\protect\numberline{\theequation}#1}\par}
-%\setlength{\cftequationsnumwidth}{2.5em}% Width of equation number in List of Equations
-
-%\listadeequacoesnome
-%\cleardoublepage
 
 % ---
 % inserir o sumario
@@ -330,7 +353,7 @@ Dentre os diversos elementos de máquina um dos mais comuns são os rolamentos, 
 
 Tem-se vários tipos de polímeros, sendo os de maior interesse tecnológico os eletroativos, capazes de realizar a conversão entre energia elétrica e energia mecânica. Em outras palavras, estes polímeros apresentam alteração em seu tamanho e/ou forma quando são sujeitos a um campo elétrico. Alguns  materiais dentro desta família apresentam também outro efeito: geram um sinal elétrico quando sujeitos a uma força. Devido a estas caraterísticas, os polímeros eletroativos são ideais para a aplicação em sensores e atuadores, onde por sua baixa massa especifica, substituem sistemas pesados e complexos, possibilitando projetos de novas aplicações devido a uma implementação e miniaturização mais simples (BAR-COHEN, 2002).
 
-O fluoreto de polivinilideno, conhecido pela sigla PVDF, apresenta características piezo e piroelétricas, além de elevada estabilidade e resistência química e física que, combinadas ao fácil processamento deste material, o tornam um excelente elemento para utilização tecnológica. O PVDF é um material semicristalino flexível e de baixo custo de fabricação, de fácil usinagem, múltiplas aplicações e com grande resistência química (Fukada, 2000; Lang, 2006). O PVDF foi descoberto em 1969 por Kawai, sendo um material novo com utilização perpassando uma variedade de campos, desde sensores para medição de vibrações mecânicas até a construção de canos e dutos para transporte de água ultrapura. A sua cristalização ocorre em pelo menos quatro fases distintas, $\alpha$, $\beta$, $\gamma$ e $\delta$ (SILVA, 2009). A fase $\beta$ é caracterizada por possuir comportamento piezo e piroelétrico (WISNIEWSKI, 2002).
+O fluoreto de polivinilideno, conhecido pela sigla PVDF, apresenta características piezo e piroelétricas, além de elevada estabilidade e resistência química e física que, combinadas ao fácil processamento deste material, o tornam um excelente elemento para utilização tecnológica. O PVDF é um material semicristalino flexível e de baixo custo de fabricação, de fácil usinagem, múltiplas aplicações e com grande resistência química (FUKADA, 2000; LANG, 2006). O PVDF foi descoberto em 1969 por Kawai, sendo um material novo com utilização perpassando uma variedade de campos, desde sensores para medição de vibrações mecânicas até a construção de canos e dutos para transporte de água ultrapura. A sua cristalização ocorre em pelo menos quatro fases distintas, $\alpha$, $\beta$, $\gamma$ e $\delta$ (SILVA, 2009). A fase $\beta$ é caracterizada por possuir comportamento piezo e piroelétrico (WISNIEWSKI, 2002).
 
 O tema deste trabalho surge da proposta de se avaliar o filme PVDF como sensor de vibração com finalidades de manutenção preditiva, em particular, aqui, aplicado a falhas de rolamentos, uma vez que este sensor possui baixo custo e, desta forma, mostra-se como possível alternativa aos acelerômetros cerâmicos costumeiramente utilizados para esta finalidade. O componente econômico, portanto, se faz basilar neste trabalho. 
 
@@ -382,7 +405,7 @@ Neste capítulo propõe-se uma revisão bibliográfica acerca dos principais con
 Estes tópicos embasam o posterior desenvolvimento do trabalho e os experimentos que serão apresentados nos capítulos seguintes.
 
 \section{\textbf{Manutenção}}
-Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios que permitam a produção (Nepomuceno, 1989), estes meios podem variar desde instrumentos simples, como tesouras, agulhas e novelos de lã, até maquinário industrial de alta complexidade. Em qualquer destes casos sempre surgem as questões de desgaste, avarias, quebras e fraturas, dentre outros possíveis problemas. Portanto, em toda atividade produtiva  há necessidade de manutenção, sem a qual a produção colapsa (NEPOMUCENO, 1989).
+Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios que permitam a produção. Estes meios podem variar desde instrumentos simples, como tesouras, agulhas e novelos de lã, até maquinário industrial de alta complexidade. Em qualquer destes casos sempre surgem as questões de desgaste, avarias, quebras e fraturas, dentre outros possíveis problemas. Portanto, em toda atividade produtiva  há necessidade de manutenção, sem a qual a produção colapsa (NEPOMUCENO, 1989).
 
 	Usualmente classifica-se a manutenção em três formas distintas: corretiva, preventiva e preditiva (HOLANDA, 2016). 
 
@@ -403,7 +426,7 @@ Para Nepomuceno, 1989, a manutenção preditiva tem por finalidade permitir que 
 
 %\end{citacao}
 
-Assim, portanto, segundo Slack, 2008, p.645 “a manutenção preditiva visa realizar manutenção somente quando as instalações precisarem dela”. 
+Neste sentido, segundo Slack, 2008, a manutenção preditiva visa que se realize o processo de manutenção apenas quando for necessário para as instalações. 
 
 Ainda de acordo com Nepomuceno, 1989, quando se estuda a manutenção preditiva esta, em uma análise superficial, parece demasiadamente dispendiosa. Há a evidente necessidade de medição e análise de diversos parâmetros e, para tanto, são necessários instrumentos de análise e medição, além de alteração de processos convencionais de medição e controle da condição do maquinário. Entretanto, analisando mais detalhadamente esta questão percebe-se que a manutenção preditiva apresenta vantagens que a tornam economicamente viável. Dentre outras, cita-se: 
 
@@ -418,11 +441,7 @@ Ainda de acordo com Nepomuceno, 1989, quando se estuda a manutenção preditiva 
 	\item Diminuição sensível, ou mesmo eliminação, da manutenção corretiva;
 \end{itemize}
 
-Além destes argumentos Holanda, 2016, chama a atenção para o fato de a manutenção preditiva ter como benefício colateral a capacidade de determinação automática do Tempo Médio Entre Falhas, MTBF (\textit{Mean Time Between Failures}). Segundo Holanda, 2016, o MTBF 
-
-\begin{citacao}
-Esse indicador fornece os subsídios para se determinar o tempo mais efetivo em termos de custo para substituir o maquinário, ao invés de continuar a absorver altos custos de manutenção. No momento em que o MTBF atinge o ponto no qual os custos de manutenção e de operação do equipamento excederem os custos da substituição, a máquina deve ser substituída. (Holanda, 2016)
-\end{citacao}
+Além destes argumentos Holanda, 2016, chama a atenção para o fato de a manutenção preditiva ter como benefício colateral a capacidade de determinação automática do Tempo Médio Entre Falhas, MTBF (\textit{Mean Time Between Failures}). Segundo Holanda, 2016, o MTBF fornece subsídios para que se determine o tempo mais efetivo em termos de custo para substituição do maquinário. Evita-se, assim, a absorção de altos custos de manutenção, uma vez que uma vez que o MTBF atinge o ponto no qual custos de manutenção e operação excedem os de substituição, a mesma é realizada. 
 
 Para a condução de um processo de manutenção preditiva existem diferentes técnicas. Holanda (2016) cita como as principais técnicas: 
 \begin{itemize}
@@ -441,19 +460,20 @@ Assim, a manutenção preditiva baseada em análise de vibrações, aplicada à 
 
 Para que se possa abordar as técnicas de manutenção preditiva baseada em análise de vibrações faz-se necessário, primeiramente, um breve entendimento relativo ao fenômeno das vibrações mecânicas. 
 
-Segundo Rao, 2008
+Segundo Rao, 2008, a maior parte das atividades humanas envolve vibração, sendo este um fenômeno que acontece constantemente na natureza e no cotidiano. Nepomuceno, 1989, afirma que as vibrações mecânicas são fenômenos observados quando uma partícula realiza um movimento entorno uma posição de equilíbrio. Assim, quando há mudança de energia cinética para energia potencial e vice-versa, ocorre a vibração. 
 
-\begin{citacao}
-A maioria das atividades humanas envolve vibração de uma forma ou outra. Por exemplo, ouvimos porque nossos tímpanos vibram, e vemos porque as ondas de luz sofrem vibração. A respiração está associada à vibração dos pulmões, e andar envolve movimento oscilatório (periódicos de pernas e mãos). Falamos devido ao movimento oscilatório da laringe (e da língua). (RAO, 2008)
-\end{citacao}
+%\begin{citacao}
+%A maioria das atividades humanas envolve vibração de uma forma ou outra. Por exemplo, ouvimos porque nossos tímpanos vibram, e vemos porque as ondas de luz sofrem vibração. A respiração está associada à vibração dos pulmões, e andar envolve movimento oscilatório (periódicos de pernas e mãos). Falamos devido ao movimento oscilatório da laringe (e da língua). (RAO, 2008)
+%\end{citacao}
 
-Ainda, segundo Holanda, 2016, as vibrações mecânicas são fenômenos que acontecem constantemente na natureza e no cotidiano humano. Holanda define vibração mecânica como
 
-\begin{citacao}
-\,[...]um tipo de movimento no qual se considera uma massa reduzida a um ponto submetido a uma força. A ação dessa força obriga o ponto a executar um movimento oscilatório. Para que o movimento oscilatório do ponto se constitua numa vibração, ele deverá percorrer uma trajetória denominada trajetória completa ou ciclo, conhecida pelo nome de período de oscilação. (HOLANDA, 2016)
-\end{citacao}
+%\begin{citacao}
+%\,[...]um tipo de movimento no qual se considera uma massa reduzida a um ponto submetido a uma força. A ação dessa força obriga o ponto a executar um movimento oscilatório. Para que o movimento oscilatório do ponto se constitua numa vibração, ele deverá percorrer uma trajetória denominada trajetória completa ou ciclo, conhecida pelo nome de período de oscilação. (HOLANDA, 2016)
+%\end{citacao}
 
-Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos observados quando uma partícula realiza um movimento entorno uma posição de equilíbrio. Assim, quando há mudança de energia cinética para energia potencial e vice-versa, ocorre a vibração. Quando um corpo oscila em períodos determinados ao redor de uma posição de equilíbrio, caracteriza-se este movimento como Movimento Harmônico, forma mais simples que a vibração pode se apresentar (HOLANDA, 2016). Holanda, 2016, apresenta como exemplo disto o movimento do pêndulo de um relógio, que oscila da máxima posição à direita até a máxima posição à esquerda, passando pelo ponto central de equilíbrio. 
+%, p.229
+
+Quando um corpo oscila em períodos determinados ao redor de uma posição de equilíbrio, caracteriza-se este movimento como Movimento Harmônico, forma mais simples que a vibração pode se apresentar (HOLANDA, 2016). Holanda, 2016, apresenta como exemplo disto o movimento do pêndulo de um relógio, que oscila da máxima posição à direita até a máxima posição à esquerda, passando pelo ponto central de equilíbrio. Quando este movimento oscilatório do ponto percorre uma trajetória completa, dá-se o nome de período de oscilação.  
 
 %Este movimento é graficamente representado como uma senoide, conforme mostrado na Figura 16, abaixo.
 
@@ -466,34 +486,47 @@ Nepomuceno, 1989, p.229 afirma que as vibrações mecânicas são fenômenos obs
 
 Ressalta-se que o tempo que a massa demora para realizar uma oscilação, ou movimento harmônico simples, é chamado de período. Uma oscilação por segundo, ou um ciclo por segundo, CPS, constitui uma medida de frequência denominada Hertz (NEPOMUCENO, 1989). 
 
-Em relação ao movimento harmônico simples, ou oscilação, Nepomuceno, 1989, p.233 ressalta que
+%Em relação ao movimento harmônico simples, ou oscilação, Nepomuceno, 1989, afirma que nos casos práticos, 
 
-\begin{citacao}
-Nos casos práticos, existem inúmeros osciladores mecânicos que são dispositivos que dão origem a oscilações simples, principalmente às amplitudes pequenas ou então fornecem combinações de oscilações. É importante observar que todo e qualquer sistema que obedeça a Lei de Hooke é apto a oferecer tal tipo de vibrações. (Nepomuceno, 1989, p.233)
-\end{citacao}
+%\begin{citacao}
+%Nos casos práticos, existem inúmeros osciladores mecânicos que são dispositivos que dão origem a oscilações simples, principalmente às amplitudes pequenas ou então fornecem combinações de oscilações. É importante observar que todo e qualquer sistema que obedeça a Lei de Hooke é apto a oferecer tal tipo de vibrações. (Nepomuceno, 1989, p.233)
+%\end{citacao}
 
 Para que se mensure os níveis de vibração, utiliza-se parâmetros expressos em termos de deslocamento, velocidade e aceleração (Holanda, 2016). Segundo Kardec e Nascif, 2009 \textit{apud} Holanda, 2016 todos os três parâmetros representam “o quanto o equipamento está vibrando”. 
 
 Além disso, estes parâmetros possuem amplitude, frequência e fase. A amplitude, A, se relaciona com a quantidade de energia contida no sinal vibratório, ou seja, a severidade do movimento, sendo medida em milímetros (mm). Pode ser medida em forma de deslocamento, velocidade e aceleração. A frequência, f, conforme anteriormente mencionado, é representada em Hertz e indica o número de vezes em que ocorre um ciclo completo de movimento. Já a fase, $\upphi$, representa “o ângulo inicial do argumento da função senoidal que descreve o movimento harmônico” (HOLANDA, 2016, p. 22).
 
-Já em relação às formas de mensuração, o Deslocamento é medido em micrometros (\SI{}{\micro\metre}). De acordo com Holanda, 2016, p.21 o deslocamento pode ser medido pelo nível de distanciamento do ponto relativo à sua posição de repouso, sendo a “unidade mais óbvia para se mensurar a vibração, pois é aquela que mais se aproxima da ideia de oscilação em torno de um ponto médio”. O deslocamento é recomendado para medições abaixo de 10Hz (HOLANDA, 2016). A fórmula abaixo representa o deslocamento, x:
+%p.21 
 
-%\begin{equation}\label{eq:Eq1}
-%   x = A \,sen (\omega t + \upphi)
-%\end{equation}
-%\listadeequacoes{Equation number \ref{eq:Eq1}}
+Já em relação às formas de mensuração, o Deslocamento é medido em micrometros (\SI{}{\micro\metre}). De acordo com Holanda, 2016, o deslocamento pode ser medido pelo nível de distanciamento do ponto relativo à sua posição de repouso, sendo a unidade mais intuitiva para a mensuração da vibração, visto que é aquuela que mais se assemelha à ideia de oscilação em torno de um ponto. O deslocamento é recomendado para medições abaixo de 10Hz (HOLANDA, 2016). A e abaixo representa o deslocamento, x:
 
-\[x = A \,sen (\omega t + \upphi)\]
+\begin{equation}
+	x = A \,sen (\omega t + \upphi)
+	\label{eq:Equação de deslocamento}
+\end{equation}
 
-A velocidade, por sua vez, é medida em milímetros por segundo ($mm/s$). A velocidade é a derivada primeira do deslocamento. O deslocamento implica na existência de uma velocidade que, por sua vez, pode ser variável. A função de velocidade, v, é dada por:
+%\[x = A \,sen (\omega t + \upphi)\]
 
-\[v = A\omega \,cos (\omega t + \upphi)\]
+A velocidade, por sua vez, é medida em milímetros por segundo ($mm/s$). A velocidade é a derivada primeira do deslocamento. O deslocamento implica na existência de uma velocidade que, por sua vez, pode ser variável. A função de velocidade, v, é dada pela equação~\ref{eq:Equação de Velocidade}
+
+\begin{equation}
+	v = A\omega \,cos (\omega t + \upphi)
+	\label{eq:Equação de Velocidade}
+\end{equation}
+
+
+%\[v = A\omega \,cos (\omega t + \upphi)\]
 
 Holanda, 2016, p.21 afirma que a velocidade de vibração é parâmetro “menos representativo para componentes tanto de baixa como de alta frequência, sendo o parâmetro normalmente escolhido para avaliação da severidade de vibração entre 10 Hz e 1000 Hz”.
 
-A aceleração, por sua vez, é medida em metros por segundo ao quadrado ($m/s^{2}$). Com velocidade variável, implica-se a existência de uma aceleração no movimento. A fórmula que representa a aceleração, a, é:
+A aceleração, por sua vez, é medida em metros por segundo ao quadrado ($m/s^{2}$). Com velocidade variável, implica-se a existência de uma aceleração no movimento. A equação que representa a aceleração, a, é:
 
-\[a = -A^{2} \omega \,sen (\omega t + \upphi)\]
+\begin{equation}
+	a = -A^{2} \omega \,sen (\omega t + \upphi)
+	\label{eq: Equação de Aceleração}
+\end{equation}
+
+%\[a = -A^{2} \omega \,sen (\omega t + \upphi)\]
 
 Limitando-se o escopo de abrangência, este fenômeno das vibrações, na engenharia, é um item de alta relevância para estudo visto que os efeitos das vibrações podem ser nocivos, ou mesmo catastróficos, ao se considerar maquinário industrial. 
 
@@ -508,19 +541,31 @@ Nepomuceno, 1989, p.206 afirma que a medida e monitoramento da vibração é uma
 
 Em relação à análise no domínio do tempo, Segundo Spamer, 2009, p.62 \textit{apud} Holanda, 2016, p.22 a amplitude de vibração em função do tempo pode ser medida em valores de pico a pico, valor de pico e valor RMS. Meola, 2005, afirma que o valor de pico a pico sinaliza a excursão máxima da onda, medida relevante para definição de quando um elemento da máquina atinge valores críticos. Já o valor de pico, de acordo com Meola, 2005, indica níveis máximos de sinais transientes, sem considerar a cronologia da onda. O valor médio, por sua vez, indica o quanto o sinal está deslocado à sua referência tendo pouca relevância quanto ao monitoramento da vibração. 
 
-Já o valor RMS, ou eficaz, é, de acordo com Meola, 2005, p.9
+%, p.9
 
-\begin{citacao}
-\,[...]uma das medidas mais importantes de amplitude, uma vez que quantifica a energia que está diretamente ligada ao fenômeno estudado, no caso é um indicativo do poder destrutivo da vibração. É muito utilizado como parâmetro global para determinação de níveis de alerta e alarme usados em procedimentos de manutenção preditiva.
-\end{citacao}
+Já o valor RMS, ou eficaz, é, de acordo com Meola, 2005, uma das medidas mais relevantes de amplitude, já que esta quantifica a energia diretamente ligada à vibração e, portanto, é um indicador do poder destrutivo desta. O nível RMS é, por este motivo, muito utilizado como parâmetro para determinação de níveis de alerta e alarme em manutenção preditiva (MEOLA, 2005).
+
+%\begin{citacao}
+%\,[...]uma das medidas mais importantes de amplitude, uma vez que quantifica a energia que está diretamente ligada ao fenômeno estudado, no caso é um indicativo do poder destrutivo da vibração. É muito utilizado como parâmetro global para determinação de níveis de alerta e alarme usados em procedimentos de manutenção preditiva.
+%\end{citacao}
 
 A relação entre os níveis de pico, o nível médio, é dada por:
 
-\[Nivel \, M\acute{e}dio = \frac{1}{T} \int_{0}^{T} x(t)dt \]
+\begin{equation}
+	Nivel \, M\acute{e}dio = \frac{1}{T} \int_{0}^{T} x(t)dt
+	\label{eq: Nível Médio}
+\end{equation}
 
-Já o nível eficaz, ou nível RMS, de um sinal harmônico é dado por:
+%\[Nivel \, M\acute{e}dio = \frac{1}{T} \int_{0}^{T} x(t)dt \]
 
-\[Nivel \, RMS = \sqrt{ \frac{1}{T} \int_{0}^{T} x^{2}(t)dt }  \]
+Já o nível eficaz, ou nível RMS, de um sinal harmônico é dado pela equação~\ref{eq: Nível RMS}
+
+\begin{equation}
+	Nivel \, RMS = \sqrt{ \frac{1}{T} \int_{0}^{T} x^{2}(t)dt }
+	\label{eq: Nível RMS}
+\end{equation}
+
+%\[Nivel \, RMS = \sqrt{ \frac{1}{T} \int_{0}^{T} x^{2}(t)dt }  \]
 
 A Figura~\ref{RelacaoSinalHarmonico} exemplifica a relação estes níveis.
 
@@ -533,7 +578,12 @@ A Figura~\ref{RelacaoSinalHarmonico} exemplifica a relação estes níveis.
 
 De acordo com Meola, 2005 \textit{apud} Tandon, 1999 os métodos mais comuns de detecção de falhas no domínio do tempo são o nível RMS e o Fator de Crista, que representa a razão entre o valor de pico e o valor RMS de aceleração. O Fator de Crista, FC, considera a variação do pico e do valor RMS. Considerando-se mancais de rolamentos, Meola afirma que a diferença entre estes é de aproximadamente 3dB, dada por:
 
-\[20log_{10} \left ( \frac{Nivel \,Pico}{Nivel \, RMS} \right ) \]
+\begin{equation}
+	20log_{10} \left ( \frac{Nivel \,Pico}{Nivel \, RMS} \right )
+	\label{eq: Nível de Pico vs RMS}
+\end{equation}
+
+%\[20log_{10} \left ( \frac{Nivel \,Pico}{Nivel \, RMS} \right ) \]
 
 Esta diferença aumenta progressivamente com o surgimento de defeitos, até atingir valor aproximado de 18dB quando, devido ao desgaste geral do rolamento, tal diferença volta a diminuir (MEOLA, 2005). Assim, ao retornar para aproximadamente 3dB a falha é iminente e o rolamento deverá ser trocado. 
 
@@ -551,22 +601,22 @@ Já a Figura~\ref{FatorCrista} demonstra o comportamento do Fator de Crista no t
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=50mm,keepaspectratio]{Figura19}
-\caption {Fator de Crista no tempo.}
+\caption {Fator de Crista no tempo. Retirado de Meola, 2005.}
 \label{FatorCrista}
 \end{figure}	
 
-Outro relevante método para detecção de falhas é a curtose. Neste, os momentos estatísticos são utilizados para descrever o comportamento de variáveis aleatórias. A curtose é utilizada na detecção de falhas incipientes em rolamentos. Segundo Mesquita et al., 2002
+Outro relevante método para detecção de falhas é a curtose. Neste, os momentos estatísticos são utilizados para descrever o comportamento de variáveis aleatórias. Segundo Mesquita et al. 2002, há diversos momentos estatísticos que podem indicar a forma da densidade de probabilidade, sendo a curtose, proposta por Dyer e Stewart, utilizada na detecção de falhas incipientes em rolamentos. O fator de Curtose trata-se do quarto momento estatístico normalizado quanto ao desvio padrão elevado a quarta potência. A curtose é descrita da seguinte forma:
 
-\begin{citacao}
-A Densidade de Probabilidade do sinal de aceleração de um rolamento também pode ser usada para a detecção de falhas em rolamentos. Um rolamento em boas condições possui uma distribuição Gaussiana de aceleração, enquanto que o rolamento defeituoso produz uma distribuição não-gaussiana devido ao aumento no número dos altos níveis de aceleração.
-Vários momentos estatísticos podem ser usados para indicar a forma da densidade de probabilidade. Dyer e Stewart propuseram o Fator de Curtose, que é o quarto momento estatístico, normalizado em relação ao desvio padrão elevado a quarta potência.
-\end{citacao}
+\begin{equation}
+	K = \frac{ \int_{-\infty}^{+\infty} (x - \overline{x})^{4}p(x)dx } {\sigma^{4}}
+	\label{eq: Fator de Curtose}
+\end{equation}
 
-A curtose é descrita da seguinte forma:
+Ainda segundo Mesquita et al., 2002, a curtose rolamento em boas condições possui distribuição Gaussiana de aceleração, ao passo que rolamentos defeituosos apresentam distribuição não-Gaussiana dado o aumento no número dos altos níveis de aceleração. 
 
-\[K = \frac{ \int_{-\infty}^{+\infty} (x - \overline{x})^{4}p(x)dx } {\sigma^{4}} \]
+%\[K = \frac{ \int_{-\infty}^{+\infty} (x - \overline{x})^{4}p(x)dx } {\sigma^{4}} \]
 
-Onde $p(x)$ é a função de densidade de probabilidade e $\overline{x}$ o valor médio do sinal de vibração \textit{x(t)}. Segundo Mesquita et al. 2002, o fator de curtose para mancais em bom estado é igual a três, sendo que este valor tende a aumentar conforme o rolamento se deteriora. 
+Na equação~\ref{eq: Fator de Curtose} $p(x)$ é a função de densidade de probabilidade e $\overline{x}$ o valor médio do sinal de vibração \textit{x(t)}. Segundo Mesquita et al. 2002, o fator de curtose para mancais em bom estado é igual a três, sendo que este valor tende a aumentar conforme o rolamento se deteriora. 
 
 Os métodos descritos, de análise de falhas no domínio do tempo, são capazes de indicar o surgimento da falha. Entretanto, tais métodos não são capazes de apontar onde se localiza tal falha. Para isto, faz-se necessário a utilização de análise no domínio da frequência. 
 
@@ -586,11 +636,7 @@ A Figura~\ref{ComponentesRolamentos} demonstra os componentes de um rolamento de
 \label{ComponentesRolamentos}
 \end{figure}
 
-Segundo a NSK (2018), 
-
-\begin{citacao}
-Atualmente, os rolamentos são uma das peças de máquina mais comumente usadas porque seu movimento de rolamento torna quase todos os movimentos mais fáceis e ajudam a reduzir a fricção. Rolamentos têm duas funções-chave: transferem movimento, isto é, suportam e guiam componentes que giram um em relação ao outro; transmitem forças.
-\end{citacao}
+Segundo a NSK (2018), rolamentos são um dos elementos de máquinas mais utilizados, visto que seu movimento rotacional torna demais movimentos mais fáceis e ajudam a reduzir fricção. Estes elementos têm dupla-função, realizando tanto a transferência de movimento, ou seja, guiando e suportando componentes que giram em relação um a outro, bem como a transmissão de forças.
 
 Em comparação aos mancais de deslizamento, os rolamentos apresentam vantagens como: torque de partida e atrito baixos, com diferença entre torque de partida e torque de funcionamento pequenos; grande padronização internacional, facilitando sua substituição; dentre outras (NSK, 2018).
 
@@ -640,22 +686,28 @@ A vida nominal básica de um rolamento é dada na norma ISO 281:2007, que també
 
 Para a vida nominal básica temos na ISO 281:2007 que:
 
-\[L_{10}= \left ( \frac{C}{P} \right )^{p}  \]
+\begin{equation}
+	L_{10}= \left ( \frac{C}{P} \right )^{p}
+	\label{eq: Vida Nominal Básica}
+\end{equation}
+
+%\[L_{10}= \left ( \frac{C}{P} \right )^{p}  \]
 
 Onde $L_{10}$ é a vida nominal básica, com 90\% de confiabilidade, expressa em milhões de revoluções; C é a classificação da carga dinâmica básica, em kN; P é a carga dinâmica equivalente do rolamento, em kN; e, por fim, p é o expoente da equação de vida, que é 3 para rolamentos de esferas e 10/3 para rolamentos de rolos (SKF, 2019).
 
 Se a velocidade for constante, por sua vez, torna-se preferível calcular a vida útil em horas de operação (SKF, 2019). Para tanto, utiliza-se :
 
-\[L_{10h}= \frac{10^{6}}{60_{n}}L_{10}\]
+\begin{equation}
+	L_{10h}= \frac{10^{6}}{60_{n}}L_{10}
+	\label{eq: Vida Útil em Horas}
+\end{equation}
+
+%\[L_{10h}= \frac{10^{6}}{60_{n}}L_{10}\]
 
 Onde $L_{10h}$ é a vida nominal básica, com 90\% de confiabilidade, expressa em horas operacionais e n é a velocidade de rotação, em rotações por minuto. 
 Para que se possa calcular a vida nominal básica de um rolamento usando as classificações de cargas dinâmicas básicas é necessário, entretanto, que esta seja convertida, primeiramente, em carga dinâmica equivalente do rolamento. A carga dinâmica equivalente do rolamento, P, é “definida como uma carga hipotética, com magnitude e direção constantes, que atua radialmente em rolamentos radiais e axial e centralmente em rolamentos axiais” (SKF, 2019). Esta carga hipotética teria influência na vida do rolamento igual às cargas reais que o rolamento é submetido.
 
-Para os rolamentos híbridos, por sua vez, as mesmas vidas nominais podem ser utilizadas. Segundo a SKF, 2019
-
-\begin{citacao}
-Experiências e testes diversos mostram que, em aplicações de máquinas-ferramentas normais, a vida útil de um rolamento híbrido é significativamente maior do que a vida útil de um rolamento com elementos rolantes de aço. A vida útil estendida de rolamentos híbridos deve-se à dureza, baixa densidade e acabamento superficial dos elementos rolantes. A baixa densidade minimiza a carga interna das forças centrífuga e de inércia, enquanto a maior dureza torna os elementos rolantes menos suscetíveis ao desgaste. Seu acabamento superficial permite que o rolamento otimize os efeitos do lubrificante. (SKF, 2019)
-\end{citacao}
+Para os rolamentos híbridos, por sua vez, as mesmas vidas nominais podem ser utilizadas. Segundo a SKF, 2019, experiência e testes que a vida útil de um rolamento híbrido é maior que a vida útil de um rolamento com elementos rolantes de aço, devendo-se isto à dureza, que confere menor desgaste aos elementos rolantes, à baixa densidade, que miniza cargas internas de força centrífuga e inércia, bem como ao acabamento superficial, que otimiza os efeitos do lubrificante.
 
 Em relação à carga mínima requerida, rolamentos que operem em alta velocidade e/ou estejam sujeitos a acelerações bruscas, forças de inércia dos elementos rolamentos e atrito do lubrificante podem ser prejudiciais aos elementos rolantes e as pistas (SKF, 2019). Assim, para o adequado funcionamento os rolamentos devem estar sujeitos a uma carga mínima de 0,01C para rolamentos de esferas e 0,02C para rolamentos de rolos. 
 
@@ -663,14 +715,15 @@ Por fim, em determinadas aplicações as condições operacionais, tais como a m
 
 Para o cálculo de vida útil em condições variáveis, utiliza-se:
 
-\[L_{10}= \frac{1}{ \frac{U_{1}}{L_{10 \,1}} + \frac{U_{2}}{L_{10 \,2}} + \frac{U_{3}}{L_{10 \,3}} + ...}\]
+\begin{equation}
+	L_{10}= \frac{1}{ \frac{U_{1}}{L_{10 \,1}} + \frac{U_{2}}{L_{10 \,2}} + \frac{U_{3}}{L_{10 \,3}} + ...}
+	\label{eq:Calculo da vida Util em condições variaveis}
+\end{equation}
+\myequation{Cálculo da vida Útil em condições variaveis}
 
-Onde $L_{10}$ é a vida nominal básica, com 90\% de confiabilidade, $L_{10 \,1}$, $L_{10 \,2}$ são as vidas nominais básicas, com 90\% de confiabilidade, em condições constantes 1, 2 e, por fim, $U_{1}$, $U_{2}$ são as frações, que devem totalizar 1, do ciclo de vida sob as condições 1, 2 etc. De acordo com SKF, 2019
+%\[L_{10}= \frac{1}{ \frac{U_{1}}{L_{10 \,1}} + \frac{U_{2}}{L_{10 \,2}} + \frac{U_{3}}{L_{10 \,3}} + ...}\]
 
-\begin{citacao}
-Dentro de cada intervalo de trabalho, a carga e as condições operacionais do rolamento podem ter um valor médio constante. O número de horas de operação ou revoluções esperadas de cada intervalo de trabalho que mostram a fração de vida necessária para essa condição de carga específica. Portanto, se ${N_{1}}$ for igual ao número de rotações necessárias na condição de carga ${P_{1}}$, e N for o número esperado de rotações para concluir todos os ciclos de carga variável, então a fração de ciclo ${U_{1} = N_{1} / N}$ é utilizada pela condição de carga ${P_{1}}$, que possui uma vida útil calculada de ${L_{10 \,1}}$. (SKF, 2019)
-\end{citacao}
-
+Onde $L_{10}$ é a vida nominal básica, com 90\% de confiabilidade, $L_{10 \,1}$, $L_{10 \,2}$ são as vidas nominais básicas, com 90\% de confiabilidade, em condições constantes 1, 2 e, por fim, $U_{1}$, $U_{2}$ são as frações, que devem totalizar 1, do ciclo de vida sob as condições 1, 2 etc. De acordo com SKF, 2019, em cada intervalo de trabalho a carga e condições operacionais podem apresentar valor médio constante. Assim, o número de horas ou revoluções esperadas para cada intervalo de trabalho definem a fração de vida para esta condição específica. Neste âmbito, se ${N_{1}}$ representar o número de rotações necessárias dada uma condição de carga ${P_{1}}$, e N for o número de rotações para conclusão dos ciclos de carga variável, logo a fração do ciclo ${U_{1} = N_{1} / N}$ é utilizada pela condição de carga ${P_{1}}$, a qual apresenta vida útil calculada de ${L_{10 \,1}}$ (SKF, 2019).
 
 \subsection{\textbf{Falhas em rolamentos}}
 
@@ -726,7 +779,6 @@ Fraturas, por sua vez, referem-se à corpos rolantes partidos, anel interno ou e
 \caption {Anéis internos e anel externo com fraturas. Retirado de NSK, 2014.}
 \label{fraturas_nsk}
 \end{figure}
-
 
 O aparecimento de trinca e lascamento se dá quando ocorre um descascamento localizado, nisto surgem pequenas trincas ou lascamentos, dentre as possíveis causas para esta falha estão excessivas cargas de choque, excessiva interferência, formação de grandes descascamentos, formação de descascamento por atritos, encostos ou chanfros inadequados ou, ainda, manejo inadequado (NSK, 2014). A Figura~\ref{trinca_nsk} mostra rolamento com trincas e lascamentos. 
 
@@ -810,7 +862,6 @@ Deformação de deslizamento é acompanhada de superfícies brilhantes ou de sup
 \label{deslizamento_nsk}
 \end{figure}
 
-
 Superaquecimento, por sua vez, diz respeito ao processo em que o rolamento se aquece e descolora, eventualmente travando. Dentre as possíveis causas para esta falha estão folga insuficiente no rolamento, incluindo-se folgas que diminuem em razão de deformações locais, lubrificação insuficiente ou imprópria, cargas excessivas ou ainda corpos rolantes afinados nas extremidades (NSK, 2014). A Figura~\ref{superaquecimento_nsk} mostra o dano em um rolamento que superaqueceu.
 
 \begin{figure}[H]
@@ -819,7 +870,6 @@ Superaquecimento, por sua vez, diz respeito ao processo em que o rolamento se aq
 \caption {Dano causado superaquecimento. Retirado de NSK, 2014.}
 \label{superaquecimento_nsk}
 \end{figure}
-
 
 Corrosão eletrolítica diz respeito a formação de afundamentos sobre as pistas. Estes afundamentos transformam-se gradualmente em ondulações. A causa para isto é a corrente elétrica passando através dos corpos rolantes (NSK, 2014). A Figura~\ref{corrosao_eletrolitica_nsk} mostra a corrosão eletrolítica na pista de um anel interno de um rolamento, com dano ampliado na foto para facilitação da visualização, bem como o dano em rolos. 
 
@@ -830,7 +880,6 @@ Corrosão eletrolítica diz respeito a formação de afundamentos sobre as pista
 \label{corrosao_eletrolitica_nsk}
 \end{figure}
 
-
 Oxidação e corrosão é uma falha que ocorre quando a superfície se torna parcial ou totalmente oxidada, e ocasionalmente óxido também surge ao longo das linhas do passo dos elementos rolantes. Causas para esta falha incluem condições inadequadas de armazenamento, embalagem inadequada, óleo protetivo insuficiente, penetração de água ou ácido, dentre outros elementos, ou, ainda, manuseio inadequado (NSK, 2014). A Figura~\ref{oxidacao_nsk} mostra um rolamento oxidado e corroído.
 
 \begin{figure}[H]
@@ -840,9 +889,7 @@ Oxidação e corrosão é uma falha que ocorre quando a superfície se torna par
 \label{oxidacao_nsk}
 \end{figure}
 
-
 Falhas na instalação têm como suas principais decorrências longo riscos na superfície das pistas ou dos elementos rolantes. As causas mais comuns são inclinação dos anéis ou impactos durante instalação ou remoção. A Figura~\ref{falha_instalacao_nsk} mostra um anel interno e externo com riscos decorrentes de falha de instalação.
-
 
 \begin{figure}[H]
 \centering
@@ -864,24 +911,43 @@ Ao verificar-se que houve o contato entre a superfície defeituosa de um element
 
 
 \subsection{\textbf{Frequências características de defeitos dos rolamentos}}
-
 Assim, tem-se as seguintes fórmulas para o cálculo das frequências de defeitos dos vários  elementos que constituem um rolamento. 
 
 FTF (\textit{fundamental train frequency}) indica a frequência de defeito na gaiola. 
 
-\[FTF = \frac{fr}{2} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )  \]
+\begin{equation}
+	FTF = \frac{fr}{2} \left ( 1 - \frac{d}{D} \,cos \, \theta \right ) 
+	\label{eq: FTF}
+\end{equation}
+
+%\[FTF = \frac{fr}{2} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )  \]
 
 BPFI, indica a frequência de defeito na pista interna (\textit{ball pass frenquency of the inner race})
 
-\[BPFI = \frac{N}{2}f_{r} \left ( 1 + \frac{d}{D} \,cos \, \theta \right )  \]
+\begin{equation}
+	BPFI = \frac{N}{2}f_{r} \left ( 1 + \frac{d}{D} \,cos \, \theta \right ) 
+	\label{eq: BPFI}
+\end{equation}
+
+%\[BPFI = \frac{N}{2}f_{r} \left ( 1 + \frac{d}{D} \,cos \, \theta \right )  \]
 
 BPFO se trata do indicativo da frequência de defeito na pista externa (\textit{ball pass frequency of the outer race})
 
-\[BPFO = \frac{N}{2}f_{r} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )  \]
+\begin{equation}
+	BPFO = \frac{N}{2}f_{r} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )
+	\label{eq: BPFO}
+\end{equation}
+
+%\[BPFO = \frac{N}{2}f_{r} \left ( 1 - \frac{d}{D} \,cos \, \theta \right )  \]
 
 BSF, por sua vez, é o indicativo da frequência de defeito do elemento rolante (\textit{ball spin frequency}).
 
-\[BSF = \frac{D}{2d}f_{r} \Bigg[  1 - \left ( \frac{d}{D} \,cos \, \theta \right ) ^{2}  \Bigg] \]
+\begin{equation}
+	BSF = \frac{D}{2d}f_{r} \Bigg[  1 - \left ( \frac{d}{D} \,cos \, \theta \right ) ^{2}  \Bigg]
+	\label{eq: BSF}
+\end{equation}
+
+%\[BSF = \frac{D}{2d}f_{r} \Bigg[  1 - \left ( \frac{d}{D} \,cos \, \theta \right ) ^{2}  \Bigg] \]
 
 Onde, nestas fórmulas, temos $f_{r}$, que é a subtração da frequência de rotação da pista interna pela frequência de rotação da pista externa; $D$ é diâmetro primitivo, calculado a partir da soma do diâmetro externo pelo diâmetro interno e divisão do resultado por dois; $d$ é o diâmetro dos elementos rolantes; $N$ é o número de elementos rolantes; e, por fim, $\theta$ é o ângulo de contato.
 
@@ -900,14 +966,13 @@ A Figura~\ref{pvdf_cadeia} mostra a estrutura molecular do PVDF.
 \label{pvdf_cadeia}
 \end{figure}
 
-
 Decorrente desta descoberta o interesse no estudo do PVDF se dá, dentre outras caraterísticas, por suas propriedades piezo e piroelétricas. 
 
 Piezoeletricidade é a capacidade de certos materiais, altamente polares, de alterar suas dimensões quando expostos a um campo elétrico, ou, inversamente, gerar sinal elétrico quando mecanicamente deformados (Halvorsen, 1986). A piezoeletricidade foi descoberta em 1880 pelos irmãos franceses Jacques e Pierre Curie, que a observaram em cristais de Quartzo (Manbacchi e Cobbold, 2011). Uma de suas primeiras aplicações tecnológicas foi feita por outro francês, Langevin, que desenvolveu um transmissor e receptor de quartzo para sons submarinos por volta de 1917 - o primeiro sonar (Halvorsen, 1986). Segundo Loussert et al., 2013, p.204 a piezoeletricidade se manifesta pela polarização da célula unitária com o aspecto de momento dipolar $\mu = q\times d$, onde $q$ é a carga elétrica do dípolo e $d$ é a distância entre os centroides.  
 
 As propriedades do PVDF, incluindo a piezoeletricidade, são altamente influenciadas pelo seu grau e tipo de estrutura de cristalina. Chatigny e Robb, 1987, fazem uma revisão relacionada ao processo de fabricação de filmes PVDF para obtenção das características desejadas em cada possível estrutura cristalina deste material. Nesta, afirmam que existem três formas distintas de estrutura cristalina no PVDF. A mais comum é centrossimétrica e não polar, obtida quando o polímero é resfriado a partir de seu ponto de derretimento, chamada de fase alfa. A deformação de grãos tipo alfa, com o \textit{stretching} de filmes obtidos através de extrusão em temperaturas abaixo de \SI{80}{\celsius}, faz com que as células unitárias se alinhem em planos paralelos, criando uma fase polar chamada de fase beta. Uma terceira configuração possível é a fase gama, que, ainda que polar, é intermediária em termos de centrossimetria entre as configurações de fases alfa e beta (Chatigny e Robb, 1987).
 
-Para obtenção de níveis significativos de atividade piezoelétrica no material, o polímero em fase beta deve ser exposto a um campo elétrico de 500 a 1000kV/cm em temperaturas de \SI{80}{\celsius} a \SI{110}{\celsius}. Este processo é chamado de \textit{poling}. O nível de atividade piezo depende do tempo de exposição a este campo elétrico, além da força do campo e da temperatura. Quando conduzido adequadamente, este processo provê orientação permanente para os dípolos no polímero (CHATIGNY e ROBB, 1987). 
+Para obtenção de níveis significativos de atividade piezoelétrica no material, o polímero em fase beta deve ser exposto a um campo elétrico de 500kV/cm a 1000kV/cm em temperaturas de \SI{80}{\celsius} a \SI{110}{\celsius}. Este processo é chamado de \textit{poling}. O nível de atividade piezo depende do tempo de exposição a este campo elétrico, além da força do campo e da temperatura. Quando conduzido adequadamente, este processo provê orientação permanente para os dípolos no polímero (CHATIGNY e ROBB, 1987). 
 
 %A Figura 20, abaixo, mostra as configurações alfa, gama e beta.
 
@@ -943,19 +1008,41 @@ A constante de acoplamento $K$, é a habilidade de trocar energia elétrica por 
 
 A constante de tensão piezoelétrica, $d$, expressa a razão de tensão desenvolvida ao longo de um eixo específico aplicada paralelamente a um eixo específico. 
 
-\[d_{31} = \frac{Tensao \,no \,eixo \,1}{Campo \,aplicado \,no \,eixo \,3} = \frac{m/m}{V/m} = \frac{m}{v} \]
+\begin{equation}
+	d_{31} = \frac{Tensao \,no \,eixo \,1}{Campo \,aplicado \,no \,eixo \,3} = \frac{m/m}{V/m} = \frac{m}{v}
+	\label{eq: Constante de Tensão Piezoelétrica}
+\end{equation}
+
+%\[d_{31} = \frac{Tensao \,no \,eixo \,1}{Campo \,aplicado \,no \,eixo \,3} = \frac{m/m}{V/m} = \frac{m}{v} \]
+
+%------- TO-DO - REVISAR ESTE TRECHO
 
 Além disso:
 
-\[d_{31} = \frac{Carga \,por \,area \,de \,eletrodo}{Estresse \,aplicado \,no \,eixo \,1} = \frac{C/m^{2}}{N/m^{2}} = \frac{C}{N} \]
+\begin{equation}
+	d_{31} = \frac{Carga \,por \,area \,de \,eletrodo}{Estresse \,aplicado \,no \,eixo \,1} = \frac{C/m^{2}}{N/m^{2}} = \frac{C}{N}
+	\label{eq: Boa pergunta}
+\end{equation}
+
+%\[d_{31} = \frac{Carga \,por \,area \,de \,eletrodo}{Estresse \,aplicado \,no \,eixo \,1} = \frac{C/m^{2}}{N/m^{2}} = \frac{C}{N} \]
 
 Outra constante é a constante de estresse piezoelétrico $g$, que expressa a razão do campo elétrico ao longo de um eixo especifico pelo estresse aplicado ao mesmo ou outro eixo. A constante g também expressa a tensão ao longo de um eixo específico pela carga elétrica por área unitária de eletrodos (CHATIGNY e ROBB, 1987). Assim:
 
-\[g_{33} = \frac{Campo \,aplicado \,ao \,longo \,do \,eixo \,3}{Estresse \,aplicado \,ao \,longo ,\do \,eixo \,3} = \frac{V/m}{N/m^{2}} = \frac{Vm}{N} \]
+\begin{equation}
+	g_{33} = \frac{Campo \,aplicado \,ao \,longo \,do \,eixo \,3}{Estresse \,aplicado \,ao \,longo ,\do \,eixo \,3} = \frac{V/m}{N/m^{2}} = \frac{Vm}{N}
+	\label{eq: Constante G, expressando a razão do campo elétrico ao longo do eixo.}
+\end{equation}
+
+%\[g_{33} = \frac{Campo \,aplicado \,ao \,longo \,do \,eixo \,3}{Estresse \,aplicado \,ao \,longo ,\do \,eixo \,3} = \frac{V/m}{N/m^{2}} = \frac{Vm}{N} \]
 
 Também:
 
-\[g_{33} = \frac{Tensao \,no \,eixo \,3}{Carga \,por \,area \,eletronica} = \frac{m/m}{C/m^{2}} = \frac{m^{2}}{C} \]
+\begin{equation}
+	g_{33} = \frac{Tensao \,no \,eixo \,3}{Carga \,por \,area \,eletronica} = \frac{m/m}{C/m^{2}} = \frac{m^{2}}{C}
+	\label{eq: Contante G, expressando a tensão ao longo de um eixo específico pela carga elétrica por área unitária de eletrodos.}
+\end{equation}
+
+%\[g_{33} = \frac{Tensao \,no \,eixo \,3}{Carga \,por \,area \,eletronica} = \frac{m/m}{C/m^{2}} = \frac{m^{2}}{C} \]
 
 Também deve-se considerar a constante hidrostática piezoelétrica, $dh$, que representa a razão de carga de curto-circuito por área unitária da superfície dos eletrodos pelo estresse hidrostático aplicado igualmente ao longo dos três eixos. 
 
@@ -998,11 +1085,7 @@ Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation met
 
 \section{\textbf{Aquisição de dados}}
 
-Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que 
-
-\begin{citacao}
-\,[...]um sistema de aquisição de dados é um conjunto de elementos inter-relacionados que se coloca entre um processo e seu observador, visando a aquisição, análise e apresentação dos dados sobre o processo.
-\end{citacao}
+Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que este trata-se de um conjunto de elementos inter-relacionados, os quais visam aquisição, análise e apresentação dos dados relativos ao processo de interesse.
 
 Percebe-se, portanto, que um sistema de aquisição de dados é composto por diversos elementos. França, 1997, afirma que a estrutura básica de um sistema de aquisição de dados é composta por um transdutor, condicionador, pela aquisição dos dados, pela análise dos dados e, por fim, por sua apresentação.
 
@@ -1014,7 +1097,14 @@ Usualmente os conversores analógico-digitais estão disponíveis em DAQs, sigla
 
 O número de canais de um DAQ trata-se da quantidade de entradas disponíveis para aquisição de dados. As faixas de conversão, de acordo com França, 1997, p. 15, são os limites de tensão máximo e mínimo que um conversor analógico-digital está apto a quantizar.
 
-Já a resolução, de acordo com a Omega, 2021, trata-se do "menor incremento de sinal que pode ser detectado por um sistema de aquisição de dados", em relação a uma faixa de conversão estabelecida. A resolução é expressa em bits, porcentagem ou fundo de escala. Para um DAQ com resolução de 12 bits e faixa de conversão de \SI{5}{\volt}, temos \[\frac{\SI{5}{\volt}}{2^{12}} = \SI{1,22}{\milli\volt} \]  
+Já a resolução, de acordo com a Omega, 2021, trata-se do "menor incremento de sinal que pode ser detectado por um sistema de aquisição de dados", em relação a uma faixa de conversão estabelecida. A resolução é expressa em bits, porcentagem ou fundo de escala. Para um DAQ com resolução de 12 bits e faixa de conversão de \SI{5}{\volt}, temos 
+
+\begin{equation}
+	\frac{\SI{5}{\volt}}{2^{12}} = \SI{1,22}{\milli\volt}
+	\label{eq: }
+\end{equation}
+
+%\[\frac{\SI{5}{\volt}}{2^{12}} = \SI{1,22}{\milli\volt} \]  
 
 Percebe-se, portanto, que quanto maior a resolução, menores estes incrementos. 
 
@@ -1022,11 +1112,13 @@ Já a velocidade, de acordo com a Omega, 2021, trata-se de "a velocidade na qual
 
 Para dispositivos multicanais, a taxa de amostragem é geralmente, mas não sempre, a velocidade do conversor analógico digital dividida pelo número de canais amostrados. 
 
-Iazzetta, 2021, afirma ainda em relação as taxas de amostragem que 
+Iazzetta, 2021, afirma ainda em relação as taxas de amostragem que estas são o número de vezes em que se realiza uma amostragem, por unidade de tempo. A taxa de amostragem geralmente é medida em Hertz. 
 
-\begin{citacao}
-\,[...]O números de vezes em que se realiza a amostragem em uma unidade de tempo é a taxa de amostragem, geralmente medida em Hertz. Assim, dizer que a taxa de amostragem de áudio em um CD é de 44.100 Hz, significa que a cada segundo de som são tomadas 44.100 medidas da variação de voltagem do sinal. Dessa maneira, quanto maior for a taxa de amostragem, mais precisa é a representação do sinal, porém é necessário que se realize mais medições e que se utilize mais espaço para armazenar esses valores.
-\end{citacao}
+%--------- TO-DO: reescrever citação abaixo.
+
+%\begin{citacao}
+%\,[...]O números de vezes em que se realiza a amostragem em uma unidade de tempo é a taxa de amostragem, geralmente medida em Hertz. Assim, dizer que a taxa de amostragem de áudio em um CD é de 44.100 Hz, significa que a cada segundo de som são tomadas 44.100 medidas da variação de voltagem do sinal. Dessa maneira, quanto maior for a taxa de amostragem, mais precisa é a representação do sinal, porém é necessário que se realize mais medições e que se utilize mais espaço para armazenar esses valores.
+%\end{citacao}
 
 Em relação a taxa de amostragem, o teorema de Nyquist, também conhecido como teorema de amostragem de Nyquist-Shannon, afirma que é necessário uma taxa de ao menos duas vezes o valor da frequência máxima de interesse para que se possa realizar a análise desta. Esta taxa é chamada frequência de Nyquist. Caso a taxa de amostragem seja menor que a frequência de Nyquist, há ocorrência do efeito conhecido como \textit{aliasing}, onde um sinal é incorretamente reconstruído como um sinal de baixa frequência.
 
@@ -1113,23 +1205,49 @@ O motor utilizado na bancada de testes possui como características um torque de
 
 A partir destes dados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. O diâmetro primitivo $D$ se dá por: 
 
-\[D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm} \]  
+\begin{equation}
+	D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm}
+	\label{eq: Diametro Primitivo no Rolamento}
+\end{equation}
+
+
+%\[D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm} \]  
 
 Logo, para a \textit{Fundamental Train Frequency} temos, aproximadamente:
 
-\[FTF = \frac{35}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~14}{{\hertz}} \]  
+\begin{equation}
+	FTF = \frac{35}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~14}{{\hertz}}
+	\label{eq: FTF no  Rolamento}
+\end{equation}
+
+%\[FTF = \frac{35}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~14}{{\hertz}} \]  
 
 Para a \textit{Ball Pass Frequency of The Inner Race} temos, aproximadamente:
 
-\[BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}} \]
+\begin{equation}
+	BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}}
+	\label{eq: BPFI no rolamento}
+\end{equation}
+
+%\[BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}} \]
 
 Para a \textit{Ball Pass Frequency of The Outer Race} temos, aproximadamente:
 
-\[BPFO = \frac{10}{2}35 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~141}{{\hertz}} \]
+\begin{equation}
+	BPFO = \frac{10}{2}35 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~141}{{\hertz}}
+	\label{eq: BPFO no Rolamento}
+\end{equation}
+
+%\[BPFO = \frac{10}{2}35 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~141}{{\hertz}} \]
 
 Por fim, para a \textit{Ball Spin Frequency} temos, aproximadamente:
 
-\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
+\begin{equation}
+	BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \
+	\label{eq: BSF no rolamento}
+\end{equation}
+
+%\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
 
 A partir destas frequências pode-se estimar as áreas para análise do sinal aquisitado, bem como realizar o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas. 
 
