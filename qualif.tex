@@ -1,4 +1,3 @@
-
 % R00 17.ABR.2018 - Edson Bispo Ferreira. Adaptado por Giovani Fonseca Ravagnani Disperati.
 %
 %-------------------------------------------------------------------------
@@ -177,13 +176,14 @@ Texto de qualificação apresentado ao Departamento de Engenharia Mecânica do I
 
 \renewcommand{\theequation}{\arabic{equation}}
 
-\newcommand{\listequationsname}{Lista de Equações}
-\newlistof{listofequations}{equ}{\listequationsname}
+%\newcommand{\listequationsname}{Lista de Equações}
+%\newlistof{listofequations}{equ}{\listequationsname}
 %\setlength{\cftmyequationsindent}{1.5em}
-\newcommand{\myequation}[1]{%
-	\addcontentsline{equ}{equation}{\protect\numberline{\theequation}#1}\par
+%\newcommand{\myequation}[1]{%
+%	\addcontentsline{equ}{equation}{\protect\numberline{\theequation}#1}\par
 	%\setlength{\cftmyequationnumwidth}{2em}% Width of equation number in List of Equations
-}
+%}
+
 %\LetLtxMacro{\LaTeXEquation}{\equation}%
 %\let\LaTeXEndEquation\endequation%
 %\renewenvironment{equation}[1][]{%
@@ -191,9 +191,9 @@ Texto de qualificação apresentado ao Departamento de Engenharia Mecânica do I
 %\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}%
 %}%
 %{\LaTeXEndEquation}
-\makeatletter
-\let\l@equation\l@toc
-\makeatother
+%\makeatletter
+%\let\l@equation\l@toc
+%\makeatother
 
 \begin{document}
 
@@ -274,8 +274,8 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 % ---
 % inserir lista de equações
 % ---
-\listofequations*
-\cleardoublepage
+%\listofequations*
+%\cleardoublepage
 
 
 % ---
@@ -343,7 +343,7 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
 \chapter{Introdução}
 De acordo com a Confederação Nacional das Indústrias, o setor industrial representava, em outubro de 2019, 21,6\% do produto interno bruto do Brasil. Também respondia por 70,8\% das exportações nacionais, 67,4\% dos investimentos empresariais em pesquisa  e 34,2\% dos tributos federais, excetuando-se receitas previdenciárias (CNI, 2019). 
 
-Neste âmbito destaca-se, portanto, a importância da manutenção como ferramenta econômica para a indústria e, consequentemente, para a economia nacional. Processos de manutenção preventiva, ou de manutenção preditiva, tem por finalidade mitigar a ocorrência de falhas catastróficas, diminuindo perdas econômicas por paradas inesperadas ou, mesmo, por custos de seguridade social decorrentes de acidentes de trabalho causados por máquinário defeituoso.
+Neste âmbito destaca-se, portanto, a importância da manutenção como ferramenta econômica para a indústria e, consequentemente, para a economia nacional. Processos de manutenção preventiva, ou de manutenção preditiva, tem por finalidade mitigar a ocorrência de falhas catastróficas, diminuindo perdas econômicas por paradas inesperadas ou, mesmo, por custos de seguridade social decorrentes de acidentes de trabalho causados por maquinário defeituoso.
 
 De acordo com a NBR 5462, manutenção preventiva é uma "manutenção efetuada em intervalos pré-determinados, ou de acordo com critérios prescritos, destinada a reduzir a probabilidade de falha ou a degradação do funcionamento de um item" (NBR 5462, p. 7). Já a manutenção preditiva, é definida como uma manutenção que "permite garantir uma qualidade de serviço desejada, com base na aplicação sistemática de técnicas de análise, utilizando-se meios de supervisão centralizados ou de amostragem, para reduzir ao mínimo a manutenção preventiva e diminuir a manutenção corretiva" (NBR 5462, p. 7). 
 
@@ -657,7 +657,6 @@ Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  
 
 Cada tipo de rolamento possui suas aplicações e a escolha de rolamento depende de uma série de fatores específicos, tais como a carga a ser suportada, a velocidade de funcionamento, temperatura de trabalho, folga interna, alinhamento e desalinhamento do eixo, espaço disponível, dentre outros. 
 
-
 \subsection{\textbf{Processos de fabricação de rolamentos}}
 
 Nos rolamentos usualmente segrega-se o processo de fabricação em: fabricação dos anéis interno e externo; fabricação das esferas; fabricação das gaiolas e, por fim, montagem (SANTOS et al., 2017).   
@@ -719,7 +718,7 @@ Para o cálculo de vida útil em condições variáveis, utiliza-se:
 	L_{10}= \frac{1}{ \frac{U_{1}}{L_{10 \,1}} + \frac{U_{2}}{L_{10 \,2}} + \frac{U_{3}}{L_{10 \,3}} + ...}
 	\label{eq:Calculo da vida Util em condições variaveis}
 \end{equation}
-\myequation{Cálculo da vida Útil em condições variaveis}
+%\myequation{Cálculo da vida Útil em condições variaveis}
 
 %\[L_{10}= \frac{1}{ \frac{U_{1}}{L_{10 \,1}} + \frac{U_{2}}{L_{10 \,2}} + \frac{U_{3}}{L_{10 \,3}} + ...}\]
 
@@ -1083,17 +1082,39 @@ Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation met
 
 %Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
 
-\section{\textbf{Aquisição de dados}}
+\section{\textbf{Sistemas de aquisição de dados}}
 
-Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que este trata-se de um conjunto de elementos inter-relacionados, os quais visam aquisição, análise e apresentação dos dados relativos ao processo de interesse.
+Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que este trata-se de um conjunto de elementos interrelacionados, os quais visam aquisição, análise e apresentação dos dados relativos ao processo de interesse.
 
-Percebe-se, portanto, que um sistema de aquisição de dados é composto por diversos elementos. França, 1997, afirma que a estrutura básica de um sistema de aquisição de dados é composta por um transdutor, condicionador, pela aquisição dos dados, pela análise dos dados e, por fim, por sua apresentação.
+Percebe-se, portanto, que um sistema de aquisição de dados é composto por diversos elementos, cada um destes com suas particularidades. França, 1997, afirma que a estrutura básica de um sistema de aquisição de dados é composta por um transdutor, condicionador, pela aquisição dos dados através de um DAQ, pela análise dos dados e, por fim, por sua apresentação. 
 
-Em especial quanto ao condicionamento e aquisição de sinais, destaca-se em particular as questões de amplificação e atenuação do sinal, essenciais em sistemas baseados em conversores analógico-digitais, A/D, onde obtém-se um sinal analógico - tal qual a tensão elétrica de um sensor de filme PVDF - e este é discretizado para representação digital. De acordo com a Omega, 2021, o conversor analógico-digital trata-se de um "dispositivo eletrônico que converte sinais analógicos em um formato digital equivalente". Este dispositivo é central na grande parte dos sistemas de aquisição de dados, uma vez que é o responsável pela representação digital dos sinais analógicos de interesse. 
+Neste projeto o transdutor utilizado será o filme PVDF, cujas características.
+
+\subsection{\textbf{Condicionamento de Sinal}}
+
+Os sinais elétricos dos transdutores, a fim de serem aquisitados, usualmente passam por condicionamento de sinal. Este processo de condicionamento diz respeito a uma série de possíveis tratamentos que podem ser feitos em relação ao sinal elétrico, dentre as quais destacam-se a amplificação, atenuação e filtragem. 
+
+A amplificação e atenuação tratam-se do processo de adequação das tensões elétricas obtidas por transdutores, particularmente importante em sistemas de aquisição baseados em conversores análogicos-digitais (FRANÇA, 1997). A tensão obtida pelo filme PVDF, por exemplo, usualmente encontra-se em aplicações nas quais esta precisa ser amplificada para que se adeque à faixa de conversão dos conversores analógicos-digitais. No mesmo sentido, interferências eletromagnéticas e da rede elétrica precisam ser atenuadas. 
+
+A amplificação usualmente se dá através de um Amplificador Operacional. Este se trata de um amplificador multiestágio cujas características se almeja aproximar de um amplificador ideal: impedância de entrada infinita, impedância de saída nula, ganho de tensão infinito, resposta de frequência infinita e insensibilidade à temperatura (WENDLING, 2010). 
+
+Já a atenuação se dá através de circuitos atenuadores, os quais são usualmente dispositivos passivos que funcionam como redes divisoras de tensão, construídas utilizando-se de resistores, os quais têm por finalidade diminuir a amplitude de um determinado sinal.
+
+%Deslocamento de nível, por sua vez, 
+
+Filtragem, por sua vez, diz respeito ao processo de seleção, rejeição ou equalização de uma ou várias faixas do espectro de frequências de um sinal elétrico. Ao se aquisitar o sinal de saída dos transdutores, este pode ser mais amplo que as frequências de interesse. Assim, para que se limite este sinal ao espectro desejado, utilizam-se filtros. Há diversas configurações de filtros, sendo os mais comums os filtros passa-alto, passa-baixo, passa-banda, rejeita-banda e passa-tudo. 
+
+% TO-DO: melhorar acima
+
+\subsection{\textbf{DAQ - Data Acquisition}}
+
+Em especial quanto ao condicionamento e aquisição de sinais, destaca-se em particular as questões de amplificação e atenuação do sinal, essenciais em sistemas baseados em conversores analógico-digitais, A/D, onde obtém-se um sinal analógico - tal qual a tensão elétrica de um sensor de filme PVDF - e este é discretizado para representação digital. 
+
+Assim, ao lidar com sistemas baseados os conversores analógico-digitais estes estão costumeiramente disponíveis em DAQs, sigla para \textit{Data Acquisition}, que podem tomar formas desde dispotivos específicos para a aquisição de dados até microcontroladores com conversores A/D embarcados. Alguns dos princiapis aspectos relativos aos DAQs e seus conversores analógicos-digitais são: número de canais, resolução, faixa de conversão e taxa de amostragem.
+
+De acordo com a Omega, 2021, o conversor analógico-digital trata-se de um "dispositivo eletrônico que converte sinais analógicos em um formato digital equivalente". Este dispositivo é central na grande parte dos sistemas de aquisição de dados, uma vez que é o responsável pela representação digital dos sinais analógicos de interesse. 
 
 %Em relação a filtragem destes sinais, França, 1997, p. 7, afirma que "o espectro de frequências do sinal na saída dos transdutores pode ser muito mais amplo do que é de interesse". Neste sentido, aplicam-se filtros para atenuação de sinais indesejados.
-
-Usualmente os conversores analógico-digitais estão disponíveis em DAQs, sigla para \textit{Data Acquisition}, que podem tomar formas desde dispotivos específicos para a aquisição de dados até microcontroladores com conversores A/D embarcados. Ao lidarmos com sistemas de aquisição de dados, alguns dos principais aspectos a se considerar são: número de canais, resolução, faixa de conversão e taxa de amostragem.
 
 O número de canais de um DAQ trata-se da quantidade de entradas disponíveis para aquisição de dados. As faixas de conversão, de acordo com França, 1997, p. 15, são os limites de tensão máximo e mínimo que um conversor analógico-digital está apto a quantizar.
 
@@ -1101,7 +1122,7 @@ Já a resolução, de acordo com a Omega, 2021, trata-se do "menor incremento de
 
 \begin{equation}
 	\frac{\SI{5}{\volt}}{2^{12}} = \SI{1,22}{\milli\volt}
-	\label{eq: }
+	\label{eq: Resolução de DAQ de 12 bits com faixa de conversão de 5 volts}
 \end{equation}
 
 %\[\frac{\SI{5}{\volt}}{2^{12}} = \SI{1,22}{\milli\volt} \]  
@@ -1418,7 +1439,13 @@ Revisões e entrega final                &                        &             
  CHATIGNY, J. V.; ROBB, L. E.
   \textbf{Sensors: making the most of piezo film}.
   Sensor Review, Vol. 7, Issue: 1, p.15-20. Reino Unido, 1987.
+
+\bibitem{FRANCA1997}
+ FRANÇA, José A. de.
+  \textbf{Sistemas de Aquisição de Dados Baseados em Microcontrolador}.
+  Dissertação. Universidade Federal da Paraíba. Campina Grande, 1997.
   
+ 
 \bibitem{FUKADA2000}
   FUKADA E.
   \textbf{History and recent progress in piezoeletric polymers}.
