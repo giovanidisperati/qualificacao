@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.9)  12 AUG 2021 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.9)  13 AUG 2021 09:59
 entering extended mode
 **./qualif.tex
 (qualif.tex
@@ -1563,11 +1563,11 @@ Package rerunfilecheck Info: File `qualif.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18357 strings out of 479799
- 306650 string characters out of 2886237
+ 18355 strings out of 479799
+ 306634 string characters out of 2886237
  706447 words of memory out of 3000000
  34696 multiletter control sequences out of 15000+200000
- 549835 words of font info for 125 fonts, out of 3000000 for 9000
+ 549726 words of font info for 124 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,13n,85p,1285b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Giovani\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
@@ -1581,7 +1581,7 @@ mr7.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Miktex/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Miktex/fonts/typ
 e1/urw/symbol/usyr.pfb>
-Output written on qualif.pdf (61 pages, 19711276 bytes).
+Output written on qualif.pdf (61 pages, 19711203 bytes).
 PDF statistics:
  794 PDF objects out of 1000 (max. 8388607)
  226 named destinations out of 1000 (max. 500000)
