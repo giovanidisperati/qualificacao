@@ -624,6 +624,7 @@ Tendo em vista que os mancais possuem frequências características de defeitos,
 
 Dentre as técnicas de análise espectral, a mencionada transformada rápida de Fourier, conhecida pela sigla FFT, é uma das mais largamente empregadas. 
 
+\newpage
 \section{\textbf{Fundamentos e aplicações de rolamentos}}
 Rolamentos são dispositivos para transmissão de movimentos rotacionais ou lineares, com finalidade de redução de atrito entre partes móveis. Rolamentos são compostos, geralmente, de dois anéis, elementos rolantes e uma gaiola, sendo classificados como rolamentos radiais ou axiais, dependendo da direção da carga principal (NSK, 2018). Adicionalmente, os rolamentos são classificados, em função do tipo de elemento rolante, como rolamentos de esferas e rolamentos de rolos, que podem assumir forma cilíndrica, de agulhas ou cônicos, bem como são segregados quanto seus propósitos específicos (NSK, 2018).
 
@@ -909,10 +910,13 @@ Por fim, manchas e descoloração demonstram superfícies sem brilho, a superfí
 Ao verificar-se que houve o contato entre a superfície defeituosa de um elemento rolante e outra superfície sem defeito, o choque entre estes elementos causa um impulso que promove uma excitação tanto na máquina, quanto no rolamento. Assim, para detecção de falhas pode-se utilizar análise de vibrações, uma vez que os defeitos nos componentes dos rolamentos apresentam frequências características que podem ser calculadas a partir das especificações do rolamento. 
 
 
-\subsection{\textbf{Frequências características de defeitos dos rolamentos}}
+\subsection{\textbf{Frequências características de defeitos e detecção de falhas em rolamentos}}
+
+De acordo com McFadden, 1984 \textit{apud} Almeida, 2016, as frequências características de defeitos dos rolamentos são assíncronas, ou seja, estas não se dão em múltiplos inteiros da velocidade de rotação do eixo. Ainda de acordo com 
+
 Assim, tem-se as seguintes fórmulas para o cálculo das frequências de defeitos dos vários  elementos que constituem um rolamento. 
 
-FTF (\textit{fundamental train frequency}) indica a frequência de defeito na gaiola. 
+FTF (\textit{fundamental train frequency}) indica a frequência de defeito na gaiola.
 
 \begin{equation}
 	FTF = \frac{fr}{2} \left ( 1 - \frac{d}{D} \,cos \, \theta \right ) 
@@ -952,6 +956,7 @@ Onde, nestas fórmulas, temos $f_{r}$, que é a subtração da frequência de ro
 
 Logo, a partir destas frequências características de defeito e das especificações dos rolamentos e de suas propriedades de trabalho - número de elementos rolantes, diâmetros, ângulo de contato e velocidade de rotação -, os componentes podem ser monitorados quanto ao surgimento de falhas.  
 
+\newpage
 \section{\textbf{Fluroreto de polivinilideno}}
 
 O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui um grande grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (CHATIGNY e ROBB, 1987).
@@ -1047,41 +1052,8 @@ Também deve-se considerar a constante hidrostática piezoelétrica, $dh$, que r
 
 A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdutores piezoelétricos. Estes absorvem energia térmica, aumentando assim a sua temperatura e induzindo sinais elétricos. Em filmes piezo o sinal de saída é proporcional à taxa de mudança de temperatura em vez de níveis de temperatura. A constante piroelétrica $p$, assim, relaciona a carga por unidade de área dos eletrodos pela unidade de troca de temperatura. Logo, $p = C/m^{2} K$.
 
-\subsection{\textbf{Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}
 
-Dentre as distintas aplicações do PVDF uma revisão de literatura é desenvolvida com base em Xin et al., 2016, quanto ao seu uso como sensor de vibrações. Nesta, apresentam suas aplicações para dispositivos médicos portáteis, monitoramento de saúde estrutural, monitoramento de maquinário, dentre outras diversas.
-
-Em particular no que tange PVDF como sensor aplicado a dispositivos médicos portáteis, citam:
-
-\begin{itemize}
-	\item utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos 
-	\item monitoramento de sinais cardíacos 
-	\item monitoramento de ronco 
-\end{itemize}
-
-Estas utilizações se dão pois a respiração e os batimentos cardíacos, de humanos e muitos outros animais, geram vibrações das superfícies corporais. Estas vibrações, em diversos casos, refletem as condições de saúde de humanos e animais, podendo ser medidas através de sensores colocados na pele. Neste sentido os sensores PVDF têm como vantagem característica sua flexibilidade, baixo custo e leveza. Isto o torna bom candidato para a aplicação nesta área da saúde e muitos pesquisadores têm feito esforços em relação ao seu estudo e desenvolvimento.
-
-Em relação ao PVDF como sensor aplicado a monitoramento de integridade estrutural, citam:
-
-\begin{itemize}
-	\item aplicações em ensaios não destrutivos de detecção de emissão acústica
-	\item detecção precoce de danos em lâminas de turbina eólica 
-	\item determinação da localização e severidade de danos sísmicos em estruturas de aço de edifícios
-\end{itemize}
-
-O PZT, titanato zirconato de chumbo, é o material mais comum para monitoramento de integridade de estruturas. Contudo, este material é rígido e não pode ser aplicado em superfícies curvas. Disto decorrem os desenvolvimentos do PVDF como material alternativo, uma vez que este pode ser uma resposta para aplicações específicas dada sua flexibilidade.
-
-Já no PVDF como sensor aplicado a medição de vibrações em maquinário, cita-se em particular o trabalho de Jeon et al., 2011, onde estes acoplaram filmes PVDF em estruturas de alumínio e o testaram em um dispositivo \textit{shaker}, ou agitador, aplicando excitações de varredura senoidal, demonstrando boa linearidade e performance na faixa de frequência entre \SI{0}{\hertz} até \SI{5}{\kilo\hertz}, o que torna este material bom candidato para uma série de aplicações industriais de monitoramento de máquinas.
-
-Kern et al., 2016, publicaram o artigo "Development of a Solid-Borne Sound Sensor
-to Detect Bearing Faults Based on a MEMS Sensor and a PVDF Foil Sensor". Neste os autores comparam o filme PVDF com um acelerômetro microeletromecânico para aplicação de monitoramento de rolamentos de aplicação automotiva. Os autores aquisitaram os sinais de ambos sensores e fizeram a comparação entre eles, utilizando como ferramentas para análise do sinal os métodos de curtose, valor RMS e densidade espectral de potência. Após os ensaios, os autores chegaram a conclusão que foi possível diferenciar com o sensor PVDF os sinais de um rolamento em bom estado para um rolamento com defeitos, ainda que apontem as interferências eletromagnéticas como um fator de inclusão de ruído no sinal quando comparado ao sensor microeletromecânico.
-
-Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation method for piezoelectric PVDF sensors". Neste os autores buscaram as características elétricas, de frequência e deriva térmica do filme PVDF a fim de verificar sua potencial utilidade como material para sensores de ruídos estruturais, bem como seus limites de aplicabilidade. Para tanto os autores testaram dez amostras de sensor filme pvdf em vinte e sete pontos entre \SI{50}{\hertz} e \SI{2}{\kilo\hertz}, repetindo vinte vezes cada medida a fim de garantir validade estatística. Os autores mostraram que a constante piezoelétrica e o módulo de elasticidade do material podem ser influenciados por variações de temperatura. Ainda assim, os autores também chegam em conclusões de que o PVDF possui potencial para ser um material central de novos sensores de monitoramento de ruídos estruturais, não apenas em pesquisas, mas também em aplicações industriais.
-
-%Para que se possa utilizar os sensores, entretanto, é necessário que seja possível aquisitar os seus sinais.
-
-%Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
-
+\newpage
 \section{\textbf{Sistemas de aquisição de dados}}
 
 Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que este trata-se de um conjunto de elementos interrelacionados, os quais visam aquisição, análise e apresentação dos dados relativos ao processo de interesse.
@@ -1145,7 +1117,53 @@ Em relação a taxa de amostragem, o teorema de Nyquist, também conhecido como 
 
 %https://br.omega.com/prodinfo/aquisicao-de-dados.html
 
+\newpage
+\chapter{\textbf{Estado da arte}}
+
+Nesta seção, apresenta-se o estado da arte quanto a utilização de sensores PVDF em aplicações de monitoramento de vibração. Apresenta-se, também, as técnicas atuais na detecção em falhas de rolamentos.
+
+\section{\textbf{Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}
+
+Dentre as distintas aplicações do PVDF uma revisão de literatura é desenvolvida com base em Xin et al., 2016, quanto ao seu uso como sensor de vibrações. Nesta, apresentam suas aplicações para dispositivos médicos portáteis, monitoramento de saúde estrutural, monitoramento de maquinário, dentre outras diversas.
+
+Em particular no que tange PVDF como sensor aplicado a dispositivos médicos portáteis, citam:
+
+\begin{itemize}
+	\item utilização em dispositivos VIVLAD, \textit{vibrating intravascular lung assist device}, a fim de auxiliar pacientes com problemas respiratórios crônicos 
+	\item monitoramento de sinais cardíacos 
+	\item monitoramento de ronco 
+\end{itemize}
+
+Estas utilizações se dão pois a respiração e os batimentos cardíacos, de humanos e muitos outros animais, geram vibrações das superfícies corporais. Estas vibrações, em diversos casos, refletem as condições de saúde de humanos e animais, podendo ser medidas através de sensores colocados na pele. Neste sentido os sensores PVDF têm como vantagem característica sua flexibilidade, baixo custo e leveza. Isto o torna bom candidato para a aplicação nesta área da saúde e muitos pesquisadores têm feito esforços em relação ao seu estudo e desenvolvimento.
+
+Em relação ao PVDF como sensor aplicado a monitoramento de integridade estrutural, citam:
+
+\begin{itemize}
+	\item aplicações em ensaios não destrutivos de detecção de emissão acústica
+	\item detecção precoce de danos em lâminas de turbina eólica 
+	\item determinação da localização e severidade de danos sísmicos em estruturas de aço de edifícios
+\end{itemize}
+
+O PZT, titanato zirconato de chumbo, é o material mais comum para monitoramento de integridade de estruturas. Contudo, este material é rígido e não pode ser aplicado em superfícies curvas. Disto decorrem os desenvolvimentos do PVDF como material alternativo, uma vez que este pode ser uma resposta para aplicações específicas dada sua flexibilidade.
+
+Já no PVDF como sensor aplicado a medição de vibrações em maquinário, cita-se em particular o trabalho de Jeon et al., 2011, onde estes acoplaram filmes PVDF em estruturas de alumínio e o testaram em um dispositivo \textit{shaker}, ou agitador, aplicando excitações de varredura senoidal, demonstrando boa linearidade e performance na faixa de frequência entre \SI{0}{\hertz} até \SI{5}{\kilo\hertz}, o que torna este material bom candidato para uma série de aplicações industriais de monitoramento de máquinas.
+
+Kern et al., 2016, publicaram o artigo "Development of a Solid-Borne Sound Sensor
+to Detect Bearing Faults Based on a MEMS Sensor and a PVDF Foil Sensor". Neste os autores comparam o filme PVDF com um acelerômetro microeletromecânico para aplicação de monitoramento de rolamentos de aplicação automotiva. Os autores aquisitaram os sinais de ambos sensores e fizeram a comparação entre eles, utilizando como ferramentas para análise do sinal os métodos de curtose, valor RMS e densidade espectral de potência. Após os ensaios, os autores chegaram a conclusão que foi possível diferenciar com o sensor PVDF os sinais de um rolamento em bom estado para um rolamento com defeitos, ainda que apontem as interferências eletromagnéticas como um fator de inclusão de ruído no sinal quando comparado ao sensor microeletromecânico.
+
+Baumgärtel et al., 2016, publicaram o artigo "Classification and simulation method for piezoelectric PVDF sensors". Neste os autores buscaram as características elétricas, de frequência e deriva térmica do filme PVDF a fim de verificar sua potencial utilidade como material para sensores de ruídos estruturais, bem como seus limites de aplicabilidade. Para tanto os autores testaram dez amostras de sensor filme pvdf em vinte e sete pontos entre \SI{50}{\hertz} e \SI{2}{\kilo\hertz}, repetindo vinte vezes cada medida a fim de garantir validade estatística. Os autores mostraram que a constante piezoelétrica e o módulo de elasticidade do material podem ser influenciados por variações de temperatura. Ainda assim, os autores também chegam em conclusões de que o PVDF possui potencial para ser um material central de novos sensores de monitoramento de ruídos estruturais, não apenas em pesquisas, mas também em aplicações industriais.
+
+%Para que se possa utilizar os sensores, entretanto, é necessário que seja possível aquisitar os seus sinais.
+
+%Descrever as aplicações do PVDF baseado na revisão de literatura feita por Xin, 2016.
+
+\subsection{\textbf{Detecção de Falhas em Mancais de Rolamentos}}
+
 \chapter{Materiais e métodos}
+
+Tendo-se em vista relação aos materiais utilizados para condução dos experimentos, bem como os métodos empregados para tanto.
+
+\section{\textbf{Rolamentos autocompensadores de rolos}}
 
 Para a realização dos experimentos serão utilizados dois rolamentos de rolos autocompensadores da NSK, modelo 21306CD. Este modelo apresenta como principais características uma alta capacidade de carga, gaiola de aço prensado e desalinhamento permissível entre $1^{\circ}$ e $2.5^{\circ}$. Esta categoria de rolamento foi escolhida pois possibilita uma maior facilidade para inserção manual de defeitos, o que será feito após a caracterização de seu sinal. Isto possibilitará, assim, a comparação entre os sinais do rolamento defeituoso em relação ao rolamento em perfeito estado. 
 
@@ -1193,6 +1211,8 @@ Já a Figura~\ref{diametro_rolamento} apresenta o diâmetro do elemento rolante,
 \end{figure} 
 
 As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falha. Estas foram montadas em uma bancada experimental, construída para condução dos experimentos, onde terão terão registradas as suas assinaturas de vibração tanto no domínio da frequência, quanto do tempo para posterior análise. 
+
+\section{\textbf{Bancada experimental}}
 
 O aparato experimental é composto por um motoredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22} mostra o projeto da bancada experimental. 
 
@@ -1270,6 +1290,8 @@ Por fim, para a \textit{Ball Spin Frequency} temos, aproximadamente:
 
 %\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
 
+\section{\textbf{Aquisição e análise do sinal do filme PVDF}}
+
 A partir destas frequências pode-se estimar as áreas para análise do sinal aquisitado, bem como realizar o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas. 
 
 Serão aquisitados sinais de todas as amostras com defeitos, com a utilização de sensores fabricados com o polímero PVDF, com terminais que permitem a medição da sua diferença de potencial, quando estes estiverem sujeitos a um esforço mecânico. 
@@ -1294,7 +1316,7 @@ A montagem dos sensores se deu em um encapsulamento de alumínio. Estes são aco
 \label{encapsulamento_sensor}
 \end{figure} 
 
-A Figura~\ref{circuito_sensor} mostra o circuito preliminar de condicionamento do sensor piezoelétrico, elaborado no \textit{software} Proteus. Neste buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral Texas Instruments LM2904, uma vez que este possui dois canais e larga banda de \SI{1}{\mega\hertz} (Texas Instruments, 2021).
+A Figura~\ref{circuito_sensor} mostra o circuito preliminar de condicionamento do sensor piezoelétrico, elaborado no \textit{software} Proteus. Neste buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral Texas Instruments LM2904, uma vez que este possui dois canais e larga banda de \SI{1}{\mega\hertz} (Texas Instruments, 2021). Os valores dos componentes deste circuito serão alterados a partir das informações obtidas nos testes.
 
 \begin{figure}[H]
 \centering
@@ -1567,7 +1589,17 @@ DIAS JR, Milton; PEDERIVA, Robson.
 % ----------------------------------------------------------
 % Apêndices
 % ----------------------------------------------------------
+\begin{apendicesenv}
 
+\chapter{Programa para aqusição de dados na plataforma LabView}
+
+
+\chapter{Programa para aqusição de dados com microcontrolador STM32}
+
+
+\chapter{Programas para análise dos sinais dos rolamentos}
+
+\end{apendicesenv}
 
 % ---
 
