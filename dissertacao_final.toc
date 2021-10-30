@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.2.4}\textbf {Falhas em rolamentos}}{23}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}\textbf {Análise de vibrações}}{33}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}\textbf {Frequências características de defeitos e detecção de falhas em rolamentos}}{35}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}\textbf {Técnicas de detecção de falhas em rolamentos}}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}\textbf {Detecção de falhas em rolamentos por análise de vibração}}{36}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}\textbf {Fluroreto de polivinilideno}}{41}{section.3.4}%
 \contentsline {section}{\numberline {3.5}\textbf {Sistemas de aquisição de dados}}{45}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}\textbf {Condicionamento de Sinal}}{45}{subsection.3.5.1}%
