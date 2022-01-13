@@ -1,0 +1,6 @@
+Range of bandpass filtering, [freq1,freq2] = [1300 2500]
+Curtose Dominio Tempo = 2.6623
+Curtose Dominio Frequencia = 76.6268
+Curtose Sinal Residual = 42.4238
+Nível RMS = 0.0129 
+P ótimo = 3

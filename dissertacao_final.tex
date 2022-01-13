@@ -31,7 +31,7 @@
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage{blindtext}
-
+\usepackage{adjustbox}
 
 % ---
 % Pacotes de citações
@@ -373,11 +373,11 @@ Espera-se que, a partir dos experimentos e análise dos dados, se possa obter um
 
 \chapter{Objetivos}
 
-\section{\textbf {Geral}}
+\section{\normalfont{\textbf {Geral}}}
 
 Em relação aos objetivos do trabalho, visa-se, de forma geral, a aquisição de sinal de vibração, com a utilização de sensor PVDF, para que seja realizada a detecção de falhas em rolamentos em um sistema supervisor com aplicações de manutenção preditiva. A partir disto espera-se possível avaliar a viabilidade de um sistema de sensores PVDF para monitoramento das condições de rolamentos em maquinários, a fim de possibilitar uma alternativa mais barata em relação aos sensores atualmente utilizados para este fim.
 
-\section{\textbf {Específicos}}
+\section{\normalfont{\textbf {Específicos}}}
 
 Os objetivos específicos do trabalho podem ser sumarizados em:
 
@@ -397,7 +397,7 @@ Os objetivos específicos do trabalho podem ser sumarizados em:
 
 Neste capítulo, apresenta-se o estado da arte quanto a utilização de sensores PVDF em aplicações de monitoramento de vibração.
 
-\section{\textbf{Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}
+\section{\normalfont{\textbf{Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}}
 
 Dentre as distintas aplicações do PVDF uma revisão de literatura é desenvolvida com base em Xin et al., 2016, quanto ao seu uso como sensor de vibrações. Nesta, apresentam suas aplicações para dispositivos médicos portáteis, monitoramento de saúde estrutural, monitoramento de maquinário, dentre outras diversas.
 
@@ -438,7 +438,7 @@ Neste capítulo propõe-se uma revisão bibliográfica acerca dos principais con
 
 Estes tópicos embasam o posterior desenvolvimento do trabalho e os experimentos que serão apresentados nos capítulos seguintes.
 
-\section{\textbf{Manutenção}}
+\section{\normalfont{\textbf{Manutenção}}}
 Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios que permitam a produção. Estes meios podem variar desde instrumentos simples, como tesouras, agulhas e novelos de lã, até maquinário industrial de alta complexidade. Em qualquer destes casos sempre surgem as questões de desgaste, avarias, quebras e fraturas, dentre outros possíveis problemas. Portanto, em toda atividade produtiva  há necessidade de manutenção, sem a qual a produção colapsa (NEPOMUCENO, 1989).
 
 	Usualmente classifica-se a manutenção em três formas distintas: corretiva, preventiva e preditiva (HOLANDA, 2016). 
@@ -449,7 +449,7 @@ Todo e qualquer meio no qual se pretenda fabricar alguma coisa precisa de meios 
 
 	Assim, faz-se necessária uma forma de manutenção que particularize cada máquina, de forma a avaliar sistematicamente suas condições. Isto começa a ocorrer nos anos 70 do século XX, com os avanços da automação e elevação das exigências de confiabilidade e disponibilidade. A este método de manutenção chama-se de manutenção preditiva. (HOLANDA, 2016).  
 
-\subsection{\textbf{Manutenção preditiva}}
+\subsection{\normalfont{\textbf{Manutenção preditiva}}}
 %Nepomuceno, 1989, p.41
 
 Para Nepomuceno, 1989, a manutenção preditiva tem por finalidade permitir que sejam adotadas medidas de forma a evitar estragos ou situações catastróficas. Para tanto, é necessário o estabelecimento, em função de cada tipo de máquina, de quais são os parâmetros que devem ser escolhidos para monitoramento. Assim, com base na análise destas informações de determinado componente, pode-se ter subsídios para que sejam tomadas tais medidas. 
@@ -489,7 +489,7 @@ Assim, a manutenção preditiva baseada em análise de vibrações, aplicada à 
 
 
 \newpage
-\section{\textbf{Fundamentos e aplicações de rolamentos}}
+\section{\normalfont{\textbf{Fundamentos e aplicações de rolamentos}}}
 Rolamentos são dispositivos para transmissão de movimentos rotacionais ou lineares, com finalidade de redução de atrito entre partes móveis. Rolamentos são compostos, geralmente, de dois anéis, elementos rolantes e uma gaiola, sendo classificados como rolamentos radiais ou axiais, dependendo da direção da carga principal (NSK, 2018). Adicionalmente, os rolamentos são classificados, em função do tipo de elemento rolante, como rolamentos de esferas e rolamentos de rolos, que podem assumir forma cilíndrica, de agulhas ou cônicos, bem como são segregados quanto seus propósitos específicos (NSK, 2018).
 
 A Figura~\ref{ComponentesRolamentos} demonstra os componentes de um rolamento de uma carreira esferas e suas dimensões. 
@@ -507,7 +507,7 @@ Em comparação aos mancais de deslizamento, os rolamentos apresentam vantagens 
 
 A seguir apresenta-se uma revisão sobre tipos de rolamentos, suas principais características, propriedades e tipos de falhas.
 
-\subsection{\textbf{Tipos de rolamentos}}
+\subsection{\normalfont{\textbf{Tipos de rolamentos}}}
 
 Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  e que servem para redução de atrito entre eles e a superfície (ABECOM, 2019). Existem distintos tipos de rolamentos, dentre os quais cita-se:
 
@@ -522,7 +522,7 @@ Os rolamentos, de forma semelhante às rodas, são componentes que podem rolar  
 
 Cada tipo de rolamento possui suas aplicações e a escolha de rolamento depende de uma série de fatores específicos, tais como a carga a ser suportada, a velocidade de funcionamento, temperatura de trabalho, folga interna, alinhamento e desalinhamento do eixo, espaço disponível, dentre outros. 
 
-\subsection{\textbf{Processos de fabricação de rolamentos}}
+\subsection{\normalfont{\textbf{Processos de fabricação de rolamentos}}}
 
 Nos rolamentos usualmente segrega-se o processo de fabricação em: fabricação dos anéis interno e externo; fabricação das esferas; fabricação das gaiolas e, por fim, montagem (SANTOS et al., 2017).   
 
@@ -544,7 +544,7 @@ As gaiolas, por sua vez, são produzidas com lâminas de aço que recebem a form
  
 Com todas as partes produzidas é realizada, então, a montagem do rolamento. Primeiro, os anéis interno e externo são colocados concentricamente na linha de produção com as esferas preenchendo os espaços entre estes. O tamanho dos elementos rolantes se dá por calculo a partir do diâmetro da ranhura do anel interno. Estes são, então, uniformemente organizados por um divisor e uma metade da gaiola é adicionada. Em sequência outra máquina adiciona a metade restante da gaiola e finaliza-se, assim, a montagem da peça. (SANTOS et al., 2017). 
 
-\subsection{\textbf{Carga e vida útil de rolamentos}}
+\subsection{\normalfont{\textbf{Carga e vida útil de rolamentos}}}
 
 A vida nominal básica de um rolamento é dada na norma ISO 281:2007, que também específica os métodos de cálculo de classificação de carga dinâmica básica. Em relação a classificação de carga dinâmica básica, C, esta é utilizada para cálculos que envolvem rolamentos dinamicamente tensionados (SKF, 2019). Tal classificação expressa a carga do rolamento que resultará em uma vida nominal básica, L10, de um milhão de revoluções (SKF , 2019). O valor de C é usualmente encontrado nos catálogos referência das fabricantes.   
 
@@ -583,7 +583,7 @@ Para o cálculo de vida útil em condições variáveis, utiliza-se:
 
 Onde $L_{10}$ é a vida nominal básica, com 90\% de confiabilidade, $L_{10 \,1}$, $L_{10 \,2}$ são as vidas nominais básicas, com 90\% de confiabilidade, em condições constantes 1, 2 e, por fim, $U_{1}$, $U_{2}$ são as frações, que devem totalizar 1, do ciclo de vida sob as condições 1, 2 etc. De acordo com SKF, 2019, em cada intervalo de trabalho a carga e condições operacionais podem apresentar valor médio constante. Assim, o número de horas ou revoluções esperadas para cada intervalo de trabalho definem a fração de vida para esta condição específica. Neste âmbito, se ${N_{1}}$ representar o número de rotações necessárias dada uma condição de carga ${P_{1}}$, e N for o número de rotações para conclusão dos ciclos de carga variável, logo a fração do ciclo ${U_{1} = N_{1} / N}$ é utilizada pela condição de carga ${P_{1}}$, a qual apresenta vida útil calculada de ${L_{10 \,1}}$ (SKF, 2019).
 
-\subsection{\textbf{Falhas em rolamentos}}
+\subsection{\normalfont{\textbf{Falhas em rolamentos}}}
 
 Quando há o correto manuseio dos rolamentos, usualmente estes podem ser utilizados por longos períodos de tempo antes de surgirem sinais de fadiga. Entretanto, devido a seleção incorreta do rolamento, lubrificação inadequada ou mesmo falhas de manuseio ou de condição de serviço, podem ocorrer falhas prematuras (NSK, 2014).
 
@@ -758,7 +758,7 @@ Ao ocorrem danos em rolamentos, verifica-se que ocorre o contato entre a superf�
 Assim, para detecção de falhas pode-se utilizar análise de vibrações, uma vez que os defeitos nos componentes dos rolamentos apresentam frequências características que podem ser calculadas a partir das especificações do rolamento. 
 
 \newpage
-\section{\textbf{Análise de vibrações}}
+\section{\normalfont{\textbf{Análise de vibrações}}}
 
 Para que se possa abordar as técnicas de manutenção preditiva baseada em análise de vibrações faz-se necessário, primeiramente, um breve entendimento relativo ao fenômeno das vibrações mecânicas. 
 
@@ -805,7 +805,7 @@ Limitando-se o escopo de abrangência, este fenômeno das vibrações, na engenh
 
 Fatores como desgaste precoce de elementos mecânicos e falhas por fadiga causadas por movimentos cíclicos podem ser mensurados ao monitorar a assinatura vibracional dos componentes de máquina. A partir disto são aplicadas, então, técnicas específicas que permitam a adequada mensuração do estado dos componentes. 
 
-\subsection{\textbf{Frequências características de defeitos e detecção de falhas em rolamentos}}
+\subsection{\normalfont{\textbf{Frequências características de defeitos e detecção de falhas em rolamentos}}}
 
 De acordo com Ponci e Cunha, 2005, as frequências características de defeitos dos rolamentos são assíncronas, ou seja, estas não se dão em múltiplos inteiros da velocidade de rotação do eixo. As falhas de rolamentos geram quatro frequências características básicas, relacionadas às características e comportamento de seus componentes. 
 
@@ -845,7 +845,7 @@ Onde, nestas fórmulas, temos $f_{r}$, que é a subtração da frequência de ro
 
 Logo, a partir destas frequências características de defeito e das especificações dos rolamentos e de suas propriedades de trabalho - número de elementos rolantes, diâmetros, ângulo de contato e velocidade de rotação -, os componentes podem ser monitorados quanto ao surgimento de falhas.  
 
-\subsection{\textbf{Detecção de falhas em rolamentos por análise de vibração}}
+\subsection{\normalfont{\textbf{Detecção de falhas em rolamentos por análise de vibração}}}
 
 Abordados os conceitos  fundamentais relativos as vibrações mecânicas e as frequências que caracterizam falhas em rolamentos, faz-se necessário entender como as vibrações podem ser medidas e analisadas sob a ótica do interesse tecnológico na manutenção preditiva. 
 
@@ -930,7 +930,7 @@ Dentre as técnicas de análise espectral, a mencionada transformada rápida de 
 
 Dentre as técnicas utilizadas para este fim, a análise de envelope é a mais largamente empregada. 
 
-\subsection{\textbf{Análise de envelope do sinal}}
+\subsection{\normalfont{\textbf{Análise de envelope do sinal}}}
 
 Segundo Barreiro, 2010, a NASA apoiou, em 1971, um programa para investigação da detecção de defeitos em rolamentos. Neste, foram conduzidos experimentos onde se deu a comparação dos sinais de rolamentos em bom estado com o de rolamentos com danos manualmente inseridos na pista interna. Para esta comparação os dados de vibração, emissões acústicas e temperatura dos rolamentos foram capturados. A Figura~\ref{fft_sinal_barreiro} mostra a diferença entre os espectros de vibração de um rolamento em bom estado e de um rolamento com dano introduzido.
 
@@ -981,7 +981,7 @@ Uma vez que possibilita a detecção de falhas de rolamentos em um espectro de f
 
 
 \newpage
-\section{\textbf{Fluroreto de polivinilideno}}
+\section{\normalfont{\textbf{Fluroreto de polivinilideno}}}
 
 O fluoreto de polivinilideno, PVDF, é um fluoropolímero termoplátisco altamente inerte produzido a partir da polimerização do monômero chamado difluoretino (kabir et al., 2017). Em 1969 um pesquisador japonês, Dr. Heiji Kawai, descobriu altíssimos níveis de atividade piezoelétrica, muito superiores a qualquer polímero natural ou sintético conhecido, no fluoreto de polivinilideno (Marutake, 1995). Desde então, o PVDF vem tendo suas aplicações estudadas. O PVDF é um polímero semicristalino de cadeia longa, proveniente da unidade CH2-CF2. Esta unidade possui um grande grande momento do dipolo elétrico, de aproximadamente 7,56 x 10-30 C.m. Como estas unidades se alinham de maneira ordenada para uma configuração \textit{head-tail} superior à 90\%, o polímero apresenta um momento líquido do dipolo elétrico incomumente alto (CHATIGNY e ROBB, 1987).
 
@@ -1063,7 +1063,7 @@ A constante piroelétrica, $p$, por sua vez, está ligada a natureza dos transdu
 
 
 \newpage
-\section{\textbf{Sistemas de aquisição de dados}}
+\section{\normalfont{\textbf{Sistemas de aquisição de dados}}}
 
 Para que possa analisar os dados provenientes de sensores é necessário um sistema de aquisição de dados. França, 1997, p. 4 define sistema de aquisição de dados afirmando que este trata-se de um conjunto de elementos interrelacionados, os quais visam aquisição, análise e apresentação dos dados relativos ao processo de interesse.
 
@@ -1071,7 +1071,7 @@ Percebe-se, portanto, que um sistema de aquisição de dados é composto por div
 
 %Neste projeto o transdutor utilizado será o filme PVDF, cujas características.
 
-\subsection{\textbf{Condicionamento de Sinal}}
+\subsection{\normalfont{\textbf{Condicionamento de Sinal}}}
 \label{sub:condicionamento}
 
 Os sinais elétricos dos transdutores, a fim de serem aquisitados, usualmente passam por condicionamento de sinal. Este processo de condicionamento diz respeito a uma série de possíveis tratamentos que podem ser feitos em relação ao sinal elétrico, dentre as quais destacam-se a amplificação, atenuação e filtragem. 
@@ -1088,7 +1088,7 @@ Filtragem, por sua vez, diz respeito ao processo de seleção, rejeição ou equ
 
 % TO-DO: melhorar acima
 
-\subsection{\textbf{DAQ - Data Acquisition}}
+\subsection{\normalfont{\textbf{DAQ - Data Acquisition}}}
 
 % TO-DO : melhorar todo este trecho
 
@@ -1130,8 +1130,7 @@ Em relação a taxa de amostragem, o teorema de Nyquist, também conhecido como 
 %https://br.omega.com/prodinfo/aquisicao-de-dados.html
 
 
-
-\subsection{\textbf{Detecção de Falhas em Mancais de Rolamentos}}
+\subsection{\normalfont{\textbf{Detecção de Falhas em Mancais de Rolamentos}}}
 
 
 
@@ -1141,14 +1140,14 @@ Em relação a taxa de amostragem, o teorema de Nyquist, também conhecido como 
 
 Tendo-se em vista relação aos materiais utilizados para condução dos experimentos, bem como os métodos empregados para tanto.
 
-\section{\textbf{Rolamentos autocompensadores de rolos}}
+\section{\normalfont{\textbf{Rolamentos autocompensadores de rolos}}}
 
 Para a realização dos experimentos serão utilizados dois rolamentos de rolos autocompensadores da NSK, modelo 21306CD. Este modelo apresenta como principais características uma alta capacidade de carga, gaiola de aço prensado e desalinhamento permissível entre $1^{\circ}$ e $2.5^{\circ}$. Esta categoria de rolamento foi escolhida pois possibilita uma maior facilidade para inserção manual de defeitos, o que será feito após a caracterização de seu sinal. Isto possibilitará, assim, a comparação entre os sinais do rolamento defeituoso em relação ao rolamento em perfeito estado. 
 
 As dimensões do rolamento escolhido são:
 
 \begin{itemize}
-	\item Número de elementos rolantes: 20 (10 por fileira)
+	\item Número de elementos rolantes: 26 (11 por fileira)
 	\item Diâmetro externo: 72 \si{\mm}
 	\item Diâmetro interno: 30 \si{\mm}
 	\item Limite de rotação: 4500 RPM lubrificado a graxa, 6000 RPM lubrificado a óleo
@@ -1158,7 +1157,7 @@ A Figura~\ref{Figura24} mostra um modelo de rolamento autocompensador de rolos, 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Figura24}
+\includegraphics[width=\textwidth,height=50mm,keepaspectratio]{Figura24}
 \caption {Rolamento autocompensador de rolos. Retirado de NSK, 2018.}
 \label{Figura24}
 \end{figure} 
@@ -1190,7 +1189,9 @@ Já a Figura~\ref{diametro_rolamento} apresenta o diâmetro do elemento rolante,
 
 As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falha. Estas foram montadas em uma bancada experimental, construída para condução dos experimentos, onde terão terão registradas as suas assinaturas de vibração tanto no domínio da frequência, quanto do tempo para posterior análise. 
 
-\section{\textbf{Bancada experimental}}
+
+
+\section{\normalfont{\textbf{Bancada experimental}}}
 
 O aparato experimental é composto por um motoredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22} mostra o projeto da bancada experimental. 
 
@@ -1267,7 +1268,7 @@ Por fim, para a \textit{Ball Spin Frequency} temos, aproximadamente:
 
 %\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
 
-\section{\textbf{Aquisição e análise do sinal do filme PVDF}}
+\section{\normalfont{\textbf{Aquisição e análise do sinal do filme PVDF}}}
 
 A partir destas frequências pode-se estimar as áreas para análise do sinal aquisitado, bem como realizar o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas. 
 
@@ -1335,7 +1336,7 @@ A Figura~\ref{fluxograma_aquisicao} apresenta o fluxo de como se dará o process
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{fluxograma_funcionamento_sistema}
+\includegraphics[width=\textwidth,height=60mm,keepaspectratio]{fluxograma_funcionamento_sistema}
 \caption {Fluxo de aquisição e processamento. Elaborado pelo autor.}
 \label{fluxograma_aquisicao}
 \end{figure} 
@@ -1346,70 +1347,188 @@ A Figura~\ref{fluxograma_aquisicao} apresenta o fluxo de como se dará o process
 
 A análise dos resultados obtidos se dará à luz da revisão bibliográfica e comparativamente com os resultados encontrados em outros artigos. 
 
+\section{\normalfont{\textbf{Definição dos experimentos}}}
+
+Para aquisição dos dados, optou-se por diferentes cenários: 1) cenário de aquisições sem qualquer tipo de filtro, apenas com amplificação por meio de amplificador operacional; 2) cenário de aquisições com filtragem analógica utilizando-se do circuito construído e descrito na seção X – Materiais e Métodos; 3) cenário baseado em filtragem analógica seguido de filtragem digital implementada através da plataforma LabVIEW.
+
+A definição destes cenários distintos se deu a partir da necessidade de se avaliar o sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito níveis de interferências eletromagnéticas com e sem filtragem. Tal definição se deu pois verificou-se, inicialmente, uma quantidade perceptível de interferências eletromagnéticas no sensor, conforme descrito na seção ~
+
+Durante a fase de aquisição dos dados, também foi realizado um conjunto de aquisições com utilização de um filtro digital rejeita-faixa do tipo Butterworth de 4ª ordem, implementado através da plataforma LabVIEW, bem como um filtro passa-baixa também do tipo Butterworth de 4ª ordem. Tal implementação se deu com o objetivo de mitigar interferências verificadas acima dos 2500Hz e, também, interferências ainda presentes por volta dos 60Hz – frequência das oscilações da corrente alternada. 
+
+Além destas interferências outras foram verificadas, através da análise espectral por meio de FFT, na própria placa de aquisição USB-6212, conforme visto na Figura 1.
+
+Dentre os possíveis motivos para tal interferência, estima-se que estes sejam decorrentes de ruídos provenientes da própria fonte do computador utilizado para aquisição dos dados, a qual pode interferir na porta USB utilizada para conexão do dispositivo de aquisição. Entretanto verificou-se, após a inclusão do filtro digital, que o mesmo atenuou demasiadamente o sinal, tendo funcionado como um passa-baixa ao invés de um passa-faixa. 
+
+Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Após isto, foram feitas análises com inclusão dos filtros digitais. 
+
+Para condução da aquisição destes distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como FULANO et al, XXXX. Tais taxas respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela , por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, da assinatura dos danos nos rolamentos. 
+
+Desta forma, os parâmetros de aquisição dos dados analisados até o momento foram definidos e encontram-se na Tabela 1
+
 \chapter{Resultados}
 
-Análise preliminar dos dados
-	Para aquisição dos dados, optou-se por diferentes cenários: 1) cenário de aquisições sem qualquer tipo de filtro, apenas com amplificação por meio de amplificador operacional; 2) cenário de aquisições com filtragem analógica utilizando-se do circuito construído e descrito na seção X – Materiais e Métodos; 3) cenário baseado em filtragem analógica seguido de filtragem digital implementada através da plataforma LabVIEW.
-	A definição destes cenários distintos se deu a partir da necessidade de se avaliar o sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito níveis de interferências eletromagnéticas com e sem filtragem. Tal definição se deu pois verificou-se, inicialmente, uma quantidade perceptível de interferências eletromagnéticas no sensor, conforme descrito na seção X – Materiais e Métodos. 
-Durante a fase de aquisição dos dados, também foi realizado um conjunto de aquisições com utilização de um filtro digital rejeita-faixa do tipo Butterworth de 4ª ordem, implementado através da plataforma LabVIEW, bem como um filtro passa-baixa também do tipo Butterworth de 4ª ordem. Tal implementação se deu com o objetivo de mitigar interferências verificadas acima dos 2500Hz e, também, interferências ainda presentes por volta dos 60Hz – frequência das oscilações da corrente alternada. 
-Além destas interferências outras foram verificadas, através da análise espectral por meio de FFT, na própria placa de aquisição USB-6212, conforme visto na Figura 1.
-Dentre os possíveis motivos para tal interferência, estima-se que estes sejam decorrentes de ruídos provenientes da própria fonte do computador utilizado para aquisição dos dados, a qual pode interferir na porta USB utilizada para conexão do dispositivo de aquisição. Entretanto verificou-se, após a inclusão do filtro digital, que o mesmo atenuou demasiadamente o sinal, tendo funcionado como um passa-baixa ao invés de um passa-faixa. 
-Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Após isto, foram feitas análises com inclusão dos filtros digitais. 
-Para condução da aquisição destes distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como FULANO et al, XXXX. Tais taxas respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela 1, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, da assinatura dos danos nos rolamentos. 
-Desta forma, os parâmetros de aquisição dos dados analisados até o momento foram definidos e encontram-se na Tabela 1
+Nesta seção são apresentados os resultados dos experimentos realizados com o sensor filme PVDF.
+
+\section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor}}}
+
+Para caracterização do sinal inerente ao sensor, submetido ao circuito de condicionamento e filtragem do sinal, foram feitos os seguintes experimentos: 1) aquisição do sinal do sensor com o maquinário desligado e desconectado da energia elétrica; 2) aquisição com o maquinário desligado, mas conectado à tomada; 3) maquinário energizado, mas com motor parado. A finalidade destes experimentos foi de, inicialmente, verificar o nível de ruído do sinal em termos de interferências eletromagnéticas no ambiente.
+
+Para que se conduzissem os experimentos deste cenário o sensor foi posicionado no rolamento e seu sinal aquisitado a uma taxa igual a taxa de aquisição dos ensaios. A tabela 
+
+Estes três cenários distintos propostos visaram a verificação da amplitude de ruídos elétricos que ainda fossem capaz de interferências no sinal. 
+
+A Figura~\ref{maquina_desligada_da_tomada} mostra o sinal temporal da bancada de ensaios desconectado da energia elétrica. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{Caso0/maquina_desligada_da_tomada}
+\caption {Sinal temporal da bancada desconectada da energia elétrica. Elaborado pelo autor.}
+\label{maquina_desligada_da_tomada}
+\end{figure} 
+
+O sinal temporal aponta a presença de um ruído, com amplitude pico a pico de aproximadamente {\SI{8}{\milli\volt}}. Calculando-se o FFT e o PSD do sinal, foi obtido o resultado mostrado na Figura~\ref{PSD_SENSOR_MAQUINA_DESLIGADA}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm,keepaspectratio]{Caso0/PSD_SENSOR_MAQUINA_DESLIGADA}
+\caption {Espectro do sinal da bancada desconectada da energia elétrica. Elaborado pelo autor.}
+\label{PSD_SENSOR_MAQUINA_DESLIGADA}
+\end{figure} 
+
+Através da remoção do componente de corrente contínua do sinal, foi possível verificar quais frequências o compõe. Foi possível verificar que o espectro possui um elevado pico na região dos {\SI{60}{\hertz}, sem alterações nas demais faixas de frequência. Considerando-se que apenas o filtro rejeita-faixa estava ligado à energia neste momento, conclui-se que o referido ruído foi induzido pela própria fonte de alimentação do mesmo. Ou seja, ainda que o circuito condicionador, em conjunto com o filtro, tenha sido capaz de atenuar as componentes de interferência elétrica, componentes de ruído elétrico ainda se mostraram presentes. 
+
+A partir deste cenário, para que se verificasse o quanto estes sinais seriam presentes nas componentes de frequência durante o processo de aquisição dos dados, foi proposto o experimento de aquisição dos dados com a bancada ligada a tomada, mas não energizada. A Figura~\ref{maquina_ligada_na_tomada} mostra o sinal temporal da bancada quando conectada à energia elétrica.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{Caso0/maquina_ligada_na_tomada}
+\caption {Sinal temporal da bancada conectada à energia elétrica. Elaborado pelo autor.}
+\label{maquina_ligada_na_tomada}
+\end{figure} 
+
+A partir do sinal temporal deste experimento foi possível verificar o incremento na amplitude do sinal, bem como novos componentes de frequência induzidos. A amplitude de voltagem pico a pico cresceu para aproximadamente {\SI{20}{\milli\volt}}, mais que dobrando em relação ao experimento anterior. A Figura~\ref{PSD_SENSOR_MAQUINA_LIGADA} mostra as componentes deste sinal, composto tanto pelos {\SI{60}{\hertz} anteriormente identificados quanto por uma nova componente de alta frequência, centrada na faixa dos {\SI{9500}{\hertz}. A origem desta nova componente de alta frequência não pôde ser identificada. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=170mm,keepaspectratio]{Caso0/PSD_SENSOR_MAQUINA_LIGADA}
+\caption {Elaborado pelo autor.}
+\label{PSD_SENSOR_MAQUINA_LIGADA}
+\end{figure} 
+
+Estas interferências, conclui-se, se devem à natureza de alta impedância do sensor PVDF.  
+
+Assim, verificando-se o aumento dos sinais de interferência elétrica ao ligar a bancada na energia elétrica, foi proposto o experimento de aquisição dos dados com a bancada energizada, mas não em funcionamento. A Figura~\ref{maquina_ligada_na_tomada_e_energizada} mostra o sinal temporal deste caso.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{Caso0/maquina_ligada_na_tomada_e_energizada}
+\caption {Elaborado pelo autor.}
+\label{maquina_ligada_na_tomada_e_energizada}
+\end{figure} 
+
+É possível verificar, neste caso, o aumento da amplitude pico a pico dos sinais, superior a {\SI{25}{\milli\volt}}. Já em relação ao sinal espectral deste caso, como é possível visualizar na Figura~\ref{PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}, o mesmo aponta picos na região dos {\SI{60}{\hertz} e dos {\SI{9500}{\hertz}. Nota-se, entretanto, que ao contrário do experimento anterior, onde as interferências de alta frequência dominavam o espectro em termos de amplitude, neste experimento a frequência da corrente alternada volta a ser dominante. Isto ocorre pela indução causada pelos demais elementos da bancada de testes, agora energizados, tal como o inversor de frequências.   
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm,keepaspectratio]{Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}
+\caption {Elaborado pelo autor.}
+\label{PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}
+\end{figure} 
+
+Os resultados desta caracterização de ruídos encontram-se sumarizados na Tabela~\ref{tab:caraterizaçãoSinal}
+
+\begin{table}[ht]
+\caption{Caracterização do ruído elétrico capturado pelo sistema}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+Caracterização do ruído do sensor               & Valor pico a pico    & Valor RMS & Frequências dominantes                                                               \\ \hline
+Bancada desligada da energia elétrica           & Aproximadamente 8mv  &           & Espectro com pico nos 60Hz                                                           \\ \hline
+Bancada ligada na energia elétrica              & Aproximadamente 20mv &           & Espectro demonstrando uma concentração de ruído nos 60Hz e pico por volta dos 9500Hz \\ \hline
+Bancada ligada na energia elétrica e energizada & Aproxidamente 25mv   &           & Espectro demonstrando uma concentração de ruído nos 9500Hz e pico nos 60Hz           \\ \hline
+\end{tabular}%
+}
+\label{tab:caraterizaçãoSinal}
+\source{Elaborado pelo autor.}
+\end{table}
+
+
+\section{\normalfont{\textbf {Caso  2 - caracterização do sinal do motorredutor}}}
+
+Após a caraterização das interferências elétricas que seriam inerentes ao sensor, o padrão de vibrações do motorredutor foi caracterizado, a fim de que fossem verificadas suas frequências. Isto foi necessário pois as frequências geradas pelo conjunto motorredutor não eram, à priori, conhecidas. Assim, para que se evitasse possíveis confusões ao se caracterizar os sinais de rolamentos, caso, por coincidência, alguma das frequências de defeito esperadas fossem iguais às do motorredutor, tal caracterização foi proposta. 
+
+Para tanto o sinal foi aquisitado durante dois minutos ininterruptos, tendo sido processados e aqui apresentados, para manutenção da consistência com os demais comparativos realizados, os primeiros seis segundos do sinal. A Figura~\ref{motorredutor} mostra o referido sinal no domínio do tempo.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso0/motorredutor}
+\caption {Sinal temporal do motorredutor.}
+\label{motorredutor}
+\end{figure} 
+
+Percebe-se um incremento significativo nas voltagens pico a pico, quando comparado ao caso anterior com a bancada meramente energizada, atingindo por volta de {\SI{1}{\volt}}. Isto mostrou inicialmente uma evidência de que a relação sinal-ruído seria, portanto, positiva - ou seja, a tensão gerada pelo sinal mecânico seria superior à do ruído elétrico. 
+
+Contudo, analisando-se o caso no domínio das frequências é possível notar, ao se analisar o PSD deste experimento, que as frequências dominantes ainda se mantém centradas nos ruídos anteriormente detectados. A Figura~\ref{PSD_MOTORREDUTOR} mostra os picos de energia contidos no sinal, destacados, ainda, nos {\SI{60}{\hertz} e também nos {\SI{9500}{\hertz}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso0/PSD_MOTORREDUTOR}
+\caption {Espectro de densidade de potência do motorredutor. Elaborado pelo autor.}
+\label{PSD_MOTORREDUTOR}
+\end{figure}
+
+Dado o ruído inerente ao sensor, adotou-se uma estratégia de filtragem manual através da análise da densidade espectral de potência, filtrando-se os ruídos com grande interferência no sinal.
+
+Para que fosse possível visualizar onde as demais frequências estavam ocorrendo, foi realizado o processo de filtragem através do PSD. Foram excluídos, após inspeção visual, os picos acima de 0.2 W/Hz. Excluindo-se os picos significativos de ruídos, o resultado, então apresentou-se conforme visto na Figura~\ref{PSD_MOTORREDUTOR_FILTRADO}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso0/PSD_MOTORREDUTOR_FILTRADO}
+\caption {Espectro de densidade de potência do motorredutor. Elaborado pelo autor.}
+\label{PSD_MOTORREDUTOR_FILTRADO}
+\end{figure}
+
+A partir desta filtragem pode-se verificar uma predominância de frequências na região dos {\SI{3800}{\hertz} aos {\SI{4000}{\hertz}. 
+
+Contudo, além deste também é possível verificar picos isolados por volta dos {\SI{128}{\hertz}, {\SI{360}{\hertz}, além de uma concentração de menor amplitude de frequências em {\SI{986}{\hertz} e outra, ainda menor, na região dos {\SI{1730}{\hertz}. 
+
+As caracteristicas do motorredutor, portanto. 
+
+\section{\normalfont{\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}
+
+Para caracterização do sinal do rolamento em bom estado, foram adotados os mesmos métodos anteriormente 
+
+A Figura~\ref{DOMINIO_TEMPO_ROLAMENTO_BOM} mostra o sinal temporal do rolamento em bom estado. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM}
+\caption {alguuma coisa}
+\label{DOMINIO_TEMPO_ROLAMENTO_BOM}
+\end{figure} 
+
+
+
+\section{\normalfont{\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}
+
+Para caracterização do rolamento com dano introduzido no elemento rolante, também foi adotado o método de análise do envelope do sinal. O envelope foi processado em dois conjuntos distintos: 1) no sinal cru, como aquisitado do sensor; 2) no sinal filtrado com as frequências de interesse, conforme visualizado através da análise espectral através do PSD.
+
+
+\section{\normalfont{\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}
+
+\section{\normalfont{\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}
+
+
+\section{\normalfont{\textbf {Comparação dos resultados}}}
 
 
 \chapter{Conclusões}
 
-Com base na revisão bibliográfica realizada, prevê-se o início dos experimentos seguindo um processo tal qual ilustrado na Figura~\ref{fluxograma_testes}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{fluxograma_testes}
-\caption {Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}
-\label{fluxograma_testes}
-\end{figure} 
-
-A partir da montagem da bancada de testes e fixação dos sensores, será possível a aquisição dos dados e análise preliminar destes. Com esta análise, abre-se a possibilidade de um ciclo de possíveis ajustes nos sistemas de aquisição - incluindo-se, o condicionamento do sinal. É esperado, com isso, que se possa consolidar a caracterização do sinal em relação ao rolamento sadio e que, disto, decorram-se os testes subsequentes com os rolamentos com falhas.
-
-Atualmente o trabalho possui as seguintes etapas em estágio de finalização ou finalizadas
-
-\begin{itemize}
-	\item Levantamento bibliográfico inicial
-	\item Construção da bancada de testes
-	\item Desenvolvimento do sistema de aquisição de dados com LabView
-	\item Desenvolvimento do sistema de aquisição de dados com STM32
-\end{itemize}
-
-A partir da revisão bibliográfica realizada e dos passos já tomados, pretende-se o início dos experimentos. 
-
-Com os dados coletados e os experimentos realizados, será possível avaliar os sinais aquisitados, verificando-se a adequação do sistema de aquisição de dados elaborado, os ajustes de posicionamento dos sensores e, por fim, introdução de falhas nos rolamentos a fim de que se diferencie os sinais de um rolamento em bom estado dos sinais de um defeituoso. 
-
-Espera-se, assim, que a questão quanto a possibilidade de utilização do sensor PVDF para detecção de falhas em rolamentos possa ser respondida.
-
-A Tabela~\ref{tab:tabelaCronograma} mostra o cronograma proposto para finalização do trabalho.
+Neste trabalho foram mostradas evidências da viabilidade de utilização do sensor filme PVDF para detecção de danos em rolamentos. 
 
 
-%A Tabela 1 mostra o cronograma de desenvolvimento.
-\begin{table}[ht]
-\caption {Cronograma proposto para o trabalho. Elaborado pelo autor.}
-\centering
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
 
-\hline
-Atividade / Mês                        & Junho                  & Jullho                 & Agosto                 & Setembro               & Outubro                & Novembro               & Dezembro               \\ \hline
-Qualificação                           & \multicolumn{1}{c|}{X} &                        &                        &                        &                        &                        &                        \\ \hline
-Ajustes Metodológicos pós qualificação & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} &                        &                        &                        &                        &                        \\ \hline
-Início e condução dos experimentos     &                        & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} &                        &                        &                        \\ \hline
-Análise dos Resultados                 &                        &                        &                        & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} &                        &                        \\ \hline
-Escrita da dissertação                 & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{}  \\ \hline
-Defesa                                 &                        &                        &                        &                        &                        & \multicolumn{1}{c|}{X} &                        \\ \hline
-Revisões e entrega final                &                        &                        &                        &                        &                        &                        & \multicolumn{1}{c|}{X} \\ \hline
-\end{tabular}}
-\label{tab:tabelaCronograma}
-\source{Elaborado pelo autor.}
-\end{table}
 
 
 % ----------------------------------------------------------

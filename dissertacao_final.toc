@@ -9,53 +9,61 @@
 \contentsline {chapter}{\chapternumberline {1}Introdução}{12}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}Objetivos}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\textbf {Geral}}{15}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\textbf {Específicos}}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.1}\normalfont {\textbf {Geral}}}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\normalfont {\textbf {Específicos}}}{15}{section.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\textbf {Estado da arte}}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\textbf {Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.1}\normalfont {\textbf {Aplicações do Fluroreto de Polivinilideno como sensor de vibração}}}{16}{section.3.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}Revisão Bibliográfica}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}\textbf {Manutenção}}{18}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}\textbf {Manutenção preditiva}}{19}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}\textbf {Fundamentos e aplicações de rolamentos}}{21}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}\textbf {Tipos de rolamentos}}{22}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}\textbf {Processos de fabricação de rolamentos}}{22}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}\textbf {Carga e vida útil de rolamentos}}{24}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}\textbf {Falhas em rolamentos}}{26}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}\textbf {Análise de vibrações}}{36}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}\textbf {Frequências características de defeitos e detecção de falhas em rolamentos}}{38}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}\textbf {Detecção de falhas em rolamentos por análise de vibração}}{39}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}\textbf {Análise de envelope do sinal}}{43}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}\textbf {Fluroreto de polivinilideno}}{46}{section.4.4}%
-\contentsline {section}{\numberline {4.5}\textbf {Sistemas de aquisição de dados}}{50}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}\textbf {Condicionamento de Sinal}}{50}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}\textbf {DAQ - Data Acquisition}}{51}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}\textbf {Detecção de Falhas em Mancais de Rolamentos}}{52}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.1}\normalfont {\textbf {Manutenção}}}{18}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}\normalfont {\textbf {Manutenção preditiva}}}{19}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}\normalfont {\textbf {Fundamentos e aplicações de rolamentos}}}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}\normalfont {\textbf {Tipos de rolamentos}}}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}\normalfont {\textbf {Processos de fabricação de rolamentos}}}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}\normalfont {\textbf {Carga e vida útil de rolamentos}}}{24}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}\normalfont {\textbf {Falhas em rolamentos}}}{26}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}\normalfont {\textbf {Análise de vibrações}}}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}\normalfont {\textbf {Frequências características de defeitos e detecção de falhas em rolamentos}}}{38}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}\normalfont {\textbf {Detecção de falhas em rolamentos por análise de vibração}}}{39}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}\normalfont {\textbf {Análise de envelope do sinal}}}{43}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}\normalfont {\textbf {Fluroreto de polivinilideno}}}{46}{section.4.4}%
+\contentsline {section}{\numberline {4.5}\normalfont {\textbf {Sistemas de aquisição de dados}}}{50}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}\normalfont {\textbf {Condicionamento de Sinal}}}{50}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}\normalfont {\textbf {DAQ - Data Acquisition}}}{51}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}\normalfont {\textbf {Detecção de Falhas em Mancais de Rolamentos}}}{52}{subsection.4.5.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}Materiais e métodos}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}\textbf {Rolamentos autocompensadores de rolos}}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}\textbf {Bancada experimental}}{56}{section.5.2}%
-\contentsline {section}{\numberline {5.3}\textbf {Aquisição e análise do sinal do filme PVDF}}{59}{section.5.3}%
+\contentsline {section}{\numberline {5.1}\normalfont {\textbf {Rolamentos autocompensadores de rolos}}}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}\normalfont {\textbf {Bancada experimental}}}{55}{section.5.2}%
+\contentsline {section}{\numberline {5.3}\normalfont {\textbf {Aquisição e análise do sinal do filme PVDF}}}{58}{section.5.3}%
+\contentsline {section}{\numberline {5.4}\normalfont {\textbf {Definição dos experimentos}}}{63}{section.5.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}Resultados}{65}{chapter.6}%
+\contentsline {section}{\numberline {6.1}\normalfont {\textbf {Caso 1 - caracterização do sinal do sensor}}}{65}{section.6.1}%
+\contentsline {section}{\numberline {6.2}\normalfont {\textbf {Caso 2 - caracterização do sinal do motorredutor}}}{70}{section.6.2}%
+\contentsline {section}{\numberline {6.3}\normalfont {\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}{73}{section.6.3}%
+\contentsline {section}{\numberline {6.4}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{74}{section.6.4}%
+\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{74}{section.6.5}%
+\contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}{74}{section.6.6}%
+\contentsline {section}{\numberline {6.7}\normalfont {\textbf {Comparação dos resultados}}}{74}{section.6.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}Conclusões}{67}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Conclusões}{75}{chapter.7}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{69}{chapter*.12}%
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{76}{chapter*.12}%
 \renewcommand *{\cftappendixname }{Ap\^endice \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}Programa para aqusição de dados na plataforma LabView}{72}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}Programa para aqusição de dados na plataforma LabView}{79}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}Programa para aqusição de dados com microcontrolador STM32}{73}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}Programa para aqusição de dados com microcontrolador STM32}{80}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}Programas para análise dos sinais dos rolamentos}{74}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}Programas para análise dos sinais dos rolamentos}{81}{appendix.C}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{Anexo \space }

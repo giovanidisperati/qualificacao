@@ -1,0 +1,14 @@
+2.656 - 79.680
+
+3.844 - 115.320
+
+
+
+
+- 35.640
+
+
+25Hz - 1500rpm
+
+o espaçamento de 25Hz se dá por conta da velocidade do motor usado no teste - sua velocidade de 1750RPM com fator de redução de 48,90 vezes resulta em velocidade de saída para o eixo de 35,8 RPM - contudo, para atingirmos 30RPM a velocidade do motor, sujeito ao motorreduutor, deve ser próxima de 1500RPM, uma vez que 1500RPM sujeito a uma redução de 48,9 vezes resulta em uma saída de 30,6RPM para o eixo. 60 / 1500 =  0,04s. 1 / 0,04s = 25Hz.
+

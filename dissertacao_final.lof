@@ -27,17 +27,26 @@
 \contentsline {figure}{\numberline {26}{\ignorespaces Envelope do sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{44}{figure.4.26}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Espectro do envelope do sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{45}{figure.4.27}%
 \contentsline {figure}{\numberline {28}{\ignorespaces Estrutura molecular do PVDF. Retirado de Xin, 2016.}}{46}{figure.4.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{54}{figure.5.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{55}{figure.5.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{56}{figure.5.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Projeto da bancada experimental. Elaborado pelo autor.}}{57}{figure.5.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Projeto da bancada experimental visto lateralmente. Elaborado pelo autor.}}{57}{figure.5.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Bancada experimental. Elaborado pelo autor.}}{58}{figure.5.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{60}{figure.5.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelo autor.}}{60}{figure.5.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{61}{figure.5.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{61}{figure.5.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Sinal de \SI {5}{\kilo \hertz } capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelo autor.}}{62}{figure.5.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Sistema de aquisição desenvolvido com LabView. Elaborado pelo autor.}}{63}{figure.5.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Fluxo de aquisição e processamento. Elaborado pelo autor.}}{64}{figure.5.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{67}{figure.7.42}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{53}{figure.5.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{54}{figure.5.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{55}{figure.5.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Projeto da bancada experimental. Elaborado pelo autor.}}{56}{figure.5.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Projeto da bancada experimental visto lateralmente. Elaborado pelo autor.}}{56}{figure.5.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Bancada experimental. Elaborado pelo autor.}}{57}{figure.5.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{59}{figure.5.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelo autor.}}{59}{figure.5.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{60}{figure.5.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{60}{figure.5.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Sinal de \SI {5}{\kilo \hertz } capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelo autor.}}{61}{figure.5.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Sistema de aquisição desenvolvido com LabView. Elaborado pelo autor.}}{62}{figure.5.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Fluxo de aquisição e processamento. Elaborado pelo autor.}}{63}{figure.5.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica. Elaborado pelo autor.}}{66}{figure.6.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica. Elaborado pelo autor.}}{66}{figure.6.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica. Elaborado pelo autor.}}{67}{figure.6.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Elaborado pelo autor.}}{68}{figure.6.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Elaborado pelo autor.}}{69}{figure.6.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Elaborado pelo autor.}}{70}{figure.6.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Sinal temporal do motorredutor.}}{71}{figure.6.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Espectro de densidade de potência do motorredutor. Elaborado pelo autor.}}{72}{figure.6.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Espectro de densidade de potência do motorredutor. Elaborado pelo autor.}}{73}{figure.6.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces alguuma coisa}}{74}{figure.6.51}%
