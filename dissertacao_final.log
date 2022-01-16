@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.9)  13 JAN 2022 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.9)  15 JAN 2022 19:52
 entering extended mode
 **./dissertacao_final.tex
 (dissertacao_final.tex
@@ -1146,135 +1146,135 @@ l.221
 ] (dissertacao_final.toc [10
 
 ]
-Overfull \hbox (4.02686pt too wide) in paragraph at lines 48--48
+Overfull \hbox (4.02686pt too wide) in paragraph at lines 51--51
  [][] [][][]\OT1/cmr/bx/n/12 Caso 6 { ca-rac-te-rizac~ao do si-nal e iden-ti-f
 icac~ao das frequ^encias 
  []
 
-) [11] [12
+[11]) [12] [13
 
 
-] [13] [14] [15
+] [14] [15] [16
 
-] [16
+] [17
 
-] [17] [18
+] [18] [19
 
-] [19] [20]
-<Figura1.png, id=339, 1067.48813pt x 404.26031pt>
+] [20] [21]
+<Figura1.png, id=369, 1067.48813pt x 404.26031pt>
 File: Figura1.png Graphic file (type png)
 <use Figura1.png>
-Package pdftex.def Info: Figura1.png  used on input line 499.
+Package pdftex.def Info: Figura1.png  used on input line 500.
 (pdftex.def)             Requested size: 455.00397pt x 172.31108pt.
- [21pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.510 \subsection
                  {\normalfont{\textbf{Tipos de rolamentos}}} <./Figura1.png>]
-[22]
-<Figura2.png, id=349, 454.69875pt x 45.92157pt>
+[23]
+<Figura2.png, id=379, 454.69875pt x 45.92157pt>
 File: Figura2.png Graphic file (type png)
 <use Figura2.png>
-Package pdftex.def Info: Figura2.png  used on input line 538.
+Package pdftex.def Info: Figura2.png  used on input line 539.
 (pdftex.def)             Requested size: 455.00984pt x 45.95297pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.547 \subsection
                  {\normalfont{\textbf{Carga e vida útil de rolamentos}}} <./Fi
-gura2.png>] [24] [25]
-<escamamento_nsk.png, id=370, 572.1375pt x 167.12437pt>
+gura2.png>] [25] [26]
+<escamamento_nsk.png, id=400, 572.1375pt x 167.12437pt>
 File: escamamento_nsk.png Graphic file (type png)
 <use escamamento_nsk.png>
-Package pdftex.def Info: escamamento_nsk.png  used on input line 598.
+Package pdftex.def Info: escamamento_nsk.png  used on input line 599.
 (pdftex.def)             Requested size: 455.00429pt x 132.90913pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.604 
        <./escamamento_nsk.png>]
-<descascamento_nsk.png, id=376, 786.68906pt x 230.36063pt>
+<descascamento_nsk.png, id=406, 786.68906pt x 230.36063pt>
 File: descascamento_nsk.png Graphic file (type png)
 <use descascamento_nsk.png>
-Package pdftex.def Info: descascamento_nsk.png  used on input line 607.
+Package pdftex.def Info: descascamento_nsk.png  used on input line 608.
 (pdftex.def)             Requested size: 455.00755pt x 133.23665pt.
-<arranhaduras_nsk.png, id=378, 1240.635pt x 367.3725pt>
+<arranhaduras_nsk.png, id=408, 1240.635pt x 367.3725pt>
 File: arranhaduras_nsk.png Graphic file (type png)
 <use arranhaduras_nsk.png>
-Package pdftex.def Info: arranhaduras_nsk.png  used on input line 616.
+Package pdftex.def Info: arranhaduras_nsk.png  used on input line 617.
 (pdftex.def)             Requested size: 454.99556pt x 134.73167pt.
-<escorregamento_nsk.png, id=380, 671.50874pt x 194.97844pt>
+<escorregamento_nsk.png, id=410, 671.50874pt x 194.97844pt>
 File: escorregamento_nsk.png Graphic file (type png)
 <use escorregamento_nsk.png>
-Package pdftex.def Info: escorregamento_nsk.png  used on input line 625.
+Package pdftex.def Info: escorregamento_nsk.png  used on input line 626.
 (pdftex.def)             Requested size: 455.00098pt x 132.1135pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.628 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.4.5}) has been already used, duplicate ignored
+l.629 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.628 \end{figure}
-                   <./descascamento_nsk.png> <./arranhaduras_nsk.png>]
-<fraturas_nsk.png, id=386, 504.38437pt x 296.60812pt>
+l.629 
+       <./descascamento_nsk.png> <./arranhaduras_nsk.png>]
+<fraturas_nsk.png, id=416, 504.38437pt x 296.60812pt>
 File: fraturas_nsk.png Graphic file (type png)
 <use fraturas_nsk.png>
-Package pdftex.def Info: fraturas_nsk.png  used on input line 634.
+Package pdftex.def Info: fraturas_nsk.png  used on input line 635.
 (pdftex.def)             Requested size: 455.00381pt x 267.5694pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+<trinca_nsk.png, id=418, 786.68906pt x 225.84375pt>
+File: trinca_nsk.png Graphic file (type png)
+<use trinca_nsk.png>
+Package pdftex.def Info: trinca_nsk.png  used on input line 644.
+(pdftex.def)             Requested size: 455.00755pt x 130.62416pt.
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.640 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.7}) has been already used, duplicate ignored
+l.646 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.4.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.640 
-       <./escorregamento_nsk.png> <./fraturas_nsk.png>]
-<trinca_nsk.png, id=392, 786.68906pt x 225.84375pt>
-File: trinca_nsk.png Graphic file (type png)
-<use trinca_nsk.png>
-Package pdftex.def Info: trinca_nsk.png  used on input line 643.
-(pdftex.def)             Requested size: 455.00755pt x 130.62416pt.
-<gaiola_nsk.png, id=394, 790.45313pt x 231.11343pt>
+l.646 \end{figure}
+                   <./escorregamento_nsk.png> <./fraturas_nsk.png>]
+<gaiola_nsk.png, id=424, 790.45313pt x 231.11343pt>
 File: gaiola_nsk.png Graphic file (type png)
 <use gaiola_nsk.png>
-Package pdftex.def Info: gaiola_nsk.png  used on input line 652.
+Package pdftex.def Info: gaiola_nsk.png  used on input line 653.
 (pdftex.def)             Requested size: 455.00153pt x 133.03377pt.
-<impressoes_nsk.png, id=396, 1173.63469pt x 347.79938pt>
+<impressoes_nsk.png, id=426, 1173.63469pt x 347.79938pt>
 File: impressoes_nsk.png Graphic file (type png)
 <use impressoes_nsk.png>
-Package pdftex.def Info: impressoes_nsk.png  used on input line 661.
+Package pdftex.def Info: impressoes_nsk.png  used on input line 662.
 (pdftex.def)             Requested size: 454.99365pt x 134.83455pt.
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.664 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.4.9}) has been already used, duplicate ignored
+l.665 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.664 \end{figure}
-                   <./trinca_nsk.png> <./gaiola_nsk.png>]
-<pitting_nsk.png, id=402, 907.89188pt x 271.0125pt>
+l.665 
+       <./trinca_nsk.png> <./gaiola_nsk.png>]
+<pitting_nsk.png, id=433, 907.89188pt x 271.0125pt>
 File: pitting_nsk.png Graphic file (type png)
 <use pitting_nsk.png>
-Package pdftex.def Info: pitting_nsk.png  used on input line 670.
+Package pdftex.def Info: pitting_nsk.png  used on input line 671.
 (pdftex.def)             Requested size: 454.99768pt x 135.82019pt.
-<desgaste_nsk.png, id=404, 906.38625pt x 271.0125pt>
+<desgaste_nsk.png, id=435, 906.38625pt x 271.0125pt>
 File: desgaste_nsk.png Graphic file (type png)
 <use desgaste_nsk.png>
-Package pdftex.def Info: desgaste_nsk.png  used on input line 679.
+Package pdftex.def Info: desgaste_nsk.png  used on input line 680.
 (pdftex.def)             Requested size: 455.00378pt x 136.04764pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1285,17 +1285,17 @@ l.683
                                                   
 l.683 
        <./impressoes_nsk.png> <./pitting_nsk.png>]
-<corrosao_nsk.png, id=411, 909.3975pt x 270.25969pt>
+<corrosao_nsk.png, id=441, 909.3975pt x 270.25969pt>
 File: corrosao_nsk.png Graphic file (type png)
 <use corrosao_nsk.png>
-Package pdftex.def Info: corrosao_nsk.png  used on input line 688.
+Package pdftex.def Info: corrosao_nsk.png  used on input line 689.
 (pdftex.def)             Requested size: 455.00291pt x 135.22023pt.
-<esmagamento_nsk.png, id=413, 935.74594pt x 280.79906pt>
+<esmagamento_nsk.png, id=443, 935.74594pt x 280.79906pt>
 File: esmagamento_nsk.png Graphic file (type png)
 <use esmagamento_nsk.png>
-Package pdftex.def Info: esmagamento_nsk.png  used on input line 697.
+Package pdftex.def Info: esmagamento_nsk.png  used on input line 698.
 (pdftex.def)             Requested size: 455.00706pt x 136.53871pt.
- [31pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1306,17 +1306,17 @@ l.701
                                                   
 l.701 
        <./desgaste_nsk.png> <./corrosao_nsk.png>]
-<deslizamento_nsk.png, id=419, 1023.825pt x 305.64188pt>
+<deslizamento_nsk.png, id=449, 1023.825pt x 305.64188pt>
 File: deslizamento_nsk.png Graphic file (type png)
 <use deslizamento_nsk.png>
-Package pdftex.def Info: deslizamento_nsk.png  used on input line 706.
+Package pdftex.def Info: deslizamento_nsk.png  used on input line 707.
 (pdftex.def)             Requested size: 454.99924pt x 135.83064pt.
-<superaquecimento_nsk.png, id=421, 773.13844pt x 237.13594pt>
+<superaquecimento_nsk.png, id=451, 773.13844pt x 237.13594pt>
 File: superaquecimento_nsk.png Graphic file (type png)
 <use superaquecimento_nsk.png>
-Package pdftex.def Info: superaquecimento_nsk.png  used on input line 715.
+Package pdftex.def Info: superaquecimento_nsk.png  used on input line 716.
 (pdftex.def)             Requested size: 455.00342pt x 139.558pt.
- [32pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1327,18 +1327,18 @@ l.719
                                                   
 l.719 
        <./esmagamento_nsk.png> <./deslizamento_nsk.png>]
-<corrosao_eletrolitica_nsk.png, id=427, 1014.03844pt x 286.06876pt>
+<corrosao_eletrolitica_nsk.png, id=457, 1014.03844pt x 286.06876pt>
 File: corrosao_eletrolitica_nsk.png Graphic file (type png)
 <use corrosao_eletrolitica_nsk.png>
-Package pdftex.def Info: corrosao_eletrolitica_nsk.png  used on input line 724.
+Package pdftex.def Info: corrosao_eletrolitica_nsk.png  used on input line 725.
 
 (pdftex.def)             Requested size: 454.99788pt x 128.35872pt.
-<oxidacao_nsk.png, id=429, 1313.6578pt x 389.20406pt>
+<oxidacao_nsk.png, id=459, 1313.6578pt x 389.20406pt>
 File: oxidacao_nsk.png Graphic file (type png)
 <use oxidacao_nsk.png>
-Package pdftex.def Info: oxidacao_nsk.png  used on input line 733.
+Package pdftex.def Info: oxidacao_nsk.png  used on input line 734.
 (pdftex.def)             Requested size: 454.99641pt x 134.8041pt.
- [33pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1349,17 +1349,17 @@ l.737
                                                   
 l.737 
        <./superaquecimento_nsk.png> <./corrosao_eletrolitica_nsk.png>]
-<falha_instalacao_nsk.png, id=435, 1086.30844pt x 324.46219pt>
+<falha_instalacao_nsk.png, id=465, 1086.30844pt x 324.46219pt>
 File: falha_instalacao_nsk.png Graphic file (type png)
 <use falha_instalacao_nsk.png>
-Package pdftex.def Info: falha_instalacao_nsk.png  used on input line 742.
+Package pdftex.def Info: falha_instalacao_nsk.png  used on input line 743.
 (pdftex.def)             Requested size: 455.00327pt x 135.90186pt.
-<manchas_nsk.png, id=437, 1012.5328pt x 297.36093pt>
+<manchas_nsk.png, id=467, 1012.5328pt x 297.36093pt>
 File: manchas_nsk.png Graphic file (type png)
 <use manchas_nsk.png>
-Package pdftex.def Info: manchas_nsk.png  used on input line 751.
+Package pdftex.def Info: manchas_nsk.png  used on input line 752.
 (pdftex.def)             Requested size: 455.0021pt x 133.62514pt.
- [34pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 18}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1369,81 +1369,82 @@ l.755
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.755 
-       <./oxidacao_nsk.png> <./falha_instalacao_nsk.png>] [35pdfTeX warning (ex
+       <./oxidacao_nsk.png> <./falha_instalacao_nsk.png>] [36pdfTeX warning (ex
 t4): destination with the same identifier (name{figure.4.20}) has been already 
 used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.760 \newpage
-               <./manchas_nsk.png>] [36] [37] [38]
+               <./manchas_nsk.png>] [37] [38] [39]
 Overfull \hbox (4.43224pt too wide) in paragraph at lines 850--851
 []\OT1/cmr/m/n/12 (-20) Abordados os con-cei-tos fun-da-men-tais re-la-ti-vos a
 s vi-brac~oes mec^anicas e as frequ^encias
  []
 
-[39]
-<Figura17.png, id=473, 379.4175pt x 211.54031pt>
+[40]
+<Figura17.png, id=503, 379.4175pt x 211.54031pt>
 File: Figura17.png Graphic file (type png)
 <use Figura17.png>
-Package pdftex.def Info: Figura17.png  used on input line 882.
+Package pdftex.def Info: Figura17.png  used on input line 883.
 (pdftex.def)             Requested size: 357.24301pt x 199.17714pt.
- [40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.895 
-       <./Figura17.png>]
-<Figura18.png, id=482, 340.27126pt x 167.12437pt>
+l.896 A
+        Figura~\ref{RelacaoPicoaPicoeRMS} demonstra esta relação entre os ...
+ <./Figura17.png>]
+<Figura18.png, id=512, 340.27126pt x 167.12437pt>
 File: Figura18.png Graphic file (type png)
 <use Figura18.png>
-Package pdftex.def Info: Figura18.png  used on input line 900.
+Package pdftex.def Info: Figura18.png  used on input line 901.
 (pdftex.def)             Requested size: 405.55086pt x 199.18646pt.
-<Figura19.png, id=484, 364.36125pt x 161.10187pt>
+<Figura19.png, id=514, 364.36125pt x 161.10187pt>
 File: Figura19.png Graphic file (type png)
 <use Figura19.png>
-Package pdftex.def Info: Figura19.png  used on input line 909.
+Package pdftex.def Info: Figura19.png  used on input line 910.
 (pdftex.def)             Requested size: 321.7675pt x 142.26909pt.
- [41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [42pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.915 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.23}) has been already used, duplicate ignored
+l.919 \end{equation}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.915 
-       <./Figura18.png> <./Figura19.png>] [42]
-<fft_sinal_barreiro.png, id=498, 475.7775pt x 399.74344pt>
+l.919 \end{equation}
+                     <./Figura18.png> <./Figura19.png>] [43]
+<fft_sinal_barreiro.png, id=528, 475.7775pt x 399.74344pt>
 File: fft_sinal_barreiro.png Graphic file (type png)
 <use fft_sinal_barreiro.png>
-Package pdftex.def Info: fft_sinal_barreiro.png  used on input line 939.
+Package pdftex.def Info: fft_sinal_barreiro.png  used on input line 940.
 (pdftex.def)             Requested size: 304.7942pt x 256.08499pt.
-<sinal_temporal_rolamento_barreiro.png, id=500, 399.74344pt x 284.56313pt>
+<sinal_temporal_rolamento_barreiro.png, id=530, 399.74344pt x 284.56313pt>
 File: sinal_temporal_rolamento_barreiro.png Graphic file (type png)
 <use sinal_temporal_rolamento_barreiro.png>
 Package pdftex.def Info: sinal_temporal_rolamento_barreiro.png  used on input l
-ine 948.
+ine 949.
 (pdftex.def)             Requested size: 279.80019pt x 199.1798pt.
- [43pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.952 
        <./fft_sinal_barreiro.png>]
-<sinal_envelope_rolamento_barreiro.png, id=506, 388.45125pt x 277.78781pt>
+<sinal_envelope_rolamento_barreiro.png, id=536, 388.45125pt x 277.78781pt>
 File: sinal_envelope_rolamento_barreiro.png Graphic file (type png)
 <use sinal_envelope_rolamento_barreiro.png>
 Package pdftex.def Info: sinal_envelope_rolamento_barreiro.png  used on input l
-ine 957.
+ine 958.
 (pdftex.def)             Requested size: 278.517pt x 199.17203pt.
-<espectro_do_envelope_barreiro.png, id=508, 286.82156pt x 268.00125pt>
+<espectro_do_envelope_barreiro.png, id=538, 286.82156pt x 268.00125pt>
 File: espectro_do_envelope_barreiro.png Graphic file (type png)
 <use espectro_do_envelope_barreiro.png>
 Package pdftex.def Info: espectro_do_envelope_barreiro.png  used on input line 
-966.
+967.
 (pdftex.def)             Requested size: 213.15494pt x 199.1684pt.
- [44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1454,29 +1455,29 @@ l.970
                                                   
 l.970 
        <./sinal_temporal_rolamento_barreiro.png> <./sinal_envelope_rolamento_ba
-rreiro.png>] [45pdfTeX warning (ext4): destination with the same identifier (na
+rreiro.png>] [46pdfTeX warning (ext4): destination with the same identifier (na
 me{figure.4.27}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.983 \newpage
                <./espectro_do_envelope_barreiro.png>]
-<pvdf_cadeia.png, id=522, 370.38374pt x 106.89937pt>
+<pvdf_cadeia.png, id=552, 370.38374pt x 106.89937pt>
 File: pvdf_cadeia.png Graphic file (type png)
 <use pvdf_cadeia.png>
-Package pdftex.def Info: pvdf_cadeia.png  used on input line 992.
+Package pdftex.def Info: pvdf_cadeia.png  used on input line 993.
 (pdftex.def)             Requested size: 394.32863pt x 113.81027pt.
- [46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.1002 
-        <./pvdf_cadeia.png>] [47] [48] [49] [50] [51] [52]
-<Figura24.png, id=564, 449.42906pt x 548.0475pt>
+        <./pvdf_cadeia.png>] [48] [49] [50] [51] [52] [53]
+<Figura24.png, id=594, 449.42906pt x 548.0475pt>
 File: Figura24.png Graphic file (type png)
 <use Figura24.png>
-Package pdftex.def Info: Figura24.png  used on input line 1160.
+Package pdftex.def Info: Figura24.png  used on input line 1161.
 (pdftex.def)             Requested size: 116.66364pt x 142.2632pt.
- [53
+ [54
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.29})
  has been already used, duplicate ignored
@@ -1484,320 +1485,428 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.29})
                                                   
 l.1168 	\item D
                iâmetro dos elementos rolantes: 10.1\si{\mm} <./Figura24.png>]
-<angulo_de_contato.png, id=570, 172.39406pt x 573.64313pt>
+<angulo_de_contato.png, id=601, 172.39406pt x 573.64313pt>
 File: angulo_de_contato.png Graphic file (type png)
 <use angulo_de_contato.png>
-Package pdftex.def Info: angulo_de_contato.png  used on input line 1176.
-(pdftex.def)             Requested size: 128.26405pt x 426.80008pt.
-<diametro_rolamento.png, id=572, 500.62032pt x 432.86719pt>
+Package pdftex.def Info: angulo_de_contato.png  used on input line 1177.
+(pdftex.def)             Requested size: 85.50761pt x 284.52754pt.
+<diametro_rolamento.png, id=603, 500.62032pt x 432.86719pt>
 File: diametro_rolamento.png Graphic file (type png)
 <use diametro_rolamento.png>
-Package pdftex.def Info: diametro_rolamento.png  used on input line 1185.
+Package pdftex.def Info: diametro_rolamento.png  used on input line 1186.
 (pdftex.def)             Requested size: 329.07362pt x 284.53734pt.
 
-[54pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+[55pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
 0}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.1189 
         <./angulo_de_contato.png>]
-<Figura22.png, id=579, 392.21532pt x 276.28218pt>
+<Figura22.png, id=609, 392.21532pt x 276.28218pt>
 File: Figura22.png Graphic file (type png)
 <use Figura22.png>
 Package pdftex.def Info: Figura22.png  used on input line 1200.
 (pdftex.def)             Requested size: 455.02992pt x 320.5297pt.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [56pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 31}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1204 
+l.1203 
         <./diametro_rolamento.png>]
-<dispositivo_teste_visto_de_lado.png, id=585, 934.99312pt x 204.01219pt>
+<dispositivo_teste_visto_de_lado.png, id=615, 934.99312pt x 204.01219pt>
 File: dispositivo_teste_visto_de_lado.png Graphic file (type png)
 <use dispositivo_teste_visto_de_lado.png>
 Package pdftex.def Info: dispositivo_teste_visto_de_lado.png  used on input lin
 e 1209.
 (pdftex.def)             Requested size: 454.99767pt x 99.27887pt.
-<bancada_de_testes.png, id=586, 629.35126pt x 511.15968pt>
+<bancada_de_testes.png, id=616, 629.35126pt x 511.15968pt>
 File: bancada_de_testes.png Graphic file (type png)
 <use bancada_de_testes.png>
 Package pdftex.def Info: bancada_de_testes.png  used on input line 1220.
 (pdftex.def)             Requested size: 350.31201pt x 284.52373pt.
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [57pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 32}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1223 \end{figure}
+l.1222 \end{figure}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.5.33}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1223 \end{figure}
+l.1222 \end{figure}
                     <./Figura22.png> <./dispositivo_teste_visto_de_lado.png>]
-[57pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+[58pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1258 \end{equation}
+l.1260 \end{equation}
                       <./bancada_de_testes.png>]
-<Figura21.png, id=599, 325.215pt x 324.46219pt>
+<Figura21.png, id=629, 325.215pt x 324.46219pt>
 File: Figura21.png Graphic file (type png)
 <use Figura21.png>
-Package pdftex.def Info: Figura21.png  used on input line 1283.
+Package pdftex.def Info: Figura21.png  used on input line 1286.
 (pdftex.def)             Requested size: 199.63634pt x 199.17421pt.
- [58]
-<encapsulamento_sensor.png, id=607, 731.73375pt x 419.31656pt>
+ [59]
+<encapsulamento_sensor.png, id=637, 731.73375pt x 419.31656pt>
 File: encapsulamento_sensor.png Graphic file (type png)
 <use encapsulamento_sensor.png>
-Package pdftex.def Info: encapsulamento_sensor.png  used on input line 1292.
+Package pdftex.def Info: encapsulamento_sensor.png  used on input line 1295.
 (pdftex.def)             Requested size: 372.38654pt x 213.39433pt.
- [59pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+<circuito_sensor.png, id=639, 966.61125pt x 265.74281pt>
+File: circuito_sensor.png Graphic file (type png)
+<use circuito_sensor.png>
+Package pdftex.def Info: circuito_sensor.png  used on input line 1304.
+(pdftex.def)             Requested size: 455.00058pt x 125.0897pt.
+ [60pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 35}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1298 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.5.36}) has been already used, duplicate ignored
+l.1306 \end{figure}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.5.36}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1298 
-        <./Figura21.png> <./encapsulamento_sensor.png>]
-<circuito_sensor.png, id=613, 966.61125pt x 265.74281pt>
-File: circuito_sensor.png Graphic file (type png)
-<use circuito_sensor.png>
-Package pdftex.def Info: circuito_sensor.png  used on input line 1301.
-(pdftex.def)             Requested size: 455.00058pt x 125.0897pt.
-<stm32.jpg, id=614, 602.25pt x 602.25pt>
+l.1306 \end{figure}
+                    <./Figura21.png> <./encapsulamento_sensor.png>]
+<stm32.jpg, id=645, 602.25pt x 602.25pt>
 File: stm32.jpg Graphic file (type jpg)
 <use stm32.jpg>
-Package pdftex.def Info: stm32.jpg  used on input line 1310.
+Package pdftex.def Info: stm32.jpg  used on input line 1313.
 (pdftex.def)             Requested size: 142.26393pt x 142.26393pt.
-<medidas_sistema_aquisicao_stm32.png, id=616, 963.6pt x 449.42906pt>
+<medidas_sistema_aquisicao_stm32.png, id=647, 963.6pt x 449.42906pt>
 File: medidas_sistema_aquisicao_stm32.png Graphic file (type png)
 <use medidas_sistema_aquisicao_stm32.png>
 Package pdftex.def Info: medidas_sistema_aquisicao_stm32.png  used on input lin
-e 1319.
+e 1322.
 (pdftex.def)             Requested size: 454.99464pt x 212.21233pt.
- [60pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [61pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 37}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1323 
+l.1325 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .5.38}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1323 
+l.1325 
         <./circuito_sensor.png> <./stm32.jpg>]
-<sistema_labview.png, id=624, 988.44281pt x 635.37375pt>
+<sistema_labview.png, id=654, 988.44281pt x 635.37375pt>
 File: sistema_labview.png Graphic file (type png)
 <use sistema_labview.png>
-Package pdftex.def Info: sistema_labview.png  used on input line 1328.
+Package pdftex.def Info: sistema_labview.png  used on input line 1331.
 (pdftex.def)             Requested size: 454.99086pt x 292.46936pt.
- [61pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [62pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 39}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1332 
+l.1334 
         <./medidas_sistema_aquisicao_stm32.png>]
-<fluxograma_funcionamento_sistema.png, id=630, 562.35094pt x 322.95656pt>
+<fluxograma_funcionamento_sistema.png, id=660, 562.35094pt x 322.95656pt>
 File: fluxograma_funcionamento_sistema.png Graphic file (type png)
 <use fluxograma_funcionamento_sistema.png>
 Package pdftex.def Info: fluxograma_funcionamento_sistema.png  used on input li
-ne 1339.
+ne 1342.
 (pdftex.def)             Requested size: 297.26372pt x 170.71771pt.
- [62pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [63pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 40}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1343 
-        <./sistema_labview.png>] [63pdfTeX warning (ext4): destination with the
- same identifier (name{figure.5.41}) has been already used, duplicate ignored
+l.1352 \section
+               {\normalfont{\textbf{Circuitos condicionadores do sinal}}}pdfTeX
+ warning (ext4): destination with the same identifier (name{figure.5.41}) has b
+een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1360 D
-        entre os possíveis motivos para tal interferência, estima-se que e...
- <./fluxograma_funcionamento_sistema.png>] [64]
-<Caso0/maquina_desligada_da_tomada.png, id=644, 433.62pt x 289.08pt>
+l.1352 \section
+               {\normalfont{\textbf{Circuitos condicionadores do sinal}}} <./si
+stema_labview.png> <./fluxograma_funcionamento_sistema.png>] [64] [65]
+<Caso0/maquina_desligada_da_tomada.png, id=674, 433.62pt x 289.08pt>
 File: Caso0/maquina_desligada_da_tomada.png Graphic file (type png)
 <use Caso0/maquina_desligada_da_tomada.png>
 Package pdftex.def Info: Caso0/maquina_desligada_da_tomada.png  used on input l
-ine 1384.
+ine 1390.
 (pdftex.def)             Requested size: 384.13412pt x 256.08942pt.
- [65
-
-]
-<Caso0/PSD_SENSOR_MAQUINA_DESLIGADA.jpg, id=650, 1566.60281pt x 669.2503pt>
+<Caso0/PSD_SENSOR_MAQUINA_DESLIGADA.jpg, id=676, 1566.60281pt x 669.2503pt>
 File: Caso0/PSD_SENSOR_MAQUINA_DESLIGADA.jpg Graphic file (type jpg)
 <use Caso0/PSD_SENSOR_MAQUINA_DESLIGADA.jpg>
 Package pdftex.def Info: Caso0/PSD_SENSOR_MAQUINA_DESLIGADA.jpg  used on input 
-line 1393.
+line 1399.
 (pdftex.def)             Requested size: 483.69684pt x 206.62807pt.
 
-Overfull \hbox (28.69684pt too wide) in paragraph at lines 1393--1394
+Overfull \hbox (28.69684pt too wide) in paragraph at lines 1399--1401
  [][] 
  []
 
-[66pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
-2}) has been already used, duplicate ignored
+[66
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.42})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1399 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.6.43}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1399 
-        <./Caso0/maquina_desligada_da_tomada.png> <./Caso0/PSD_SENSOR_MAQUINA_D
-ESLIGADA.jpg>]
-<Caso0/maquina_ligada_na_tomada.png, id=658, 433.62pt x 289.08pt>
+l.1401 \end{figure}
+                    <./Caso0/maquina_desligada_da_tomada.png>]
+<Caso0/maquina_ligada_na_tomada.png, id=684, 433.62pt x 289.08pt>
 File: Caso0/maquina_ligada_na_tomada.png Graphic file (type png)
 <use Caso0/maquina_ligada_na_tomada.png>
 Package pdftex.def Info: Caso0/maquina_ligada_na_tomada.png  used on input line
- 1404.
+ 1410.
 (pdftex.def)             Requested size: 384.13412pt x 256.08942pt.
-<Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg, id=660, 1170.62344pt x 666.23906pt>
+ [67pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+43}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1413 
+        <./Caso0/PSD_SENSOR_MAQUINA_DESLIGADA.jpg>]
+<Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg, id=690, 1170.62344pt x 666.23906pt>
 File: Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg Graphic file (type jpg)
 <use Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg>
 Package pdftex.def Info: Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg  used on input lin
-e 1413.
+e 1419.
 (pdftex.def)             Requested size: 483.69684pt x 275.28447pt.
 
-Overfull \hbox (28.69684pt too wide) in paragraph at lines 1413--1414
+Overfull \hbox (28.69684pt too wide) in paragraph at lines 1419--1421
  [][] 
  []
 
-[67pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
-4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1416 \end{figure}
-                    <./Caso0/maquina_ligada_na_tomada.png>]
-<Caso0/maquina_ligada_na_tomada_e_energizada.png, id=667, 433.62pt x 289.08pt>
+<Caso0/maquina_ligada_na_tomada_e_energizada.png, id=692, 433.62pt x 289.08pt>
 File: Caso0/maquina_ligada_na_tomada_e_energizada.png Graphic file (type png)
 <use Caso0/maquina_ligada_na_tomada_e_energizada.png>
 Package pdftex.def Info: Caso0/maquina_ligada_na_tomada_e_energizada.png  used 
-on input line 1424.
+on input line 1430.
 (pdftex.def)             Requested size: 384.13412pt x 256.08942pt.
- [68pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-45}) has been already used, duplicate ignored
+[68pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
+4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1428 
-        <./Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg>]
-<Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg, id=673, 1191.7022pt x 673.76
+l.1433 
+        <./Caso0/maquina_ligada_na_tomada.png>] [69pdfTeX warning (ext4): desti
+nation with the same identifier (name{figure.6.45}) has been already used, dupl
+icate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1435 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.6.46}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1435 
+        <./Caso0/PSD_SENSOR_MAQUINA_LIGADA.jpg> <./Caso0/maquina_ligada_na_toma
+da_e_energizada.png>]
+<Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg, id=704, 1191.7022pt x 673.76
 718pt>
 File: Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg Graphic file (type jpg)
 <use Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg>
 Package pdftex.def Info: Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg  used
- on input line 1433.
+ on input line 1439.
 (pdftex.def)             Requested size: 483.69684pt x 273.4705pt.
 
-Overfull \hbox (28.69684pt too wide) in paragraph at lines 1433--1434
+Overfull \hbox (28.69684pt too wide) in paragraph at lines 1439--1441
  [][] 
  []
 
-[69pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
-6}) has been already used, duplicate ignored
+[70pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
+7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1437 
-        <./Caso0/maquina_ligada_na_tomada_e_energizada.png>]
-<Caso0/motorredutor.png, id=681, 433.62pt x 289.08pt>
+l.1466 P
+        ara tanto o sinal foi aquisitado durante dois minutos ininterruptos,...
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1466 P
+        ara tanto o sinal foi aquisitado durante dois minutos ininterruptos,...
+ <./Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg>]
+<Caso0/motorredutor.png, id=711, 433.62pt x 289.08pt>
 File: Caso0/motorredutor.png Graphic file (type png)
 <use Caso0/motorredutor.png>
-Package pdftex.def Info: Caso0/motorredutor.png  used on input line 1465.
+Package pdftex.def Info: Caso0/motorredutor.png  used on input line 1471.
 (pdftex.def)             Requested size: 426.81056pt x 284.54036pt.
- [70pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-47}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1468 \end{figure}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.6.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1468 \end{figure}
-                    <./Caso0/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA.jpg>]
-<Caso0/PSD_MOTORREDUTOR.jpg, id=687, 1569.61406pt x 655.69969pt>
+<Caso0/PSD_MOTORREDUTOR.jpg, id=713, 1569.61406pt x 655.69969pt>
 File: Caso0/PSD_MOTORREDUTOR.jpg Graphic file (type jpg)
 <use Caso0/PSD_MOTORREDUTOR.jpg>
-Package pdftex.def Info: Caso0/PSD_MOTORREDUTOR.jpg  used on input line 1476.
+Package pdftex.def Info: Caso0/PSD_MOTORREDUTOR.jpg  used on input line 1482.
 (pdftex.def)             Requested size: 454.98482pt x 190.068pt.
-
-[71pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
-8}) has been already used, duplicate ignored
+ [71pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+48}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1480 
+l.1485 
         <./Caso0/motorredutor.png>]
-<Caso0/PSD_MOTORREDUTOR_FILTRADO.jpg, id=694, 1203.7472pt x 676.77844pt>
-File: Caso0/PSD_MOTORREDUTOR_FILTRADO.jpg Graphic file (type jpg)
-<use Caso0/PSD_MOTORREDUTOR_FILTRADO.jpg>
-Package pdftex.def Info: Caso0/PSD_MOTORREDUTOR_FILTRADO.jpg  used on input lin
-e 1487.
-(pdftex.def)             Requested size: 455.00415pt x 255.81534pt.
- [72pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-49}) has been already used, duplicate ignored
+
+LaTeX Warning: Reference `PSD_MOTORREDUTOR_FILTRADO' on page 72 undefined on in
+put line 1488.
+
+<GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO.png, id=719, 1199.23032pt x 
+673.76718pt>
+File: GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO.png Graphic file (type 
+png)
+<use GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO.png>
+Package pdftex.def Info: GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO.png 
+ used on input line 1493.
+(pdftex.def)             Requested size: 454.99861pt x 255.63322pt.
+[72pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
+9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1491 
+l.1496 
         <./Caso0/PSD_MOTORREDUTOR.jpg>]
-<Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png, id=701, 433.62pt x 289.08pt>
+<Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png, id=726, 433.62pt x 289.08pt>
 File: Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png Graphic file (type png)
 <use Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png>
 Package pdftex.def Info: Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png  used on input l
-ine 1506.
+ine 1512.
 (pdftex.def)             Requested size: 426.81056pt x 284.54036pt.
  [73pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 50}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1510 
-        <./Caso0/PSD_MOTORREDUTOR_FILTRADO.jpg>] [74pdfTeX warning (ext4): dest
-ination with the same identifier (name{figure.6.51}) has been already used, dup
-licate ignored
+l.1515 
+        <./GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO.png>] [74pdfTeX wa
+rning (ext4): destination with the same identifier (name{figure.6.51}) has been
+ already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1526 \chapter
-               {Conclusões} <./Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png>]
+l.1516 \newpage
+                <./Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM.png>]
+<GraficosAnalise/DEFEITO_ELEMENTO_ROLANTE.png, id=738, 433.62pt x 289.08pt>
+File: GraficosAnalise/DEFEITO_ELEMENTO_ROLANTE.png Graphic file (type png)
+<use GraficosAnalise/DEFEITO_ELEMENTO_ROLANTE.png>
+Package pdftex.def Info: GraficosAnalise/DEFEITO_ELEMENTO_ROLANTE.png  used on 
+input line 1524.
+(pdftex.def)             Requested size: 426.81056pt x 284.54036pt.
+ [75pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+52}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1533 
+        <./GraficosAnalise/DEFEITO_ELEMENTO_ROLANTE.png>]
+<GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado.jpg, id=745, 1187.18532pt
+ x 682.80093pt>
+File: GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado.jpg Graphic file (ty
+pe jpg)
+<use GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado.jpg>
+Package pdftex.def Info: GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado.j
+pg  used on input line 1541.
+(pdftex.def)             Requested size: 454.99359pt x 261.68622pt.
+<GraficosAnalise/ENVELOPE_ROLANTE_RUIM.jpg, id=746, 1545.52406pt x 645.16031pt>
+
+File: GraficosAnalise/ENVELOPE_ROLANTE_RUIM.jpg Graphic file (type jpg)
+<use GraficosAnalise/ENVELOPE_ROLANTE_RUIM.jpg>
+Package pdftex.def Info: GraficosAnalise/ENVELOPE_ROLANTE_RUIM.jpg  used on inp
+ut line 1550.
+(pdftex.def)             Requested size: 455.00592pt x 189.9367pt.
+ [76pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+53}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1554 
+        <./GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado.jpg>] [77pdfTeX
+ warning (ext4): destination with the same identifier (name{figure.6.54}) has b
+een already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1563 \newpage
+                <./GraficosAnalise/ENVELOPE_ROLANTE_RUIM.jpg>] [78
+
+] [79
+
+]
 (dissertacao_final.brf)
 \tf@brf=\write5
 \openout5 = `dissertacao_final.brf'.
 
- [75
+ [80
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 1547.
+(hyperref)                removing `\@ifnextchar' on input line 1603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1547.
+(hyperref)                removing `\<let>-command' on input line 1603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nextToken' on input line 1547.
+(hyperref)                removing `\nextToken' on input line 1603.
 
 bibitemlist
 
-Underfull \hbox (badness 1383) in paragraph at lines 1568--1568
+Underfull \hbox (badness 1383) in paragraph at lines 1624--1624
 \OT1/cmr/bx/n/12 Bra-si-leira\OT1/cmr/m/n/12 (+20) . Bra-sil, 2019. Dis-ponve
 l em: Dis-ponvel em: 
  []
 
-[76
-
-] [77] [78] [79
-
-] [80
-
-] 
-AED: lastpage setting LastPage
 [81
 
+] [82] [83] [84
+
+] [85
+
 ]
+<Apendices/psd_1.png, id=846, 512.66531pt x 664.73344pt>
+File: Apendices/psd_1.png Graphic file (type png)
+<use Apendices/psd_1.png>
+Package pdftex.def Info: Apendices/psd_1.png  used on input line 1768.
+(pdftex.def)             Requested size: 455.0pt x 589.96774pt.
+<Apendices/psd_2.png, id=847, 478.03593pt x 642.14906pt>
+File: Apendices/psd_2.png Graphic file (type png)
+<use Apendices/psd_2.png>
+Package pdftex.def Info: Apendices/psd_2.png  used on input line 1773.
+(pdftex.def)             Requested size: 455.0pt x 611.20416pt.
+ [86
+
+ <./Apendices/psd_1.png>]
+<Apendices/envelope_5.png, id=852, 508.90125pt x 610.53094pt>
+File: Apendices/envelope_5.png Graphic file (type png)
+<use Apendices/envelope_5.png>
+Package pdftex.def Info: Apendices/envelope_5.png  used on input line 1778.
+(pdftex.def)             Requested size: 455.0pt x 545.88614pt.
+ [87 <./Apendices/psd_2.png>]
+<Apendices/envelope_6.png, id=857, 534.49687pt x 661.72218pt>
+File: Apendices/envelope_6.png Graphic file (type png)
+<use Apendices/envelope_6.png>
+Package pdftex.def Info: Apendices/envelope_6.png  used on input line 1783.
+(pdftex.def)             Requested size: 455.0pt x 563.32477pt.
+ [88 <./Apendices/envelope_5.png>] [89 <./Apendices/envelope_6.png>]
+<Apendices/gerb_1.png, id=866, 380.92313pt x 597.73312pt>
+File: Apendices/gerb_1.png Graphic file (type png)
+<use Apendices/gerb_1.png>
+Package pdftex.def Info: Apendices/gerb_1.png  used on input line 1790.
+(pdftex.def)             Requested size: 455.0pt x 714.00185pt.
+
+[90
+
+]
+Overfull \vbox (53.33516pt too high) has occurred while \output is active []
+
+
+[91 <./Apendices/gerb_1.png>]
+<Apendices/gerb_2.png, id=876, 380.92313pt x 599.99156pt>
+File: Apendices/gerb_2.png Graphic file (type png)
+<use Apendices/gerb_2.png>
+Package pdftex.def Info: Apendices/gerb_2.png  used on input line 1795.
+(pdftex.def)             Requested size: 455.0pt x 716.69958pt.
+
+Overfull \vbox (8.69958pt too high) has occurred while \output is active []
+
+
+[92 <./Apendices/gerb_2.png>]
+<Apendices/gerb_3.png, id=881, 389.95688pt x 599.99156pt>
+File: Apendices/gerb_3.png Graphic file (type png)
+<use Apendices/gerb_3.png>
+Package pdftex.def Info: Apendices/gerb_3.png  used on input line 1800.
+(pdftex.def)             Requested size: 455.0pt x 700.0922pt.
+<Apendices/gerb_4.png, id=882, 390.70969pt x 599.99156pt>
+File: Apendices/gerb_4.png Graphic file (type png)
+<use Apendices/gerb_4.png>
+Package pdftex.def Info: Apendices/gerb_4.png  used on input line 1805.
+(pdftex.def)             Requested size: 455.0pt x 698.75555pt.
+ [93 <./Apendices/gerb_3.png>]
+
+AED: lastpage setting LastPage
+[94 <./Apendices/gerb_4.png>]
 \tf@lof=\write6
 \openout6 = `dissertacao_final.lof'.
 
@@ -1810,31 +1919,45 @@ AED: lastpage setting LastPage
  (dissertacao_final.aux)
 Package rerunfilecheck Info: File `dissertacao_final.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- )
-(\end occurred inside a group at level 13)
 
-### simple group (level 13) entered at line 1494 ({)
-### simple group (level 12) entered at line 1494 ({)
-### simple group (level 11) entered at line 1494 ({)
-### simple group (level 10) entered at line 1494 ({)
-### simple group (level 9) entered at line 1492 ({)
-### simple group (level 8) entered at line 1492 ({)
-### simple group (level 7) entered at line 1472 ({)
-### simple group (level 6) entered at line 1472 ({)
-### simple group (level 5) entered at line 1429 ({)
-### simple group (level 4) entered at line 1429 ({)
-### simple group (level 3) entered at line 1409 ({)
-### simple group (level 2) entered at line 1409 ({)
-### simple group (level 1) entered at line 1398 ({)
+
+LaTeX Warning: There were undefined references.
+
+ )
+(\end occurred inside a group at level 23)
+
+### simple group (level 23) entered at line 1545 ({)
+### simple group (level 22) entered at line 1545 ({)
+### simple group (level 21) entered at line 1545 ({)
+### simple group (level 20) entered at line 1530 ({)
+### simple group (level 19) entered at line 1530 ({)
+### simple group (level 18) entered at line 1530 ({)
+### simple group (level 17) entered at line 1528 ({)
+### simple group (level 16) entered at line 1528 ({)
+### simple group (level 15) entered at line 1528 ({)
+### simple group (level 14) entered at line 1528 ({)
+### simple group (level 13) entered at line 1499 ({)
+### simple group (level 12) entered at line 1499 ({)
+### simple group (level 11) entered at line 1499 ({)
+### simple group (level 10) entered at line 1499 ({)
+### simple group (level 9) entered at line 1497 ({)
+### simple group (level 8) entered at line 1497 ({)
+### simple group (level 7) entered at line 1477 ({)
+### simple group (level 6) entered at line 1477 ({)
+### simple group (level 5) entered at line 1434 ({)
+### simple group (level 4) entered at line 1434 ({)
+### simple group (level 3) entered at line 1414 ({)
+### simple group (level 2) entered at line 1414 ({)
+### simple group (level 1) entered at line 1403 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19593 strings out of 479799
- 329044 string characters out of 2886237
- 732369 words of memory out of 3000000
- 35833 multiletter control sequences out of 15000+200000
+ 19715 strings out of 479799
+ 332090 string characters out of 2886237
+ 736318 words of memory out of 3000000
+ 35920 multiletter control sequences out of 15000+200000
  549367 words of font info for 123 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,85p,1296b,1526s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 80i,13n,85p,1296b,1913s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Giovani\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
 n/ec/dpi600\tcrm1200.pk><D:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
 :/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Miktex/fonts/type1/publi
@@ -1845,9 +1968,9 @@ iktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Miktex/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Mikt
 ex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Miktex/fonts/type1/public/amsfo
 nts/cm/cmti12.pfb><D:/Miktex/fonts/type1/urw/symbol/usyr.pfb>
-Output written on dissertacao_final.pdf (82 pages, 20939933 bytes).
+Output written on dissertacao_final.pdf (95 pages, 21860033 bytes).
 PDF statistics:
- 1056 PDF objects out of 1200 (max. 8388607)
- 282 named destinations out of 1000 (max. 500000)
- 20616 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1172 PDF objects out of 1200 (max. 8388607)
+ 304 named destinations out of 1000 (max. 500000)
+ 20719 words of extra memory for PDF output out of 20736 (max. 10000000)
 
