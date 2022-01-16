@@ -47,32 +47,32 @@
 \contentsline {section}{\numberline {6.3}\normalfont {\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}{73}{section.6.3}%
 \contentsline {section}{\numberline {6.4}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{75}{section.6.4}%
 \contentsline {section}{\numberline {6.5}\normalfont {\textbf {Comparação do sinal do rolamento com dano no elemento rolante e do rolamento em bom estado}}}{77}{section.6.5}%
-\contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{77}{section.6.6}%
-\contentsline {section}{\numberline {6.7}\normalfont {\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}{77}{section.6.7}%
-\contentsline {section}{\numberline {6.8}\normalfont {\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}{77}{section.6.8}%
+\contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{78}{section.6.6}%
+\contentsline {section}{\numberline {6.7}\normalfont {\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}{78}{section.6.7}%
+\contentsline {section}{\numberline {6.8}\normalfont {\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}{78}{section.6.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}Comparação dos custos dos sistemas}{78}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Comparação dos custos dos sistemas}{79}{chapter.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}Discussões}{79}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Discussões}{80}{chapter.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {9}Conclusões}{80}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Conclusões}{81}{chapter.9}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{81}{chapter*.12}%
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{82}{chapter*.12}%
 \renewcommand *{\cftappendixname }{Ap\^endice \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}Programa para aqusição de dados na plataforma LabView}{84}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}Programa para aqusição de dados na plataforma LabView}{85}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}Programa para aqusição de dados com microcontrolador STM32}{85}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}Programa para aqusição de dados com microcontrolador STM32}{86}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}Programas para análise dos sinais dos rolamentos}{86}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}Programas para análise dos sinais dos rolamentos}{87}{appendix.C}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}Cálculo do isoamortecedor}{91}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {D}Cálculo do isoamortecedor}{92}{appendix.D}%
