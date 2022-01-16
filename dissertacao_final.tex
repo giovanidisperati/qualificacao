@@ -299,6 +299,8 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
   \item[BPFO] Ball Pass Frequency Outer Race
   \item[BSF] Ball Spin Frequency 
   \item[DAQ] Data Acquisition
+  \item[FFT] Fast Fourier Transform
+  \item[PSD] Power Spectral Density
   \item[PVDF] Fluoreto de Polivinilideno
 \end{siglas}
 % ---
@@ -1350,13 +1352,14 @@ A Figura~\ref{fluxograma_aquisicao} apresenta o fluxo de como se dará o process
 A análise dos resultados obtidos se dará à luz da revisão bibliográfica e comparativamente com os resultados encontrados em outros artigos. 
 
 \section{\normalfont{\textbf{Circuitos condicionadores do sinal}}}
+\label{secao:CircuitosCondicionadores}
 
 
 \section{\normalfont{\textbf{Definição dos experimentos}}}
 
 Para aquisição dos dados, optou-se por diferentes cenários: 1) cenário de aquisições sem qualquer tipo de filtro, apenas com amplificação por meio de amplificador operacional; 2) cenário de aquisições com filtragem analógica utilizando-se do circuito construído e descrito na seção X – Materiais e Métodos; 3) cenário baseado em filtragem analógica seguido de filtragem digital implementada através da plataforma LabVIEW.
 
-A definição destes cenários distintos se deu a partir da necessidade de se avaliar o sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito níveis de interferências eletromagnéticas com e sem filtragem. Tal definição se deu pois verificou-se, inicialmente, uma quantidade perceptível de interferências eletromagnéticas no sensor, conforme descrito na seção ~
+A definição destes cenários distintos se deu a partir da necessidade de se avaliar o sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito níveis de interferências eletromagnéticas com e sem filtragem. Tal definição se deu pois verificou-se, inicialmente, uma quantidade perceptível de interferências eletromagnéticas no sensor, conforme descrito na seção~\ref{secao:CircuitosCondicionadores}
 
 Durante a fase de aquisição dos dados, também foi realizado um conjunto de aquisições com utilização de um filtro digital rejeita-faixa do tipo Butterworth de 4ª ordem, implementado através da plataforma LabVIEW, bem como um filtro passa-baixa também do tipo Butterworth de 4ª ordem. Tal implementação se deu com o objetivo de mitigar interferências verificadas acima dos 2500Hz e, também, interferências ainda presentes por volta dos 60Hz – frequência das oscilações da corrente alternada. 
 
@@ -1514,6 +1517,8 @@ A Figura~\ref{DOMINIO_TEMPO_ROLAMENTO_BOM} mostra o sinal temporal do rolamento 
 \end{figure} 
 
 
+A Figura~\ref{PSD_ROLAMENTO_BOM} apresenta o PSD do 
+
 \begin{figure}[H]
 \centering
 \caption {Espectro de densidade de potência do rolamento em bom estado. Elaborado pelo autor.}
@@ -1539,7 +1544,18 @@ Em relação às frequências de defeito esperadas, em particular no que se trat
  
 Dadas estas questões, para caracterização do rolamento com dano introduzido no elemento rolante, também foi adotado o método de análise do envelope do sinal. Este se deu para que fosse possível verificar se haveria a ocorrência das frequências esperadas para o dano no elemento rolante.
 
-Para que o processamento deste envelope fosse realizado, a banda de seleção do filtro passa-faixa foi realizada manualmente com base na observação dos valores de curtose, conforme verificado na Figura~
+Para que o processamento deste envelope fosse realizado, a banda de seleção do filtro passa-faixa foi realizada manualmente com base na observação dos valores de curtose, conforme verificado na Figura~\ref{CURTOSE_ROLAMENTO_RUIM}.
+
+
+\begin{figure}[H]
+\centering
+\caption {Espectro de densidade de potência do rolamento com dano no elemento rolante. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/curtose_rolamento_ruim}
+Fonte: O autor (2022)
+\label{CURTOSE_ROLAMENTO_RUIM}
+\end{figure} 
+
+Ainda, observa-se que neste valor de curtose há uma queda após os {\SI{2500}{\hertz} e CONTINUAR_AQUI
 
 \begin{figure}[H]
 \centering
@@ -1553,15 +1569,15 @@ O envelope do sinal mostra concentrações de baixa amplitude em regiões próxi
 
 \begin{figure}[H]
 \centering
-\caption {Envelope do sinal do rolamento com dano no elemento rolante.}
+\caption {Envelope do sinal do rolamento com dano no elemento rolante}
 \includegraphics[width=\textwidth,height=120mm,keepaspectratio]{GraficosAnalise/ENVELOPE_ROLANTE_RUIM}
 Fonte: O autor (2022)
 \label{ENVELOPE_ROLANTE_RUIM}
 \end{figure} 
 
-A concentração nas frequências mais baixas mostra-se indistinguível por meio desta análise e, ao final do espectro próximo aos {\SI{2000}{\hertz} também é possível verificar a existência de uma região de concentração de picos, porém mais espalhados e menos claramente definidos.
+A concentração nas frequências mais baixas mostra-se de difícil separação, dada a grande quantidade de componentes que podem ter suas frequências nesta região, por meio desta análise. Ao final do espectro próximo aos {\SI{2000}{\hertz}, entretanto, também é possível verificar a existência de uma região de concentração de picos, porém mais espalhados e menos claramente definidos.
 
-Já os picos de maior amplitude que podem ser visalizados permeando todo o espectro, com espaçamento nitidamente equidistante entre si, ocorrem periodicamente em múultiplos de {\SI{25}{\hertz}. A hipótese é de que, durante o processo de janelamento de frequências advindo do STFT, tenha ocorrido um fenômeno conhecido por espalhamento espectral. Trataria-se, portanto, de uma limitação do processo de análise adotado, não de frequências presentes originalmente no espectro. 
+Já os picos de maior amplitude que podem ser visalizados permeando todo o espectro, com espaçamento perpceptivelmente equidistante entre si, ocorrem periodicamente em múltiplos de {\SI{25}{\hertz}. A hipótese é de que, durante o processo de janelamento de frequências advindo do STFT, tenha ocorrido um fenômeno conhecido por espalhamento espectral. Trataria-se, portanto, de uma limitação do processo de análise adotado, não de frequências presentes originalmente no espectro. 
 
 \section{\normalfont{\textbf {Comparação do sinal do rolamento com dano no elemento rolante e do rolamento em bom estado}}}
 

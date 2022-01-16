@@ -46,7 +46,7 @@
 \contentsline {section}{\numberline {6.2}\normalfont {\textbf {Caso 2 - caracterização do sinal do motorredutor}}}{70}{section.6.2}%
 \contentsline {section}{\numberline {6.3}\normalfont {\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}{73}{section.6.3}%
 \contentsline {section}{\numberline {6.4}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{75}{section.6.4}%
-\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Comparação do sinal do rolamento com dano no elemento rolante e do rolamento em bom estado}}}{77}{section.6.5}%
+\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Comparação do sinal do rolamento com dano no elemento rolante e do rolamento em bom estado}}}{78}{section.6.5}%
 \contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{78}{section.6.6}%
 \contentsline {section}{\numberline {6.7}\normalfont {\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}{78}{section.6.7}%
 \contentsline {section}{\numberline {6.8}\normalfont {\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}{78}{section.6.8}%
