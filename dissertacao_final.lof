@@ -19,39 +19,48 @@
 \contentsline {figure}{\numberline {18}{\ignorespaces Rolamentos com oxidações e corrosões. Retirado de NSK, 2014.}}{35}{figure.4.18}%
 \contentsline {figure}{\numberline {19}{\ignorespaces Rolamentos com falhas de instalação. Retirado de NSK, 2014.}}{35}{figure.4.19}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Manchas e descoloração em rolamentos. Retirado de NSK, 2014.}}{36}{figure.4.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Representação dos níveis de um sinal harmônico. Retirado de Meola, 2005.}}{41}{figure.4.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Relação entre os valores de Pico e RMS com o desgaste progressivo de rolamentos. Retirado de Meola, 2005.}}{42}{figure.4.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Fator de Crista no tempo. Retirado de Meola, 2005.}}{42}{figure.4.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Comparação de espectros de vibração de um rolamento em bom estado e de um rolamento defeituoso. O sinal acima representa o rolamento bom e o sinal abaixo, o rolamento defeituoso. A faixa destacada mostra a região de dano, explicitando as diferenças entre ambos. Retirado de Barreiro, 2010.}}{44}{figure.4.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{45}{figure.4.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Envelope do sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{45}{figure.4.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Espectro do envelope do sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{46}{figure.4.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Estrutura molecular do PVDF. Retirado de Xin, 2016.}}{47}{figure.4.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{54}{figure.5.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{55}{figure.5.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{56}{figure.5.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Projeto da bancada experimental. Elaborado pelo autor.}}{57}{figure.5.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Projeto da bancada experimental visto lateralmente. Elaborado pelo autor.}}{57}{figure.5.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Bancada experimental. Elaborado pelo autor.}}{58}{figure.5.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{60}{figure.5.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelo autor.}}{60}{figure.5.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{61}{figure.5.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{61}{figure.5.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Sinal de \SI {5}{\kilo \hertz } capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelo autor.}}{62}{figure.5.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Sistema de aquisição desenvolvido com LabView. Elaborado pelo autor.}}{63}{figure.5.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Fluxo de aquisição e processamento. Elaborado pelo autor.}}{63}{figure.5.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica. Elaborado pelo autor.}}{66}{figure.6.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica. Elaborado pelo autor.}}{67}{figure.6.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica. Elaborado pelo autor.}}{68}{figure.6.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Elaborado pelo autor.}}{69}{figure.6.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Elaborado pelo autor.}}{69}{figure.6.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Elaborado pelo autor.}}{70}{figure.6.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Sinal temporal do motorredutor. Elaborado pelo autor.}}{71}{figure.6.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Espectro de densidade de potência do motorredutor. Elaborado pelo autor.}}{72}{figure.6.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Espectro de densidade de potência do motorredutor com picos filtrados. Elaborado pelo autor.}}{73}{figure.6.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Sinal temporal do rolamento em bom estado. Elaborado pelo autor.}}{74}{figure.6.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado. Elaborado pelo autor.}}{74}{figure.6.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante. Elaborado pelo autor.}}{75}{figure.6.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante. Elaborado pelo autor.}}{76}{figure.6.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante. Elaborado pelo autor.}}{77}{figure.6.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Envelope do sinal do rolamento com dano no elemento rolante}}{77}{figure.6.56}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Causas de defeitos em rolamentos. Retirado de NSK, 2014.}}{36}{figure.4.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Representação dos níveis de um sinal harmônico. Retirado de Meola, 2005.}}{42}{figure.4.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Relação entre os valores de Pico e RMS com o desgaste progressivo de rolamentos. Retirado de Meola, 2005.}}{43}{figure.4.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Fator de Crista no tempo. Retirado de Meola, 2005.}}{43}{figure.4.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Comparação de espectros de vibração de um rolamento em bom estado e de um rolamento defeituoso. O sinal acima representa o rolamento em bom estado e o sinal abaixo, o rolamento defeituoso. A faixa destacada mostra a região de dano, explicitando as diferenças entre ambos. Retirado de Barreiro, 2010.}}{45}{figure.4.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{46}{figure.4.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Envelope do sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{46}{figure.4.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Espectro do envelope do sinal temporal do rolamento com dano introduzido. Retirado de Barreiro, 2010.}}{47}{figure.4.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Processos para . Retirado de Kim, 2020.}}{48}{figure.4.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Estágio 1}}{49}{figure.4.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Primeiro estágio de defeito no rolamento. Adaptado de ACOEM, 2019.}}{49}{figure.4.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Estágio 2}}{50}{figure.4.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Estágio 3}}{51}{figure.4.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Estágio 3}}{51}{figure.4.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Estágio 4}}{52}{figure.4.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Estrutura molecular do PVDF. Retirado de Xin, 2016.}}{53}{figure.4.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{60}{figure.5.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{61}{figure.5.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}}{62}{figure.5.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Projeto da bancada experimental. Elaborado pelo autor.}}{63}{figure.5.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Projeto da bancada experimental visto lateralmente. Elaborado pelo autor.}}{63}{figure.5.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Bancada experimental. Elaborado pelo autor.}}{64}{figure.5.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{66}{figure.5.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio. Elaborado pelo autor.}}{66}{figure.5.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Circuito preliminar de condicionamento do sensor piezoelétrico. Elaborado pelo autor.}}{67}{figure.5.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{67}{figure.5.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Sinal de \SI {5}{\kilo \hertz } capturado pelo sistema construído com o microcontrolador STM32. Elaborado pelo autor.}}{68}{figure.5.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Sistema de aquisição desenvolvido com LabView. Elaborado pelo autor.}}{69}{figure.5.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Fluxo de aquisição e processamento. Elaborado pelo autor.}}{69}{figure.5.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Elaborado pelo autor.}}{70}{figure.5.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica. Elaborado pelo autor.}}{72}{figure.6.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica. Elaborado pelo autor.}}{73}{figure.6.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica. Elaborado pelo autor.}}{74}{figure.6.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Elaborado pelo autor.}}{75}{figure.6.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Elaborado pelo autor.}}{75}{figure.6.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Elaborado pelo autor.}}{76}{figure.6.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Sinal temporal do motorredutor. Elaborado pelo autor.}}{77}{figure.6.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Espectro de densidade de potência do motorredutor. Elaborado pelo autor.}}{78}{figure.6.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Espectro de densidade de potência do motorredutor com picos filtrados. Elaborado pelo autor.}}{79}{figure.6.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Sinal temporal do rolamento em bom estado. Elaborado pelo autor.}}{80}{figure.6.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado. Elaborado pelo autor.}}{80}{figure.6.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante. Elaborado pelo autor.}}{81}{figure.6.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Curtose espectral para diferentes janelas no rolamento com dano no elemento rolante. Elaborado pelo autor.}}{82}{figure.6.63}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante. Elaborado pelo autor.}}{83}{figure.6.64}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Envelope do sinal do rolamento com dano no elemento rolante}}{83}{figure.6.65}%
