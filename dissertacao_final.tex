@@ -1223,14 +1223,15 @@ Em relação a taxa de amostragem, o teorema de Nyquist, também conhecido como 
 
 
 \chapter{Materiais e métodos}
-
+\label{secao:MateriaisEMetodos}
 % TO-DO: MELHORAR TODA ESTA SEÇÃO
 
-Tendo-se em vista relação aos materiais utilizados para condução dos experimentos, bem como os métodos empregados para tanto.
+Neste capítulo são descritos os materiais empregados e métodos adotados para os experimentos, também descritos nesta seção, a fim de se investigar a viabilidade do sensor filme PVDF para fins de manutenção preditiva em rolamentos. 
+
 
 \section{\normalfont{\textbf{Rolamentos autocompensadores de rolos}}}
 
-Para a realização dos experimentos serão utilizados dois rolamentos de rolos autocompensadores da NSK, modelo 21306CD. Este modelo apresenta como principais características uma alta capacidade de carga, gaiola de aço prensado e desalinhamento permissível entre $1^{\circ}$ e $2.5^{\circ}$. Esta categoria de rolamento foi escolhida pois possibilita uma maior facilidade para inserção manual de defeitos, o que será feito após a caracterização de seu sinal. Isto possibilitará, assim, a comparação entre os sinais do rolamento defeituoso em relação ao rolamento em perfeito estado. 
+Para a realização dos experimentos foram utilizados dois rolamentos de rolos autocompensadores da NSK, modelo 21306CD. Este modelo apresenta como principais características uma alta capacidade de carga, gaiola de aço prensado e desalinhamento permissível entre $1^{\circ}$ e $2.5^{\circ}$. Esta categoria de rolamento foi escolhida pois possibilita uma maior facilidade para inserção manual de defeitos quando comparado, por exemplo, com rolamentos de esferas blindados. A inserção manual de defeitos é uma etapa necessária para possibilitar, nos experimentos, o emprego dos métodos de análise dos sinais do rolamento defeituoso para detecção das frequências características de defeito com utilização do filme PVDF. 
 
 As dimensões do rolamento escolhido são:
 
@@ -1250,7 +1251,16 @@ A Figura~\ref{Figura24} mostra um modelo de rolamento autocompensador de rolos, 
 \label{Figura24}
 \end{figure} 
 
-Algumas das medidas do rolamento necessárias para o cálculo das frequências características de defeito, a saber o ângulo de contato e o diâmetro dos elementos rolantes, estão disponíveis no site da NSK Japão em um modelo CAD do mesmo, onde a partir deste calcularam-se os seguintes valores:
+A Figura~\ref{rolamento_caixa_aberta} mostra os rolamentos já acoplado ao eixo motriz na bancada experimental, dentro de suas respectivas caixas.
+
+\begin{figure}[H]
+\centering
+\caption {Rolamento autocompensador de rolos. Retirado de NSK, 2018.}
+\includegraphics[width=\textwidth,height=120mm,keepaspectratio]{rolamento_caixa_aberta}
+\label{rolamento_caixa_aberta}
+\end{figure} 
+
+Algumas das medidas do rolamento necessárias para o cálculo das frequências características de defeito, a saber o ângulo de contato e o diâmetro dos elementos rolantes, estão disponíveis no \textit{website} da fabricante NSK em um modelo CAD do mesmo, onde a partir deste calcularam-se os seguintes valores:
 
 \begin{itemize}
 	\item Diâmetro dos elementos rolantes: aproximadamente 10\si{\mm}
@@ -1271,12 +1281,11 @@ Já a Figura~\ref{diametro_rolamento} apresenta o diâmetro do elemento rolante,
 \begin{figure}[H]
 \centering
 \caption {Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK. Elaborado pelo autor.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{diametro_rolamento}
+\includegraphics[width=\textwidth,height=75mm,keepaspectratio]{diametro_rolamento}
 \label{diametro_rolamento}
 \end{figure} 
 
-As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falha. Estas foram montadas em uma bancada experimental, construída para condução dos experimentos, onde terão terão registradas as suas assinaturas de vibração tanto no domínio da frequência, quanto do tempo para posterior análise. 
-
+As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falha. Estas foram montadas em uma bancada experimental, construída para condução dos experimentos, onde foram registradas as suas assinaturas de vibração tanto no domínio da frequência, quanto do tempo para posterior análise. 
 
 \section{\normalfont{\textbf{Bancada experimental}}}
 
@@ -1298,9 +1307,7 @@ A Figura~\ref{dispositivo_teste_visto_de_lado} mostra uma visão lateral do disp
 \label{dispositivo_teste_visto_de_lado}
 \end{figure}
 
-Em relação a construção da bancada experimental, a mesma se deu durante o ano de 2019. Foi utilizado um torno mecânico do IFSP Câmpus Guarulhos para usinagem do eixo, e foi utilizada prensa a fim de realizar o acoplamento dos mancais de rolamentos ao eixo usinado e posteriormente este foi ligado ao motoredutor. 
-
-O motor utilizado na bancada de testes possui como características um torque de \SI{400}{\newton\metre}, velocidade de 1750 RPM com taxa de redução de 48,90 vezes, resultante em velocidade de saída para o eixo de 35,8 RPM.  
+Em relação a construção da bancada experimental, foi utilizado um torno mecânico do IFSP Câmpus Guarulhos para usinagem do eixo, e foi utilizada prensa a fim de realizar o acoplamento dos mancais de rolamentos ao eixo usinado e posteriormente este foi ligado ao motoredutor. A Figura~\ref{bancada_de_testes} mostra a bancada experimental em sua fase inicial de elaboração.
 
 \begin{figure}[H]
 \centering
@@ -1308,6 +1315,71 @@ O motor utilizado na bancada de testes possui como características um torque de
 \includegraphics[width=\textwidth,height=100mm,keepaspectratio]{bancada_de_testes}
 \label{bancada_de_testes}
 \end{figure}
+
+Já a Figura~\ref{bancada_completa} mostra a bancada com construção finalizada.
+
+\begin{figure}[H]
+\centering
+\caption {Bancada experimental. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{bancada_completa}
+\label{bancada_completa}
+\end{figure}
+
+Ao projeto inicial optou-se incluir duas melhorias: dispositivos isoamortecedores, capazes de bloquear vibrações externas para a bancada, bem como um acoplamento no eixo. A Figura~\ref{isoamortecedor_bancada} mostra o isoamortecedor da marca Gerb instalado. O projeto de instalação e dimensionamento do isoamortecedor está disponível no Apêndice~\ref{secao:apendiceIsoamortecedor}. 
+ 
+\begin{figure}[H]
+\centering
+\caption {Isoamortecedor Gerb. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=70mm,keepaspectratio]{isoamortecedor_bancada}
+\label{isoamortecedor_bancada}
+\end{figure}
+
+
+O motor utilizado na bancada de testes possui como características um torque de \SI{400}{\newton\metre}, velocidade de 1750 RPM com taxa de redução de 48,90 vezes, resultante em velocidade de saída para o eixo de 35,8 RPM. A medição com Tacômetro em partida direta mostrou uma taxa de rotação do eixo de 37 RPM. 
+
+\begin{figure}[H]
+\centering
+\caption {Medição de rotação com partida direta. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{tacometro_lucas}
+\label{tacometro_lucas}
+\end{figure}
+ 
+Também foi adicionado, para controle da bancada, um painel conforme mostrado na Figura~\ref{painel_bancada}. 
+
+\begin{figure}[H]
+\centering
+\caption {Painel de controle da bancada experimental. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{painel_bancada}
+\label{painel_bancada}
+\end{figure}
+ 
+O painel é composto por botões indicadores iluminados por led indicando o estado da máquina: energizada ou não-energizada, com motor ligado ou desligado. Além disso há botões de controle para ligar e desligar a máquina, bem como ma chave seletora da direção de rotação e um potênciometro para controle da velocidade da rotação do eixo através de um dispositivo inversor de frequências. A Figura~\ref{painel_por_dentro} mostra a parte interna do painel.
+ 
+\begin{figure}[H]
+\centering
+\caption {Inversor de frequências e instalação elétrica do painel da bancada experimental. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{painel_por_dentro}
+\label{painel_por_dentro}
+\end{figure}
+
+Além disso, também foi adicionado um acoplamento ao eixo, a fim de se diminuir interferências da vibração do dispositivo motorreduutor nos rolamentos. A Figura~\ref{acoplamento_eixo} mostra o acoplamento colocado no eixo. 
+
+\begin{figure}[H]
+\centering
+\caption {Inversor de frequências e instalação elétrica do painel da bancada experimental. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{acoplamento_eixo}
+\label{acoplamento_eixo}
+\end{figure}
+ 
+A Figura~\ref{bancada_aberta} mostra a bancada experimental visualizada com a porta do painel aberta e o inversor de frequências à mostra.
+ 
+\begin{figure}[H]
+\centering
+\caption {Inversor de frequências e instalação elétrica do painel da bancada experimental. Elaborado pelo autor.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{bancada_aberta}
+\label{bancada_aberta}
+\end{figure}
+  
 
  
 \section{\normalfont{\textbf{Cálculo das frequências esperadas}}}
@@ -1495,7 +1567,6 @@ A Figura~\ref{maquina_desligada_da_tomada} mostra o sinal temporal da bancada de
 O sinal temporal aponta a presença de um ruído, com amplitude pico a pico de aproximadamente {\SI{8}{\milli\volt}}. Calculando-se o FFT e o PSD do sinal, foi obtido o resultado mostrado na Figura~\ref{PSD_SENSOR_MAQUINA_DESLIGADA}. 
 
 \begin{figure}[H]
-\adjustimage{left}
 \caption {Espectro do sinal da bancada desconectada da energia elétrica. Elaborado pelo autor.}
 \includegraphics[height=95mm,keepaspectratio]{Caso0/PSD_SENSOR_MAQUINA_DESLIGADA}
 \label{PSD_SENSOR_MAQUINA_DESLIGADA}
@@ -1916,6 +1987,8 @@ DIAS JR, Milton; PEDERIVA, Robson.
 
 
 \chapter{Cálculo do isoamortecedor}
+\label{secao:apendiceIsoamortecedor}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{Apendices/gerb_1}
