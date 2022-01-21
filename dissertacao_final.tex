@@ -219,7 +219,10 @@ Dissertação apresentada ao Departamento de Engenharia Mecânica do Instituto F
 \imprimirfolhaderosto
 % ---
 
+\chapter*{Agradecimentos}
+obrigado
 
+\newpage
 
 % ---
 % RESUMOS
@@ -227,6 +230,7 @@ Dissertação apresentada ao Departamento de Engenharia Mecânica do Instituto F
 
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+
 \begin{resumo}
 
 %-------------------------------------------------------------------------
@@ -1507,7 +1511,8 @@ A partir de testes iniciais verificou-se que o sensor por ser de alta impedânci
 \begin{figure}[H]
 \centering
 \caption {Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_rejeita_faixa}
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_rejeita_faixa} \\
+Fonte: O autor (2022).
 \label{circuito_rejeita_faixa}
 \end{figure} 
 
@@ -1516,7 +1521,8 @@ Os capacitores foram ligados em série para atingir os valores adequados e medid
 \begin{figure}[H]
 \centering
 \caption {Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_notch}
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_notch} \\
+Fonte: O autor (2022).
 \label{circuito_notch}
 \end{figure} 
 
@@ -1627,20 +1633,20 @@ Caso 6        & Rolamento com dano na pista externa e rolamento com dano no elem
 \source{O autor (2022).}
 \end{table}
 
-Os danos nos rolamentos foram inseridos manualmente. A Figura
+Os danos nos rolamentos foram inseridos manualmente. A Figura~\ref{dano_introduzido_rolante} mostra o dano introduzido no elemento rolante, onde é possível verificar o desbaste de um dos rolos. Este processo seria semelhante, porém mais drástico, ao dano conhecido por esmagamento.
 
 \begin{figure}[H]
 \centering
 \caption {Dano introduzido no elemento rolante.}
-\includegraphics[width=\textwidth,height=60mm,keepaspectratio]{dano_introduzido_rolante}
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio,angle=-90]{dano_introduzido_rolante} \\
+Fonte: O autor (2022).
 \label{dano_introduzido_rolante}
 \end{figure}
 
-A análise dos resultados obtidos, por sua vez, se dá à luz da revisão bibliográfica. 
 
 \chapter{Resultados}
 
-Nesta seção são apresentados os resultados dos experimentos realizados com o sensor filme PVDF.
+Nesta seção são apresentados os resultados dos experimentos realizados com o sensor filme PVDF, com as análises discutidas à luz da revisão bibliográfica. 
 
 \section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor}}}
 
@@ -1655,7 +1661,7 @@ A Figura~\ref{maquina_desligada_da_tomada} mostra o sinal temporal da bancada de
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal da bancada desconectada da energia elétrica.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{Caso0/maquina_desligada_da_tomada} \\
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{Caso0/maquina_desligada_da_tomada} \\
 Fonte: O autor (2022).
 \label{maquina_desligada_da_tomada}
 \end{figure} 
@@ -1806,7 +1812,7 @@ Nele podemos verificar uma concentração de frequências por volta dos
 \newpage
 \section{\normalfont{\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}
 
-A partir destas caracterizações, é dado prosseguimento nos experimentos a fim de identificação de danos no rolamento. Neste experimento foi introduzido dano no elemento rolante, conforme 
+A partir destas caracterizações, é dado prosseguimento nos experimentos a fim de identificação de danos no rolamento. Neste experimento foi introduzido dano no elemento rolante, conforme mostrado na seção~\ref{secao:MateriaisEMetodos}. O dano imposto ao rolamento simulou a situação de esmagamento e foi tal que o ruído do rolamento tornou-se audível ao aproximar-se de onde este estava localizado. 
 
 A Figura ~\ref{DEFEITO_ELEMENTO_ROLANTE} mostra o sinal temporal do rolamento com dano no elemento rolante. 
 
@@ -1818,11 +1824,19 @@ Fonte: O autor (2022).
 \label{DEFEITO_ELEMENTO_ROLANTE}
 \end{figure} 
 
-É possível verificar através do sinal temporal uma tensão pico a pico de aproximadamente {\SI{150}{\milli\volt}}. Observando-se a densidade espectral de potência, é possível verificar a existência de uma concentração iniciando-se nos {\SI{80}{\hertz} e indo até, aproximadamente, os {\SI{117}{\hertz}}, com pico nos {\SI{103}{\hertz}. Também há uma concentração, de menor amplitude, entre os {\SI{380}{\hertz} e os {\SI{408}{\hertz}, conforme mostra a Figura~\ref{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}.
+É possível verificar através do sinal temporal uma tensão pico a pico de aproximadamente {\SI{150}{\milli\volt}}. Observando-se a densidade espectral de potência, é possível verificar a existência de uma concentração iniciando-se nos {\SI{80}{\hertz} e indo até, aproximadamente, os {\SI{117}{\hertz}}, com pico nos {\SI{103}{\hertz}. Também há uma concentração, de menor amplitude, entre os {\SI{380}{\hertz} e os {\SI{408}{\hertz}, conforme mostra a Figura~\ref{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}. 
 
-Em relação às frequências de defeito esperadas, em particular no que se trata do elemento rolante, a região de maior amplitude verificada no espectro aproxima-se do valor esperado, ainda que acima do calculado para a frequência base. O pico nos {\SI{390}{\hertz}, contudo, apresenta um indício de valor harmônico para o BSF, sendo 5$\times$ o valor base característico de defeito no elemento rolante. Contudo, no experimento anterior também foi possível notar a existência de um pico próximo desta frequência, ainda que ocorrendo em uma faixa um pouco mais elevada do espectro. De qualquer forma, nota-se, após estes dois picos de frequências, concentrações de pequena amplitude no restante do espectro tal como verificado, por exemplo, entre {\SI{700}{\hertz} e {\SI{800}{\hertz}. Além disto, também é possível verificar que os ruídos externos mostraram menor amplitude neste experimento. A maior distância de posicionamento do elemento sensor em relação ao ponto de energização da bancada, portanto, mostrou-se influente quanto à diminuição dos ruídos elétricos externos.   
+\begin{figure}[H]
+\centering
+\caption {Espectro de densidade de potência do rolamento com dano no elemento rolante}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado} \\
+Fonte: O autor (2022)
+\label{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}
+\end{figure} 
+
+Em relação às frequências de defeito esperadas, em particular no que se trata do elemento rolante, a região de maior amplitude verificada no espectro aproxima-se do valor esperado, ainda que acima do calculado para a frequência base. Esperava-se uma frequência para o dano BSF de aproximadamente {\SI{95}{\hertz} e foi detectado um pico nos {\SI{103}{\hertz}. O pico nos {\SI{390}{\hertz} apresenta um indício de valor harmônico para o BSF, sendo 4$\times$ o valor base característico de defeito no elemento rolante. No experimento anterior também foi possível notar a existência de um pico próximo desta frequência, ainda que ocorrendo em uma faixa um pouco mais elevada do espectro. Neste sentido, estima-se que o valor possa ter sido transmitido pelo eixo. De qualquer forma, nota-se, após estes dois picos de frequências, concentrações de pequena amplitude no restante do espectro tal como verificado, por exemplo, entre {\SI{700}{\hertz} e {\SI{800}{\hertz}. Além disto, também é possível verificar que os ruídos externos mostraram menor amplitude neste experimento. A maior distância de posicionamento do elemento sensor em relação ao ponto de energização da bancada, portanto, mostrou-se influente quanto à diminuição dos ruídos elétricos externos.   
  
-Dadas estas questões, para caracterização do rolamento com dano introduzido no elemento rolante, também foi adotado o método de análise do envelope do sinal. Este se deu para que fosse possível verificar se haveria a ocorrência das frequências esperadas para o dano no elemento rolante.
+Dadas estas questões, para caracterização do rolamento com dano introduzido no elemento rolante, também foi adotado o método de análise do envelope do sinal. Este se deu para que fosse possível verificar se haveria a ocorrência das frequências esperadas para o dano no elemento rolante através de impulsos verificados no espectro.
 
 Para que o processamento deste envelope fosse realizado, a banda de seleção do filtro passa-faixa foi realizada manualmente com base na observação dos valores de curtose através do método da curtose espectral, conforme verificado na Figura~\ref{CURTOSE_ROLAMENTO_RUIM}.
 
@@ -1834,17 +1848,8 @@ Fonte: O autor (2022)
 \label{CURTOSE_ROLAMENTO_RUIM}
 \end{figure} 
 
-Ainda, observa-se que neste valor de curtose há uma queda após os {\SI{2500}{\hertz}} e CONTINUARAQUI
- 
-\begin{figure}[H]
-\centering
-\caption {Espectro de densidade de potência do rolamento com dano no elemento rolante}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado} \\
-Fonte: O autor (2022)
-\label{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}
-\end{figure} 
 
-O envelope do sinal mostra concentrações de baixa amplitude em regiões próximas dos múltiplos do valor base para o dano no elemento rolante. Admite-se a possibilidade de que estes sinais, portanto, possam constituir harmônicas do sinal esperado, com concentrações de sinais e picos aparecendo, respectivamente, em {\SI{788}{\hertz}, ou 10,1$\times$ a frequência base, {\SI{1170}{\hertz}, ou 15$\times$ a frequência esperada e {\SI{1569}{\hertz}, ou 20,1$\times$ a frequência esperada, indicados na Figura~\ref{ENVELOPE_ROLANTE_RUIM} pelos círculos vermelhos. 
+O envelope do sinal mostra concentrações de baixa amplitude em regiões próximas dos múltiplos do valor base para o dano no elemento rolante. Admite-se a possibilidade de que estes sinais, portanto, possam constituir harmônicas do sinal esperado, com concentrações de sinais e picos aparecendo, respectivamente, em {\SI{788}{\hertz}, ou 8,2$\times$ a frequência base, {\SI{1170}{\hertz}, ou 12,3$\times$ a frequência esperada e {\SI{1569}{\hertz}, ou 16,5$\times$ a frequência esperada, indicados na Figura~\ref{ENVELOPE_ROLANTE_RUIM} pelos círculos vermelhos. A concentração nas frequências mais baixas mostra-se de difícil separação, dada a grande quantidade de componentes que podem ter suas frequências nesta região, por meio desta análise. Ao final do espectro próximo aos {\SI{2000}{\hertz}, entretanto, também é possível verificar a existência de uma região de concentração de picos, porém mais espalhados e menos claramente definidos.
 
 \begin{figure}[H]
 \centering
@@ -1854,9 +1859,9 @@ Fonte: O autor (2022)
 \label{ENVELOPE_ROLANTE_RUIM}
 \end{figure} 
 
-A concentração nas frequências mais baixas mostra-se de difícil separação, dada a grande quantidade de componentes que podem ter suas frequências nesta região, por meio desta análise. Ao final do espectro próximo aos {\SI{2000}{\hertz}, entretanto, também é possível verificar a existência de uma região de concentração de picos, porém mais espalhados e menos claramente definidos.
-
 Já os picos de maior amplitude que podem ser visalizados permeando todo o espectro, com espaçamento perpceptivelmente equidistante entre si, ocorrem periodicamente em múltiplos de {\SI{25}{\hertz}. A hipótese é de que, durante o processo de janelamento de frequências advindo do STFT, tenha ocorrido um fenômeno conhecido por espalhamento espectral. Trataria-se, portanto, de uma limitação do processo de análise adotado, não de frequências presentes originalmente no espectro. 
+
+O dano verificado, conclui-se, foi coerente com o esperado pela literatura e demonstrou elevado nível de espalhamento de frequências, compatível com um rolamento em seu quarto estágio de dano. 
 
 \section{\normalfont{\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}
 
