@@ -181,6 +181,8 @@ Dissertação apresentada ao Departamento de Engenharia Mecânica do Instituto F
 
 \renewcommand{\theequation}{\arabic{equation}}
 
+\renewcommand\tabularxcolumn[1]{m{#1}}%
+
 %\newcommand{\listequationsname}{Lista de Equações}
 %\newlistof{listofequations}{equ}{\listequationsname}
 %\setlength{\cftmyequationsindent}{1.5em}
@@ -884,7 +886,7 @@ BSF, por sua vez, é o indicativo da frequência de defeito do elemento rolante 
 	\label{eq: BSF}
 \end{equation}
 
-Onde, nas fórmulas, temos $f_{r}$, que é a subtração da frequência de rotação da pista interna pela frequência de rotação da pista externa; $D$ é diâmetro primitivo, calculado a partir da soma do diâmetro externo pelo diâmetro interno e divisão do resultado por dois; $d$ é o diâmetro dos elementos rolantes; $N$ é o número de elementos rolantes; e, por fim, $\theta$ é o ângulo de contato.
+Onde, nas fórmulas, temos $f_{r}$, que é frequência de rotação da pista interna do rolamento; $D$ é diâmetro primitivo, calculado a partir da soma do diâmetro externo pelo diâmetro interno e divisão do resultado por dois; $d$ é o diâmetro dos elementos rolantes; $N$ é o número de elementos rolantes; e, por fim, $\theta$ é o ângulo de contato.
 
 Logo, a partir dessas frequências características de defeito e das especificações dos rolamentos e de suas propriedades de trabalho - número de elementos rolantes, diâmetros, ângulo de contato e velocidade de rotação -, os componentes podem ser monitorados quanto ao surgimento de falhas.  
 
@@ -1388,13 +1390,13 @@ Ao projeto inicial optou-se incluir duas melhorias: dispositivos isoamortecedore
  
 \begin{figure}[H]
 \centering
-\caption {Isoamortecedor Gerb.}
+\caption {Isoamortecedor afixado à bancada.}
 \includegraphics[width=\textwidth,height=70mm,keepaspectratio]{isoamortecedor_bancada} \\
 Fonte: O autor (2022).
 \label{isoamortecedor_bancada}
 \end{figure}
 
-O motor utilizado na bancada de testes possui como características um torque de \SI{400}{\newton\metre}, velocidade de 1750 RPM com taxa de redução de 48,90 vezes, resultante em velocidade de saída para o eixo de 35,8 RPM. A medição com Tacômetro em partida direta mostrou uma taxa de rotação do eixo de 37 RPM. 
+O motor utilizado na bancada de testes possui como características um torque de \SI{400}{\newton\metre}, velocidade de 1800 RPM com taxa de redução de 48,90 vezes, resultante em velocidade de saída para o eixo de 36,8 RPM. A medição com Tacômetro em partida direta mostrou uma taxa de rotação do eixo de 37 RPM. 
 
 \begin{figure}[H]
 \centering
@@ -1428,7 +1430,7 @@ Além disso, também foi adicionado um acoplamento ao eixo, a fim de se diminuir
 
 \begin{figure}[H]
 \centering
-\caption {Inversor de frequências e instalação elétrica do painel da bancada experimental} 
+\caption {Eixo com acoplamento.} 
 \includegraphics[width=\textwidth,height=90mm,keepaspectratio]{acoplamento_eixo} \\
 Fonte: O autor (2022).
 \label{acoplamento_eixo}
@@ -1455,39 +1457,72 @@ A partir dos dados coletados, pode-se calcular com base nas frequências caracte
 
 %\[D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm} \]  
 
-Logo, para a \textit{Fundamental Train Frequency} temos, aproximadamente:
+Em relação à frequência de rotação do eixo, os experimentos serão propostos em duas rotações distintas. Uma com 36,8 RPM, velocidade da partida direta, e outra a 61,3 RPM, velocidade de rotação com utilização do inversor de frequências e motor a 3000 RPM.
+
+Assim, no caso da rotação fixada em 61,3 RPM, para a \textit{Fundamental Train Frequency} a frequência esperada é, aproximadamente: 
 
 \begin{equation}
-	FTF = \frac{37}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~15}{{\hertz}}
+	FTF = \frac{1.03}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{0.417}{{\hertz}}
+	\label{eq: FTF no  Rolamento em 100Hz}
+\end{equation}
+
+Já com a rotação fixada em 36,8 RPM, para a \textit{Fundamental Train Frequency} espera-se, aproximadamente:
+
+\begin{equation}
+	FTF = \frac{0.61}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{0.247}{{\hertz}}
 	\label{eq: FTF no  Rolamento}
 \end{equation}
 
+
 %\[FTF = \frac{35}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~14}{{\hertz}} \]  
 
-Para a \textit{Ball Pass Frequency of The Inner Race} temos, aproximadamente:
+Já para a \textit{Ball Pass Frequency of The Inner Race} com eixo a 61,3 RPM temos, aproximadamente:
 
 \begin{equation}
-	BPFI = \frac{10}{2}37 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~220}{{\hertz}}
+	BPFI = \frac{10}{2}1.03 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{6.14}{{\hertz}}
 	\label{eq: BPFI no rolamento}
 \end{equation}
 
-%\[BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}} \]
-
-Para a \textit{Ball Pass Frequency of The Outer Race} temos, aproximadamente:
+Para a \textit{Ball Pass Frequency of The Inner Race} com rolamento a 36,8 RPM temos, aproximadamente:
 
 \begin{equation}
-	BPFO = \frac{10}{2}37 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~141}{{\hertz}}
+	BPFI = \frac{10}{2}0.61 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{3.63}{{\hertz}}
+	\label{eq: BPFI no rolamento}
+\end{equation}
+
+
+%\[BPFI = \frac{10}{2}35 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~208}{{\hertz}} \]
+
+Para a \textit{Ball Pass Frequency of The Outer Race} com eixo a 61,3 RPM temos, aproximadamente:
+
+\begin{equation}
+	BPFO = \frac{10}{2}1.03 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{4.16}{{\hertz}}
+	\label{eq: BPFO no Rolamento}
+\end{equation}
+
+Para a \textit{Ball Pass Frequency of The Outer Race} com eixo a 36,8 RPM temos, aproximadamente:
+
+\begin{equation}
+	BPFO = \frac{10}{2}0.61 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{2.54}{{\hertz}}
 	\label{eq: BPFO no Rolamento}
 \end{equation}
 
 %\[BPFO = \frac{10}{2}35 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{~141}{{\hertz}} \]
 
-Por fim, para a \textit{Ball Spin Frequency} temos, aproximadamente:
+Para a \textit{Ball Spin Frequency} a frequência esperada para rotação do eixo em 61,3 RPM é, aproximadamente:
 
 \begin{equation}
-	BSF = \frac{51}{2*10.1}37 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~91}{{\hertz}} \
+	BSF = \frac{51}{2*10.1}1.03 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{2.5}{{\hertz}} \
 	\label{eq: BSF no rolamento}
 \end{equation}
+
+E por fim, para a \textit{Ball Spin Frequency} com eixo em 36,8 RPM temos, aproximadamente:
+
+\begin{equation}
+	BSF = \frac{51}{2*10.1}0.61 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{1.48}{{\hertz}} \
+	\label{eq: BSF no rolamento}
+\end{equation}
+
 
 %\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
 
@@ -1516,9 +1551,11 @@ Esse se trata de um filme PVDF com espessura de \SI{28}{\micro\meter}, laminado 
 	\item Temperatura de operação: 0°C a +70°C
 \end{itemize}
 
-Tendo em vista se tratarem de sensores de alta impedância, faz-se necessário isolamento elétrico, a fim de mitigar as interferências da fase da rede elétrica e de outros sinais de alta frequência incidentes sobre o local de testes, bem como amplificação da tensão resultante do esforço mecânico através de amplificador operacional. 
+Tendo em vista se tratarem de sensores de alta impedância, faz-se necessário isolamento elétrico, a fim de mitigar as interferências da fase da rede elétrica e de outros sinais de alta frequência incidentes sobre o local de testes, bem como amplificação da tensão resultante do esforço mecânico sofrido pelo sensor, por meio de amplificador operacional. 
 
-Li et. al, 2011, explicitam o tratamento eletrônico para trabalho com o sensor PVDF, mostrando a importância de um filtro rejeita-faixa e de amplificação operacional. Também os autores apontam que dada à alta impedância, esse se torna facilmente sujeito aos ruídos ambientes - tal como verificado experimentalmente nos testes realizados neste trabalho.
+Tal como mencionado na revisão bibliográfica realizada, baseando-se em Li et. al, 2011, os autores explicitam a necessidade de condicionamento eletrônico do sinal para trabalho com o sensor PVDF. Os autores mostram a importância de um filtro rejeita-faixa e de amplificação operacional, também apontando que dada à alta impedância, esse se torna facilmente sujeito aos ruídos ambientes. 
+
+Com utilização de osciloscópio foi-se verificado, inicialmente, tal como verificado experimentalmente nos testes realizados neste trabalho.
 
 Portanto, a fim de mitigar esse problema, a montagem dos sensores se deu em um encapsulamento de alumínio para diminuição dos ruídos. Os sensores foram acoplados com cola acrílica, a fim de que não ocorresse amortecimento significativo da vibração devido ao elemento colante. A Figura~\ref{encapsulamento_sensor} mostra uma montagem do sensor em seu encapsulamento.
 
@@ -1530,7 +1567,7 @@ Fonte: O autor (2022).
 \label{encapsulamento_sensor}
 \end{figure} 
 
-A Figura ~\ref{sensor_e_operacional} mostra o sensor e o circuito amplificador operacional, montados no encapsulamento de alumínio, onde se acomoda o filme PVDF, além de amplificador operacional Texas Instruments TL082.
+A Figura ~\ref{sensor_e_operacional} mostra o sensor e o circuito amplificador operacional, montados no encapsulamento de alumínio, onde se acomoda o filme PVDF, além de amplificador operacional LM2904.
  
 \begin{figure}[H]
 \centering
@@ -1540,29 +1577,27 @@ Fonte: O autor (2022).
 \label{sensor_e_operacional}
 \end{figure} 
 
-Além destes, conforme mencionado, também foram desenvolvidos filtro passa-baixa e filtro rejeita-faixa com regulagem de frequências específicas para os problemas encontrados
-
-A Figura~\ref{amplificador_filme_pvdf} mostra o desenho esquemático do circuito de condicionamento do sinal do sensor piezoelétrico. Nele buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral Texas Instruments TL082, uma vez que este possui dois canais e larga banda de \SI{1}{\mega\hertz} (TEXAS INSTRUMENTS, 2021).
+Além destes, conforme mencionado, também foram desenvolvidos filtro passa-baixa e filtro rejeita-faixa com regulagem de frequências específicas para os problemas encontrados. A Figura~\ref{amplificador_filme_pvdf} mostra o desenho esquemático do circuito de condicionamento do sinal do sensor piezoelétrico. Nele buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral LM2904, uma vez que este possui dois canais e larga banda de \SI{1.1}{\mega\hertz} (ST MICROELECTRONICS, 2021). O ganho do circuito é dado por $ \frac{R1}{R2} + 1$. Além disso o mesmo implementa um filtro passa-baixa Butterworth de 2º ordem, a fim de eliminar os ruídos de alta frequência induzidos no sensor.  
 
 \begin{figure}[H]
 \centering
 \caption {Circuito amplificador operacional do sensor piezoelétrico.}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{amplificador_filme_pvdf} \\
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{circuito_novo_certo} \\
 Fonte: O autor (2022).
-\label{amplificador_filme_pvdf}
+\label{circuito_novo}
 \end{figure} 
 
 A partir de testes iniciais verificou-se que o sensor por ser de alta impedância, conforme anteriormente mencionado, apresentava altos níveis de ruído. Assim, foram projetados e construídos circuitos condicionadores de sinal para o trabalho com o sensor PVDF. A Figura~\ref{circuito_rejeita_faixa} mostra o circuito rejeita-faixa construído, ligado à fonte de alimentação. 
 
 \begin{figure}[H]
 \centering
-\caption {Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}
+\caption {Processo de teste do circuito rejeita-faixa para filtragem dos 60 Hz da rede. O circuito rejeita-faixa é indicado pela seta vermelha.}
 \includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_rejeita_faixa} \\
 Fonte: O autor (2022).
 \label{circuito_rejeita_faixa}
 \end{figure} 
 
-Os capacitores foram ligados em série para atingir os valores adequados e medidos com diferença inferior a 0.5\% entre si, de modo a fornecer melhor resultado no processo de filtragem. A Figura~\ref{circuito_notch} apresenta o desenho esquemático do circuito rejeita-faixa.
+Os capacitores foram medidos com diferença inferior a 0.5\% entre si, de modo a fornecer melhor resultado no processo de filtragem. A Figura~\ref{circuito_notch} apresenta o desenho esquemático do circuito rejeita-faixa.
 
 \begin{figure}[H]
 \centering
@@ -1592,7 +1627,19 @@ Fonte: O autor (2022).
 \label{sinal_filtrado_maquina_ligada_tomada}
 \end{figure} 
 
-Uma vez montado o aparato, os sinais decorrentes da vibração foram aqsuisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos a fim de que se determine a severidade da falha. Para tanto, foram desenvolvidos sistemas de aquisição de dados. 
+
+Para desta comparação e validação do sensor PVDF em relação a um sensor comercial de uso industrial, os sinais obtidos com sensor filme PVDF foram comparados a um sensor acelerômetro de um eixo com sensibilidade de 100 mV/G, obtidos com equipamento de captura de dados da marca Adash e utilização do \textit{software} de análise Virtual Unit, também produzido pela Adash. A Figura~\ref{adash} mostra o aparato descrito.
+
+\begin{figure}[H]
+\centering
+\caption {Sensor acelerômetro conectado ao equipamento de captura dos dados.}
+\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{adash} \\
+Fonte: O autor (2022).
+\label{adash}
+\end{figure} 
+
+
+Uma vez montados os sensores, os sinais decorrentes da vibração foram aquisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos a fim de que se determine a severidade da falha. Para tanto, foram desenvolvidos sistemas de aquisição de dados. 
 
 \section{\normalfont{\textbf{Aquisição dos dados}}}
 
@@ -1618,6 +1665,8 @@ Fonte: O autor (2022).
 O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. 
 
 Além disso também foi construído um sistema de aquisição baseado no microcontrolador STM32, modelo stm32f103, também conhecido como \textit{bluepill}, utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. 
+
+%TODO arrancar essa parte
 
 \begin{figure}[H]
 \centering
@@ -1683,13 +1732,14 @@ Os danos nos rolamentos foram inseridos manualmente. A Figura~\ref{dano_introduz
 
 \begin{figure}[H]
 \centering
-\caption {Dano introduzido no elemento rolante. A seta vermelha aponta o elemento rolante onde o dano foi inserido.}
-\includegraphics[width=\textwidth,height=80mm,keepaspectratio,angle=-90]{dano_introduzido_rolante} \\
+\caption {Dano introduzido no elemento rolante. A seta vermelha apon
+a o elemento rolante onde o dano foi inserido.}
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{dano_introduzido_rolante} \\
 Fonte: O autor (2022).
 \label{dano_introduzido_rolante}
 \end{figure}
 
-Já a Figura~\ref{insercao_dano_pista_externa} mostra o processo de inserção de dano na pista externa, realizado com uma furadeira de coluna.
+Já a Figura~\ref{insercao_dano_pista_externa} mostra o processo de inserção de dano na pista externa, realizado por meio de processo de eletroerosão.
 
 \begin{figure}[H]
 \centering
@@ -1709,10 +1759,82 @@ Fonte: O autor (2022).
 \label{dano_pista_externa}
 \end{figure}
 
-
 \chapter{Resultados}
 
 Nesta seção são apresentados os resultados dos experimentos realizados com o sensor filme PVDF, com as análises discutidas à luz da revisão bibliográfica. 
+
+\section{\normalfont{\textbf {Caso 1 - caracterização dos sinais de falha com utilização de sensor acelerômetro}}}
+
+Com uso do sensor acelerômetro de uso comercial, a caracterização dos sinais do rolamento em bom estado, do motorredutor e dos rolamentos com falha no elemento rolante e na pista externa foi realizada. Esta se deu para
+
+A partir das aquisições, obtiveram-se os seguintes resultados.
+
+\subsection{\normalfont{\textbf{Motorredutor}}}
+
+
+\subsection{\normalfont{\textbf{Rolamento em bom estado}}}
+
+
+\subsection{\normalfont{\textbf{Falha no elemento rolante}}}
+
+Com a velocidade do eixo em 61,3 RPM, calculou-se a frequência de defeito no elemento rolante foi calculada em \SI{2,5}{\hertz}. Sabe-se que os sinais aparecem em duas vezes esta frequência - dado que o dano no elemento rolante atinge as pistas externa e interna a cada revolução. Assim, procurou-se os danos em duas vezes a BSF, sabendo-se, também, que estes apresentam bandas laterais na \textit{fundamental train frequency} do rolamento. 
+
+A Figura~\ref{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado} mostra o sinal temporal do rolamento com dano no elemento rolante.
+
+\begin{figure}[H]
+\centering
+\caption {Sinal temporal do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}
+\includegraphics[width=\textwidth,keepaspectratio]{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado} \\
+Fonte: O autor (2022).
+\label{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado}
+\end{figure}
+
+Tendo-se em vista a velocidade de rotação, temos uma frequência do eixo de aproximadamente \SI{1,03}{\hertz}, equivalennte a um intervalo de 970ms por revolução. É possível verificar uma sequência de picos com intervalo aproximado deste tempo, identificando a revolução do eixo. O dano no elemento rolante, entretanto, é de difícil identificação através da análise no domínio do tempo. Para que este fosse mais facilmente identificado, aplicou-se a análise espectral, verificando a amplitude em cada um de suas frequências. A Figura~\ref{defeito_rolante_espectro_100hz} mostra o espectro do sinal. 
+
+\begin{figure}[H]
+\centering
+\caption {Sinal espectral do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}
+\includegraphics[width=\textwidth,keepaspectratio]{ESPECTRO_ROLAMENTO_DEFEITO_ROLANTE_100HZ} \\
+Fonte: O autor (2022).
+\label{ESPECTRO_ROLAMENTO_DEFEITO_ROLANTE_100HZ}
+\end{figure}
+
+O sinal do espectro apresenta um nível elevado de energia espalhado pelo espectro, com algumas frequências marcantes em relação. 
+
+Percebe-se uma grande quantidade de energia concentrada na região de frequências mais elevadas, em particular na que compreende, aproximadamente, dos \SI{2850}{\hertz} aos \SI{3050}{\hertz}. Demodulando-se o sinal do rolamento a partir desta faixa de frequências, obtém-se o espectro da Figura~\ref{DANO_ROLANTE_100HZ_2BSF_SEM_BANDAS_HARMONICAS}. 
+
+\begin{figure}[H]
+\centering
+\caption {Sinal espectral demodulado do rolamento com dano no elemento rolante.}
+\includegraphics[width=\textwidth,keepaspectratio]{DANO_ROLANTE_100HZ_2BSF_SEM_BANDAS_HARMONICAS} \\
+Fonte: O autor (2022).
+\label{DANO_ROLANTE_100HZ_2BSF_SEM_BANDAS_HARMONICAS}
+\end{figure}
+
+Nele pode-se verificar mais marcadamente os picos de baixas frequências, em particular picos bastante próximos pela frequência calculada para duas vezes BSF. A Figura~\ref{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} mostra o cursor com harmônicas. 
+
+\begin{figure}[H]
+\centering
+\caption {Indicações das harmônicas no sinal espectral demodulado do rolamento com dano no elemento rolante.}
+\includegraphics[width=\textwidth,keepaspectratio]{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} \\
+Fonte: O autor (2022).
+\label{DANO_ROLANTE_100HZ_HARMONICOS_2BSF}
+\end{figure}
+
+É possível verificar a existência de um pico em aproximadamente \SI{5,1}{\hertz}, bem como a existência de bandas laterais neste pico, de aproximadamente \SI{0,4}{\hertz}, compatível com o esperado para a FTF. Verifica-se que as harmônicas também apresentam mesmo padrão, além de estar em múltiplos exatos o que confirma a identificação da falha no elemento rolante.
+
+\subsection{\normalfont{\textbf{Falha na pista externa}}}
+
+Para identificação na falha da pista externa, seguiram-se os mesmos procedimentos adotados na identificação da falha da pista interna. Primeiro foi-se verificado o sinal temporal obtido com o sensor acelerômetro, como mostrado na Figura~\ref{}
+
+\begin{figure}[H]
+\centering
+\caption {Indicações das harmônicas no sinal espectral demodulado do rolamento com dano no elemento rolante.}
+\includegraphics[width=\textwidth,keepaspectratio]{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} \\
+Fonte: O autor (2022).
+\label{DANO_ROLANTE_100HZ_HARMONICOS_2BSF}
+\end{figure}
+
 
 \section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor}}}
 
@@ -1802,9 +1924,9 @@ Bancada ligada na energia elétrica e energizada & Aproxidamente 250mv  & Espect
 
 Nota-se que a amplitude dos sinais aumenta consideravelmente quando a bancada está conectada à rede elétrica, demonstrando, por um lado, que há baixa indução de ruídos causada pela própria fonte de alimentação do circuito condicionador de sinal. Por outro lado, há uma quantidade de ruído advinda do próprio ambiente. Brisebois, 2006, aponta que sensores de alta impedância podem sofrer ruídos por uma série de fatores, tais como ruído externo, resíduos de fluxo de solda, correntes de polarização, dentre outros. Uma vez caracterizados tais ruídos, eles podem ser considerados ao se analisarem os resultados para verificação da viabilidade do filme PVDF na aplicação proposta.
 
-\section{\normalfont{\textbf {Caso  2 - caracterização do sinal do motorredutor}}}
+\section{\normalfont{\textbf {Caso  2.1 - caracterização do sinal do motorredutor com sensor PVDF}}}
 
-Após a caraterização das interferências elétricas que seriam inerentes ao sensor, o padrão de vibrações do motorredutor foi caracterizado, a fim de que fossem verificadas suas frequências. Isso foi necessário pois as frequências geradas pelo conjunto motorredutor não eram, à priori, conhecidas. Assim, para que se evitassem possíveis confusões ao se caracterizarem os sinais de rolamentos, caso, por coincidência, alguma das frequências de defeito esperadas fossem iguais às do motorredutor, tal caracterização foi proposta. 
+Após a caraterização das interferências elétricas que seriam inerentes ao sensor, o padrão de vibrações do motorredutor foi caracterizado com o sensor PVDF, a fim de que fossem verificadas suas frequências. Isso foi necessário pois as frequências geradas pelo conjunto motorredutor não eram, à priori, conhecidas. Assim, para que se evitassem possíveis confusões ao se caracterizarem os sinais de rolamentos, caso, por coincidência, alguma das frequências de defeito esperadas fossem iguais às do motorredutor, tal caracterização foi proposta. 
 
 Para tanto o sinal foi aquisitado durante dois minutos ininterruptos, tendo sido processados e aqui apresentados, para manutenção da consistência com os demais comparativos realizados, os primeiros seis segundos do sinal. A Figura~\ref{motorredutor} mostra o referido sinal no domínio do tempo.
 
@@ -2124,7 +2246,7 @@ KURATA, M.; LI, X.; FUJITA, K.; HE, L.; YAMAGUCHI, M. \textbf{PVDF Piezo Film as
 \begin{justify}
   W. K. Lee, G. S. Chung, H. J. Baek and K. S. Park
   \textbf{Heart sounds measurement using PVDF film sensor and their comparison with RR intervals of ECG signals}.
-   Conference on Biomedical and Health Informatics, 2012.
+   Proceedings of 2012 IEEE-EMBS International Conference on Biomedical and Health Informatics. China, 2012.
 \end{justify}
 \vspace{-25pt}
 

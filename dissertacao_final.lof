@@ -46,38 +46,43 @@
 \contentsline {figure}{\numberline {45}{\ignorespaces Projeto da bancada experimental visto lateralmente.}}{71}{figure.5.45}%
 \contentsline {figure}{\numberline {46}{\ignorespaces Bancada experimental em fase inicial de construção.}}{71}{figure.5.46}%
 \contentsline {figure}{\numberline {47}{\ignorespaces Bancada experimental finalizada.}}{72}{figure.5.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Isoamortecedor Gerb.}}{73}{figure.5.48}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Isoamortecedor afixado à bancada.}}{73}{figure.5.48}%
 \contentsline {figure}{\numberline {49}{\ignorespaces Medição de rotação com partida direta.}}{73}{figure.5.49}%
 \contentsline {figure}{\numberline {50}{\ignorespaces Painel de controle da bancada experimental.}}{74}{figure.5.50}%
 \contentsline {figure}{\numberline {51}{\ignorespaces Inversor de frequências e instalação elétrica do painel da bancada experimental.}}{75}{figure.5.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Inversor de frequências e instalação elétrica do painel da bancada experimental}}{76}{figure.5.52}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Eixo com acoplamento.}}{76}{figure.5.52}%
 \contentsline {figure}{\numberline {53}{\ignorespaces Versão final da bancada experimental.}}{76}{figure.5.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{78}{figure.5.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Encapsulamento de alumínio com amplificador operacional e sensor filme PVDF.}}{79}{figure.5.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio.}}{80}{figure.5.56}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Circuito amplificador operacional do sensor piezoelétrico.}}{81}{figure.5.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}}{81}{figure.5.58}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}}{82}{figure.5.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Comparação do sinal filtrado com o sinal não-filtrado, com a bancada desligada.}}{83}{figure.5.60}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}}{83}{figure.5.61}%
-\contentsline {figure}{\numberline {62}{\ignorespaces DAQ USB 6212. Retirado de National Instruments, 2021.}}{84}{figure.5.62}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Sistema de aquisição desenvolvido com LabView.}}{85}{figure.5.63}%
-\contentsline {figure}{\numberline {64}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{85}{figure.5.64}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Dano introduzido no elemento rolante. A seta vermelha aponta o elemento rolante onde o dano foi inserido.}}{88}{figure.5.65}%
-\contentsline {figure}{\numberline {66}{\ignorespaces Processo de inserção do dano na pista externa.}}{88}{figure.5.66}%
-\contentsline {figure}{\numberline {67}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{89}{figure.5.67}%
-\contentsline {figure}{\numberline {68}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica.}}{90}{figure.6.68}%
-\contentsline {figure}{\numberline {69}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica.}}{91}{figure.6.69}%
-\contentsline {figure}{\numberline {70}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica.}}{92}{figure.6.70}%
-\contentsline {figure}{\numberline {71}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica.}}{93}{figure.6.71}%
-\contentsline {figure}{\numberline {72}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica e energizada.}}{94}{figure.6.72}%
-\contentsline {figure}{\numberline {73}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica e energizada.}}{95}{figure.6.73}%
-\contentsline {figure}{\numberline {74}{\ignorespaces Sinal temporal do motorredutor.}}{96}{figure.6.74}%
-\contentsline {figure}{\numberline {75}{\ignorespaces Espectro de densidade de potência do motorredutor.}}{97}{figure.6.75}%
-\contentsline {figure}{\numberline {76}{\ignorespaces Espectro de densidade de potência do motorredutor com picos filtrados.}}{98}{figure.6.76}%
-\contentsline {figure}{\numberline {77}{\ignorespaces Sinal temporal do rolamento em bom estado.}}{99}{figure.6.77}%
-\contentsline {figure}{\numberline {78}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado.}}{99}{figure.6.78}%
-\contentsline {figure}{\numberline {79}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante.}}{101}{figure.6.79}%
-\contentsline {figure}{\numberline {80}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante}}{102}{figure.6.80}%
-\contentsline {figure}{\numberline {81}{\ignorespaces Curtose espectral para diferentes janelas no rolamento com dano no elemento rolante.}}{103}{figure.6.81}%
-\contentsline {figure}{\numberline {82}{\ignorespaces Envelope do sinal do rolamento com dano no elemento rolante}}{104}{figure.6.82}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}}{79}{figure.5.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Encapsulamento de alumínio com amplificador operacional e sensor filme PVDF.}}{80}{figure.5.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio.}}{81}{figure.5.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Circuito amplificador operacional do sensor piezoelétrico.}}{82}{figure.5.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Processo de teste do circuito rejeita-faixa para filtragem dos 60 Hz da rede. O circuito rejeita-faixa é indicado pela seta vermelha.}}{82}{figure.5.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}}{83}{figure.5.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Comparação do sinal filtrado com o sinal não-filtrado, com a bancada desligada.}}{84}{figure.5.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}}{84}{figure.5.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Sensor acelerômetro conectado ao equipamento de captura dos dados.}}{85}{figure.5.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces DAQ USB 6212. Retirado de National Instruments, 2021.}}{86}{figure.5.63}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Sistema de aquisição desenvolvido com LabView.}}{86}{figure.5.64}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{87}{figure.5.65}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Dano introduzido no elemento rolante. A seta vermelha apon a o elemento rolante onde o dano foi inserido.}}{89}{figure.5.66}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Processo de inserção do dano na pista externa.}}{90}{figure.5.67}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{91}{figure.5.68}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{93}{figure.6.69}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Sinal espectral do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{94}{figure.6.70}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Sinal espectral demodulado do rolamento com dano no elemento rolante.}}{95}{figure.6.71}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Indicações das harmônicas no sinal espectral demodulado do rolamento com dano no elemento rolante.}}{96}{figure.6.72}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica.}}{97}{figure.6.73}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica.}}{98}{figure.6.74}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica.}}{99}{figure.6.75}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica.}}{100}{figure.6.76}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica e energizada.}}{101}{figure.6.77}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica e energizada.}}{102}{figure.6.78}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Sinal temporal do motorredutor.}}{104}{figure.6.79}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Espectro de densidade de potência do motorredutor.}}{105}{figure.6.80}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Espectro de densidade de potência do motorredutor com picos filtrados.}}{105}{figure.6.81}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Sinal temporal do rolamento em bom estado.}}{106}{figure.6.82}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado.}}{107}{figure.6.83}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante.}}{108}{figure.6.84}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante}}{109}{figure.6.85}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Curtose espectral para diferentes janelas no rolamento com dano no elemento rolante.}}{110}{figure.6.86}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Envelope do sinal do rolamento com dano no elemento rolante}}{111}{figure.6.87}%

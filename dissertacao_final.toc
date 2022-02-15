@@ -39,40 +39,46 @@
 \contentsline {section}{\numberline {5.1}\normalfont {\textbf {Rolamentos autocompensadores de rolos}}}{67}{section.5.1}%
 \contentsline {section}{\numberline {5.2}\normalfont {\textbf {Bancada experimental}}}{70}{section.5.2}%
 \contentsline {section}{\numberline {5.3}\normalfont {\textbf {Cálculo das frequências esperadas}}}{77}{section.5.3}%
-\contentsline {section}{\numberline {5.4}\normalfont {\textbf {Filme PVDF e circuitos condicionadores de sinal}}}{77}{section.5.4}%
-\contentsline {section}{\numberline {5.5}\normalfont {\textbf {Aquisição dos dados}}}{84}{section.5.5}%
-\contentsline {section}{\numberline {5.6}\normalfont {\textbf {Métodos de análise dos dados}}}{86}{section.5.6}%
-\contentsline {section}{\numberline {5.7}\normalfont {\textbf {Definição dos experimentos}}}{86}{section.5.7}%
+\contentsline {section}{\numberline {5.4}\normalfont {\textbf {Filme PVDF e circuitos condicionadores de sinal}}}{78}{section.5.4}%
+\contentsline {section}{\numberline {5.5}\normalfont {\textbf {Aquisição dos dados}}}{85}{section.5.5}%
+\contentsline {section}{\numberline {5.6}\normalfont {\textbf {Métodos de análise dos dados}}}{87}{section.5.6}%
+\contentsline {section}{\numberline {5.7}\normalfont {\textbf {Definição dos experimentos}}}{88}{section.5.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}Resultados}{90}{chapter.6}%
-\contentsline {section}{\numberline {6.1}\normalfont {\textbf {Caso 1 - caracterização do sinal do sensor}}}{90}{section.6.1}%
-\contentsline {section}{\numberline {6.2}\normalfont {\textbf {Caso 2 - caracterização do sinal do motorredutor}}}{96}{section.6.2}%
-\contentsline {section}{\numberline {6.3}\normalfont {\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}{98}{section.6.3}%
-\contentsline {section}{\numberline {6.4}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{101}{section.6.4}%
-\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{104}{section.6.5}%
-\contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}{104}{section.6.6}%
-\contentsline {section}{\numberline {6.7}\normalfont {\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}{104}{section.6.7}%
+\contentsline {chapter}{\chapternumberline {6}Resultados}{92}{chapter.6}%
+\contentsline {section}{\numberline {6.1}\normalfont {\textbf {Caso 1 - caracterização dos sinais de falha com utilização de sensor acelerômetro}}}{92}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}\normalfont {\textbf {Motorredutor}}}{92}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}\normalfont {\textbf {Rolamento em bom estado}}}{92}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}\normalfont {\textbf {Falha no elemento rolante}}}{92}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}\normalfont {\textbf {Falha na pista externa}}}{96}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}\normalfont {\textbf {Caso 1 - caracterização do sinal do sensor}}}{97}{section.6.2}%
+\contentsline {section}{\numberline {6.3}\normalfont {\textbf {Caso 2 - caracterização do sinal do motorredutor com sensor acelerômetro}}}{103}{section.6.3}%
+\contentsline {section}{\numberline {6.4}\normalfont {\textbf {Caso 2.1 - caracterização do sinal do motorredutor com sensor PVDF}}}{103}{section.6.4}%
+\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}{106}{section.6.5}%
+\contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{108}{section.6.6}%
+\contentsline {section}{\numberline {6.7}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{111}{section.6.7}%
+\contentsline {section}{\numberline {6.8}\normalfont {\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}{111}{section.6.8}%
+\contentsline {section}{\numberline {6.9}\normalfont {\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}{111}{section.6.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}Comparação dos custos dos sistemas}{105}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Comparação dos custos dos sistemas}{112}{chapter.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}Conclusões}{106}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Conclusões}{113}{chapter.8}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{108}{chapter*.13}%
+\contentsline {chapter}{Refer\^encias\footnote {De acordo com a Associa\c {c}\~ao Brasileira de Normas T\'ecnicas. NBR 6023.}}{115}{chapter*.13}%
 \renewcommand *{\cftappendixname }{Ap\^endice \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}Programa para aqusição de dados na plataforma LabView}{112}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}Programa para aqusição de dados na plataforma LabView}{119}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}Programa para aqusição de dados com microcontrolador STM32}{113}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}Programa para aqusição de dados com microcontrolador STM32}{120}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}Programas para análise dos sinais dos rolamentos}{114}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}Programas para análise dos sinais dos rolamentos}{121}{appendix.C}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}Cálculo do isoamortecedor}{119}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {D}Cálculo do isoamortecedor}{126}{appendix.D}%
