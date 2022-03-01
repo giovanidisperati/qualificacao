@@ -97,7 +97,7 @@
 \local{São Paulo}
 
 %-------------------------------------------------------------------------
-\data{2021}
+\data{2022}
 
 
 %-------------------------------------------------------------------------
@@ -502,7 +502,7 @@ Ainda de acordo com Nepomuceno, 1989, quando se estuda a manutenção preditiva,
 
 Além desses argumentos Holanda, 2016, chama a atenção para o fato de a manutenção preditiva ter como benefício colateral a capacidade de determinação automática do Tempo Médio Entre Falhas, MTBF (\textit{Mean Time Between Failures}). Segundo Holanda, 2016, o MTBF fornece subsídios para que se determine o tempo mais efetivo em termos de custo para substituição do maquinário. Evita-se, assim, a absorção de altos custos de manutenção, uma vez que uma vez que o MTBF atinge o ponto no qual custos de manutenção e operação excedem os de substituição, a mesma é realizada. 
 
-Para a condução de um processo de manutenção preditiva existem diferentes técnicas. Holanda (2016) cita como as principais técnicas: 
+Para a condução de um processo de manutenção preditiva existem diferentes técnicas. Holanda, 2016, cita como as principais técnicas: 
 \begin{itemize}
 	\item termografia, técnica que, por meio de temperatura, realiza a formação de imagens térmicas para atuação no diagnóstico de falhas; 
 	\item análise de lubrificantes, técnica que verifica fatores que possam ser danosos à operação do equipamento por meio da análise de viscosidade, acidez, teor da água dentre outros; 
@@ -511,7 +511,7 @@ Para a condução de um processo de manutenção preditiva existem diferentes t�
 	\item análise de vibrações, técnica que permite o monitoramento do desenvolvimento de falhas em maquinário e peças através de medições de suas assinaturas vibracionais. 
 \end{itemize}
 
-Cada elemento de máquina possui características particulares que influenciam os métodos de manutenção preditiva adotados. No caso dos mancais de rolamentos geram vibrações mesmo quando geometricamente perfeitos, uma vez que possuem um número finito de elementos rolantes a fim de suportar a carga. Ainda, quando ocorre um defeito em um dos componentes de um mancal de rolamentos, há aumento considerável nos níveis de vibração do mesmo. (BARILLI, 2013)
+Cada elemento de máquina possui características particulares que influenciam os métodos de manutenção preditiva adotados. No caso dos mancais de rolamentos geram vibrações mesmo quando geometricamente perfeitos, uma vez que possuem um número finito de elementos rolantes a fim de suportar a carga. Ainda, quando ocorre um defeito em um dos componentes de um mancal de rolamentos, há aumento considerável nos níveis de vibração do mesmo (BARILLI, 2013).
 
 Assim, a manutenção preditiva baseada em análise de vibrações, aplicada a mancais de rolamentos, será abordada em maiores detalhes por se tratar da técnica escolhida dadas as características dos rolamentos, bem como do sensor objeto de estudo deste trabalho.
 
@@ -527,8 +527,9 @@ A Figura~\ref{ComponentesRolamentos} demonstra os componentes de um rolamento de
 
 \begin{figure}[!htb]
 \centering
-\caption{a) Componentes de um rolamento. (b) Dimensões do rolamento. Retirado de Mesquita et al. 2002}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura1}
+\caption{a) Componentes de um rolamento. (b) Dimensões do rolamento.}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Figura1} \\
+Retirado de Mesquita et al. 2002
 \label{ComponentesRolamentos}
 \end{figure}
 
@@ -1457,19 +1458,31 @@ A partir dos dados coletados, pode-se calcular com base nas frequências caracte
 
 %\[D = \frac{\SI{72}{\mm} \ + \SI{30}{\mm}}{2} = \SI{51}{\mm} \]  
 
-Em relação à frequência de rotação do eixo, os experimentos serão propostos em duas rotações distintas. Uma com 36,8 RPM, velocidade da partida direta, e outra a 61,3 RPM, velocidade de rotação com utilização do inversor de frequências e motor a 3000 RPM.
+Em relação à frequência de rotação do eixo, os experimentos serão propostos em duas rotações distintas. Uma com 36,8 RPM, velocidade da partida direta, e outra a 61,3 RPM, velocidade de rotação com utilização do inversor de frequências e motor a 3000 RPM. Realizando a conversão para Hz a frequência de rotação do eixo em 36,8 RPM é
+
+\begin{equation}
+	Fr = \frac{36,8 RPM} {60s} = \SI{0,61}{\hertz}
+	\label{eq: Frequencia do eixo em 36,8 RPM}
+\end{equation}
+
+Já para a rotação em 61,3 RPM temos:
+
+\begin{equation}
+	Fr = \frac{61,3 RPM} {60s} = \SI{1,03}{\hertz}
+	\label{eq: Frequencia do eixo em 61,3 RPM}
+\end{equation}
 
 Assim, no caso da rotação fixada em 61,3 RPM, para a \textit{Fundamental Train Frequency} a frequência esperada é, aproximadamente: 
 
 \begin{equation}
-	FTF = \frac{1.03}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{0.417}{{\hertz}}
+	FTF = \frac{1,03}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{0,417}{{\hertz}}
 	\label{eq: FTF no  Rolamento em 100Hz}
 \end{equation}
 
 Já com a rotação fixada em 36,8 RPM, para a \textit{Fundamental Train Frequency} espera-se, aproximadamente:
 
 \begin{equation}
-	FTF = \frac{0.61}{2} \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{0.247}{{\hertz}}
+	FTF = \frac{0,61}{2} \left ( 1 - \frac{10,1}{51} \,cos \, \ang{14} \right )  \ = \SI{0,247}{{\hertz}}
 	\label{eq: FTF no  Rolamento}
 \end{equation}
 
@@ -1479,14 +1492,14 @@ Já com a rotação fixada em 36,8 RPM, para a \textit{Fundamental Train Frequen
 Já para a \textit{Ball Pass Frequency of The Inner Race} com eixo a 61,3 RPM temos, aproximadamente:
 
 \begin{equation}
-	BPFI = \frac{10}{2}1.03 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{6.14}{{\hertz}}
+	BPFI = \frac{13}{2}1,03 \left ( 1 + \frac{10,1}{51} \,cos \, \ang{14} \right )  \ = \SI{7,96}{{\hertz}}
 	\label{eq: BPFI no rolamento}
 \end{equation}
 
 Para a \textit{Ball Pass Frequency of The Inner Race} com rolamento a 36,8 RPM temos, aproximadamente:
 
 \begin{equation}
-	BPFI = \frac{10}{2}0.61 \left ( 1 + \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{3.63}{{\hertz}}
+	BPFI = \frac{13}{2}0,61 \left ( 1 + \frac{10,1}{51} \,cos \, \ang{14} \right )  \ = \SI{4,71}{{\hertz}}
 	\label{eq: BPFI no rolamento}
 \end{equation}
 
@@ -1496,14 +1509,14 @@ Para a \textit{Ball Pass Frequency of The Inner Race} com rolamento a 36,8 RPM t
 Para a \textit{Ball Pass Frequency of The Outer Race} com eixo a 61,3 RPM temos, aproximadamente:
 
 \begin{equation}
-	BPFO = \frac{10}{2}1.03 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{4.16}{{\hertz}}
+	BPFO = \frac{13}{2}1,03 \left ( 1 - \frac{10,1}{51} \,cos \, \ang{14} \right )  \ = \SI{5,42}{{\hertz}}
 	\label{eq: BPFO no Rolamento}
 \end{equation}
 
 Para a \textit{Ball Pass Frequency of The Outer Race} com eixo a 36,8 RPM temos, aproximadamente:
 
 \begin{equation}
-	BPFO = \frac{10}{2}0.61 \left ( 1 - \frac{10.1}{51} \,cos \, \ang{14} \right )  \ = \SI{2.54}{{\hertz}}
+	BPFO = \frac{13}{2}0,61 \left ( 1 - \frac{10,1}{51} \,cos \, \ang{14} \right )  \ = \SI{3,21}{{\hertz}}
 	\label{eq: BPFO no Rolamento}
 \end{equation}
 
@@ -1512,21 +1525,20 @@ Para a \textit{Ball Pass Frequency of The Outer Race} com eixo a 36,8 RPM temos,
 Para a \textit{Ball Spin Frequency} a frequência esperada para rotação do eixo em 61,3 RPM é, aproximadamente:
 
 \begin{equation}
-	BSF = \frac{51}{2*10.1}1.03 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{2.5}{{\hertz}} \
+	BSF = \frac{51}{2*10,1}1,03 \Bigg[  1 - \left ( \frac{10,1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{2,5}{{\hertz}} \
 	\label{eq: BSF no rolamento}
 \end{equation}
 
 E por fim, para a \textit{Ball Spin Frequency} com eixo em 36,8 RPM temos, aproximadamente:
 
 \begin{equation}
-	BSF = \frac{51}{2*10.1}0.61 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{1.48}{{\hertz}} \
+	BSF = \frac{51}{2*10,1}0,61 \Bigg[  1 - \left ( \frac{10,1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{1,48}{{\hertz}} \
 	\label{eq: BSF no rolamento}
 \end{equation}
 
-
 %\[BSF = \frac{51}{2*10.1}35 \Bigg[  1 - \left ( \frac{10.1}{51} \,cos \, \ang{14} \right ) ^{2}  \Bigg] \ = \SI{~85}{{\hertz}} \]
 
-O conhecimento prévio destas frequências é de grande importância na etapa de análise, uma vez que elas nos apontam as regiões do espectro onde as falhas devem se mostrar presentes.
+O conhecimento prévio destas frequências é de grande importância na etapa de análise, uma vez que elas apontam as regiões do espectro onde as falhas devem se mostrar presentes.
 
 \section{\normalfont{\textbf{Filme PVDF e circuitos condicionadores de sinal}}}
 
@@ -1749,7 +1761,7 @@ Fonte: O autor (2022).
 \label{insercao_dano_pista_externa}
 \end{figure}
 
-A Figura~\ref{dano_pista_externa} apresenta o rolamento com dano inserido na pista externa. A seta vermelha aponta o furo realizado com a furadeira de bancada. O furo imediatamente ao lado é característico do rolamento, não representando um defeito - os elementos rolantes não têm contato com ele, cuja finalidade é a vazão de possível excesso de graxa, caso esta seja utilizada como lubrificante.
+A Figura~\ref{dano_pista_externa} apresenta o rolamento com dano inserido na pista externa. A seta vermelha aponta o furo realizado. O furo imediatamente ao lado é característico do rolamento, não representando um defeito - os elementos rolantes não têm contato com ele, cuja finalidade é a vazão de possível excesso de graxa, caso esta seja utilizada como lubrificante.
 
 \begin{figure}[H]
 \centering
@@ -1765,21 +1777,63 @@ Nesta seção são apresentados os resultados dos experimentos realizados com o 
 
 \section{\normalfont{\textbf {Caso 1 - caracterização dos sinais de falha com utilização de sensor acelerômetro}}}
 
-Com uso do sensor acelerômetro de uso comercial, a caracterização dos sinais do rolamento em bom estado, do motorredutor e dos rolamentos com falha no elemento rolante e na pista externa foi realizada. Esta se deu para
+Com uso do sensor acelerômetro de uso comercial a caracterização dos sinais do rolamento em bom estado e do motorredutor foi realizada, a fim de que se conhecessem os padrões de vibração dos conjuntos experimentais e que se pudesse, assim, determinar com precisão as falhas nos rolamentos. Após a determinação das frequências dominantes presentes nestes componentes, a análise dos rolamentos com falha no elemento rolante e na pista externa foi feita com uso das técnicas de análise temporal, espectral e demodulação do espectro de frequências, conforme descrito na literatura.
 
-A partir das aquisições, obtiveram-se os seguintes resultados.
+A partir dos experimentos, obtiveram-se resultados apresentados a seguir.
 
 \subsection{\normalfont{\textbf{Motorredutor}}}
 
+O primeiro passo adotado para possiblitar a identificação das falhas dos rolamentos foi a caracterização do sinal do motorredutor. Para tanto, o sensor acelerômetro foi posicionado próximo à saída da caixa de redução, local em que há maior possibilidade de transmissão das vibrações provenientes da caixa de redução para o eixo motriz.  
+
+O sinal temporal do motorredutor pode ser visto na Figura~\ref{MOTORREDUTOR_TEMPORAL_ACELEROMETRO}.
+
+\begin{figure}[H]
+\centering
+\caption {Sinal temporal do motorredutor sob rotação de 61,3 RPM.}
+\includegraphics[width=\textwidth,keepaspectratio]{MOTORREDUTOR_TEMPORAL_ACELEROMETRO} \\
+Fonte: O autor (2022).
+\label{MOTORREDUTOR_TEMPORAL_ACELEROMETRO}
+\end{figure}
+
+A Figura~\ref{ESPECTRO_ACELERACAO_MOTORREDUTOR_100HZ} mostra o espectro de frequências do motorredutor, com grande pico e concentração na região dos \SI{1600}{\hertz}, bem como picos menores em \SI{50}{\hertz}, frequência de rotação do motor, e nos \SI{500}{\hertz}, \SI{550}{\hertz}, \SI{600}{\hertz} e \SI{800}{\hertz}, provenientes da caixa de redução. 
+
+\begin{figure}[H]
+\centering
+\caption {Espectro de frequências do motorredutor sob rotação de 61,3 RPM.}
+\includegraphics[width=\textwidth,keepaspectratio]{ESPECTRO_ACELERACAO_MOTORREDUTOR_100HZ} \\
+Fonte: O autor (2022).
+\label{ESPECTRO_ACELERACAO_MOTORREDUTOR_100HZ}
+\end{figure}
 
 \subsection{\normalfont{\textbf{Rolamento em bom estado}}}
 
+Para o sinal do rolamento em bom estado, foram adotados os mesmos métodos do conjunto motorredutor. Primeiro o sinal do rolamento foi analisado no domínio do tempo, apresentado na Figura~\ref{ROLAMENTO_BOM_ESTADO_TEMPO}.
+
+\begin{figure}[H]
+\centering
+\caption {Sinal temporal do rolamento em bom estado sob rotação de 61,3 RPM.}
+\includegraphics[width=\textwidth,keepaspectratio]{ROLAMENTO_BOM_ESTADO_TEMPO} \\
+Fonte: O autor (2022).
+\label{ROLAMENTO_BOM_ESTADO_TEMPO}
+\end{figure}
+
+A partir da representação temporal, é possível verificar que a amplitude pico a pico do sinal do rolamento em bom estado é menor que a amplitude de saída do motorredutor. A Figura~\ref{ROLAMENTO_BOM_ESTADO_ESPECTRO} mostra o sinal do espectro do rolamento. 
+
+\begin{figure}[H]
+\centering
+\caption {Espectro de frequências do rolamento em bom estado sob rotação de 61,3 RPM.}
+\includegraphics[width=\textwidth,keepaspectratio]{ROLAMENTO_BOM_ESTADO_ESPECTRO} \\
+Fonte: O autor (2022).
+\label{ROLAMENTO_BOM_ESTADO_ESPECTRO}
+\end{figure}
+
+Aparecem neste espectro as frequências de \SI{1}{\hertz}, velocidade de rotação do eixo, \SI{50}{\hertz}, velocidade de rotação do motor ainda cuja frequência ainda aparece sendo transmitida pelo eixo, bem como, e principalmente, as frequências de picos presentes na saída do motorredutor:  \SI{500}{\hertz}, \SI{550}{\hertz}, \SI{600}{\hertz} e \SI{800}{\hertz}. O pico mais elevado, neste caso, está nos \SI{550}{\hertz}. É importante notar, entretanto, que apesar do pico estar mais destacado aqui, há menor amplitude destas frequências em relação ao sinal medido na saída do motorredutor. Percebe-se, portanto, a transmissão, pelo eixo motriz, das frequências do motorredutor. Esta informação é relevante para a adequada análise dos sinais das falhas dos rolamentos.
 
 \subsection{\normalfont{\textbf{Falha no elemento rolante}}}
 
 Com a velocidade do eixo em 61,3 RPM, calculou-se a frequência de defeito no elemento rolante foi calculada em \SI{2,5}{\hertz}. Sabe-se que os sinais aparecem em duas vezes esta frequência - dado que o dano no elemento rolante atinge as pistas externa e interna a cada revolução. Assim, procurou-se os danos em duas vezes a BSF, sabendo-se, também, que estes apresentam bandas laterais na \textit{fundamental train frequency} do rolamento. 
 
-A Figura~\ref{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado} mostra o sinal temporal do rolamento com dano no elemento rolante.
+A partir da análise dos sinais obtidos nos eixos vertical e horizontal, verificou-se que o eixo vertical permitiu uma identificação mais clara do dano no elemento rolante. Os resultados são, portanto, apresentados com base neste eixo. A Figura~\ref{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado} mostra o sinal temporal do rolamento com dano no elemento rolante.
 
 \begin{figure}[H]
 \centering
@@ -1801,42 +1855,54 @@ Fonte: O autor (2022).
 
 O sinal do espectro apresenta um nível elevado de energia espalhado pelo espectro, com algumas frequências marcantes em relação. 
 
-Percebe-se uma grande quantidade de energia concentrada na região de frequências mais elevadas, em particular na que compreende, aproximadamente, dos \SI{2850}{\hertz} aos \SI{3050}{\hertz}. Demodulando-se o sinal do rolamento a partir desta faixa de frequências, obtém-se o espectro da Figura~\ref{DANO_ROLANTE_100HZ_2BSF_SEM_BANDAS_HARMONICAS}. 
+Percebe-se uma grande quantidade de energia concentrada na região de frequências mais elevadas, em particular na que compreende, aproximadamente, dos \SI{2850}{\hertz} aos \SI{3050}{\hertz}. Demodulando-se o sinal do rolamento a partir desta faixa de frequências, obtém-se o espectro da Figura~\ref{2bsf_anotado}. 
 
 \begin{figure}[H]
 \centering
 \caption {Sinal espectral demodulado do rolamento com dano no elemento rolante.}
-\includegraphics[width=\textwidth,keepaspectratio]{DANO_ROLANTE_100HZ_2BSF_SEM_BANDAS_HARMONICAS} \\
+\includegraphics[width=\textwidth,keepaspectratio]{2bsf_anotado} \\
 Fonte: O autor (2022).
-\label{DANO_ROLANTE_100HZ_2BSF_SEM_BANDAS_HARMONICAS}
+\label{2bsf_anotado}
 \end{figure}
 
-Nele pode-se verificar mais marcadamente os picos de baixas frequências, em particular picos bastante próximos pela frequência calculada para duas vezes BSF. A Figura~\ref{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} mostra o cursor com harmônicas. 
-
-\begin{figure}[H]
-\centering
-\caption {Indicações das harmônicas no sinal espectral demodulado do rolamento com dano no elemento rolante.}
-\includegraphics[width=\textwidth,keepaspectratio]{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} \\
-Fonte: O autor (2022).
-\label{DANO_ROLANTE_100HZ_HARMONICOS_2BSF}
-\end{figure}
-
-É possível verificar a existência de um pico em aproximadamente \SI{5,1}{\hertz}, bem como a existência de bandas laterais neste pico, de aproximadamente \SI{0,4}{\hertz}, compatível com o esperado para a FTF. Verifica-se que as harmônicas também apresentam mesmo padrão, além de estar em múltiplos exatos o que confirma a identificação da falha no elemento rolante.
+Nele pode-se verificar mais marcadamente os picos de baixas frequências, em particular picos bastante próximos pela frequência calculada para duas vezes BSF. É possível verificar a existência de um pico em aproximadamente \SI{5,1}{\hertz}, bem como a existência de bandas laterais neste pico, de aproximadamente \SI{0,4}{\hertz}, compatível com o esperado para a FTF. Verifica-se também a existência de frequências harmônicas de amplitude ligeiramente menor que a frequência base da falha, apontadas nos círculos vermelhos, que apresentam o mesmo padrão e confirmam a identificação da falha no elemento rolante.
 
 \subsection{\normalfont{\textbf{Falha na pista externa}}}
 
-Para identificação na falha da pista externa, seguiram-se os mesmos procedimentos adotados na identificação da falha da pista interna. Primeiro foi-se verificado o sinal temporal obtido com o sensor acelerômetro, como mostrado na Figura~\ref{}
+Para identificação na falha da pista externa, seguiram-se os mesmos procedimentos adotados na identificação da falha da pista interna. Entretanto, no caso do dano na pista externa, o eixo horizontal apresentou uma identificação mais clara do dano. Isto se deve à colocação do rolamento no eixo, com o dano na pista externa posicionado próximo à lateral da caixa. A Figura~\ref{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} apresenta o sinal temporal obtido com o sensor acelerômetro no eixo horizontal.
 
 \begin{figure}[H]
 \centering
-\caption {Indicações das harmônicas no sinal espectral demodulado do rolamento com dano no elemento rolante.}
-\includegraphics[width=\textwidth,keepaspectratio]{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} \\
+\caption {Sinal temporal do rolamento com dano na pista externa.}
+\includegraphics[width=\textwidth,keepaspectratio]{TEMPO_DEFEITO_EXTERNA_100HZ_COM_CARGA} \\
 Fonte: O autor (2022).
-\label{DANO_ROLANTE_100HZ_HARMONICOS_2BSF}
+\label{TEMPO_DEFEITO_EXTERNA_100HZ_COM_CARGA}
 \end{figure}
 
+A Figura~\ref{ESPECTRO_DEFEITO_EXTERNA_100HZ} mostra o espectro do sinal da pista externa, onde são perceptíveis picos na região, principalmente, dos \SI{1200}{\hertz}.  
 
-\section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor}}}
+\begin{figure}[H]
+\centering
+\caption {Sinal espectral demodulado do rolamento com dano na pista externa.}
+\includegraphics[width=\textwidth,keepaspectratio]{ESPECTRO_DEFEITO_EXTERNA_100HZ} \\
+Fonte: O autor (2022).
+\label{ESPECTRO_DEFEITO_EXTERNA_100HZ}
+\end{figure}
+  
+Demodulando-se o sinal, obtém-se o resultado apresentado na Figura~\ref{PISTA_EXTERNA_DEMODULADA_anotada}.
+ 
+\begin{figure}[H]
+\centering
+\caption {Indicações das harmônicas no sinal espectral demodulado do rolamento com dano na pista externa.}
+\includegraphics[width=\textwidth,keepaspectratio]{PISTA_EXTERNA_DEMODULADA_anotada} \\
+Fonte: O autor (2022).
+\label{PISTA_EXTERNA_DEMODULADA_anotada}
+\end{figure} 
+
+A frequência de BPFO calculada para a BPFO nesta rotação de eixo foi de \SI{5.41}{\hertz}, com o pico medido se dando próximo aos \SI{6}{\hertz} o que sugere, portanto, a ocorrência do BPFO. A harmônica de duas vezes o BPFO também aparece no espectro, precisamente no dobro da frequência medida para a falha. Sua amplitude é menor que a BPFO, o que aponta se tratar de uma harmônica desta, tal como verificado na literatura.
+ 
+\newpage
+\section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor PVDF}}}
 
 Para caracterização do sinal inerente ao sensor, submetido ao circuito de condicionamento e filtragem do sinal, foram feitos os seguintes experimentos: 1) aquisição do sinal do sensor com o maquinário desligado e desconectado da energia elétrica; 2) aquisição com o maquinário desligado, mas conectado à tomada; 3) maquinário energizado, mas com motor parado. A finalidade destes experimentos foi de, inicialmente, verificar o nível de ruído do sinal em termos de interferências eletromagnéticas no ambiente.
 
@@ -2047,8 +2113,6 @@ Já os picos de maior amplitude que podem ser visalizados permeando todo o espec
 O dano verificado, conclui-se, foi coerente com o esperado pela literatura e demonstrou elevado nível de espalhamento de frequências, compatível com um rolamento em seu quarto estágio de dano. 
 
 \section{\normalfont{\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}
-
-\section{\normalfont{\textbf {Caso 6 – caracterização do sinal e identificação das frequências característica de defeitos nos rolamentos, com utilização de sensor acelerômetro}}}
 
 \section{\normalfont{\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}
 
