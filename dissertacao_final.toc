@@ -42,7 +42,7 @@
 \contentsline {section}{\numberline {5.4}\normalfont {\textbf {Filme PVDF e circuitos condicionadores de sinal}}}{79}{section.5.4}%
 \contentsline {section}{\numberline {5.5}\normalfont {\textbf {Aquisição dos dados}}}{86}{section.5.5}%
 \contentsline {section}{\numberline {5.6}\normalfont {\textbf {Métodos de análise dos dados}}}{88}{section.5.6}%
-\contentsline {section}{\numberline {5.7}\normalfont {\textbf {Definição dos experimentos}}}{89}{section.5.7}%
+\contentsline {section}{\numberline {5.7}\normalfont {\textbf {Definição dos experimentos}}}{88}{section.5.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}Resultados}{93}{chapter.6}%
 \contentsline {section}{\numberline {6.1}\normalfont {\textbf {Caso 1 - caracterização dos sinais de falha com utilização de sensor acelerômetro}}}{93}{section.6.1}%
@@ -53,7 +53,7 @@
 \contentsline {section}{\numberline {6.2}\normalfont {\textbf {Caso 1 - caracterização do sinal do sensor PVDF}}}{104}{section.6.2}%
 \contentsline {section}{\numberline {6.3}\normalfont {\textbf {Caso 2.1 - caracterização do sinal do motorredutor com sensor PVDF}}}{110}{section.6.3}%
 \contentsline {section}{\numberline {6.4}\normalfont {\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}{112}{section.6.4}%
-\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{115}{section.6.5}%
+\contentsline {section}{\numberline {6.5}\normalfont {\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}{114}{section.6.5}%
 \contentsline {section}{\numberline {6.6}\normalfont {\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}{118}{section.6.6}%
 \contentsline {section}{\numberline {6.7}\normalfont {\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}{118}{section.6.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

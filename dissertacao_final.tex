@@ -36,6 +36,8 @@
 \usepackage{ragged2e}
 
 \newcommand{\f}{\mkern-2mu f\mkern-3mu}
+%\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
+
 
 % ---
 % Pacotes de citações
@@ -476,9 +478,9 @@ Todo e qualquer meio no qual se pretenda fabricar alguma coisa demanda recursos 
 
 	A manutenção corretiva, também conhecida por manutenção reativa, diz respeito à prática correspondente à primeira geração das técnicas de manutenção. A manutenção corretiva foi utilizada desde as primeiras indústrias até, aproximadamente, o final dos anos 40 do século XX – período em que a indústria era pouco mecanizada e com maquinário comparativamente mais simples. Seu princípio é a utilização do equipamento até sua quebra, sendo apenas então realizado o reparo (HOLANDA, 2016). 
 	
-	Entretanto, ainda de acordo com Holanda, 2016, esse tipo de manutenção não elimina a possibilidade de falhas inesperadas.
+Entretanto, ainda de acordo com Holanda, 2016, esse tipo de manutenção não elimina a possibilidade de falhas inesperadas.
 
-	Assim, faz-se necessária uma forma de manutenção que particularize cada máquina, de forma a avaliar sistematicamente suas condições. Isto começa a ocorrer nos anos 70 do século XX, com os avanços da automação e elevação das exigências de confiabilidade e disponibilidade. A esse método de manutenção chama-se de manutenção preditiva. (HOLANDA, 2016).  
+Assim, faz-se necessária uma forma de manutenção que particularize cada máquina, de forma a avaliar sistematicamente suas condições. Isto começa a ocorrer nos anos 70 do século XX, com os avanços da automação e elevação das exigências de confiabilidade e disponibilidade. A esse método de manutenção chama-se de manutenção preditiva. (HOLANDA, 2016).  
 
 \subsection{\normalfont{\textbf{Manutenção preditiva}}}
 %Nepomuceno, 1989, p.41
@@ -1581,6 +1583,7 @@ E por fim, para a \textit{Ball Spin Frequency} com eixo em 36,8 RPM temos, aprox
 O conhecimento prévio destas frequências é de grande importância na etapa de análise, uma vez que elas apontam as regiões do espectro onde as falhas devem se mostrar presentes.
 
 \section{\normalfont{\textbf{Filme PVDF e circuitos condicionadores de sinal}}}
+\label{secao:CircuitosCondicionnadores}
 
 A partir destas frequências é possível estimar as regiões do espectro de frequência para análise do sinal aquisitado. Para que isto seja possível, entretanto, é necessário o emprego de circuitos que realizem o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas, percebidas em testes preliminares e constatadas na literatura.  
 
@@ -1588,9 +1591,10 @@ Utilizou-se como sensor o filme PVDF modelo LDT1-028k da Measurement Specialties
 
 \begin{figure}[H]
 \centering
-\caption {Sensor de vibração piezoelétrico. Retirado de Measurement Specialties, 2021.}
+\caption {Sensor de vibração piezoelétrico.}
 \includegraphics[width=\textwidth,height=70mm,keepaspectratio]{Figura21} 
-\label{Figura21}
+\label{Figura21} \\
+Fonte: Measurement Specialties (2021).
 \end{figure} 
 
 Esse se trata de um filme PVDF com espessura de \SI{28}{\micro\meter}, laminado em folha de poliéster e com dois terminais crimpados, que permitem a medição de sua tensão quando sujeito a um esforço mecânico e tem como principais características: 
@@ -1605,10 +1609,10 @@ Esse se trata de um filme PVDF com espessura de \SI{28}{\micro\meter}, laminado 
 
 Tendo em vista se tratarem de sensores de alta impedância, faz-se necessário isolamento elétrico, a fim de mitigar as interferências da fase da rede elétrica e de outros sinais de alta frequência incidentes sobre o local de testes, bem como amplificação da tensão resultante do esforço mecânico sofrido pelo sensor, por meio de amplificador operacional. 
 
-Tal como mencionado na revisão bibliográfica realizada, baseando-se em Li et. al, 2011, os autores explicitam a necessidade de condicionamento eletrônico do sinal para trabalho com o sensor PVDF. Os autores mostram a importância de um filtro rejeita-faixa na frequência da rede elétrica e de amplificação operacional, também apontando que dada à alta impedância, esse se torna facilmente sujeito aos ruídos ambientes. 
+Tal como mencionado na revisão bibliográfica realizada, baseando-se em Li et. al, 2011, os autores explicitam a necessidade de condicionamento eletrônico do sinal para trabalho com o sensor PVDF. Os autores mostram a importância de um filtro rejeita-faixa na frequência da rede elétrica e de amplificação operacional, também apontando que dada a alta impedância, esse se torna facilmente sujeito aos ruídos ambientes. 
 %Com utilização de osciloscópio foi-se verificado, inicialmente, tal como verificado experimentalmente nos testes realizados neste trabalho.
 
-A partir de testes iniciais verificou-se que o sensor por ser de alta impedância, conforme verificado por meio da revisão bibliográfica, apresentava altos níveis de ruído. Assim, foram projetados e construídos circuitos condicionadores de sinal para o trabalho com o sensor PVDF. Portanto, a fim de mitigar esse problema, a montagem dos sensores se deu em um encapsulamento de alumínio para diminuição dos ruídos. Os sensores foram acoplados com cola acrílica, a fim de que não ocorresse amortecimento significativo da vibração devido ao elemento colante.
+A partir de testes iniciais verificou-se que o sensor, conforme verificado por meio da revisão bibliográfica, de fato apresentava altos níveis de ruído. Assim, foram projetados e construídos circuitos condicionadores de sinal para o trabalho com o sensor PVDF, a fim de mitigar esse problema. A montagem dos sensores se deu em um encapsulamento de alumínio para diminuição dos ruídos, sendo os sensores acoplados com cola acrílica, a fim de que não ocorresse amortecimento da vibração devido ao elemento colante.
 %HERE A Figura ~\ref{ìnserir_foto_modelo_3d_lucas) mostra o modelo do encapsulamento desenvolvido. 
 
 A Figura~\ref{encapsulamento_sensor}, por sua vez, apresenta a montagem do sensor em seu encapsulamento.
@@ -1719,20 +1723,7 @@ Fonte: O autor (2022).
 \label{sistema_labview}
 \end{figure} 
 
-O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. 
-
-Além disso também foi construído um sistema de aquisição baseado no microcontrolador STM32, modelo stm32f103, também conhecido como \textit{bluepill}, utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. 
-
-%TODO arrancar essa parte
-
-\begin{figure}[H]
-\centering
-\caption {Microcontrolador STM32F103. Retirado de ST, 2021.}
-\includegraphics[width=\textwidth,height=60mm,keepaspectratio]{stm32}
-\label{stm32}
-\end{figure}
-
-O software foi desenvolvido em linguagem C, com utilização do sistema operacional FreeRTOS, manipulação dos registradores do microcontrolador e testado com dispositivo gerador de função. A construção desse software justificou-se como um experimento a fim de se verificar a viabilidade conjunta de um sistema de aquisição de baixo custo com o sensor de baixo custo. Foi desenvolvido também um sistema de registro dos dados obtidos através de comunicação serial em Python, capaz de registrar os dados aquisitados e gravá-los em arquivos. Ambos softwares encontram-se também no Apêndice~\ref{secao:programastm}.
+O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. Também foi desenvolvido um sistema baseado em STM32, de forma a que se possam conduzir experimentos em trabalhos futuros para que se verifique a possibilidade de um sistema completo de baixo custo com finalidades de manutenção preditiva, incluindo-se, aí, a aquisição e processamento dos dados. Este encontra-se disponível no Apêndice~\ref{secao:programastm}.
 
 %Os modelos matemáticos de identificação de frequências características de defeitos serão utilizados para a análise dos sinais no domínio do tempo e da frequência, que terão a finalidade de calibragem dos níveis de alarme. Para fins de validação dos dados obtidos através do sistema de aquisição desenvolvido com a plataforma STM32, será utilizado a DAQ da National Instruments modelo USB-6212. Esta conta com integração total ao sistema LabView, largamente utilizado na indústria e que será, aqui, utilizado para construção de um sistema com finalidade comparativa. A Figura~\ref{sistema_labview} apresenta o sistema desenvolvido para tanto, na versão livre para uso acadêmico do LabView 2020.
 
@@ -1745,7 +1736,7 @@ Para construção desses códigos foi utilizada a plataforma Anaconda e o Jupyte
 
 \section{\normalfont{\textbf{Definição dos experimentos}}}
 
-A definição dos experimentos se deu a partir de diferentes cenários de caracterização dos sinais em função da necessidade de avaliação do sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito a diferentes níveis de interferências eletromagnéticas, pois, como descrito na seção ~\ref{secao:CircuitosCondicionadores} há uma quantidade perceptível de interferências eletromagnéticas no sensor por sua natureza de alta impedância.
+A definição dos experimentos se deu a partir de diferentes cenários de caracterização dos sinais em função da necessidade de avaliação do sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito a diferentes níveis de interferências eletromagnéticas, pois, como descrito na seção ~\ref{secao:CircuitosCondicionnadores} há possibilidade de interferências eletromagnéticas no sensor por sua natureza de alta impedância. 
 
 %Durante a fase de aquisição dos dados, também foi realizado um conjunto de aquisições com utilização de um filtro digital rejeita-faixa do tipo Butterworth de 4ª ordem, implementado através da plataforma LabVIEW, bem como um filtro passa-baixa também do tipo Butterworth de 4ª ordem. Tal implementação se deu com o objetivo de mitigar interferências verificadas acima dos 2500Hz e, também, interferências ainda presentes por volta dos 60Hz – frequência das oscilações da corrente alternada. 
 
@@ -1753,9 +1744,9 @@ A definição dos experimentos se deu a partir de diferentes cenários de caract
 
 %Dentre os possíveis motivos para tal interferência, estima-se que estes sejam decorrentes de ruídos provenientes da própria fonte do computador utilizado para aquisição dos dados, a qual pode interferir na porta USB utilizada para conexão do dispositivo de aquisição. Entretanto verificou-se, após a inclusão do filtro digital, que o mesmo atenuou demasiadamente o sinal, tendo funcionado como um passa-baixa ao invés de um passa-faixa. 
 
-Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Contudo, após análise preliminar, as amostras obtidas apenas com amplificação e sem filtragem mostraram-se demasiadamente ruidosas. 
+Para condução da aquisição destes distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como Kim et al., 2020, as quais respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela~\ref{tab:conjuntoDeTestes}, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, das frequências características dos danos nos rolamentos. 
 
-Para condução da aquisição destes distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como Kim et al., 2020, as quais respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela~\ref{tab:conjuntoDeTestes}, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, da assinatura dos danos nos rolamentos. 
+Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Contudo, após análise preliminar, as amostras obtidas apenas com amplificação e sem filtragem mostraram-se demasiadamente ruidosa. Assim, os experimentos prosseguiram a partir da aquisição dos sinais filtrados.
 
 Desta forma, os parâmetros de aquisição dos dados analisados até o momento foram definidos e encontram-se na Tabela~\ref{tab:conjuntoDeTestes}.
 
@@ -1780,6 +1771,8 @@ Caso 5        & Rolamento com dano na pista externa, eixo a 37 RPM              
 \hline
 Caso 6        & Rolamento com dano na pista externa e rolamento com dano no elemento rolante, com utilização de sensor acelerômetro e eixo a 37 RPM & 25.6khz            \\
 \hline
+Caso 6        & Rolamento com dano na pista externa e rolamento com dano no elemento rolante, com utilização de sensor acelerômetro e eixo a 61,3 RPM & 25.6khz            \\
+\hline
 \end{tabularx}
 \label{tab:conjuntoDeTestes}
 \source{O autor (2022).}
@@ -1791,7 +1784,7 @@ Os danos nos rolamentos foram inseridos manualmente. A Figura~\ref{dano_introduz
 \centering
 \caption {Dano introduzido no elemento rolante. A seta vermelha apon
 a o elemento rolante onde o dano foi inserido.}
-\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{dano_introduzido_rolante} \\
+\includegraphics[width=\textwidth,height=140mm,keepaspectratio]{dano_introduzido_rolante} \\
 Fonte: O autor (2022).
 \label{dano_introduzido_rolante}
 \end{figure}
@@ -1811,7 +1804,7 @@ A Figura~\ref{dano_pista_externa} apresenta o rolamento com dano inserido na pis
 \begin{figure}[H]
 \centering
 \caption {Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}
-\includegraphics[width=\textwidth,keepaspectratio]{dano_pista_externa} \\
+\includegraphics[width=\textwidth,keepaspectratio]{dano_pista_externa_certo} \\
 Fonte: O autor (2022).
 \label{dano_pista_externa}
 \end{figure}
@@ -1949,7 +1942,7 @@ A frequência de BPFO calculada para a BPFO nesta rotação de eixo foi de \SI{5
 \newpage
 \section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor PVDF}}}
 
-Para caracterização do sinal inerente ao sensor, submetido ao circuito de condicionamento e filtragem do sinal, foram feitos os seguintes experimentos: 1) aquisição do sinal do sensor com o maquinário desligado e desconectado da energia elétrica; 2) aquisição com o maquinário desligado, mas conectado à tomada; 3) maquinário energizado, mas com motor parado. A finalidade destes experimentos foi de, inicialmente, verificar o nível de ruído do sinal em termos de interferências eletromagnéticas no ambiente.
+Para caracterização do sinal inerente ao sensor, submetido ao circuito de condicionamento e filtragem do sinal, foram feitos os seguintes experimentos descritos na Tabela~\ref{tab:conjuntoDeTestes}: 1) aquisição do sinal do sensor com o maquinário desligado e desconectado da energia elétrica; 2) aquisição com o maquinário desligado, mas conectado à energia elétrica; 3) maquinário energizado, mas com motor parado. A finalidade destes experimentos foi de, inicialmente, verificar o nível de ruído do sinal em termos de interferências eletromagnéticas no ambiente.
 
 Para que se conduzissem os experimentos deste cenário o sensor foi posicionado no rolamento e seu sinal aquisitado a uma taxa igual à taxa de aquisição dos ensaios. 
 
@@ -1960,61 +1953,65 @@ A Figura~\ref{maquina_desligada_da_tomada} mostra o sinal temporal da bancada de
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal da bancada desconectada da energia elétrica.}
-\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{Caso0/maquina_desligada_da_tomada} \\
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{aquisicao_01_maquina_desligada_tomada_10_03_2022_08h53min_ajustado} \\
 Fonte: O autor (2022).
 \label{maquina_desligada_da_tomada}
 \end{figure} 
 
-O sinal temporal aponta a presença de um ruído, com amplitude pico a pico de aproximadamente {\SI{8}{\milli\volt}}. Calculando-se o FFT e o PSD do sinal, foi obtido o resultado mostrado na Figura~\ref{PSD_SENSOR_MAQUINA_DESLIGADA}. 
+O sinal temporal aponta a presença de um ruído, com amplitude pico a pico de aproximadamente {\SI{10}{\milli\volt}}. Calculando-se o FFT e o PSD do sinal, foi obtido o resultado mostrado na Figura~\ref{PSD_SENSOR_MAQUINA_DESLIGADA}. 
 
 \begin{figure}[H]
 \centering
 \caption {Espectro do sinal da bancada desconectada da energia elétrica.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso0/PSD_SENSOR_MAQUINA_DESLIGADA} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{PSD_PVDF_MAQUINA_DESLIGADA} \\
 Fonte: O autor (2022).
 \label{PSD_SENSOR_MAQUINA_DESLIGADA}
 \end{figure} 
 
-Por meio da remoção do componente de corrente contínua do sinal, foi possível verificar quais frequências o compõe. Foi possível verificar que o espectro possui um elevado pico na região dos {\SI{60}{\hertz}, sem alterações nas demais faixas de frequência. Considerando-se que apenas o filtro rejeita-faixa estava ligado à energia neste momento, conclui-se que o referido ruído foi induzido pela própria fonte de alimentação do mesmo ou por interferência do ambiente. Ou seja, ainda que o circuito condicionador, em conjunto com o filtro, tenha sido capaz de atenuar as componentes de interferência elétrica, componentes de ruído elétrico ainda se mostraram presentes. 
+É possível verificar que o espectro possui um elevado pico na região dos {\SI{60}{\hertz} e dos {\SI{9500}{\hertz}, sem a presença de energia significativa nas demais faixas de frequência. Considerando-se que apenas o conjunto de circuitos de condicionamento do sinal estava ligado à energia neste momento, conclui-se que o referido ruído foi induzido pela própria fonte de alimentação do mesmo, por interferência do ambiente ou por ruído inerente ao próprio circuito. Ou seja, ainda que os circuitos condicionadores tenham sido capazes de atenuar as componentes de interferência elétrica, componentes de ruído elétrico ainda se mostraram presentes ainda que em pequena amplitude. 
 
-A partir desse cenário, para que se verificasse o quanto estes sinais seriam presentes nas componentes de frequência durante o processo de aquisição dos dados, foi proposto o experimento de aquisição dos dados com a bancada ligada à tomada, mas não energizada. A Figura~\ref{maquina_ligada_na_tomada} mostra o sinal temporal da bancada quando conectada à energia elétrica.
+A partir dessa constatação e para que se verificasse o quanto estes sinais seriam presentes nas componentes de frequência durante o processo de aquisição dos dados, foi assim proposto o experimento de aquisição dos dados com a bancada ligada à tomada, mas não energizada. A Figura~\ref{maquina_ligada_na_tomada} mostra o sinal temporal da bancada quando conectada à energia elétrica.
 
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal da bancada conectada à energia elétrica.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{Caso0/maquina_ligada_na_tomada} \\
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{aquisicao_02_maquina_ligada_tomada_10_03_2022_08h55min_ajustado_6s} \\
 Fonte: O autor (2022).
 \label{maquina_ligada_na_tomada}
 \end{figure} 
 
-A partir do sinal temporal desse experimento foi possível verificar o incremento na amplitude do sinal, bem como novos componentes de frequência induzidos. A amplitude de tensão pico a pico cresceu para aproximadamente {\SI{200}{\milli\volt}}, aumento significativo em relação ao experimento anterior. A Figura~\ref{PSD_SENSOR_MAQUINA_LIGADA} mostra as componentes deste sinal, compostos tanto pelos {\SI{60}{\hertz} anteriormente identificados quanto por uma nova componente de alta frequência, centrada na faixa dos {\SI{9500}{\hertz}, cuja origem não pôde ser identificada. 
+A partir do sinal temporal desse experimento foi possível verificar o incremento na amplitude do sinal, bem como novos componentes de frequência induzidos. A amplitude de tensão pico a pico cresceu para aproximadamente {\SI{20}{\milli\volt}}, o dobro em relação ao experimento anterior. Em ensaios preliminares, com as versões anteriores do conjunto eletrônico de condicionamento e encapsulamento, o sinal de ruído chegava aos {\SI{215}{\milli\volt}}. 
+
+A Figura~\ref{PSD_SENSOR_MAQUINA_LIGADA} mostra as componentes deste sinal, compostos tanto pelos {\SI{60}{\hertz} anteriormente identificados quanto pela componente de alta frequência, centrada na faixa dos {\SI{9500}{\hertz}, cuja origem não pôde ser identificada. 
 
 \begin{figure}[H]
 \centering
 \caption {Espectro de densidade de potência da bancada conectada à energia elétrica.}
-\includegraphics[width=170mm,keepaspectratio]{GraficosAnalise/PSD_SENSOR_MAQUINA_LIGADA} \\
+\includegraphics[width=170mm,keepaspectratio]{PSD_PVDF_MAQUINA_LIGADA} \\
 Fonte: O autor (2022).
 \label{PSD_SENSOR_MAQUINA_LIGADA}
 \end{figure} 
 
-Estas interferências, conclui-se, devem-se à natureza de alta impedância do sensor filme PVDF.  
+Estas interferências, presume-se, devem-se à natureza de alta impedância do sensor filme PVDF bem como à ruídos de alta frequência do ambiente ou do próprio circuito.  
 
 Assim, verificando-se o aumento dos sinais de interferência elétrica ao ligar a bancada na energia elétrica, foi proposto o experimento de aquisição dos dados com a bancada energizada, mas não em funcionamento. A Figura~\ref{maquina_ligada_na_tomada_e_energizada} mostra o sinal temporal desse caso.
 
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal da bancada conectada à energia elétrica e energizada.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{Caso0/maquina_ligada_na_tomada_e_energizada} \\
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{aquisicao_03_maquina_energizada_10_03_2022_08h57min_ajustado_6s} \\
 Fonte: O autor (2022).
 \label{maquina_ligada_na_tomada_e_energizada}
 \end{figure} 
 
-É possível verificar, nesse caso, o aumento da amplitude pico a pico dos sinais, superior a {\SI{250}{\milli\volt}}. Já em relação ao sinal espectral, como é possível visualizar na Figura~\ref{PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}, o mesmo aponta picos na região dos {\SI{60}{\hertz} e dos {\SI{9500}{\hertz}. Nota-se, entretanto, que ao contrário do experimento anterior, onde as interferências de alta frequência dominavam o espectro em termos de amplitude, a frequência da corrente alternada volta a ser dominante. Isso ocorre pela indução causada pelos elementos da bancada de testes, agora energizados, tal como o próprio motorredutor e o inversor de frequências.   
+É possível verificar, nesse caso, que a amplitude pico a pico dos sinais manteve-se em aproximadamente {\SI{20}{\milli\volt}}. Em ensaios preliminares, nesse caso, o a amplitude pico a pico dos sinais mostrava-se superior a {\SI{250}{\milli\volt}}. 
+
+Já em relação ao sinal espectral, como é possível visualizar na Figura~\ref{PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}, o mesmo aponta picos na região dos {\SI{60}{\hertz} e dos {\SI{9500}{\hertz}. Há também o aparecimento de uma frequência nos {\SI{175}{\hertz}. Isso ocorre pela indução causada pelos elementos da bancada de testes, agora energizados, tal como o próprio motorredutor e o inversor de frequências.   
 
 \begin{figure}[H]
 \centering
 \caption {Espectro de densidade de potência da bancada conectada à energia elétrica e energizada.}
-\includegraphics[width=170mm,keepaspectratio]{GraficosAnalise/PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}
+\includegraphics[width=170mm,keepaspectratio]{PSD_PVDF_BANCADA_ENERGIZADA}
 \label{PSD_SENSOR_MAQUINA_LIGADA_E_ENERGIZADA}
 \end{figure} 
 
@@ -2025,15 +2022,15 @@ Os resultados desta caracterização de ruídos encontram-se sumarizados na Tabe
 \begin{tabularx}{\textwidth}{|X|X|X|}
 \hline
 Caracterização do ruído do sensor               & Valor pico a pico    & Frequências dominantes                                                               \\ \hline
-Bancada desligada da energia elétrica           & Aproximadamente 8mv  & Espectro com pico nos 60Hz                                                           \\ \hline
-Bancada ligada na energia elétrica              & Aproximadamente 200mv & Espectro demonstrando uma concentração de ruído nos 60Hz e pico por volta dos 9500Hz \\ \hline
-Bancada ligada na energia elétrica e energizada & Aproxidamente 250mv  & Espectro demonstrando uma concentração de ruído nos 9500Hz e pico nos 60Hz           \\ \hline
+Bancada desligada da energia elétrica           & Aproximadamente 10mv  & Espectro com picos nos 60Hz e 9500Hz                                                           \\ \hline
+Bancada ligada na energia elétrica              & Aproximadamente 20mv & Espectro demonstrando uma concentração de ruído nos 60Hz e pico por volta dos 9500Hz \\ \hline
+Bancada ligada na energia elétrica e energizada & Aproxidamente 20mv  & Espectro demonstrando pico nos 9500Hz e ruído nos 60Hz e 175Hz           \\ \hline
 \end{tabularx}
 \label{tab:caraterizaçãoSinal}
 \source{O autor (2022).}
 \end{table}
 
-Nota-se que a amplitude dos sinais aumenta consideravelmente quando a bancada está conectada à rede elétrica, demonstrando, por um lado, que há baixa indução de ruídos causada pela própria fonte de alimentação do circuito condicionador de sinal. Por outro lado, há uma quantidade de ruído advinda do próprio ambiente. Brisebois, 2006, aponta que sensores de alta impedância podem sofrer ruídos por uma série de fatores, tais como ruído externo, resíduos de fluxo de solda, correntes de polarização, dentre outros. Uma vez caracterizados tais ruídos, eles podem ser considerados ao se analisarem os resultados para verificação da viabilidade do filme PVDF na aplicação proposta.
+Nota-se que a amplitude dos sinais aumenta consideravelmente quando a bancada está conectada à rede elétrica, demonstrando, por um lado, que há baixa indução de ruídos causada pela própria fonte de alimentação do circuito condicionador de sinal. Por outro lado, há uma quantidade de ruído advinda do próprio ambiente. Conforme apontado por Brisebois, 2006, sensores de alta impedância podem sofrer ruídos por uma série de fatores, tais como ruído externo, resíduos de fluxo de solda, correntes de polarização, dentre outros. Contudo, uma vez caracterizados tais ruídos, eles podem ser considerados ao se analisar os resultados para verificação da viabilidade do filme PVDF na aplicação proposta.
 
 \section{\normalfont{\textbf {Caso  2.1 - caracterização do sinal do motorredutor com sensor PVDF}}}
 
@@ -2044,36 +2041,39 @@ Para tanto o sinal foi aquisitado durante dois minutos ininterruptos, tendo sido
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal do motorredutor.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso0/motorredutor} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{aquisicao_04_motorredutor_10_03_2022_09h46min_ajustado_6s} \\
 Fonte: O autor (2022).
 \label{motorredutor}
 \end{figure} 
 
-Percebe-se um incremento significativo nos valores de tensão pico a pico, quando comparado ao caso anterior com a bancada meramente energizada, atingindo por volta de {\SI{1}{\volt}}. Isto mostrou inicialmente uma evidência de que a relação sinal-ruído seria, portanto, positiva - ou seja, a tensão gerada pelo sinal mecânico seria superior à do ruído elétrico. 
+Percebe-se um incremento significativo nos valores de tensão quando comparado às caracterizações do ruído captado pelo sensor, atingindo por volta de {\SI{1,4}{\volt}} pico a pico. Isto mostra, inicialmente, uma evidência de que a tensão gerada pela deformação mecânica do sensor é bastante superior às tensões de ruído elétrico. 
 
-Contudo, analisando-se o caso no domínio das frequências é possível notar, ao se analisar o PSD do experimento, que as frequências dominantes ainda se mantém centradas nos ruídos anteriormente detectados. A Figura~\ref{PSD_MOTORREDUTOR} mostra os picos de energia contidos no sinal, destacados, ainda, nos {\SI{60}{\hertz} e também nos {\SI{9500}{\hertz}.
+Contudo, analisando-se o caso no domínio das frequências é possível notar, ao se analisar o PSD do experimento, que as frequências dominantes ainda se mantém centradas nos ruídos anteriormente detectados. A Figura~\ref{PSD_MOTORREDUTOR} mostra os picos de energia contidos no sinal, com os respectivos destaques nas frequências proeminentes.
 
 \begin{figure}[H]
 \centering
 \caption {Espectro de densidade de potência do motorredutor.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso0/PSD_MOTORREDUTOR} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{PSD_PVDF_MOTORREDUTOR} \\
 Fonte: O autor (2022).
 \label{PSD_MOTORREDUTOR}
 \end{figure}
 
-Dado o ruído inerente ao sensor, adotou-se uma estratégia de filtragem manual através da análise da densidade espectral de potência, filtrando-se os ruídos com grande interferência no sinal.
+%Dado o ruído inerente ao sensor, adotou-se uma estratégia de filtragem manual através da análise da densidade espectral de potência, filtrando-se os ruídos com grande interferência no sinal.
 
-Para que fosse possível visualizar onde as demais frequências estavam ocorrendo, foi realizado o processo de filtragem através do PSD. Foram excluídos, após inspeção visual, os picos acima de 0.2 W/Hz. Excluindo-se os picos significativos de ruídos, o resultado, então apresentou-se conforme visto na Figura~\ref{PSD_MOTORREDUTOR_FILTRADO}. 
+%Para que fosse possível visualizar onde as demais frequências estavam ocorrendo, foi realizado o processo de filtragem através do PSD. Foram excluídos, após inspeção visual, os picos acima de 0.2 W/Hz. Excluindo-se os picos significativos de ruídos, o resultado, então apresentou-se conforme visto na Figura~\ref{PSD_MOTORREDUTOR_FILTRADO}. 
 
-\begin{figure}[H]
-\centering
-\caption {Espectro de densidade de potência do motorredutor com picos filtrados.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO} \\
-Fonte: O autor (2022).
-\label{PSD_MOTORREDUTOR_FILTRADO_ANOTADO}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\caption {Espectro de densidade de potência do motorredutor com picos filtrados.}
+%\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/PSD_MOTORREDUTOR_FILTRADO_ANOTADO} \\
+%Fonte: O autor (2022).
+%\label{PSD_MOTORREDUTOR_FILTRADO_ANOTADO}
+%\end{figure}
 
-A partir desta filtragem verifica-se uma predominância de frequências na região dos {\SI{3800}{\hertz} aos {\SI{4000}{\hertz}. Também é possível verificar picos isolados por volta dos {\SI{128}{\hertz}, {\SI{360}{\hertz}, além de uma concentração de menor amplitude de frequências em {\SI{986}{\hertz} e outra, ainda menor, na região dos {\SI{1730}{\hertz}. 
+A partir desta filtragem verifica-se uma predominância de frequências na região dos {\SI{728}{\hertz} e dos {\SI{802}{\hertz}. Também é possível verificar picos isolados por volta dos {\SI{908}{\hertz} e dos {\SI{1592}{\hertz}.
+
+%TODO Mover para discussões
+Ao comparar este resultado com o obtido pelo sensor acelerômetro, percebe-se que este apresentou picos bastante próximos, ainda que com amplitudes distintas. No sensor acelerômetro o pico dos 1597Hz foi o de maior amplitude, enquanto no sensor PVDF aparece um pico nos 1592Hz - ainda que de menor amplitude se comparado às frequências de 728Hz e 802Hz, que dominaram o espectro. Uma explicação para tanto encontra-se no posicionamento dos sensores, visto que as dimensões do encapsulamento do sensor PVDF não permite, enquanto obtendo as frequências do motorredutor, um ajuste em sua posição tão preciso quanto o acelerômetro. 
 
 %TODO As caracteristicas do sinal de vibração do motorredutor, portanto, são sumarizadas na tabela  
 
@@ -2086,52 +2086,64 @@ A Figura~\ref{DOMINIO_TEMPO_ROLAMENTO_BOM} mostra o sinal temporal do rolamento 
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal do rolamento em bom estado.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{Caso1/DOMINIO_TEMPO_ROLAMENTO_BOM} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{aquisicao_05_rolamento_bom_10_03_2022_09h03min_ajustado_6s} \\
 Fonte: O autor (2022).
 \label{DOMINIO_TEMPO_ROLAMENTO_BOM}
 \end{figure} 
-
 
 A Figura~\ref{PSD_ROLAMENTO_BOM} apresenta o PSD do rolamento em bom estado.
 
 \begin{figure}[H]
 \centering
 \caption {Espectro de densidade de potência do rolamento em bom estado.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/PSD_ROLAMENTO_BOM} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{PSD_PVDF_ROLAMENTO_BOM} \\
 Fonte: O autor (2022).
 \label{PSD_ROLAMENTO_BOM}
 \end{figure} 
 
-Nele podemos verificar uma concentração de frequências por volta dos {\SI{400}{\hertz}, bem como um pico na região dos {\SI{16}{\hertz}, próximo à FTF calculada.
+Nele podemos verificar uma concentração de frequências por volta dos {\SI{549}{\hertz}, bem como picos na região dos {\SI{490}{\hertz}, {\SI{602}{\hertz} e {\SI{1201}{\hertz}. Neste caso o pico obtido pelo sensor PVDF coincide com o pico obtido pelo sensor acelerômetro, nos {\SI{549}{\hertz}. Verifica-se que há menor definição no pico, sendo que este tem início e fim por uma região de frequências maior que às do acelerômetro, mas, ainda assim, foi ambos sensores mostraram a mesma frequência dominante no espectro. 
 
 \newpage
 \section{\normalfont{\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}
 
-A partir das caracterizações das frequências de ruído, do motorredutor e do rolamento em bom estado, é dado prosseguimento nos experimentos a fim de identificação de danos no rolamento. Nesse experimento foi introduzido dano no elemento rolante, conforme mostrado na seção~\ref{secao:MateriaisEMetodos}. O dano imposto ao rolamento simulou a situação de esmagamento e foi tal que o ruído do rolamento tornou-se audível ao aproximar-se dele. 
+A partir das caracterizações das frequências de ruído, do motorredutor e do rolamento em bom estado, é dado prosseguimento nos experimentos a fim de identificação de danos no rolamento. Nesse experimento foi introduzido dano no elemento rolante, conforme mostrado na seção~\ref{secao:MateriaisEMetodos}. O dano no rolamento simulou uma situação de elevado desgaste e possível esmagamento em um dos elementos rolantes. 
 
 A Figura ~\ref{DEFEITO_ELEMENTO_ROLANTE} mostra o sinal temporal do rolamento com dano no elemento rolante. 
 
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal do rolamento com dano no elemento rolante.}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/DEFEITO_ELEMENTO_ROLANTE} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{aquisicao_06_dano_rolante_11_03_2022_13h48min_2560samples_ajustado_impactos_6s} \\
 Fonte: O autor (2022).
 \label{DEFEITO_ELEMENTO_ROLANTE}
 \end{figure} 
 
-É possível verificar por meio do sinal temporal uma tensão pico a pico de aproximadamente {\SI{150}{\milli\volt}}. Observando-se a densidade espectral de potência, é possível verificar a existência de uma concentração iniciando-se nos {\SI{80}{\hertz} e indo até, aproximadamente, os {\SI{117}{\hertz}}, com pico nos {\SI{103}{\hertz}. Também há uma concentração, de menor amplitude, entre os {\SI{380}{\hertz} e os {\SI{408}{\hertz}, conforme mostra a Figura~\ref{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}. 
+É possível verificar por meio do sinal temporal uma tensão pico a pico de aproximadamente {\SI{450}{\milli\volt}}. Observando-se a densidade espectral de potência, é possível verificar a existência de concentrações nos {\SI{475}{\hertz}, {\SI{795}{\hertz} e {\SI{1201}{\hertz}, aproximadamente. Também há uma concentração, de menor amplitude, entre por volta dos {\SI{1591}{\hertz} e os {\SI{408}{\hertz}, conforme mostra a Figura~\ref{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}. 
 
 \begin{figure}[H]
 \centering
 \caption {Espectro de densidade de potência do rolamento com dano no elemento rolante}
-\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{GraficosAnalise/PSD_DEFEITO_ELEMENTO_ROLANTE_anotado} \\
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{PSD_PVDF_rolamento_dano_rolante} \\
 Fonte: O autor (2022)
 \label{PSD_DEFEITO_ELEMENTO_ROLANTE_anotado}
 \end{figure} 
 
-Em relação às frequências de defeito esperadas, em particular no que se trata do elemento rolante, a região de maior amplitude verificada no espectro aproxima-se do valor esperado, ainda que acima do calculado para a frequência base. Esperava-se uma frequência para o dano BSF de aproximadamente {\SI{95}{\hertz} e foi detectado um pico nos {\SI{103}{\hertz}. O pico nos {\SI{390}{\hertz} apresenta um indício de valor harmônico para o BSF, sendo 4$\times$ o valor base característico de defeito no elemento rolante. No experimento anterior também foi possível notar a existência de um pico próximo desta frequência, ainda que ocorrendo em uma faixa um pouco mais elevada do espectro. Neste sentido, estima-se que a ressonância deste possa ter sido transmitido pelo eixo. De qualquer forma, nota-se, após estes dois picos de frequências, concentrações de pequena amplitude no restante do espectro tal como verificado, por exemplo, entre {\SI{700}{\hertz} e {\SI{800}{\hertz}. Além disto, também é possível verificar que os ruídos externos mostraram menor amplitude neste experimento. A maior distância de posicionamento do elemento sensor em relação ao ponto de energização da bancada, portanto, mostrou-se influente quanto à diminuição dos ruídos elétricos externos.   
- 
+Tais frequências podem ser provenientes de vibrações de engrenamentos e demais componentes que geram alta energia e são transmitidos, por meio do eixo, do motorredutor até os rolamentos. Tal hipótese é consistente com a diminuição da amplitude dos sinais conforme há maior distanciamento do motorredutor. 
+
+Nota-se, entretanto, que era esperada uma frequência, para duas vezes BSF, de aproximadamente {\SI{10,6}{\hertz} e foi detectado um pequeno pico nos {\SI{10}{\hertz}. Ampliando-se o espectro de baixas frequências, é possível verificar que esse pico, ainda que de baixa amplitude quando comparado ao espectro total de frequências, mostrou-se pronunciado quando visto em comparação com a região de baixas frequências. A Figura~\ref{PSD_DEFEITO_ELEMENTO_ROLANTE_ZOOM} mostra o espectro ampliado na região das baixas frequências.
+
+\begin{figure}[H]
+\centering
+\caption {Espectro de densidade de potência do rolamento com dano no elemento rolante. Vista ampliada da região de baixas frequências, onde o pico em 10Hz mostra-se presente.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{PSD_PVDF_rolamento_dano_rolante_ZOOM} \\
+Fonte: O autor (2022)
+\label{PSD_DEFEITO_ELEMENTO_ROLANTE_ZOOM}
+\end{figure} 
+
 Dadas essas questões, para caracterização do rolamento com dano introduzido no elemento rolante, também foi adotado o método de análise do envelope do sinal a fim de que fosse possível verificar se haveria a ocorrência das frequências esperadas para o dano no elemento rolante através de impulsos verificados no espectro.
+
+
+
 
 Para que o processamento deste envelope fosse realizado, a banda de seleção do filtro passa-faixa foi realizada manualmente com base na observação dos valores de curtose recorrendo-se ao método da curtose espectral, conforme verificado na Figura~\ref{CURTOSE_ROLAMENTO_RUIM}.
 
@@ -2499,6 +2511,22 @@ WANG, D. H.; HUANG, S. L. \textbf{Health Monitoring and Diagnosis for Flexible S
 
 \chapter{Programa para aqusição de dados com microcontrolador STM32}
 \label{secao:programastm}
+
+Foi construído um sistema de aquisição baseado no microcontrolador STM32, modelo stm32f103, também conhecido como \textit{bluepill}, utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. 
+
+\begin{figure}[H]
+\centering
+\caption {Microcontrolador STM32F103. Retirado de ST, 2021.}
+\includegraphics[width=\textwidth,height=60mm,keepaspectratio]{stm32}
+\label{stm32}
+\end{figure}
+
+O software foi desenvolvido em linguagem C, com utilização do sistema operacional FreeRTOS, manipulação dos registradores do microcontrolador e testado com dispositivo gerador de função. A construção desse software justificou-se como um experimento a fim de se verificar a viabilidade conjunta de um sistema de aquisição de baixo custo com o sensor de baixo custo. 
+
+Os códigos são apresentados abaixo.
+
+Foi desenvolvido também um sistema de registro dos dados obtidos através de comunicação serial em Python, capaz de registrar os dados aquisitados e gravá-los em arquivos. Ambos softwares encontram-se também no Apêndice~\ref{secao:programastm}.
+
 
 \chapter{Programas para análise dos sinais dos rolamentos}
 \label{secao:programasAnalise}
