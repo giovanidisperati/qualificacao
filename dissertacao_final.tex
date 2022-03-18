@@ -229,18 +229,27 @@ Dissertação apresentada ao Departamento de Engenharia Mecânica do Instituto F
 
 \chapter*{Agradecimentos}
 
-Agradeço ao Programa de Mestrado Acadêmico em Engenharia Mecânica do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo pela oportunidade de desenvolver este trabalho, bem como pelo apoio de todos os docentes e colegas discentes que foram parte, de alguma forma, da realização do mesmo.
+Agradeço ao Programa de Mestrado Acadêmico em Engenharia Mecânica do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo pela oportunidade que me foi dada. 
 
-Agradeço ao meu orientador, Prof. Dr. Wilson Carlos da Silva Junior, bem como à minha coorientadora, Profa. Dra. Vanessa Seriacopi, por todo o conhecimento, paciência e valorosos encaminhamentos em todos as etapas deste projeto.
+Agradeço à empresa parceira WEG-CESTARI, que nos apoiou e gentilmente cedeu o conjunto motorredutor utilizado durante os ensaios.
 
-Ao Prof. Dr. Rene Ramos de Oliveira
+Agradeço ao meu orientador, Prof. Dr. Wilson Carlos da Silva Junior, bem como à minha coorientadora, Profa. Dra. Vanessa Seriacopi, por todo o conhecimento, paciência e valorosos encaminhamentos em todas as etapas deste projeto.
+
+Ao Prof. Dr. Rene Ramos de Oliveira, por seus conselhos e direcionamentos durante a elaboração do trabalho.
 
 Ao Prof. Me. Rogério Daniel Dantas, por toda a ajuda prestada com seu grande arcabouço de conhecimentos técnicos e metodológicos. 
 
-Ao Sr. Lucas Willenshofer, que sempre esteve disposto a fornecer grande ajuda em todo o processo de desenvolvimento e construção dos aparatos experimentais.
+Ao Sr. Victor Hugo Deuner, por suas inestimáveis contribuições e enorme disposição em nos auxiliar com sua sabedoria e experiência na área de eletrônica. 
 
-Ao Sr. Victor Hugo Deuner, por suas inestimáveis contribuições e enorme disposição em nos auxiliar com sua sabedoria, sem o qual este projeto não seria possível. 
+Ao Sr. Lucas Willenshofer, que sempre esteve disposto a prestar grande ajuda em todo o processo de construção dos aparatos experimentais.
 
+Ao Sr. Maurício Coronado, pela experiência transmitida, conselhos e direcionamentos durante a etapa de análise dos resultados. 
+
+Ao Sr. Pedro Igor Borçatti da Silva, pelo seu auxílio e disponibilidade com seus conhecimentos na área de microcontroladores. 
+
+Também agradeço o apoio de todos os docentes e colegas discentes que foram parte, de alguma forma, deste projeto.
+
+Agradeço, por fim, à minha família e esposa por todo o apoio.
 
 \newpage
 
@@ -259,10 +268,7 @@ Ao Sr. Victor Hugo Deuner, por suas inestimáveis contribuições e enorme dispo
 %DISPERATI, Giovani Fonseca Ravagnani. \imprimirtitulo. \imprimirdata. \pageref{LastPage} f. Proposta de qualificação (Mestrado em Ciências) %– Departamento de Engenharia Mecânica, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, São Paulo, 2018.
 %\end{flushleft}
 
-O fluoreto de polivinilideno, conhecido pela sigla PVDF, é um polímero com características piezo e piroelétricas, além de alta estabilidade e resistência química e física que, aliadas ao fácil processamento desse material, o tornam um excelente elemento para uso tecnológico. PVDF é um material semicristalino flexível, de baixo custo de fabricação e fácil de usinar. Seu uso passa por diversas aplicações, desde sensores até a construção de tubos e dutos para o transporte de água ultrapura. Sua cristalização ocorre em pelo menos quatro fases distintas, alfa, beta, gama e delta, sendo que a fase beta é caracterizada por apresentar os comportamentos piezo e piroelétricos já mencionados.
-Dadas estas características, trabalhos têm sido desenvolvidos utilizando filmes feitos deste material como sensores para manutenção preditiva baseada em análise de vibração. O tema deste trabalho surge da proposta de avaliar o filme PVDF como um sensor aplicado na detecção de falhas em mancais de rolamentos, um dos elementos de máquina mais comuns, uma vez que o PVDF possui caracteríticas que o tornam candidato a ser uuma alternativa aos sensores habitualmente utilizados para este fim. O PVDF tem menor custo em relação a estes e, portanto, o componente econômico é a motivação para esta investigação.
-O objetivo deste trabalho é adquirir um sinal de vibração utilizando um sensor PVDF, para que seja realizada a detecção de falhas em mancais em um software supervisório com aplicações de manutenção preditiva. Com base nos sinais captados deste sensor, será possível avaliar a viabilidade de um sistema de sensor PVDF para monitoramento das condições dos mancais. Para tanto, foi construída uma bancada experimental na qual o sensor PVDF é acoplado aos mancais escolhidos como objeto de estudo. Um circuito também foi construído para condicionar e amplificar o sinal de saída do sensor, de forma que ele possa ser capturado por um sistema de aquisição de dados. A partir desta saída espera-se encontrar o melhor posicionamento do sensor para capturar os sinais de falha, a fim de diferenciar os sinais de um rolamento autocompensador de rolos com as seguintes falhas: desgaste da pista do anel externo e desgaste no elemento rotativo. Espera-se que isso culmine na possibilidade de determinar um nível de alarme indicativo de uma situação de pré-falha.
-
+O fluoreto de polivinilideno, conhecido pela sigla PVDF, é um polímero com características piezo e piroelétricas, além de alta estabilidade e resistência química e física que, aliadas ao fácil processamento desse material, o tornam um excelente elemento para uso tecnológico. O PVDF é um material semicristalino flexível, de baixo custo de fabricação e fácil de usinar. Seu uso passa por diversas aplicações, desde sensores até a construção de tubos e dutos para o transporte de água ultrapura. Sua cristalização ocorre em pelo menos quatro fases distintas, alfa, beta, gama e delta, sendo que a fase beta é caracterizada por apresentar os comportamentos piezo e piroelétricos já mencionados. Dadas estas características, trabalhos têm sido desenvolvidos utilizando filmes feitos deste material como sensores para manutenção preditiva baseada em análise de vibração. O objetivo deste trabalho surge da proposta de avaliar o filme PVDF como um sensor aplicado na detecção de falhas em mancais de rolamentos, um dos elementos de máquina mais comuns, uma vez que o PVDF possui características que o tornam candidato a ser uma alternativa aos sensores habitualmente utilizados para este fim. Para tanto, foi construída uma bancada experimental na qual o sensor PVDF foi acoplado aos mancais selecionados como objeto de estudo. Um encapsulamento de alumínio foi usinado para blindagem do sensor às interferências eletromagnéticas do ambiente, bem como um circuito também foi construído para condicionar do sinal de saída do sensor, de forma que foi possível capturar os sinais de vibrações por meio de um conversor analógico-digital e sistema de aquisição de dados. A partir desta saída foram aplicados métodos de análise dos sinais de vibração, de forma a buscar as frequências características de defeitos em rolamentos autocompensadores de rolos com os seguintes danos: desgaste da pista do anel externo e desgaste no elemento rotativo. Para validação dos resultados, os sinais de vibração obtidos com o sensor PVDF foram comparados a um sensor acelerômetro de uso comercial. No arranjo experimental utilizado, a análise dos danos nos rolamentos com uso do filme PVDF mostrou menor definição para representação dos sinais no domínio da frequência quando comparado ao acelerômetro. Os resultados mostraram-se promissores para a utilização do PVDF em aplicações onde seu menor custo seja fator determinante, sugerindo-se assim posteriores investigações de sua utilização por meio de trabalhos futuros. 
 
 Palavras-chaves: Manutenção preditiva. Rolamentos. Análise de vibração. PVDF.
 \end{resumo}
@@ -272,9 +278,7 @@ Palavras-chaves: Manutenção preditiva. Rolamentos. Análise de vibração. PVD
 \begin{resumo}[Abstract]
 \begin{otherlanguage*}{english}
 
-Polyvinylidene fluoride, known by the acronym PVDF, is a polymer with piezo and pyroelectric characteristics, in addition to high chemical and physical stability and resistance that, combined with the easy processing of this material, make it an excellent element for technological use. PVDF is a flexible semi-crystalline material, low in manufacturing cost and easy to machine. Its use goes through a variety of applications, from sensors to the construction of pipes and ducts for the transport of ultrapure water. Its crystallization occurs in at least four distinct phases, alpha, beta, gamma and delta, and the beta phase is characterized by having the aforementioned piezo and pyroelectric behaviors.
-Given these characteristics, works have been developed using films made of this material as sensors for predictive maintenance based on vibration analysis. The theme of this work arises from the proposal to evaluate the PVDF film as a sensor applied in the detection of failures in bearing housings, one of the most common machine elements, since the PVDF has characteristics that make it a candidate to be an alternative to the ceramic sensors customarily used for this purpose. The PVDF also has a much lower cost compared to them and this economic component, therefore, is the motivation for this investigation.
-The objective of this work is to acquire a vibration signal using a PVDF sensor, so that the detection of bearing failures in a supervisory software with predictive maintenance applications is performed. Based on the signals captured from this sensor, it will be possible to assess the viability of a PVDF sensor system for monitoring bearing conditions. For this purpose, an experimental bench was built in which the PVDF sensor is coupled to the bearings chosen as the object of study. A circuit was also built-in order to condition and amplify the sensor's output signal, so that it can be captured by a data acquisition system. From this output it is expected to find the best positioning of the sensor to capture the failure signals, in order to differentiate signals from a spherical roller bearing with the following failures: wear of the inner ring raceway, wear on the outer ring raceway and wear on the rolling element. It is expected that this culminates in the possibility of determining an alarm level indicative of a pre-failure situation.
+Polyvinylidene fluoride, known by the acronym PVDF, is a polymer with piezo and pyroelectric characteristics, in addition to high stability and chemical and physical resistance that, combined with the easy processing of this material, make it an excellent element for technological use. PVDF is a flexible, low-cost, easy-to-machine semi-crystalline material. Its use goes through several applications, from sensors to the construction of tubes and ducts for the transport of ultrapure water. Its crystallization occurs in at least four distinct phases, alpha, beta, gamma and delta, and the beta phase is characterized by presenting the aforementioned piezo and pyroelectric behaviors. Given these characteristics, works have been developed using films made of this material as sensors for predictive maintenance based on vibration analysis. The objective of this work arises from the proposal to evaluate the PVDF film as a sensor applied in the detection of failures in rolling bearings, one of the most common machine elements, since PVDF has characteristics that make it a candidate to be an alternative to sensors commonly used for this purpose. For that, an experimental bench was built in which the PVDF sensor was coupled to the selected bearings as the object of study. An aluminum package was machined to shield the sensor from electromagnetic interference from the environment, as well as a circuit was also built to condition the sensor output signal, so that it was possible to capture the vibration signals through an analog-digital converter. and data acquisition system. From this output, methods of analysis of vibration signals were applied, in order to search for the characteristic frequencies of defects in spherical roller bearings with the following damages: wear of the outer ring raceway and wear on the rotating element. To validate the results, the vibration signals obtained with the PVDF sensor were compared to a commercially used accelerometer sensor. In the experimental arrangement used, the analysis of the damage to the bearings using the PVDF film showed lower definition for the representation of the signals in the frequency domain when compared to the accelerometer. The results showed to be promising for the use of PVDF in applications where its lower cost is a determining factor, thus suggesting further investigations of its use through future works.
 
 
 Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
@@ -343,9 +347,6 @@ Keywords: Predictive Maintenance. Bearings. Vibration analysis. PVDF.
   \item[$ \sigma $] Letra Sigma, indicando desvio-padrão
   \item[$ \upphi $] Letra Phi maiúscula, indicando fase inicial
   \item[$ \omega $] Letra Omega, indicando velocidade angular 
-  \item[\SI{}{\metre}] Metro  
-  \item[\SI{}{\micro\metre}] Micrometro
-  \item[$ \in $] Pertence
 \end{simbolos}
 % ---
 
@@ -388,9 +389,9 @@ Dadas essas características do material, o filme PVDF foi utilizado como sensor
 
 %Sabendo-se que as suas propriedades de piezoeletricidade surgem após esforço mecânico, verifica-se a possibilidade de utilização deste como alternativa aos acelerômetros cerâmicos normalmente utilizados para análise de vibração.    
 
-Essa tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e seus dados armazenados por meio de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF é de alta impedância e está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, bem como tende a possuir baixa voltagem de saída, é necessário o condicionamento desse sinal a circuito eletrônico específico para tanto. 
+Essa tensão então, a partir de sua aquisição e conversão por um conversor analógico-digital, pode ser transmitida e seus dados armazenados por meio de um software de aquisição de dados, para que se realize posterior análise. Uma vez que o filme PVDF é de alta impedância e está sujeito a interferências por vibrações externas, sinais de alta frequência e outros fatores, fez-se necessário o condicionamento desse sinal por meio de isolamento, amplificação e filtragem de ruídos. 
 
-Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados a fim de promover a análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. Tal bancada experimental foi construída com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido pela empresa parceira WEG/Cestari. Além disso, foi desenvolvida revisão bibliográfica acerca do tema, bem como construídos softwares que implementam métodos de análise de falhas em rolamentos. 
+Portanto, foi construído um encapsulamento para o sensor, bem como um circuito de condicionamento do sinal e um sistema de software para aquisição de dados a fim de promover a análise das informações capturadas pelo sensor durante os testes na bancada experimental, também construída para este trabalho. bancada experimental foi construída com mancais de rolamentos de rolos, da empresa NSK, acoplados a um eixo em um motoredutor cedido pela empresa parceira WEG-CESTARI. Além disso, foi desenvolvida revisão bibliográfica acerca do tema, bem como construídos softwares que implementam métodos de análise de falhas em rolamentos. Para validação do arranjo experimental e dos sinais obtidos com o sensor PVDF, utilizou-se um acelerômetro de uso comercial em conjunto com sistema proprietário utilizado para análise de vibrações nas indústrias.
 
 Buscou-se, assim, a partir dos experimentos e análise dos dados, uma resposta inicial quanto à viabilidade de utilização do filme PVDF como sensor de baixo custo para fins de manutenção preditiva.
 
@@ -1387,7 +1388,7 @@ As amostras do rolamento escolhido são novas e isentas de qualquer tipo de falh
 
 \section{\normalfont{\textbf{Bancada experimental}}}
 
-O aparato experimental é composto por um motorredutor cedido pela empresa parceira WEG/Cestari, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22} mostra o projeto da bancada experimental. 
+O aparato experimental é composto por um motorredutor cedido pela empresa parceira WEG-CESTARI, com eixo motriz usinado e ligado à mancal de rolamento de empresa parceira NSK. A bancada possui em sua base um isolador de vibrações do tipo vibra-stop. A Figura~\ref{Figura22} mostra o projeto da bancada experimental. 
 
 \begin{figure}[H]
 \centering
@@ -1489,6 +1490,199 @@ Fonte: O autor (2022).
 \label{bancada_aberta}
 \end{figure}
   
+
+\section{\normalfont{\textbf{Filme PVDF e circuitos condicionadores de sinal}}}
+\label{secao:CircuitosCondicionnadores}
+
+A partir destas frequências é possível estimar as regiões do espectro de frequência para análise do sinal aquisitado. Para que isto seja possível, entretanto, é necessário o emprego de circuitos que realizem o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas, percebidas em testes preliminares e constatadas na literatura.  
+
+Utilizou-se como sensor o filme PVDF modelo LDT1-028k da Measurement Specialties. A Figura~\ref{Figura21} mostra o sensor de vibração. 
+
+\begin{figure}[H]
+\centering
+\caption {Sensor de vibração piezoelétrico.}
+\includegraphics[width=\textwidth,height=70mm,keepaspectratio]{Figura21} 
+\label{Figura21} \\
+Fonte: Measurement Specialties (2021).
+\end{figure} 
+
+Esse se trata de um filme PVDF com espessura de \SI{28}{\micro\meter}, laminado em folha de poliéster e com dois terminais crimpados, que permitem a medição de sua tensão quando sujeito a um esforço mecânico e tem como principais características: 
+
+\begin{itemize}
+	\item Impedância mínima: \SI{1}{\mega\ohm}
+	\item Impedância preferida: \SI{10}{\mega\ohm} e superior
+	\item Tensão de saída: 10 mV-100 V dependendo da força e impedância do circuito
+	\item Temperatura de armazenamento: -40°C a +70°C 
+	\item Temperatura de operação: 0°C a +70°C
+\end{itemize}
+
+Tendo em vista se tratarem de sensores de alta impedância, faz-se necessário isolamento elétrico, a fim de mitigar as interferências da fase da rede elétrica e de outros sinais de alta frequência incidentes sobre o local de testes, bem como amplificação da tensão resultante do esforço mecânico sofrido pelo sensor, por meio de amplificador operacional. 
+
+Tal como mencionado na revisão bibliográfica realizada, baseando-se em Li et. al, 2011, os autores explicitam a necessidade de condicionamento eletrônico do sinal para trabalho com o sensor PVDF. Os autores mostram a importância de um filtro rejeita-faixa na frequência da rede elétrica e de amplificação operacional, também apontando que dada a alta impedância, esse se torna facilmente sujeito aos ruídos ambientes. 
+%Com utilização de osciloscópio foi-se verificado, inicialmente, tal como verificado experimentalmente nos testes realizados neste trabalho.
+
+A partir de testes iniciais verificou-se que o sensor, conforme verificado por meio da revisão bibliográfica, de fato apresentava altos níveis de ruído induzidos pelo ambiente. Assim, foram projetados e construídos circuitos condicionadores de sinal para o trabalho com o sensor PVDF, a fim de mitigar esse problema. A montagem dos sensores se deu em um encapsulamento de alumínio para diminuição dos ruídos, sendo os sensores acoplados com cola acrílica, a fim de que não ocorresse amortecimento da vibração devido ao elemento colante. Inicialmente foi desenvolvido um protótipo para validação, sendo posteriormente usinado o encapsulamento e as transmissões de sinais feitas com uso de cabos blindados. 
+%HERE A Figura ~\ref{ìnserir_foto_modelo_3d_lucas) mostra o modelo do encapsulamento desenvolvido. 
+
+A Figura~\ref{encapsulamento_sensor} apresenta a montagem do sensor no protótipo do encapsulamento.
+
+%HERE substituir essa foto
+\begin{figure}[H]
+\centering
+\caption {Encapsulamento de alumínio com amplificador operacional e sensor filme PVDF.}
+\includegraphics[width=\textwidth,height=75mm,keepaspectratio]{encapsulamento_sensor} \\
+Fonte: O autor (2022).
+\label{encapsulamento_sensor}
+\end{figure} 
+
+A Figura ~\ref{sensor_e_operacional} mostra o sensor e o circuito amplificador operacional, montados no encapsulamento de alumínio, onde se acomoda o filme PVDF, além de amplificador operacional LM2904.
+ 
+\begin{figure}[H]
+\centering
+\caption {Sensor de vibração piezoelétrico no encapsulamento de alumínio.}
+\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{sensor_e_operacional} \\
+Fonte: O autor (2022).
+\label{sensor_e_operacional}
+\end{figure} 
+
+Os circuitos constituem filtro passa-baixa e filtro rejeita-faixa, tendo suas frequências específicas ajustadas para os ruídos encontrados. O filtro rejeita-faixa é presente nos \SI{60}{\hertz}, enquanto o filtro passa-baixa atua na região superior aos \SI{2500}{\hertz}.
+
+A Figura~\ref{circuito_novo_certo} mostra o desenho esquemático do circuito de condicionamento do sinal do sensor piezoelétrico. Nele buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral LM2904, uma vez que este possui dois canais e larga banda de \SI{1.1}{\mega\hertz} (ST MICROELECTRONICS, 2021). O ganho do circuito é dado por $ \frac{R1}{R2} + 1$. Além disso o mesmo implementa um filtro passa-baixa Butterworth de 2º ordem, a fim de eliminar os ruídos de alta frequência induzidos no sensor.  
+
+\begin{figure}[H]
+\centering
+\caption {Circuito amplificador operacional do sensor piezoelétrico.}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{circuito_novo_certo} \\
+Fonte: O autor (2022).
+\label{circuito_novo_certo}
+\end{figure} 
+
+A Figura~\ref{circuito_rejeita_faixa} mostra o circuito rejeita-faixa construído, ligado à fonte de alimentação. 
+
+\begin{figure}[H]
+\centering
+\caption {Processo de teste do circuito rejeita-faixa para filtragem dos 60 Hz da rede. O circuito rejeita-faixa é indicado pela seta vermelha.}
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_rejeita_faixa} \\
+Fonte: O autor (2022).
+\label{circuito_rejeita_faixa}
+\end{figure} 
+
+Os capacitores foram medidos com diferença inferior a 0.5\% entre si, de modo a fornecer melhor resultado no processo de filtragem. A Figura~\ref{circuito_notch} apresenta o desenho esquemático do circuito rejeita-faixa.
+
+\begin{figure}[H]
+\centering
+\caption {Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}
+\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_notch} \\
+Fonte: O autor (2022).
+\label{circuito_notch}
+\end{figure} 
+
+A Figura~\ref{sinal_filtrado_maquina_desligada} compara os sinais pré-filtragem e pós-filtragem do sensor: em vermelho, o sinal saído diretamente do amplificador operacional sem filtragem; em branco, o sinal filtrado pelo filtro rejeita-faixa, com amplitude visivelmente menor.
+
+\begin{figure}[H]
+\centering
+\caption {Comparação do sinal filtrado com o sinal não-filtrado, com a bancada desligada.}
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{GraficosAnalise/sinal_filtrado_maquina_desligada} \\
+Fonte: O autor (2022).
+\label{sinal_filtrado_maquina_desligada}
+\end{figure} 
+
+Já a Figura~\ref{sinal_filtrado_maquina_ligada_tomada} denota ambos os sinais quando da bancada experimental energizada, mas com motorredutor desligado. Percebe-se um incremento nos níveis totais dos sinais de ruído elétrico, mas, ainda assim, os mesmos continuam em níveis significativamente menores do que os sinais não-filtrados.
+
+\begin{figure}[H]
+\centering
+\caption {Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{GraficosAnalise/sinal_filtrado_maquina_ligada_tomada} \\
+Fonte: O autor (2022).
+\label{sinal_filtrado_maquina_ligada_tomada}
+\end{figure} 
+
+Após os ensaios iniciais, desenvolveu-se uma nova usinagem do encapsulamento, cujo processo é mostrado na Figura~\ref{encapsulamento_novo_usinagem}.
+
+\begin{figure}[H]
+\centering
+\caption {Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}
+\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{encapsulamento_novo_usinagem} \\
+Fonte: O autor (2022).
+\label{encapsulamento_novo_usinagem}
+\end{figure} 
+
+Para uso com o novo encapsulamento, o circuito condicionador foi reconstruído com uso de componentes SMD de modo que pudesse ser montado próximo ao sensor, de forma que se mitigasse a possibilidade de interferências que ocorressem entre ambos. A Figura ~\ref{encapsulamento_novo_interno} mostra a versão final do encapsulamento desenvolvido. O circuito condicionador SMD encontra-se atrás do circuito e acima dos contatos deste, os quais foram isolados da base com elemento isolante. O circuito SMD, por sua vez, foi afixado com uso de cola macia, de forma que não houvesse interferências de vibrações geradas pelo mesmo ao entrar em contato com a base de alumínio.
+
+\begin{figure}[H]
+\centering
+\caption {Versão final do encapsulamento. }
+\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{encapsulamento_novo_interno} \\
+Fonte: O autor (2022).
+\label{encapsulamento_novo_interno}
+\end{figure} 
+
+A Figura ~\ref{encapsulamento_novo_externo} mostra o encapsulamento de alumínio fechado, com tampa laminada por material condutivo para isolamento elétrico. 
+
+\begin{figure}[H]
+\centering
+\caption {Sensor acelerômetro conectado ao equipamento de captura dos dados.}
+\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{encapsulamento_novo_externo} \\
+Fonte: O autor (2022).
+\label{encapsulamento_novo_externo}
+\end{figure} 
+
+Com estes tratamentos, diminuiu-se o nível pico a pico de ruído captado pelo sensor de {\SI{250}{\milli\volt}} para {\SI{20}{\milli\volt}}. A Figura~\ref{comparacao_antes_depois_ruido_circuito} a) mostra o ruído captado pela versão protótipo do conjunto de circuito condicionador e encapuslamento, enquanto a Figura~\ref{comparacao_antes_depois_ruido_circuito} b) mostra a diminuição do nível de ruído pico a pico na versão final do mesmo.
+
+\begin{figure}[H]
+\centering
+\caption {Comparação dos ruídos captados pelo protótipo do conjunto e pela versão final.}
+\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{comparacao_antes_depois_ruido_circuito} \\
+Fonte: O autor (2022).
+\label{comparacao_antes_depois_ruido_circuito}
+\end{figure} 
+
+Para análise comparativa do sensor PVDF em relação a um sensor comercial de uso industrial, os sinais obtidos com sensor filme PVDF foram comparados a um sensor acelerômetro de um eixo com sensibilidade de 100 mV/G, modelo Adash A102-1A, obtidos com equipamento de captura de dados, modelo Adash A4300 VA3. 
+
+Com a utilização deste conjunto de aquisição e acelerômetro, foi necessária a utilização do \textit{software} de análise Virtual Unit, também produzido pela Adash, uma vez que os formatos de arquivos gerados são proprietários e não puderam ser convertidos para a utilização nos algoritmos e métodos descritos. O Virtual Unit, entretanto, dispõe dos métodos adotados no trabalho para análise de vibrações, a saber: FFT, PSD e demodulação do sinal por faixa de frequências, para realização da análise de envelope.
+
+A Figura~\ref{adash} mostra o conjunto de acelerômetro e aparelho de aquisição utilizado.
+
+\begin{figure}[H]
+\centering
+\caption {Sensor acelerômetro conectado ao equipamento de captura dos dados.}
+\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{adash} \\
+Fonte: O autor (2022).
+\label{adash}
+\end{figure} 
+
+Uma vez montados os sensores, os sinais decorrentes da vibração foram aquisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos a fim de que se determine a severidade da falha. Para tanto, foram desenvolvidos sistemas de aquisição de dados. 
+
+\section{\normalfont{\textbf{Aquisição dos dados}}}
+
+Para a aquisição de dados, foi construído software de aquisição com utilização do DAQ USB-6212 da National Instruments, com 16 entradas analógicas de 16 bits e até 400 kS/s. A Figura~\ref{USB6212} apresenta o dispositivo utilizado.
+
+\begin{figure}[H]
+\centering
+\caption {DAQ USB 6212. Retirado de National Instruments, 2021.}
+\includegraphics[width=\textwidth,height=60mm,keepaspectratio]{USB6212}
+\label{USB6212}
+\end{figure}
+
+Em conjunto com a interface USB6212 foi utilizada a plataforma LabVIEW para construção de um Software de Aquisição, capaz de aquisitar os dados advindos do sensor PVDF e registrá-los em arquivos para posterior processamento. A Figura~\ref{sistema_labview} mostra a tela de aquisição de dados do sistema desenvolvido. 
+
+\begin{figure}[H]
+\centering
+\caption {Sistema de aquisição desenvolvido com LabView.}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{sistema_labview} \\
+Fonte: O autor (2022).
+\label{sistema_labview}
+\end{figure} 
+
+O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. Também foi desenvolvido um sistema baseado em STM32, de forma a que se possam conduzir experimentos em trabalhos futuros para que se verifique a possibilidade de um sistema completo de baixo custo com finalidades de manutenção preditiva, incluindo-se, aí, a aquisição e processamento dos dados. Este encontra-se disponível no Apêndice~\ref{secao:programastm}.
+
+
+\section{\normalfont{\textbf{Métodos de análise dos dados}}}
+
+Para análise dos dados obtidos foram desenvolvidos programas na plataforma MatLab e Python. Foram adotados os métodos descritos durante a Revisão Bibliográfica, em particular a densidade espectral de potência, FFT, e Análise de Envelope com utilização de pré-processamento dos dados com modelo de autoregressão e seleção de banda por meio de Curtose Espectral. O código para análise de Envelope e Curtose Espectral baseou-se no disponibilizado por Kim et al., 2020. Os códigos para esses programas de análise dos dados podem ser encontrados no apêndice ~\ref{secao:programasAnalise}.
+
+Para construção desses códigos foi utilizada a plataforma Anaconda e o Jupyter Notebook de Python, bem como a plataforma Octave, alternative livre ao sistema Matlab, sendo possível verificar o funcionamento dos métodos de análise em ferramentas de software livre, com licenças do tipo BSD. 
+
 \section{\normalfont{\textbf{Cálculo das frequências esperadas}}}
 
 A partir dos dados coletados, pode-se calcular com base nas frequências características de defeitos as frequências esperadas de defeito para o rolamento adotado no estudo. O diâmetro primitivo $D$ se dá por: 
@@ -1582,203 +1776,11 @@ E por fim, para a \textit{Ball Spin Frequency} com eixo em 36,8 RPM temos, aprox
 
 O conhecimento prévio destas frequências é de grande importância na etapa de análise, uma vez que elas apontam as regiões do espectro onde as falhas devem se mostrar presentes.
 
-\section{\normalfont{\textbf{Filme PVDF e circuitos condicionadores de sinal}}}
-\label{secao:CircuitosCondicionnadores}
+\section{\normalfont{\textbf{Inserção dos danos nos rolamentos}}}
 
-A partir destas frequências é possível estimar as regiões do espectro de frequência para análise do sinal aquisitado. Para que isto seja possível, entretanto, é necessário o emprego de circuitos que realizem o tratamento e filtragem do sinal resultante do sensor a fim de eliminação de interferências eletromagnéticas, percebidas em testes preliminares e constatadas na literatura.  
+Para que se pudesse conduzir os ensaios, dois tipos distintos de danos foram introduzidos nos rolamentos, cada um em uma amostra distinta para que as frequências características de falhas não se sobrepusessem umas às outras. Os danos foram, respectivamente, inseridos na pista externa e no elemento rolante. Propunha-se também, originalmente, a inserção e avaliação de dano na pista interna, o que, por limitações de acesso ferramental, não foi possível realizar. 
 
-Utilizou-se como sensor o filme PVDF modelo LDT1-028k da Measurement Specialties. A Figura~\ref{Figura21} mostra o sensor de vibração. 
-
-\begin{figure}[H]
-\centering
-\caption {Sensor de vibração piezoelétrico.}
-\includegraphics[width=\textwidth,height=70mm,keepaspectratio]{Figura21} 
-\label{Figura21} \\
-Fonte: Measurement Specialties (2021).
-\end{figure} 
-
-Esse se trata de um filme PVDF com espessura de \SI{28}{\micro\meter}, laminado em folha de poliéster e com dois terminais crimpados, que permitem a medição de sua tensão quando sujeito a um esforço mecânico e tem como principais características: 
-
-\begin{itemize}
-	\item Impedância mínima: \SI{1}{\mega\ohm}
-	\item Impedância preferida: \SI{10}{\mega\ohm} e superior
-	\item Tensão de saída: 10 mV-100 V dependendo da força e impedância do circuito
-	\item Temperatura de armazenamento: -40°C a +70°C 
-	\item Temperatura de operação: 0°C a +70°C
-\end{itemize}
-
-Tendo em vista se tratarem de sensores de alta impedância, faz-se necessário isolamento elétrico, a fim de mitigar as interferências da fase da rede elétrica e de outros sinais de alta frequência incidentes sobre o local de testes, bem como amplificação da tensão resultante do esforço mecânico sofrido pelo sensor, por meio de amplificador operacional. 
-
-Tal como mencionado na revisão bibliográfica realizada, baseando-se em Li et. al, 2011, os autores explicitam a necessidade de condicionamento eletrônico do sinal para trabalho com o sensor PVDF. Os autores mostram a importância de um filtro rejeita-faixa na frequência da rede elétrica e de amplificação operacional, também apontando que dada a alta impedância, esse se torna facilmente sujeito aos ruídos ambientes. 
-%Com utilização de osciloscópio foi-se verificado, inicialmente, tal como verificado experimentalmente nos testes realizados neste trabalho.
-
-A partir de testes iniciais verificou-se que o sensor, conforme verificado por meio da revisão bibliográfica, de fato apresentava altos níveis de ruído. Assim, foram projetados e construídos circuitos condicionadores de sinal para o trabalho com o sensor PVDF, a fim de mitigar esse problema. A montagem dos sensores se deu em um encapsulamento de alumínio para diminuição dos ruídos, sendo os sensores acoplados com cola acrílica, a fim de que não ocorresse amortecimento da vibração devido ao elemento colante.
-%HERE A Figura ~\ref{ìnserir_foto_modelo_3d_lucas) mostra o modelo do encapsulamento desenvolvido. 
-
-A Figura~\ref{encapsulamento_sensor}, por sua vez, apresenta a montagem do sensor em seu encapsulamento.
-
-%HERE substituir essa foto
-\begin{figure}[H]
-\centering
-\caption {Encapsulamento de alumínio com amplificador operacional e sensor filme PVDF.}
-\includegraphics[width=\textwidth,height=75mm,keepaspectratio]{encapsulamento_sensor} \\
-Fonte: O autor (2022).
-\label{encapsulamento_sensor}
-\end{figure} 
-
-A Figura ~\ref{sensor_e_operacional} mostra o sensor e o circuito amplificador operacional, montados no encapsulamento de alumínio, onde se acomoda o filme PVDF, além de amplificador operacional LM2904.
- 
-\begin{figure}[H]
-\centering
-\caption {Sensor de vibração piezoelétrico no encapsulamento de alumínio.}
-\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{sensor_e_operacional} \\
-Fonte: O autor (2022).
-\label{sensor_e_operacional}
-\end{figure} 
-
-Além destes, conforme mencionado, também foram desenvolvidos filtro passa-baixa e filtro rejeita-faixa com regulagem de frequências específicas para os problemas encontrados. A Figura~\ref{circuito_novo_certo} mostra o desenho esquemático do circuito de condicionamento do sinal do sensor piezoelétrico. Nele buscou-se a amplificação do sinal, tendo se optado pelo amplificador operacional de propósito geral LM2904, uma vez que este possui dois canais e larga banda de \SI{1.1}{\mega\hertz} (ST MICROELECTRONICS, 2021). O ganho do circuito é dado por $ \frac{R1}{R2} + 1$. Além disso o mesmo implementa um filtro passa-baixa Butterworth de 2º ordem, a fim de eliminar os ruídos de alta frequência induzidos no sensor.  
-
-\begin{figure}[H]
-\centering
-\caption {Circuito amplificador operacional do sensor piezoelétrico.}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{circuito_novo_certo} \\
-Fonte: O autor (2022).
-\label{circuito_novo}
-\end{figure} 
-
-A Figura~\ref{circuito_rejeita_faixa} mostra o circuito rejeita-faixa construído, ligado à fonte de alimentação. 
-
-\begin{figure}[H]
-\centering
-\caption {Processo de teste do circuito rejeita-faixa para filtragem dos 60 Hz da rede. O circuito rejeita-faixa é indicado pela seta vermelha.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_rejeita_faixa} \\
-Fonte: O autor (2022).
-\label{circuito_rejeita_faixa}
-\end{figure} 
-
-Os capacitores foram medidos com diferença inferior a 0.5\% entre si, de modo a fornecer melhor resultado no processo de filtragem. A Figura~\ref{circuito_notch} apresenta o desenho esquemático do circuito rejeita-faixa.
-
-\begin{figure}[H]
-\centering
-\caption {Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}
-\includegraphics[width=\textwidth,height=90mm,keepaspectratio]{circuito_notch} \\
-Fonte: O autor (2022).
-\label{circuito_notch}
-\end{figure} 
-
-A Figura~\ref{sinal_filtrado_maquina_desligada} compara os sinais pré-filtragem e pós-filtragem do sensor: em vermelho, o sinal saído diretamente do amplificador operacional sem filtragem; em branco, o sinal filtrado pelo filtro rejeita-faixa, com amplitude visivelmente menor.
-
-\begin{figure}[H]
-\centering
-\caption {Comparação do sinal filtrado com o sinal não-filtrado, com a bancada desligada.}
-\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{GraficosAnalise/sinal_filtrado_maquina_desligada} \\
-Fonte: O autor (2022).
-\label{sinal_filtrado_maquina_desligada}
-\end{figure} 
-
-Já a Figura~\ref{sinal_filtrado_maquina_ligada_tomada} denota ambos os sinais quando da bancada experimental energizada, mas com motorredutor desligado. Percebe-se um incremento nos níveis totais dos sinais de ruído elétrico, mas, ainda assim, os mesmos continuam em níveis significativamente menores do que os sinais não-filtrados.
-
-\begin{figure}[H]
-\centering
-\caption {Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}
-\includegraphics[width=\textwidth,height=80mm,keepaspectratio]{GraficosAnalise/sinal_filtrado_maquina_ligada_tomada} \\
-Fonte: O autor (2022).
-\label{sinal_filtrado_maquina_ligada_tomada}
-\end{figure} 
-
-
-Para verificação do sensor PVDF em relação a um sensor comercial de uso industrial, os sinais obtidos com sensor filme PVDF foram comparados a um sensor acelerômetro de um eixo com sensibilidade de 100 mV/G, obtidos com equipamento de captura de dados da marca Adash e utilização do \textit{software} de análise Virtual Unit, também produzido pela Adash. 
-
-A Figura~\ref{adash} mostra o aparato descrito.
-
-\begin{figure}[H]
-\centering
-\caption {Sensor acelerômetro conectado ao equipamento de captura dos dados.}
-\includegraphics[width=\textwidth,height=110mm,keepaspectratio]{adash} \\
-Fonte: O autor (2022).
-\label{adash}
-\end{figure} 
-
-
-Uma vez montados os sensores, os sinais decorrentes da vibração foram aquisitados para posterior comparação com os sinais característicos dos rolamentos sem defeitos a fim de que se determine a severidade da falha. Para tanto, foram desenvolvidos sistemas de aquisição de dados. 
-
-\section{\normalfont{\textbf{Aquisição dos dados}}}
-
-Para a aquisição de dados, foi construído software de aquisição com utilização do DAQ USB-6212 da National Instruments, com 16 entradas analógicas de 16 bits e até 400 kS/s. A Figura~\ref{USB6212} apresenta o dispositivo utilizado.
-
-\begin{figure}[H]
-\centering
-\caption {DAQ USB 6212. Retirado de National Instruments, 2021.}
-\includegraphics[width=\textwidth,height=60mm,keepaspectratio]{USB6212}
-\label{USB6212}
-\end{figure}
-
-Em conjunto com a interface USB6212 foi utilizada a plataforma LabVIEW para construção de um Software de Aquisição, capaz de aquisitar os dados advindos do sensor PVDF e registrá-los em arquivos para posterior processamento. A Figura~\ref{sistema_labview} mostra a tela de aquisição de dados do sistema desenvolvido. 
-
-\begin{figure}[H]
-\centering
-\caption {Sistema de aquisição desenvolvido com LabView.}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{sistema_labview} \\
-Fonte: O autor (2022).
-\label{sistema_labview}
-\end{figure} 
-
-O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. Também foi desenvolvido um sistema baseado em STM32, de forma a que se possam conduzir experimentos em trabalhos futuros para que se verifique a possibilidade de um sistema completo de baixo custo com finalidades de manutenção preditiva, incluindo-se, aí, a aquisição e processamento dos dados. Este encontra-se disponível no Apêndice~\ref{secao:programastm}.
-
-%Os modelos matemáticos de identificação de frequências características de defeitos serão utilizados para a análise dos sinais no domínio do tempo e da frequência, que terão a finalidade de calibragem dos níveis de alarme. Para fins de validação dos dados obtidos através do sistema de aquisição desenvolvido com a plataforma STM32, será utilizado a DAQ da National Instruments modelo USB-6212. Esta conta com integração total ao sistema LabView, largamente utilizado na indústria e que será, aqui, utilizado para construção de um sistema com finalidade comparativa. A Figura~\ref{sistema_labview} apresenta o sistema desenvolvido para tanto, na versão livre para uso acadêmico do LabView 2020.
-
-
-\section{\normalfont{\textbf{Métodos de análise dos dados}}}
-
-Para análise dos dados obtidos foram desenvolvidos programas na plataforma MatLab e Python. Foram adotados os métodos descritos durante a Revisão Bibliográfica, em particular a densidade espectral de potência, nível RMS, FFT, e Análise de Envelope com utilização de pré-processamento dos dados com modelo de autoregressão e seleção de banda por meio de Curtose Espectral. O código para análise de Envelope baseou-se no disponibilizado por Kim et al., 2020. Os códigos para esses programas de análise dos dados podem ser encontrados no apêndice ~\ref{secao:programasAnalise}.
-
-Para construção desses códigos foi utilizada a plataforma Anaconda e o Jupyter Notebook de Python, bem como a plataforma Octave, alternative livre ao sistema Matlab, sendo possível verificar o funcionamento dos métodos de análise em ferramentas de software livre, com licenças do tipo BSD. 
-
-\section{\normalfont{\textbf{Definição dos experimentos}}}
-
-A definição dos experimentos se deu a partir de diferentes cenários de caracterização dos sinais em função da necessidade de avaliação do sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito a diferentes níveis de interferências eletromagnéticas, pois, como descrito na seção ~\ref{secao:CircuitosCondicionnadores} há possibilidade de interferências eletromagnéticas no sensor por sua natureza de alta impedância. 
-
-%Durante a fase de aquisição dos dados, também foi realizado um conjunto de aquisições com utilização de um filtro digital rejeita-faixa do tipo Butterworth de 4ª ordem, implementado através da plataforma LabVIEW, bem como um filtro passa-baixa também do tipo Butterworth de 4ª ordem. Tal implementação se deu com o objetivo de mitigar interferências verificadas acima dos 2500Hz e, também, interferências ainda presentes por volta dos 60Hz – frequência das oscilações da corrente alternada. 
-
-%Além destas interferências outras foram verificadas, através da análise espectral por meio de FFT, na própria placa de aquisição USB-6212, conforme visto na Figura 1.
-
-%Dentre os possíveis motivos para tal interferência, estima-se que estes sejam decorrentes de ruídos provenientes da própria fonte do computador utilizado para aquisição dos dados, a qual pode interferir na porta USB utilizada para conexão do dispositivo de aquisição. Entretanto verificou-se, após a inclusão do filtro digital, que o mesmo atenuou demasiadamente o sinal, tendo funcionado como um passa-baixa ao invés de um passa-faixa. 
-
-Para condução da aquisição destes distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como Kim et al., 2020, as quais respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela~\ref{tab:conjuntoDeTestes}, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, das frequências características dos danos nos rolamentos. 
-
-Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Contudo, após análise preliminar, as amostras obtidas apenas com amplificação e sem filtragem mostraram-se demasiadamente ruidosa. Assim, os experimentos prosseguiram a partir da aquisição dos sinais filtrados.
-
-Desta forma, os parâmetros de aquisição dos dados analisados até o momento foram definidos e encontram-se na Tabela~\ref{tab:conjuntoDeTestes}.
-
-\begin{table}[h]
-\caption{Cenários de caracterização dos sinais.}
-\begin{tabularx}{\textwidth}{|X|X|X|}
-\hline
-Identificação & Condições~                                                                                                                          & Taxa de aquisição  \\ 
-\hline
-Caso
-1        & Bancada não-energizada                                                                                                              & 25.6khz            \\ 
-\hline
-Caso 1        & Bancada energizada                                                                                                                  & 25.6khz            \\ 
-\hline
-Caso 2        & Caracterização do motorredutor, eixo a 37 RPM de velocidade                                                                         & 25.6khz            \\ 
-\hline
-Caso 3        & Rolamento em bom estado, eixo a 37 RPM                                                                                              & 25.6khz            \\ 
-\hline
-Caso 4        & Rolamento com dano no elemento rolante, eixo a 37 RPM                                                                               & 25.6khz            \\ 
-\hline
-Caso 5        & Rolamento com dano na pista externa, eixo a 37 RPM                                                                                  & 25.6khz            \\ 
-\hline
-Caso 6        & Rolamento com dano na pista externa e rolamento com dano no elemento rolante, com utilização de sensor acelerômetro e eixo a 37 RPM & 25.6khz            \\
-\hline
-Caso 6        & Rolamento com dano na pista externa e rolamento com dano no elemento rolante, com utilização de sensor acelerômetro e eixo a 61,3 RPM & 25.6khz            \\
-\hline
-\end{tabularx}
-\label{tab:conjuntoDeTestes}
-\source{O autor (2022).}
-\end{table}
-
-Os danos nos rolamentos foram inseridos manualmente. A Figura~\ref{dano_introduzido_rolante} mostra o dano introduzido no elemento rolante, onde é possível verificar o desbaste de um dos rolos, com utilização de uma retificadeira elétrica.
+A Figura~\ref{dano_introduzido_rolante} mostra o dano introduzido no elemento rolante, onde é possível verificar o desbaste de um dos rolos. Para a inserção do dano foi utilizada uma retificadeira elétrica.
 
 \begin{figure}[H]
 \centering
@@ -1789,7 +1791,7 @@ Fonte: O autor (2022).
 \label{dano_introduzido_rolante}
 \end{figure}
 
-Já a Figura~\ref{insercao_dano_pista_externa} mostra o processo de inserção de dano na pista externa, realizado por meio de processo de eletroerosão.
+Já a Figura~\ref{insercao_dano_pista_externa} mostra a inserção de dano na pista externa, realizado por meio de processo de eletroerosão.
 
 \begin{figure}[H]
 \centering
@@ -1799,7 +1801,7 @@ Fonte: O autor (2022).
 \label{insercao_dano_pista_externa}
 \end{figure}
 
-A Figura~\ref{dano_pista_externa} apresenta o rolamento com dano inserido na pista externa. A seta vermelha aponta o furo realizado. O furo imediatamente ao lado é característico do rolamento, não representando um defeito - os elementos rolantes não têm contato com ele, cuja finalidade é a vazão de possível excesso de graxa, caso esta seja utilizada como lubrificante.
+A Figura~\ref{dano_pista_externa} apresenta o rolamento com dano inserido na pista externa. A seta vermelha aponta o furo realizado. O furo imediatamente ao lado é característico do rolamento, não representando um defeito - os elementos rolantes não têm contato com tal furo, cuja finalidade é a vazão de possível excesso de graxa, caso seja utilizada como lubrificante.
 
 \begin{figure}[H]
 \centering
@@ -1809,19 +1811,78 @@ Fonte: O autor (2022).
 \label{dano_pista_externa}
 \end{figure}
 
+Após a inserção dos danos, foi feita a definição e condução dos experimentos.
+
+\section{\normalfont{\textbf{Definição dos experimentos}}}
+
+A definição dos experimentos se deu a partir de diferentes cenários de caracterização dos sinais em função da necessidade de avaliação do sinal gerado pelo sensor, acoplado à caixa de rolamento, enquanto sujeito a diferentes níveis de interferências eletromagnéticas, pois, como descrito na seção ~\ref{secao:CircuitosCondicionnadores} há possibilidade de interferências eletromagnéticas neste dada sua natureza de alta impedância. 
+
+%Durante a fase de aquisição dos dados, também foi realizado um conjunto de aquisições com utilização de um filtro digital rejeita-faixa do tipo Butterworth de 4ª ordem, implementado através da plataforma LabVIEW, bem como um filtro passa-baixa também do tipo Butterworth de 4ª ordem. Tal implementação se deu com o objetivo de mitigar interferências verificadas acima dos 2500Hz e, também, interferências ainda presentes por volta dos 60Hz – frequência das oscilações da corrente alternada. 
+
+%Além destas interferências outras foram verificadas, através da análise espectral por meio de FFT, na própria placa de aquisição USB-6212, conforme visto na Figura 1.
+
+%Dentre os possíveis motivos para tal interferência, estima-se que estes sejam decorrentes de ruídos provenientes da própria fonte do computador utilizado para aquisição dos dados, a qual pode interferir na porta USB utilizada para conexão do dispositivo de aquisição. Entretanto verificou-se, após a inclusão do filtro digital, que o mesmo atenuou demasiadamente o sinal, tendo funcionado como um passa-baixa ao invés de um passa-faixa. 
+
+Para condução da aquisição dos distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como Kim et al., 2020, as quais respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela~\ref{tab:conjuntoDeTestes}, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, das frequências características dos danos nos rolamentos. 
+
+Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Contudo, após análise preliminar, as amostras obtidas apenas com amplificação e sem filtragem mostraram-se demasiadamente ruidosas, como descrito na seção~\ref{secao:CircuitosCondicionnadores}. Assim, os experimentos prosseguiram a partir da aquisição dos sinais filtrados.
+
+Desta forma, os parâmetros de aquisição dos dados analisados até o momento foram definidos e encontram-se na Tabela~\ref{tab:conjuntoDeTestes}.
+
+\begin{table}[h]
+\caption{Cenários de caracterização dos sinais.}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+Identificação & Condições~                                                                                                                          & Taxa de aquisição  \\ 
+\hline
+Caso
+1        & Caracterização dos sinais com sensor acelerômetro                                                                                                              & 31768Hz            \\ 
+\hline
+Caso 2        & Caracterização dos ruídos no sensor PVDF & 25.6khz            \\ 
+\hline
+Caso 3        & Caracterização do sinal do motorredutor com PVDF & 25.6khz            \\ 
+\hline
+Caso 4        & Caracterização do sinal do rolamento em bom estado com PVDF                                                                                              & 25.6khz            \\ 
+\hline
+Caso 5        & Caracterização do sinal do rolamento com dano no elemento rolante com PVDF                                                                               & 25.6khz            \\ 
+\hline
+Caso 6        & Caracterização do sinal do rolamento com dano na pista externa com PVDF                                                                               & 25.6khz            \\ 
+\hline
+\end{tabularx}
+\label{tab:conjuntoDeTestes}
+\source{O autor (2022).}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\caption {Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}
+\includegraphics[width=\textwidth,keepaspectratio]{experimento_acelerometro} \\
+Fonte: O autor (2022).
+\label{dano_pista_externa}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption {Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}
+\includegraphics[width=\textwidth,keepaspectratio]{setup_experimental_pvdf} \\
+Fonte: O autor (2022).
+\label{dano_pista_externa}
+\end{figure}
+
 \chapter{Resultados}
 
-Nesta seção são apresentados os resultados dos experimentos realizados com o sensor filme PVDF, com as análises discutidas à luz da revisão bibliográfica. 
+Nesta seção são apresentados os resultados dos experimentos realizados com o sensor filme PVDF e com o sensor acelerômetro, com análises discutidas à luz da revisão bibliográfica. 
 
 \section{\normalfont{\textbf {Caso 1 - caracterização dos sinais de falha com utilização de sensor acelerômetro}}}
 
-Com uso do sensor acelerômetro de uso comercial a caracterização dos sinais do rolamento em bom estado e do motorredutor foi realizada, a fim de que se conhecessem os padrões de vibração dos conjuntos experimentais e que se pudesse, assim, determinar com precisão as falhas nos rolamentos. Após a determinação das frequências dominantes presentes nestes componentes, a análise dos rolamentos com falha no elemento rolante e na pista externa foi feita com uso das técnicas de análise temporal, espectral e demodulação do espectro de frequências, conforme descrito na literatura.
+Com uso do sensor acelerômetro de uso comercial a caracterização dos sinais do rolamento em bom estado e do motorredutor foi realizada, a fim de que se conhecessem os padrões de vibração dos conjuntos experimentais e que se pudesse, assim, determinar com precisão as falhas nos rolamentos. Após a determinação das frequências dominantes presentes nestes componentes, a análise dos rolamentos com dano no elemento rolante e na pista externa foi feita com uso das técnicas de análise temporal, espectral e demodulação do espectro de frequências, conforme descrito na literatura.
 
 A partir dos experimentos, obtiveram-se resultados apresentados a seguir.
 
 \subsection{\normalfont{\textbf{Motorredutor}}}
 
-O primeiro passo adotado para possiblitar a identificação das falhas dos rolamentos foi a caracterização do sinal do motorredutor. Para tanto, o sensor acelerômetro foi posicionado próximo à saída da caixa de redução, local em que há maior possibilidade de transmissão das vibrações provenientes da caixa de redução para o eixo motriz.  
+O primeiro passo adotado para possiblitar a identificação das falhas dos rolamentos foi a caracterização do sinal do motorredutor, de forma que suas frequências tornassem-se conhecidas a fim de diferenciá-las das frequências esperadas para os rolamentos com danos. Para tanto, o sensor acelerômetro foi posicionado próximo à saída da caixa de redução, local em que há maior possibilidade de transmissão das vibrações provenientes da caixa de redução para o eixo motriz. A análise aqui apresentada corresponde a posição 4V, descrita na seção~\ref{secao:MateriaisEMetodos}.
 
 O sinal temporal do motorredutor pode ser visto na Figura~\ref{MOTORREDUTOR_TEMPORAL_ACELEROMETRO}.
 
@@ -1838,7 +1899,7 @@ A Figura~\ref{ESPECTRO_ACELERACAO_MOTORREDUTOR_100HZ} mostra o espectro de frequ
 \begin{figure}[H]
 \centering
 \caption {Espectro de frequências do motorredutor sob rotação de 61,3 RPM.}
-\includegraphics[width=\textwidth,keepaspectratio]{ESPECTRO_ACELERACAO_MOTORREDUTOR_100HZ} \\
+\includegraphics[width=\textwidth,keepaspectratio]{espectro_redutor_4v_mv} \\
 Fonte: O autor (2022).
 \label{ESPECTRO_ACELERACAO_MOTORREDUTOR_100HZ}
 \end{figure}
@@ -1860,40 +1921,38 @@ A partir da representação temporal, é possível verificar que a amplitude pic
 \begin{figure}[H]
 \centering
 \caption {Espectro de frequências do rolamento em bom estado sob rotação de 61,3 RPM.}
-\includegraphics[width=\textwidth,keepaspectratio]{ROLAMENTO_BOM_ESTADO_ESPECTRO} \\
+\includegraphics[width=\textwidth,keepaspectratio]{espectro_rolamento_bom_mc6v_mv} \\
 Fonte: O autor (2022).
 \label{ROLAMENTO_BOM_ESTADO_ESPECTRO}
 \end{figure}
 
-Aparecem neste espectro as frequências de \SI{1}{\hertz}, velocidade de rotação do eixo, \SI{50}{\hertz}, velocidade de rotação do motor ainda cuja frequência ainda aparece sendo transmitida pelo eixo, bem como, e principalmente, as frequências de picos presentes na saída do motorredutor:  \SI{500}{\hertz}, \SI{550}{\hertz}, \SI{600}{\hertz} e \SI{800}{\hertz}. O pico mais elevado, neste caso, está nos \SI{550}{\hertz}. É importante notar, entretanto, que apesar do pico estar mais destacado aqui, há menor amplitude destas frequências em relação ao sinal medido na saída do motorredutor. Percebe-se, portanto, a transmissão, pelo eixo motriz, das frequências do motorredutor. Esta informação é relevante para a adequada análise dos sinais das falhas dos rolamentos.
+Aparecem neste espectro, em pequena amplitude, a frequência de \SI{1}{\hertz}, velocidade de rotação do eixo, \SI{50}{\hertz}, velocidade de rotação do motor ainda cuja frequência aparece sendo transmitida pelo eixo, bem como, e principalmente, as frequências de picos presentes na saída do motorredutor:  \SI{500}{\hertz}, \SI{550}{\hertz}, \SI{600}{\hertz} e \SI{800}{\hertz}, além dos \SI{1600}{\hertz}. O pico mais elevado, neste caso, está nos \SI{550}{\hertz}. É importante notar, entretanto, que apesar do pico estar mais destacado aqui, há menor amplitude destas frequências em relação ao sinal medido na saída do motorredutor. Percebe-se, portanto, a transmissão, pelo eixo motriz, das frequências do motorredutor. Esta informação é relevante para a adequada análise dos sinais das falhas dos rolamentos. Verifica-se, além destas, uma concentração de frequências espalhadas após os \SI{2400}{\hertz}, que vão até os \SI{2750}{\hertz}, não presentes anteriormente. 
 
 \subsection{\normalfont{\textbf{Falha no elemento rolante}}}
 
-Com a velocidade do eixo em 61,3 RPM, calculou-se a frequência de defeito no elemento rolante foi calculada em \SI{2,5}{\hertz}. Sabe-se que os sinais aparecem em duas vezes esta frequência - dado que o dano no elemento rolante atinge as pistas externa e interna a cada revolução. Assim, procurou-se os danos em duas vezes a BSF, sabendo-se, também, que estes apresentam bandas laterais na \textit{fundamental train frequency} do rolamento. 
+Com a velocidade do eixo em 61,3 RPM, calculou-se a frequência de defeito no elemento rolante em \SI{2,5}{\hertz}. Sabe-se que os sinais aparecem em duas vezes esta frequência e suas harmônicas - dado que o dano no elemento rolante atinge as pistas externa e interna a cada revolução. Assim, procurou-se os danos em duas vezes a BSF, sabendo-se, também, que estes apresentam bandas laterais na \textit{fundamental train frequency} do rolamento. 
 
-A partir da análise dos sinais obtidos nos eixos vertical e horizontal, verificou-se que o eixo vertical permitiu uma identificação mais clara do dano no elemento rolante. Os resultados são, portanto, apresentados com base neste eixo. A Figura~\ref{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado} mostra o sinal temporal do rolamento com dano no elemento rolante.
+A partir da análise dos sinais obtidos nos eixos vertical e horizontal, verificou-se que o eixo vertical permitiu uma identificação mais clara do dano no elemento rolante. Os resultados são, portanto, apresentados com base neste eixo. A Figura~\ref{dominio_tempo_defeito_rolante_acelerometro_100hz} mostra o sinal temporal do rolamento com dano no elemento rolante.
 
 \begin{figure}[H]
 \centering
 \caption {Sinal temporal do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}
-\includegraphics[width=\textwidth,keepaspectratio]{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado} \\
+\includegraphics[width=\textwidth,keepaspectratio]{dominio_tempo_defeito_rolante_acelerometro_100hz} \\
 Fonte: O autor (2022).
-\label{dominio_tempo_defeito_rolante_acelerometro_100hz_anotado}
+\label{dominio_tempo_defeito_rolante_acelerometro_100hz}
 \end{figure}
 
-Tendo-se em vista a velocidade de rotação, temos uma frequência do eixo de aproximadamente \SI{1,03}{\hertz}, equivalennte a um intervalo de 970ms por revolução. É possível verificar uma sequência de picos com intervalo aproximado deste tempo, identificando a revolução do eixo. O dano no elemento rolante, entretanto, é de difícil identificação através da análise no domínio do tempo. Para que este fosse mais facilmente identificado, aplicou-se a análise espectral, verificando a amplitude em cada um de suas frequências. A Figura~\ref{defeito_rolante_espectro_100hz} mostra o espectro do sinal. 
+Tendo-se em vista a velocidade de rotação, temos uma frequência do eixo de aproximadamente \SI{1,03}{\hertz}, equivalente a um intervalo de 970ms por revolução. É possível verificar uma sequência de picos com intervalo aproximado deste tempo, identificando a revolução do eixo. O dano no elemento rolante, entretanto, é de difícil identificação através da análise no domínio do tempo. Para que este fosse mais facilmente identificado, aplicou-se a análise espectral, verificando a amplitude em cada uma de suas frequências. A Figura~\ref{espectro_rolamento_dano_rolante_mc6v_mv} mostra o espectro do sinal. 
 
 \begin{figure}[H]
 \centering
 \caption {Sinal espectral do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}
-\includegraphics[width=\textwidth,keepaspectratio]{ESPECTRO_ROLAMENTO_DEFEITO_ROLANTE_100HZ} \\
+\includegraphics[width=\textwidth,keepaspectratio]{espectro_rolamento_dano_rolante_mc6v_mv} \\
 Fonte: O autor (2022).
-\label{ESPECTRO_ROLAMENTO_DEFEITO_ROLANTE_100HZ}
+\label{espectro_rolamento_dano_rolante_mc6v_mv}
 \end{figure}
 
-O sinal do espectro apresenta um nível elevado de energia espalhado pelo espectro, com algumas frequências marcantes em relação. 
-
-Percebe-se uma grande quantidade de energia concentrada na região de frequências mais elevadas, em particular na que compreende, aproximadamente, dos \SI{2850}{\hertz} aos \SI{3050}{\hertz}. Demodulando-se o sinal do rolamento a partir desta faixa de frequências, obtém-se o espectro da Figura~\ref{2bsf_anotado}. 
+O sinal do espectro apresenta frequências elevadas mais presentes, tal qual o caso anterior. Nota-se, neste caso, entretanto, que ao contrário do rolamento em bom estado, essas frequências são as de maior amplitude. Nota-se, também, que tais frequências foram deslocadas no espectro para a região dos \SI{2850}{\hertz} aos \SI{3050}{\hertz}, onde essa concentração mostra-se perceptível. Demodulando-se o sinal do rolamento a partir desta faixa de frequências, obtém-se o espectro da Figura~\ref{2bsf_anotado}. 
 
 \begin{figure}[H]
 \centering
@@ -1903,11 +1962,11 @@ Fonte: O autor (2022).
 \label{2bsf_anotado}
 \end{figure}
 
-Nele pode-se verificar mais marcadamente os picos de baixas frequências, em particular picos bastante próximos pela frequência calculada para duas vezes BSF. É possível verificar a existência de um pico em aproximadamente \SI{5,1}{\hertz}, bem como a existência de bandas laterais neste pico, de aproximadamente \SI{0,4}{\hertz}, compatível com o esperado para a FTF. Verifica-se também a existência de frequências harmônicas de amplitude ligeiramente menor que a frequência base da falha, apontadas nos círculos vermelhos, que apresentam o mesmo padrão e confirmam a identificação da falha no elemento rolante.
+Nele pode-se verificar mais marcadamente os picos de baixas frequências, em particular picos bastante próximos pela frequência calculada para duas vezes BSF. É possível verificar a existência de um pico em aproximadamente \SI{5,1}{\hertz}, bem como a existência de bandas laterais neste pico, de aproximadamente \SI{0,4}{\hertz}, compatível com o esperado para a FTF. Verifica-se também a existência de frequências harmônicas de amplitude ligeiramente menor que a frequência base da falha, apontadas nos círculos vermelhos, que apresentam o mesmo padrão e apontam a identificação da falha no elemento rolante.
 
 \subsection{\normalfont{\textbf{Falha na pista externa}}}
 
-Para identificação na falha da pista externa, seguiram-se os mesmos procedimentos adotados na identificação da falha da pista interna. Entretanto, no caso do dano na pista externa, o eixo horizontal apresentou uma identificação mais clara do dano. Isto se deve à colocação do rolamento no eixo, com o dano na pista externa posicionado próximo à lateral da caixa. A Figura~\ref{DANO_ROLANTE_100HZ_HARMONICOS_2BSF} apresenta o sinal temporal obtido com o sensor acelerômetro no eixo horizontal.
+Para identificação na falha da pista externa, seguiram-se os mesmos procedimentos adotados na identificação da falha da pista interna. Entretanto, no caso do dano na pista externa, o eixo horizontal apresentou uma identificação mais clara do dano. Isto se deve ao posicionamento do rolamento no eixo, onde verificou-se, após os ensaios, que no processo de subtituição e reposicionamento dos rolamentos no eixo o dano na pista externa acabou se localizando mais próximo à lateral da caixa do que da zona de carga. A Figura~\ref{TEMPO_DEFEITO_EXTERNA_100HZ_COM_CARGA} apresenta o sinal temporal obtido com o sensor acelerômetro no eixo horizontal.
 
 \begin{figure}[H]
 \centering
@@ -1921,8 +1980,8 @@ A Figura~\ref{ESPECTRO_DEFEITO_EXTERNA_100HZ} mostra o espectro do sinal da pist
 
 \begin{figure}[H]
 \centering
-\caption {Sinal espectral demodulado do rolamento com dano na pista externa.}
-\includegraphics[width=\textwidth,keepaspectratio]{ESPECTRO_DEFEITO_EXTERNA_100HZ} \\
+\caption {Sinal espectral do rolamento com dano na pista externa.}
+\includegraphics[width=\textwidth,keepaspectratio]{espectro_rolamento_dano_pista_externa_mc4v_mv} \\
 Fonte: O autor (2022).
 \label{ESPECTRO_DEFEITO_EXTERNA_100HZ}
 \end{figure}
@@ -1940,7 +1999,7 @@ Fonte: O autor (2022).
 A frequência de BPFO calculada para a BPFO nesta rotação de eixo foi de \SI{5.41}{\hertz}, com o pico medido se dando próximo aos \SI{6}{\hertz} o que sugere, portanto, a ocorrência do BPFO. A harmônica de duas vezes o BPFO também aparece no espectro, precisamente no dobro da frequência medida para a falha. Sua amplitude é menor que a BPFO, o que aponta se tratar de uma harmônica desta, tal como verificado na literatura.
  
 \newpage
-\section{\normalfont{\textbf {Caso 1 - caracterização do sinal do sensor PVDF}}}
+\section{\normalfont{\textbf {Caso 2 - caracterização do sinal do sensor PVDF}}}
 
 Para caracterização do sinal inerente ao sensor, submetido ao circuito de condicionamento e filtragem do sinal, foram feitos os seguintes experimentos descritos na Tabela~\ref{tab:conjuntoDeTestes}: 1) aquisição do sinal do sensor com o maquinário desligado e desconectado da energia elétrica; 2) aquisição com o maquinário desligado, mas conectado à energia elétrica; 3) maquinário energizado, mas com motor parado. A finalidade destes experimentos foi de, inicialmente, verificar o nível de ruído do sinal em termos de interferências eletromagnéticas no ambiente.
 
@@ -2032,7 +2091,7 @@ Bancada ligada na energia elétrica e energizada & Aproxidamente 20mv  & Espectr
 
 Nota-se que a amplitude dos sinais aumenta consideravelmente quando a bancada está conectada à rede elétrica, demonstrando, por um lado, que há baixa indução de ruídos causada pela própria fonte de alimentação do circuito condicionador de sinal. Por outro lado, há uma quantidade de ruído advinda do próprio ambiente. Conforme apontado por Brisebois, 2006, sensores de alta impedância podem sofrer ruídos por uma série de fatores, tais como ruído externo, resíduos de fluxo de solda, correntes de polarização, dentre outros. Contudo, uma vez caracterizados tais ruídos, eles podem ser considerados ao se analisar os resultados para verificação da viabilidade do filme PVDF na aplicação proposta.
 
-\section{\normalfont{\textbf {Caso  2.1 - caracterização do sinal do motorredutor com sensor PVDF}}}
+\section{\normalfont{\textbf {Caso  3 - caracterização do sinal do motorredutor com sensor PVDF}}}
 
 Após a caraterização das interferências elétricas que seriam inerentes ao sensor, o padrão de vibrações do motorredutor foi caracterizado com o sensor PVDF, a fim de que fossem verificadas suas frequências. Isso foi necessário pois as frequências geradas pelo conjunto motorredutor não eram, à priori, conhecidas. Assim, para que se evitassem possíveis confusões ao se caracterizarem os sinais de rolamentos, caso, por coincidência, alguma das frequências de defeito esperadas fossem iguais às do motorredutor, tal caracterização foi proposta. 
 
@@ -2077,7 +2136,7 @@ Ao comparar este resultado com o obtido pelo sensor acelerômetro, percebe-se qu
 
 %TODO As caracteristicas do sinal de vibração do motorredutor, portanto, são sumarizadas na tabela  
 
-\section{\normalfont{\textbf {Caso 3 - caracterização do sinal do rolamento em bom estado}}}
+\section{\normalfont{\textbf {Caso 4 - caracterização do sinal do rolamento em bom estado}}}
 
 O próximo experimento, após caracterização do sinal do motorredutor, foi a caracterização do sinal do rolamento autocompensador de rolos em bom estado, sem nenhum tipo de dano introduzido. 
 
@@ -2090,6 +2149,8 @@ A Figura~\ref{DOMINIO_TEMPO_ROLAMENTO_BOM} mostra o sinal temporal do rolamento 
 Fonte: O autor (2022).
 \label{DOMINIO_TEMPO_ROLAMENTO_BOM}
 \end{figure} 
+
+Percebe-se amplitude de aproximadamente {\SI{800}{\milli\volt}} pico a pico.
 
 A Figura~\ref{PSD_ROLAMENTO_BOM} apresenta o PSD do rolamento em bom estado.
 
@@ -2104,7 +2165,7 @@ Fonte: O autor (2022).
 Nele podemos verificar uma concentração de frequências por volta dos {\SI{549}{\hertz}, bem como picos na região dos {\SI{490}{\hertz}, {\SI{602}{\hertz} e {\SI{1201}{\hertz}. Neste caso o pico obtido pelo sensor PVDF coincide com o pico obtido pelo sensor acelerômetro, nos {\SI{549}{\hertz}. Verifica-se que há menor definição no pico, sendo que este tem início e fim por uma região de frequências maior que às do acelerômetro, mas, ainda assim, foi ambos sensores mostraram a mesma frequência dominante no espectro. 
 
 \newpage
-\section{\normalfont{\textbf {Caso 4 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}
+\section{\normalfont{\textbf {Caso 5 - caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano no elemento rolante}}}
 
 A partir das caracterizações das frequências de ruído, do motorredutor e do rolamento em bom estado, é dado prosseguimento nos experimentos a fim de identificação de danos no rolamento. Nesse experimento foi introduzido dano no elemento rolante, conforme mostrado na seção~\ref{secao:MateriaisEMetodos}. O dano no rolamento simulou uma situação de elevado desgaste e possível esmagamento em um dos elementos rolantes. 
 
@@ -2142,59 +2203,124 @@ Fonte: O autor (2022)
 
 Dadas essas questões, para caracterização do rolamento com dano introduzido no elemento rolante, também foi adotado o método de análise do envelope do sinal a fim de que fosse possível verificar se haveria a ocorrência das frequências esperadas para o dano no elemento rolante através de impulsos verificados no espectro.
 
+%TODO mover para comparação
+Uma possibilidade seria a aplicação da demodulação do sinal para análise do envelope. Entretanto, dada a utilização dos circuitos condicionadores com filtro passa-baixa, para diminuição do ruído dos sensores, parte da informação de alta frequência possivelmente portadora do sinal de falhas não se mostra presente no sinal aquisitado. 
 
+%Além disso, como visto em levantamento bibliográfico, o  sensor PVDF apresentou boa linearidade em frequências até 
 
+%Para que o processamento deste envelope fosse realizado, a banda de seleção do filtro passa-faixa foi realizada manualmente com base na observação dos valores de curtose recorrendo-se ao método da curtose espectral, conforme verificado na Figura~\ref{CURTOSE_ROLAMENTO_RUIM}.
 
-Para que o processamento deste envelope fosse realizado, a banda de seleção do filtro passa-faixa foi realizada manualmente com base na observação dos valores de curtose recorrendo-se ao método da curtose espectral, conforme verificado na Figura~\ref{CURTOSE_ROLAMENTO_RUIM}.
+%\begin{figure}[H]
+%\centering
+%\caption {Curtose espectral para diferentes janelas no rolamento com dano no elemento rolante.}
+%\includegraphics[width=\textwidth,height=120mm,keepaspectratio]{GraficosAnalise/curtose_rolamento_ruim} \\
+%Fonte: O autor (2022)
+%\label{CURTOSE_ROLAMENTO_RUIM}
+%\end{figure} 
+
+%O envelope do sinal mostra concentrações de baixa amplitude em regiões próximas dos múltiplos do valor base para o dano no elemento rolante. Admite-se a possibilidade de que estes sinais, portanto, possam constituir harmônicas do sinal esperado, com concentrações de sinais e picos aparecendo, respectivamente, em {\SI{788}{\hertz}, ou 8,2$\times$ a frequência base, {\SI{1170}{\hertz}, ou 12,3$\times$ a frequência esperada e {\SI{1569}{\hertz}, ou 16,5$\times$ a frequência esperada, indicados na Figura~\ref{ENVELOPE_ROLANTE_RUIM} pelos círculos vermelhos. A concentração nas frequências mais baixas mostra-se de difícil separação, dada à grande quantidade de componentes que podem ter suas frequências nesta região, por meio desta análise. Ao final do espectro próximo aos {\SI{2000}{\hertz}, entretanto, também é possível verificar a existência de uma região de concentração de picos, porém mais espalhados e menos claramente definidos.
+
+%\begin{figure}[H]
+%\centering
+%\caption {Envelope do sinal do rolamento com dano no elemento rolante}
+%\includegraphics[width=\textwidth,height=120mm,keepaspectratio]{GraficosAnalise/ENVELOPE_ROLANTE_RUIM} \\
+%Fonte: O autor (2022)
+%\label{ENVELOPE_ROLANTE_RUIM}
+%\end{figure} 
+
+%Já os picos de maior amplitude que podem ser visalizados permeando todo o espectro, com espaçamento perpceptivelmente equidistante entre si, ocorrem periodicamente em múltiplos de {\SI{25}{\hertz}. A hipótese é de que, durante o processo de janelamento de frequências advindo do STFT, tenha ocorrido um fenômeno conhecido por espalhamento espectral. Trataria-se, portanto, de uma limitação do processo de análise adotado, não de frequências presentes originalmente no espectro. 
+
+%O dano verificado, conclui-se, foi coerente com o esperado pela literatura e demonstrou elevado nível de espalhamento de frequências, compatível com um rolamento em seu quarto estágio de dano. 
+
+\section{\normalfont{\textbf {Caso 6 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}
+
+Por fim, a análise do rolamento com dano no elemento rolante é feita com o sensor filme PVDF. A Figura~\ref{DEFEITO_PISTA_EXTERNA} mostra o sinal temporal do dano na pista externa.
 
 \begin{figure}[H]
 \centering
-\caption {Curtose espectral para diferentes janelas no rolamento com dano no elemento rolante.}
-\includegraphics[width=\textwidth,height=120mm,keepaspectratio]{GraficosAnalise/curtose_rolamento_ruim} \\
-Fonte: O autor (2022)
-\label{CURTOSE_ROLAMENTO_RUIM}
+\caption {Sinal temporal do rolamento com dano na pista externa.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{aquisicao_07_dano_externa_11_03_2022_15h15min_ajustado_6s} \\
+Fonte: O autor (2022).
+\label{DEFEITO_PISTA_EXTERNA}
 \end{figure} 
 
-O envelope do sinal mostra concentrações de baixa amplitude em regiões próximas dos múltiplos do valor base para o dano no elemento rolante. Admite-se a possibilidade de que estes sinais, portanto, possam constituir harmônicas do sinal esperado, com concentrações de sinais e picos aparecendo, respectivamente, em {\SI{788}{\hertz}, ou 8,2$\times$ a frequência base, {\SI{1170}{\hertz}, ou 12,3$\times$ a frequência esperada e {\SI{1569}{\hertz}, ou 16,5$\times$ a frequência esperada, indicados na Figura~\ref{ENVELOPE_ROLANTE_RUIM} pelos círculos vermelhos. A concentração nas frequências mais baixas mostra-se de difícil separação, dada à grande quantidade de componentes que podem ter suas frequências nesta região, por meio desta análise. Ao final do espectro próximo aos {\SI{2000}{\hertz}, entretanto, também é possível verificar a existência de uma região de concentração de picos, porém mais espalhados e menos claramente definidos.
+Percebe-se uma amplitude pico a pico superior a {\SI{400}{\milli\volt}} no sinal, semelhante ao obtido no ensaio do rolamento com dano no elemento rolante. Observando-se o PSD do sinal, é visto pico de frequências na região dos {\SI{1596}{\hertz}, bem como picos de menor amplitude nos {\SI{1405}{\hertz}, {\SI{1198}{\hertz} e {\SI{387}{\hertz}. Observando-se o espectro de baixas frequências, percebe-se um pico aos {\SI{5}{\hertz}, próximo à frequência calculada para o dano na pista externa. 
 
 \begin{figure}[H]
 \centering
-\caption {Envelope do sinal do rolamento com dano no elemento rolante}
-\includegraphics[width=\textwidth,height=120mm,keepaspectratio]{GraficosAnalise/ENVELOPE_ROLANTE_RUIM} \\
-Fonte: O autor (2022)
-\label{ENVELOPE_ROLANTE_RUIM}
+\caption {Espectro de densidade de potência do rolamento com dano na pista externa.}
+\includegraphics[width=\textwidth,height=190mm,keepaspectratio]{PSD_PVDF_rolamento_dano_pista_externa} \\
+Fonte: O autor (2022).
+\label{DEFEITO_PISTA_EXTERNA}
 \end{figure} 
 
-Já os picos de maior amplitude que podem ser visalizados permeando todo o espectro, com espaçamento perpceptivelmente equidistante entre si, ocorrem periodicamente em múltiplos de {\SI{25}{\hertz}. A hipótese é de que, durante o processo de janelamento de frequências advindo do STFT, tenha ocorrido um fenômeno conhecido por espalhamento espectral. Trataria-se, portanto, de uma limitação do processo de análise adotado, não de frequências presentes originalmente no espectro. 
+Assim como no caso anterior, as frequências mais elevadas mostraram-se menos presentes dada a utilização do filtro passa-baixa. Contudo, como mencionado e assim como no caso anterior, em que analisou-se o dano no elemento rolante, verifica-se o aparecimento de uma frequência próxima ao esperado para o dano diretamente no espectro de densidade de potência.
 
-O dano verificado, conclui-se, foi coerente com o esperado pela literatura e demonstrou elevado nível de espalhamento de frequências, compatível com um rolamento em seu quarto estágio de dano. 
-
-\section{\normalfont{\textbf {Caso 5 – caracterização do sinal e identificação da frequência característica de defeitos no rolamento com dano na pista externa}}}
-
-\section{\normalfont{\textbf {Comparação dos resultados obtidos pelo sensor PVDF e pelo sensor acelerômetro}}}
+\begin{figure}[H]
+\centering
+\caption {Espectro de densidade de potência do rolamento com dano na pista externa. Vista ampliada da região de baixas frequências, onde o pico próximo aos 5Hz mostra-se presente.}
+\includegraphics[width=\textwidth,height=100mm,keepaspectratio]{PSD_PVDF_rolamento_dano_pista_externa_zoom} \\
+Fonte: O autor (2022).
+\label{DEFEITO_PISTA_EXTERNA}
+\end{figure} 
 
 \newpage
-\chapter{Comparação dos custos dos sistemas}
+\section{\normalfont{\textbf {Discussão dos resultados}}}
 
+%TODO mover este primeiro parágrafo para as conclusões
+
+O sensor acelerômetro mostrou maior definição na detecção dos picos de frequências, evidenciando resolução superior para aplicações em que uma maior precisão é necessária para diferenciamento de danos e falhas. O sensor PVDF, em comparação ao sensor acelerômetro, mostrou menor definição durante a representação dos sinais no espectro de frequências. Observando-se, entretanto, o conjunto de caracterizações realizadas, percebe-se que o sensor PVDF foi capaz, em alguns casos, de discriminar os picos de frequências tal qual o acelerômetro, ainda que com menor definição. Isto é mostrado na Figura~\ref{comparacao_acelerometro_e_pvdf} que recobra, para fins comparativos, o espectro do rolamento em bom estado com acelerômetro e com sensor PVDF. A Figura~\ref{comparacao_acelerometro_e_pvdf} a) mostra o sinal aquisitado com sensor acelerômetro, enquanto a Figura~\ref{comparacao_acelerometro_e_pvdf} b) o com sensor PVDF.
+
+\begin{figure}[H]
+\centering
+\caption {Espectro de densidade de potência do rolamento com dano na pista externa. Vista ampliada da região de baixas frequências, onde o pico próximo aos 5Hz mostra-se presente.}
+\includegraphics[width=\textwidth,height=150mm,keepaspectratio]{comparacao_acelerometro_e_pvdf} \\
+Fonte: O autor (2022).
+\label{comparacao_acelerometro_e_pvdf}
+\end{figure} 
+
+A comparação entre os sinais mostra que o sinal do sensor acelerômetro mostra-se mais bem definido. É importante notar que é apresentado, aqui, o espectro de potência do sensor PVDF uma vez que os ruídos criam um espalhamento por todo o espectro, dificultando a visualização das frequências que foram realmente capturadas. A menor diferenciação das frequências por parte do PVDF é visível nos picos dos {\SI{472}{\hertz} e {\SI{499}{\hertz}.
+
+Nos casos onde ocorrem os danos de rolamentos, porém, o acelerômetro mostrou-se bastante superior. O PVDF aponta concentrações no espectro bastante próximos de onde as frequências base das falhas deveriam estar presentes, contudo, não é possível afirmar taxativamente que estas tratam-se das frequências de falhas dos rolamentos - ainda que ressaltadas apenas nos casos onde os danos são presentes e, portanto, sugerindo se tratar, de fato, das frequências base das falhas. 
+
+Ainda, devido aos ruídos capturados durante os ensaios preliminares com o sensor, foi necessária a implementação do circuito condicionador do sinal com implementação de filtro rejeita-faixa e filtro passa-baixa. As frequências mais elevadas, principalmente após os {\SI{2500}{\hertz}, portanto, acabaram não sendo capturadas nos ensaios com o sensor PDVF. Isso, como visto na seção~\ref{secao:CircuitosCondicionnadores}, mostrou-se necessário dadas as condições encontradas durante o processo de condicionamento do sinal do sensor, uma vez que optou-se pela diminuição dos ruídos e, portanto, de maior clareza na aquisição dos dados. Dada a inexistência das frequências mais elevadas onde os danos propagavam-se, contudo, a análise por demodulação do sinal, ou análise de envelope, mostrou-se inviabilizada com o sensor PVDF. 
+
+%O sensor PVDF, entretanto, mostra-se promissor para
+
+%Ao se considerar o desenvolvimento natural de uma falha em um rolamento, tal como visto na literatura, o sensor PVDF não se mostra viável para detecção da falha nos estágios iniciais onde há propagação das mesmas por frequências elevadas no espectro. 
+
+Percebe-se, assim, que o sensor acelerômetro mostrou-se superior ao PVDF no arranjo experimental adotado, permitindo uma análise de maior acurácia na detecção dos danos nos rolamentos enquanto acoplados ao eixo do motorredutor. Isso se deu, por sua vez, pois foi perceptível a interferência de frequências dos componentes da caixa de redução, que tiveram suas assinaturas vibracionais transmitidas por meio do eixo motor, tendo sido capturadas nas caixas dos rolamentos. Um outro fator a se considerar no experimento é a baixa velocidade de rotação do eixo, que impôs maior dificuldade à análise. Isto se deu pois a baixa rotação, dada a velocidade máxima de transmissão ao eixo pelo conjunto motorredutor, fez com que os impactos causados pelos danos nos rolamentos fosse de menor amplitude e, portanto, de menor propagação quando se comparado a um cenário com maior velocidade de rotação. A detecção das frequências características mesmo quando adotado o sensor acelerômetro não se mostrou óbvia em análise inicial visto que análise dos danos nas condições experimentais foi, em si mesmo, de elevada complexidade. 
+
+Em aplicações de manutenção em ambientes onde há grande quantidade de vibrações externas às que se pretende analisar, por sua vez, a análise destas pode se mostrar de difícil condução com o sensor PVDF. 
+
+%A utilização do sensor PDVF, portanto, 
+
+
+%\chapter{Comparação dos custos dos sistemas}
 
 \chapter{Conclusões}
 
-Neste trabalho foram mostradas evidências da viabilidade da utilização do sensor filme PVDF para detecção de danos em rolamentos autocompensadores de rolos, sob as condições de rotação impostas durante os experimentos. Os ruídos mostraram-se presentes dada à natureza de alta impedância do sensor PVDF. Como parte deste trabalho, e para mitigar este problema, um conjunto de circuitos condicionadores de sinais foi elaborado e um encapsulamento de alumínio, para acomodação do sensor, foi construído. 
+Neste trabalho buscaram-se evidências da viabilidade inicial da utilização do sensor filme PVDF para detecção de danos em rolamentos autocompensadores de rolos, sob as condições impostas durante os experimentos realizados. Ruídos mostraram-se presentes dada à natureza de alta impedância do sensor PVDF, mas puderam ser mitigados com o desenvolvimento de um conjunto de circuitos condicionadores de sinais e com a usinagem de um encapsulamento de alumínio, que foi construído para acomodação e isolamento do sensor. Após as caracterizações e análises, verificou-se que foi possível diminuir significativamente os níveis de ruídos captados pelo sensor PVDF. 
 
-Também foi elaborado um sistema de aquisição de dados na plataforma LabView, bem como um sistema de aquisição baseado no microcontrolador STM32 foi desenvolvido, ambos apresentados em apêndice. 
+Também foi elaborado um sistema de aquisição de dados na plataforma LabView, apresentado em apêndice, e desenvolvido um sistema de aquisição baseado no microcontrolador STM32, de modo que este, em conjunto com circuito de condicionamento do sinal, possa vir a ser utilizado para estudos futuros de viabilidade de um sistema composto por sensor PVDF em conjunto com sistema de aquisição de dados de baixo custo.
 
-Além disso, foi construída uma bancada experimental para condução dos experimentos. Também foi desenvolvido um conjunto de programas para análise dos sinais do rolamento, tanto no domínio do tempo, quanto no domínio frequência e, também, com utilização de ferramentas do domínio tempo-frequência, com os mesmos disponibilizados em apêndice. Tais métodos apoiam-se na literatura específica do tema, apresentada durante a revisão bibliográfica realizada. 
+Além disso, foi construída uma bancada experimental para condução dos ensaios, bem como desenvolvido um conjunto de programas para análise dos sinais do rolamento, tanto no domínio do tempo, quanto no domínio frequência, com os mesmos disponibilizados em apêndice. Tais métodos apoiam-se na literatura específica do tema, apresentada durante a revisão bibliográfica realizada e foram validados com utilização de conjuntos de dados experimentais disponibilizados. 
 
-A aplicação dos métodos de detecção de danos em rolamentos requer o conhecimento prévio de suas frequências esperadas, não sendo imediatamente óbvia a localização destes no espectro de frequências. Além disso, conforme verificado na própria literatura, a localização das frequências características de defeito aproxima-se do estimado, mas usualmente não coincide com precisão. Dadas as vibrações de outros elementos de máquinas, percebe-se que isto representa um desafio na detecção destas frequências. Ademais, o próprio estágio de degradação do rolamento pode impôr um elevado nível de ruído no espectro de frequências. 
+Por meio dos ensaios percebe-se que a aplicação dos métodos de detecção de danos em rolamentos requer o conhecimento prévio de suas frequências esperadas, não sendo imediatamente óbvia a localização destes no espectro de frequências. A baixa rotação do eixo motriz impôs uma maior complexidade na análise, dadas as baixas frequências onde as frequências características de defeitos se localizavam no espectro. Além disso, conforme verificado na própria literatura, a localização das frequências características de defeito aproxima-se do estimado, mas usualmente não coincide com absoluta precisão. Dadas as vibrações de outros elementos do motorredutor, transmitidas por meio do eixo, percebeu-se que isto representou um desafio na detecção das falhas. Ademais, como visto na literatura, o próprio estágio de degradação do rolamento pode impor um elevado nível de ruído no espectro de frequências e, nesse sentido, ao se trabalhar com aplicações de diagnósticos com falhas introduzidas manualmente, há, ainda, que se ter cautela durante a introdução dos danos. Portanto, a introdução das falhas baseou-se, também, em referências encontradas na literatura.
 
-Neste sentido, ao se trabalhar com aplicações de diagnósticos com falhas introduzidas manualmente, há, ainda, que se tomar cuidado ao se introduzir as falhas.
+O sensor filme PVDF, com o arranjo de circuitos condicionadores de sinal e encapsulamento utilizado durante os ensaios, não se mostrou alternativa imediata ao sensor acelerômetro para detecção de danos na pista externa e no elemento rolante de rolamentos autocompensadores de rolos sob as condições experimentais adotadas. A presença de ruídos que fizeram necessária a aplicação de filtro passa-baixa, em conjunto com a baixa rotação do eixo motriz, não permitiu a aplicação da técnica de demodulação do sinal, ou análise de envelope. Tentou-se, assim, detectar os danos por meio da análise espectral por meio dos métodos da FFT e PSD. Os resultados sugerem que os danos puderam ser visualizados em suas frequências base com uso do sensor PVDF, mas os padrões gerados pelas falhas e vistos na literatura não puderam ser confirmados e, portanto, não há como se afirmar taxativamente que as mesmas foram detectadas.
 
-Trabalhos futuros incluem, mas não se limitam a:
+Os resultados obtidos com o sensor PVDF, demonstram, ainda assim, uma representação das frequências compatível com às do sensor acelerômetro em ensaios realizados, particularmente na região abaixo dos {\SI{2500}{\hertz}. Pode-se, assim, investigar em trabalhos futuros a possibilidade de detecção dos danos em rolamentos, com uso do sensor PVDF, em condições de maiores rotações, outros arranjos de cargas e/ou com imposição de sinais de falhas de maior amplitude. Esse fato também aponta para a possibilidade de estudos futuros que verifiquem o emprego do sensor em demais aplicações onde essa faixa de frequências se faça suficiente e em que sua definição não seja fator inviabilizante à utilização do mesmo. A bancada experimental, circuitos condicionadores, encapsulamento e softwares de análise construídos, bem como os ensaios, resultados e conclusões elaborados durante este trabalho são, nesse âmbito, contribuições que se tornam ponto de partida para investigações futuras.
+
+Assim, sugestões de trabalhos futuros incluem, mas não se limitam a:
 
 \begin{itemize}
+
+	\item Investigação de outras aplicações do conjunto de circuito, encapsulamento e sensor construídos, de forma que este possa ser adotado para fins de manutenção preditiva em outras áreas.
+
 	\item Investigação de métodos para melhoria da relação sinal-ruído gerado pelo sensor, através de melhorias mecânicas no arranjo do sensor em relação ao encapsulamento; por exemplo, com a construção de um arranjo em balanço que proporcione maior deflexão na ponta do sensor e, portanto, gere maiores tensões de saída conforme ocorre maior deformação mecânica. 
 
-	\item Desenvolvimentos posteriores no estudos dos circuitos condicionadores e amplificadores  do sinal do sensor PVDF, tal como a construção de encapsulamentos blindados para o sensor e para os filtros de tratamento do sinal, mitigando ao máximo possível a questão de ruídos inerentes à natureza do sensor. 
+	\item Desenvolvimento de circuitos condicionadores e amplificadores do sinal do sensor PVDF, tal como a construção de encapsulamentos blindados para o sensor e para os filtros de tratamento do sinal, de forma a buscar que se mitigue ainda mais a questão de ruídos inerentes à natureza do sensor. 
 
 	\item Investigação de métodos de detecção automática de falhas baseado em inteligência artificial, com classificação automática de falhas por meio da utilização das ferramentas de análise espectral do sinal. 
 	
@@ -2227,6 +2353,18 @@ ACOEM USA. \textbf{The 4 Stages of Bearing Failure}. Estados Unidos, 2019. Dispo
 \end{justify}
 \vspace{-25pt}
 
+\bibitem{almeida2016}
+\begin{justify}
+  ALMEIDA, I. B. de. \textbf{Análise de falhas em rolamentos por análise de vibração aplicado a aerogeradores}. Dissertação. Universidade Federal do Rio Grande do Norte. Natal, 2016.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{barreiro2011}
+\begin{justify}
+  BARREIRO, J. L. G. \textbf{MODELO DINÁMICO DE RODAMIENTO. APLICACIÓN INFORMÁTICA SIMROD}. Tese. Universidade Carlos III de Madrid. Espanha, 2010.
+\end{justify}
+\vspace{-25pt}
+
 \bibitem{BARCOHEN2002}
 \begin{justify}
 BAR-COHEN, Y. \textbf{Electroactive Polimers as Artificial Muscles: a review}. Journal of Spacecraft and Rockets, 39 (8), pg. 322-328, 2002.
@@ -2238,6 +2376,26 @@ BAR-COHEN, Y. \textbf{Electroactive Polimers as Artificial Muscles: a review}. J
   BARILLI, Rodrigo J. de C.
   \textbf{Análise de Falhas em Mancais de Rolamento Utilizando a Técnica do Envelope}.
   Dissertação. Universidade Federal do Rio de Janeiro. Rio de janeiro, 2013.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{BAUMGARTEL2016}
+\begin{justify}
+  BAUMGÄRTEL, K. H.; ZÖLNNER, D.; KRIEGER, K.; \textbf{Classification and Simulation Method for Piezoelectric PVDF Sensors}.
+  3rd International Conference on System-integrated Intelligence (SYSINT). Alemanha, 2016.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{BENECH1996}
+\begin{justify}
+  BENECH, P.; CHAMBERED, E.; MONLLOR, C.; \textbf{Acceleration measurement using PVDF}.
+  IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control, vol. 43, ed. 5. Estados Unidios, 1996.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{BROWN1996}
+\begin{justify}
+  BROWN, L. F.; MASON, J. L. \textbf{Disposable PVDF Ultrasonic Transducers for nondestructive Testing Applications}. IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control, vol. 43, ed. 4. Estados Unidios, 1996.
 \end{justify}
 \vspace{-25pt}
 
@@ -2284,6 +2442,14 @@ CNI, Confederação Nacional das Indústrias. \textbf{Perfil da Indústria Brasi
 \end{justify}
 \vspace{-25pt}
 
+\bibitem{HADAS2020}
+\begin{justify}
+  HADAS, Z.; RUBES, O.; TOFEL, P.; MACHU, Z.; RIHA, D.; SEVECEK, O.; KASTYL, J.; SOBOLA, D.; CASTKOVA, K.
+  \textbf{Piezoelectric PVDF Elements and Systems for Mechanical Engineering Applications}.
+  International Conference on Mechatronics - Mechatronika (ME). República Tcheca, 2020.
+\end{justify}
+\vspace{-25pt}
+
 \bibitem{HALVORSEN1986}
 \begin{justify}
   HALVORSEN, D. L.
@@ -2308,11 +2474,27 @@ CNI, Confederação Nacional das Indústrias. \textbf{Perfil da Indústria Brasi
 \end{justify}
 \vspace{-25pt}
 
+\bibitem{HUH2011}
+\begin{justify}
+  HUH, Y. H.; KIM, J. I.; LEE, J. H.; HONG, S. G.; PARK, J. H.  
+  \textbf{Application of PVDF Film Sensor to Detect Early Damage}.
+  Procedia Engineering. Holanda, 2011.
+\end{justify}
+\vspace{-25pt}
+
 \bibitem{JEE2011}
 \begin{justify}
   JEE, D. K.; KIM, H. S.; WEI, R.; IM, J.
   \textbf{A study for the development of PVDF vibration sensor and establishment of noise removal algorithm for snoring detection pillow}.
   International Conference on Biomedical Engineering and Informatics (BMEI). China, 2011.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{JEON2011}
+\begin{justify}
+  JEON, J. C.; SOHN, J.W.; CHOI, S. B.
+  \textbf{Comparison of Dynamic Signal of MFC and PVDF Sensor: Experimental Investigation}.
+  International Conference on Advanced Design and Manufacturing Engineering (ADME). China, 2011.
 \end{justify}
 \vspace{-25pt}
 
@@ -2337,6 +2519,13 @@ CNI, Confederação Nacional das Indústrias. \textbf{Perfil da Indústria Brasi
   KARDEC, Alan; NASCIF, Júlio.
   \textbf{Manutenção: Função Estratégica}.
   3.ed. Rio de Janeiro: Qualitymark: Petrobras, 2009.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{KERN2014}
+\begin{justify}
+  KERN, J.; THUN, C.; HERMAN, J. \textbf{Development of a Solid-Borne Sound Sensor to Detect Bearing Faults Based on a MEMS Sensor and a PVDF Foil Sensor}.
+  Advanced Microsystems for Automotive Applications 2014. Estados Unidos, 2014.
 \end{justify}
 \vspace{-25pt}
 
@@ -2365,9 +2554,24 @@ KURATA, M.; LI, X.; FUJITA, K.; HE, L.; YAMAGUCHI, M. \textbf{PVDF Piezo Film as
 %TODO terminanr essa referência
 \bibitem{LEE2012}
 \begin{justify}
-  W. K. Lee, G. S. Chung, H. J. Baek and K. S. Park
+  LEE, W. K.; CHUNG, G. S.; BAEK, H. J.; PARK, K. S. 
   \textbf{Heart sounds measurement using PVDF film sensor and their comparison with RR intervals of ECG signals}.
    Proceedings of 2012 IEEE-EMBS International Conference on Biomedical and Health Informatics. China, 2012.
+\end{justify}
+\vspace{-25pt}
+
+%TODO terminanr essa referência
+\bibitem{loussert2013}
+\begin{justify}
+  LOUSSERT, A.; DEBUS, J-C.; VANDERBOCK, G. \textbf{Studying the behavior of piezoelectric single crystals for sonar using ATILA}.
+   Applications of ATILA FEM Software to Smart Materials: Case Studies in Designing Devices. Woodhead Publishing, Reino Unido, 2013.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{MANBACHI2011}
+\begin{justify}
+  MANBACHI, A.; COBBOL, R. S. C. \textbf{Development and Application of Piezoelectric Materials for Ultrasound Generation and Detection}.
+  Ultrasound, v. 19, ed.4. Reino Unido, 2011.
 \end{justify}
 \vspace{-25pt}
 
@@ -2433,6 +2637,18 @@ DIAS JR, Milton; PEDERIVA, Robson.
  RAO, Singiresu S.
   \textbf{Mechanical Vibrations}.
   4.ed. São Paulo: Pearson Prentice Hall, 2008.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{RASTEGARI2014}
+\begin{justify}
+ RASTEGARI, M.;  YOUSEFI-KOMA, A.; SADEQ SALEH, M. \textbf{Design and Fabrication of a PVDF-based Accelerometer}. The Bi-Annual International Conference on Experimental Solid Mechanics and Dynamics. Irã, 2014.
+\end{justify}
+\vspace{-25pt}
+
+\bibitem{SANTANDER2014}
+\begin{justify}
+  SANTANDER, E. J. O. \textbf{APLICAÇÃO DE CURTOSE ESPECTRAL NA IDENTIFICAÇÃO DE FALHAS EM MANCAIS DE ROLAMENTOS}. Dissertação. Universidade Federal do Rio de Janeiro. Rio de Janeiro, 2014.
 \end{justify}
 \vspace{-25pt}
 

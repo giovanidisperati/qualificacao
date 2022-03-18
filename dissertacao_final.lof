@@ -1,94 +1,102 @@
 \babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces a) Componentes de um rolamento. (b) Dimensões do rolamento.}}{26}{figure.4.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces a) Processo de fabricação dos anéis internos e externos.}}{28}{figure.4.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Anéis internos de rolamentos apresentando escamamento.}}{31}{figure.4.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Pista de rolamento com descascamento.}}{32}{figure.4.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Rolamentos com amassados e arranhaduras.}}{32}{figure.4.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Aneís interno e externo com danos por escorregamento.}}{33}{figure.4.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Anéis internos e anel externo com fraturas.}}{33}{figure.4.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Rolamento com lasca e trincas.}}{34}{figure.4.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Gaiolas danificadas.}}{34}{figure.4.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Anel interno e rolos com impressões.}}{35}{figure.4.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Anel interno e esfera com \textit {pitting}.}}{35}{figure.4.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Anel interno e externo com desgaste.}}{36}{figure.4.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Rolamentos com corrosão por contato.}}{36}{figure.4.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Pistas com esmagamento.}}{37}{figure.4.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Deformação de deslizamento.}}{37}{figure.4.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Dano causado superaquecimento.}}{38}{figure.4.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Corrosão eletrolítica em rolamentos.}}{38}{figure.4.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Rolamentos com oxidações e corrosões.}}{39}{figure.4.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Rolamentos com falhas de instalação.}}{39}{figure.4.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Manchas e descoloração em rolamentos.}}{40}{figure.4.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Causas de defeitos em rolamentos.}}{41}{figure.4.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Representação dos níveis de um sinal harmônico.}}{46}{figure.4.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Relação entre os valores de Pico e RMS com o desgaste progressivo de rolamentos.}}{47}{figure.4.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Fator de Crista no tempo.}}{47}{figure.4.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Exemplo de ressonância com decaimento exponencial ocorrendo periodicamente na frequência de falha.}}{49}{figure.4.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Exemplo de sinal AM e FFT de seu Envelope.}}{50}{figure.4.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Padrões de sinais de vibração gerados a partir de danos em diferentes componentes dos rolamentos.}}{51}{figure.4.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Comparação de espectros de vibração de um rolamento em bom estado e de um rolamento defeituoso. O sinal de cima representa o rolamento em bom estado e o sinal debaixo, o rolamento defeituoso. A faixa destacada mostra a região de dano, explicitando as diferenças entre ambos.}}{52}{figure.4.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Sinal temporal do rolamento com dano introduzido.}}{52}{figure.4.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Envelope do sinal temporal do rolamento com dano introduzido.}}{53}{figure.4.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Espectro do envelope do sinal temporal do rolamento com dano introduzido.}}{53}{figure.4.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Análise de Envelope com etapas de pré-processamento do sinal.}}{55}{figure.4.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Exemplo de dano no primeiro estágio de falha de um rolamento.}}{56}{figure.4.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Primeiro estágio de defeito no rolamento.}}{56}{figure.4.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Segundo estágio de defeito no rolamento.}}{57}{figure.4.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Pista externa em segundo estágio de defeito no rolamento.}}{57}{figure.4.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Terceiro estágio de defeito no rolamento.}}{58}{figure.4.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Quarto estágio de defeito no rolamento.}}{58}{figure.4.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Estrutura molecular do PVDF.}}{60}{figure.4.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{67}{figure.5.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{68}{figure.5.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK.}}{69}{figure.5.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK.}}{69}{figure.5.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Projeto da bancada experimental.}}{70}{figure.5.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Projeto da bancada experimental visto lateralmente.}}{71}{figure.5.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Bancada experimental em fase inicial de construção.}}{71}{figure.5.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Bancada experimental finalizada.}}{72}{figure.5.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Isoamortecedor afixado à bancada.}}{73}{figure.5.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Eixo com acoplamento.}}{73}{figure.5.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Medição de rotação com partida direta.}}{74}{figure.5.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Painel de controle da bancada experimental.}}{75}{figure.5.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Inversor de frequências e instalação elétrica do painel da bancada experimental.}}{76}{figure.5.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Versão final da bancada experimental.}}{77}{figure.5.53}%
+\contentsline {figure}{\numberline {1}{\ignorespaces a) Componentes de um rolamento. (b) Dimensões do rolamento.}}{27}{figure.4.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces a) Processo de fabricação dos anéis internos e externos.}}{29}{figure.4.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Anéis internos de rolamentos apresentando escamamento.}}{32}{figure.4.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Pista de rolamento com descascamento.}}{33}{figure.4.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Rolamentos com amassados e arranhaduras.}}{33}{figure.4.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Aneís interno e externo com danos por escorregamento.}}{34}{figure.4.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Anéis internos e anel externo com fraturas.}}{34}{figure.4.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Rolamento com lasca e trincas.}}{35}{figure.4.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Gaiolas danificadas.}}{35}{figure.4.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Anel interno e rolos com impressões.}}{36}{figure.4.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Anel interno e esfera com \textit {pitting}.}}{36}{figure.4.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Anel interno e externo com desgaste.}}{37}{figure.4.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Rolamentos com corrosão por contato.}}{37}{figure.4.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Pistas com esmagamento.}}{38}{figure.4.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Deformação de deslizamento.}}{38}{figure.4.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Dano causado superaquecimento.}}{39}{figure.4.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Corrosão eletrolítica em rolamentos.}}{39}{figure.4.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Rolamentos com oxidações e corrosões.}}{40}{figure.4.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Rolamentos com falhas de instalação.}}{40}{figure.4.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Manchas e descoloração em rolamentos.}}{41}{figure.4.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Causas de defeitos em rolamentos.}}{42}{figure.4.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Representação dos níveis de um sinal harmônico.}}{47}{figure.4.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Relação entre os valores de Pico e RMS com o desgaste progressivo de rolamentos.}}{48}{figure.4.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Fator de Crista no tempo.}}{48}{figure.4.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Exemplo de ressonância com decaimento exponencial ocorrendo periodicamente na frequência de falha.}}{50}{figure.4.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Exemplo de sinal AM e FFT de seu Envelope.}}{51}{figure.4.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Padrões de sinais de vibração gerados a partir de danos em diferentes componentes dos rolamentos.}}{52}{figure.4.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Comparação de espectros de vibração de um rolamento em bom estado e de um rolamento defeituoso. O sinal de cima representa o rolamento em bom estado e o sinal debaixo, o rolamento defeituoso. A faixa destacada mostra a região de dano, explicitando as diferenças entre ambos.}}{53}{figure.4.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Sinal temporal do rolamento com dano introduzido.}}{53}{figure.4.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Envelope do sinal temporal do rolamento com dano introduzido.}}{54}{figure.4.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Espectro do envelope do sinal temporal do rolamento com dano introduzido.}}{54}{figure.4.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Análise de Envelope com etapas de pré-processamento do sinal.}}{56}{figure.4.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Exemplo de dano no primeiro estágio de falha de um rolamento.}}{57}{figure.4.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Primeiro estágio de defeito no rolamento.}}{57}{figure.4.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Segundo estágio de defeito no rolamento.}}{58}{figure.4.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Pista externa em segundo estágio de defeito no rolamento.}}{58}{figure.4.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Terceiro estágio de defeito no rolamento.}}{59}{figure.4.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Quarto estágio de defeito no rolamento.}}{59}{figure.4.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Estrutura molecular do PVDF.}}{61}{figure.4.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{68}{figure.5.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Rolamento autocompensador de rolos. Retirado de NSK, 2018.}}{69}{figure.5.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Ângulo de contato calculado a partir do modelo CAD disponibilizado pela NSK.}}{70}{figure.5.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Diâmetro do elemento rolante calculado a partir do modelo CAD disponibilizado pela NSK.}}{70}{figure.5.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Projeto da bancada experimental.}}{71}{figure.5.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Projeto da bancada experimental visto lateralmente.}}{72}{figure.5.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Bancada experimental em fase inicial de construção.}}{72}{figure.5.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Bancada experimental finalizada.}}{73}{figure.5.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Isoamortecedor afixado à bancada.}}{74}{figure.5.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Eixo com acoplamento.}}{74}{figure.5.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Medição de rotação com partida direta.}}{75}{figure.5.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Painel de controle da bancada experimental.}}{76}{figure.5.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Inversor de frequências e instalação elétrica do painel da bancada experimental.}}{77}{figure.5.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Versão final da bancada experimental.}}{78}{figure.5.53}%
 \contentsline {figure}{\numberline {54}{\ignorespaces Sensor de vibração piezoelétrico.}}{79}{figure.5.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Encapsulamento de alumínio com amplificador operacional e sensor filme PVDF.}}{81}{figure.5.55}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Encapsulamento de alumínio com amplificador operacional e sensor filme PVDF.}}{80}{figure.5.55}%
 \contentsline {figure}{\numberline {56}{\ignorespaces Sensor de vibração piezoelétrico no encapsulamento de alumínio.}}{81}{figure.5.56}%
 \contentsline {figure}{\numberline {57}{\ignorespaces Circuito amplificador operacional do sensor piezoelétrico.}}{82}{figure.5.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Processo de teste do circuito rejeita-faixa para filtragem dos 60 Hz da rede. O circuito rejeita-faixa é indicado pela seta vermelha.}}{83}{figure.5.58}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Processo de teste do circuito rejeita-faixa para filtragem dos 60 Hz da rede. O circuito rejeita-faixa é indicado pela seta vermelha.}}{82}{figure.5.58}%
 \contentsline {figure}{\numberline {59}{\ignorespaces Circuito rejeita-faixa para filtragem dos 60 Hz da rede.}}{83}{figure.5.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Comparação do sinal filtrado com o sinal não-filtrado, com a bancada desligada.}}{84}{figure.5.60}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}}{85}{figure.5.61}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Sensor acelerômetro conectado ao equipamento de captura dos dados.}}{86}{figure.5.62}%
-\contentsline {figure}{\numberline {63}{\ignorespaces DAQ USB 6212. Retirado de National Instruments, 2021.}}{87}{figure.5.63}%
-\contentsline {figure}{\numberline {64}{\ignorespaces Sistema de aquisição desenvolvido com LabView.}}{87}{figure.5.64}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Dano introduzido no elemento rolante. A seta vermelha apon a o elemento rolante onde o dano foi inserido.}}{90}{figure.5.65}%
-\contentsline {figure}{\numberline {66}{\ignorespaces Processo de inserção do dano na pista externa.}}{91}{figure.5.66}%
-\contentsline {figure}{\numberline {67}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{92}{figure.5.67}%
-\contentsline {figure}{\numberline {68}{\ignorespaces Sinal temporal do motorredutor sob rotação de 61,3 RPM.}}{94}{figure.6.68}%
-\contentsline {figure}{\numberline {69}{\ignorespaces Espectro de frequências do motorredutor sob rotação de 61,3 RPM.}}{95}{figure.6.69}%
-\contentsline {figure}{\numberline {70}{\ignorespaces Sinal temporal do rolamento em bom estado sob rotação de 61,3 RPM.}}{96}{figure.6.70}%
-\contentsline {figure}{\numberline {71}{\ignorespaces Espectro de frequências do rolamento em bom estado sob rotação de 61,3 RPM.}}{97}{figure.6.71}%
-\contentsline {figure}{\numberline {72}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{98}{figure.6.72}%
-\contentsline {figure}{\numberline {73}{\ignorespaces Sinal espectral do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{99}{figure.6.73}%
-\contentsline {figure}{\numberline {74}{\ignorespaces Sinal espectral demodulado do rolamento com dano no elemento rolante.}}{100}{figure.6.74}%
-\contentsline {figure}{\numberline {75}{\ignorespaces Sinal temporal do rolamento com dano na pista externa.}}{101}{figure.6.75}%
-\contentsline {figure}{\numberline {76}{\ignorespaces Sinal espectral demodulado do rolamento com dano na pista externa.}}{102}{figure.6.76}%
-\contentsline {figure}{\numberline {77}{\ignorespaces Indicações das harmônicas no sinal espectral demodulado do rolamento com dano na pista externa.}}{103}{figure.6.77}%
-\contentsline {figure}{\numberline {78}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica.}}{104}{figure.6.78}%
-\contentsline {figure}{\numberline {79}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica.}}{105}{figure.6.79}%
-\contentsline {figure}{\numberline {80}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica.}}{106}{figure.6.80}%
-\contentsline {figure}{\numberline {81}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica.}}{107}{figure.6.81}%
-\contentsline {figure}{\numberline {82}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica e energizada.}}{108}{figure.6.82}%
-\contentsline {figure}{\numberline {83}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica e energizada.}}{109}{figure.6.83}%
-\contentsline {figure}{\numberline {84}{\ignorespaces Sinal temporal do motorredutor.}}{110}{figure.6.84}%
-\contentsline {figure}{\numberline {85}{\ignorespaces Espectro de densidade de potência do motorredutor.}}{111}{figure.6.85}%
-\contentsline {figure}{\numberline {86}{\ignorespaces Sinal temporal do rolamento em bom estado.}}{112}{figure.6.86}%
-\contentsline {figure}{\numberline {87}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado.}}{113}{figure.6.87}%
-\contentsline {figure}{\numberline {88}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante.}}{114}{figure.6.88}%
-\contentsline {figure}{\numberline {89}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante}}{115}{figure.6.89}%
-\contentsline {figure}{\numberline {90}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante. Vista ampliada da região de baixas frequências, onde o pico em 10Hz mostra-se presente.}}{116}{figure.6.90}%
-\contentsline {figure}{\numberline {91}{\ignorespaces Curtose espectral para diferentes janelas no rolamento com dano no elemento rolante.}}{117}{figure.6.91}%
-\contentsline {figure}{\numberline {92}{\ignorespaces Envelope do sinal do rolamento com dano no elemento rolante}}{118}{figure.6.92}%
-\contentsline {figure}{\numberline {93}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{127}{figure.B.93}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Comparação do sinal filtrado com o sinal não-filtrado, com a bancada desligada.}}{83}{figure.5.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}}{84}{figure.5.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Comparação do sinal do sensor filtrado com o sinal não-filtrado, com bancada conectada à energia elétrica.}}{84}{figure.5.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Versão final do encapsulamento. }}{85}{figure.5.63}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Sensor acelerômetro conectado ao equipamento de captura dos dados.}}{86}{figure.5.64}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Comparação dos ruídos captados pelo protótipo do conjunto e pela versão final.}}{87}{figure.5.65}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Sensor acelerômetro conectado ao equipamento de captura dos dados.}}{88}{figure.5.66}%
+\contentsline {figure}{\numberline {67}{\ignorespaces DAQ USB 6212. Retirado de National Instruments, 2021.}}{89}{figure.5.67}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Sistema de aquisição desenvolvido com LabView.}}{89}{figure.5.68}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Dano introduzido no elemento rolante. A seta vermelha apon a o elemento rolante onde o dano foi inserido.}}{93}{figure.5.69}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Processo de inserção do dano na pista externa.}}{94}{figure.5.70}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{95}{figure.5.71}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{97}{figure.5.72}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{98}{figure.5.73}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Sinal temporal do motorredutor sob rotação de 61,3 RPM.}}{100}{figure.6.74}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Espectro de frequências do motorredutor sob rotação de 61,3 RPM.}}{101}{figure.6.75}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Sinal temporal do rolamento em bom estado sob rotação de 61,3 RPM.}}{102}{figure.6.76}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Espectro de frequências do rolamento em bom estado sob rotação de 61,3 RPM.}}{103}{figure.6.77}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{104}{figure.6.78}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Sinal espectral do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{105}{figure.6.79}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Sinal espectral demodulado do rolamento com dano no elemento rolante.}}{106}{figure.6.80}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Sinal temporal do rolamento com dano na pista externa.}}{107}{figure.6.81}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Sinal espectral do rolamento com dano na pista externa.}}{108}{figure.6.82}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Indicações das harmônicas no sinal espectral demodulado do rolamento com dano na pista externa.}}{109}{figure.6.83}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica.}}{110}{figure.6.84}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica.}}{111}{figure.6.85}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica.}}{112}{figure.6.86}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica.}}{113}{figure.6.87}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica e energizada.}}{114}{figure.6.88}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica e energizada.}}{115}{figure.6.89}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Sinal temporal do motorredutor.}}{116}{figure.6.90}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Espectro de densidade de potência do motorredutor.}}{117}{figure.6.91}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Sinal temporal do rolamento em bom estado.}}{118}{figure.6.92}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado.}}{119}{figure.6.93}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante.}}{120}{figure.6.94}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante}}{121}{figure.6.95}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante. Vista ampliada da região de baixas frequências, onde o pico em 10Hz mostra-se presente.}}{122}{figure.6.96}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Sinal temporal do rolamento com dano na pista externa.}}{123}{figure.6.97}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa.}}{124}{figure.6.98}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa. Vista ampliada da região de baixas frequências, onde o pico próximo aos 5Hz mostra-se presente.}}{125}{figure.6.99}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa. Vista ampliada da região de baixas frequências, onde o pico próximo aos 5Hz mostra-se presente.}}{127}{figure.6.100}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{137}{figure.B.101}%
