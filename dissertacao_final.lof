@@ -66,37 +66,37 @@
 \contentsline {figure}{\numberline {65}{\ignorespaces Comparação dos ruídos captados pelo protótipo do conjunto e pela versão final.}}{87}{figure.5.65}%
 \contentsline {figure}{\numberline {66}{\ignorespaces Sensor acelerômetro conectado ao equipamento de captura dos dados.}}{88}{figure.5.66}%
 \contentsline {figure}{\numberline {67}{\ignorespaces DAQ USB 6212. Retirado de National Instruments, 2021.}}{89}{figure.5.67}%
-\contentsline {figure}{\numberline {68}{\ignorespaces Sistema de aquisição desenvolvido com LabView.}}{89}{figure.5.68}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Sistema de aquisição desenvolvido com LabView.}}{90}{figure.5.68}%
 \contentsline {figure}{\numberline {69}{\ignorespaces Dano introduzido no elemento rolante. A seta vermelha apon a o elemento rolante onde o dano foi inserido.}}{93}{figure.5.69}%
 \contentsline {figure}{\numberline {70}{\ignorespaces Processo de inserção do dano na pista externa.}}{94}{figure.5.70}%
 \contentsline {figure}{\numberline {71}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{95}{figure.5.71}%
-\contentsline {figure}{\numberline {72}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{97}{figure.5.72}%
-\contentsline {figure}{\numberline {73}{\ignorespaces Pista externa com dano inserido. A seta vermelha aponta o furo realizado na pista externa.}}{98}{figure.5.73}%
-\contentsline {figure}{\numberline {74}{\ignorespaces Sinal temporal do motorredutor sob rotação de 61,3 RPM.}}{100}{figure.6.74}%
-\contentsline {figure}{\numberline {75}{\ignorespaces Espectro de frequências do motorredutor sob rotação de 61,3 RPM.}}{101}{figure.6.75}%
-\contentsline {figure}{\numberline {76}{\ignorespaces Sinal temporal do rolamento em bom estado sob rotação de 61,3 RPM.}}{102}{figure.6.76}%
-\contentsline {figure}{\numberline {77}{\ignorespaces Espectro de frequências do rolamento em bom estado sob rotação de 61,3 RPM.}}{103}{figure.6.77}%
-\contentsline {figure}{\numberline {78}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{104}{figure.6.78}%
-\contentsline {figure}{\numberline {79}{\ignorespaces Sinal espectral do rolamento com dano no elemento rolante sob rotação de 61,3 RPM.}}{105}{figure.6.79}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Experimento realizado com sensor acelerômetro.}}{97}{figure.5.72}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Experimento realizado com sensor PVDF.}}{98}{figure.5.73}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Sinal temporal do motorredutor obtido com sensor acelerômetro.}}{100}{figure.6.74}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Espectro de frequências do motorredutor obtido com sensor acelerômetro.}}{101}{figure.6.75}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Sinal temporal do rolamento em bom estado obtido com sensor acelerômetro.}}{102}{figure.6.76}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Espectro de frequências do rolamento em bom estado obtido com sensor acelerômetro.}}{103}{figure.6.77}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante obtido com sensor acelerômetro.}}{104}{figure.6.78}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Sinal espectral do rolamento com dano no elemento rolante obtido com sensor acelerômetro.}}{105}{figure.6.79}%
 \contentsline {figure}{\numberline {80}{\ignorespaces Sinal espectral demodulado do rolamento com dano no elemento rolante.}}{106}{figure.6.80}%
 \contentsline {figure}{\numberline {81}{\ignorespaces Sinal temporal do rolamento com dano na pista externa.}}{107}{figure.6.81}%
 \contentsline {figure}{\numberline {82}{\ignorespaces Sinal espectral do rolamento com dano na pista externa.}}{108}{figure.6.82}%
 \contentsline {figure}{\numberline {83}{\ignorespaces Indicações das harmônicas no sinal espectral demodulado do rolamento com dano na pista externa.}}{109}{figure.6.83}%
 \contentsline {figure}{\numberline {84}{\ignorespaces Sinal temporal da bancada desconectada da energia elétrica.}}{110}{figure.6.84}%
-\contentsline {figure}{\numberline {85}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica.}}{111}{figure.6.85}%
-\contentsline {figure}{\numberline {86}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica.}}{112}{figure.6.86}%
-\contentsline {figure}{\numberline {87}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica.}}{113}{figure.6.87}%
-\contentsline {figure}{\numberline {88}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica e energizada.}}{114}{figure.6.88}%
-\contentsline {figure}{\numberline {89}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica e energizada.}}{115}{figure.6.89}%
-\contentsline {figure}{\numberline {90}{\ignorespaces Sinal temporal do motorredutor.}}{116}{figure.6.90}%
-\contentsline {figure}{\numberline {91}{\ignorespaces Espectro de densidade de potência do motorredutor.}}{117}{figure.6.91}%
-\contentsline {figure}{\numberline {92}{\ignorespaces Sinal temporal do rolamento em bom estado.}}{118}{figure.6.92}%
-\contentsline {figure}{\numberline {93}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado.}}{119}{figure.6.93}%
-\contentsline {figure}{\numberline {94}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante.}}{120}{figure.6.94}%
-\contentsline {figure}{\numberline {95}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante}}{121}{figure.6.95}%
-\contentsline {figure}{\numberline {96}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante. Vista ampliada da região de baixas frequências, onde o pico em 10Hz mostra-se presente.}}{122}{figure.6.96}%
-\contentsline {figure}{\numberline {97}{\ignorespaces Sinal temporal do rolamento com dano na pista externa.}}{123}{figure.6.97}%
-\contentsline {figure}{\numberline {98}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa.}}{124}{figure.6.98}%
-\contentsline {figure}{\numberline {99}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa. Vista ampliada da região de baixas frequências, onde o pico próximo aos 5Hz mostra-se presente.}}{125}{figure.6.99}%
-\contentsline {figure}{\numberline {100}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa. Vista ampliada da região de baixas frequências, onde o pico próximo aos 5Hz mostra-se presente.}}{127}{figure.6.100}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Espectro do sinal da bancada desconectada da energia elétrica.}}{110}{figure.6.85}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica obtido com sensor PVDF.}}{111}{figure.6.86}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica obtido com sensor PVDF.}}{112}{figure.6.87}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Sinal temporal da bancada conectada à energia elétrica e energizada obtido com sensor PVDF.}}{113}{figure.6.88}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Espectro de densidade de potência da bancada conectada à energia elétrica e energizada obtido com sensor PVDF.}}{114}{figure.6.89}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Sinal temporal do motorredutor obtido com sensor PVDF.}}{115}{figure.6.90}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Espectro de densidade de potência do motorredutor obtido com sensor PVDF.}}{116}{figure.6.91}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Sinal temporal do rolamento em bom estado obtido com sensor PVDF.}}{117}{figure.6.92}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Espectro de densidade de potência do rolamento em bom estado obtido com sensor PVDF.}}{118}{figure.6.93}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Sinal temporal do rolamento com dano no elemento rolante obtido com sensor PVDF.}}{119}{figure.6.94}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante obtido com sensor PVDF.}}{120}{figure.6.95}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Espectro de densidade de potência do rolamento com dano no elemento rolante obtido com sensor PVDF. Vista ampliada da região de baixas frequências, onde o pico em 10Hz mostra-se presente.}}{121}{figure.6.96}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Sinal temporal do rolamento com dano na pista externa obtido com sensor PVDF.}}{122}{figure.6.97}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa obtido com sensor PVDF.}}{123}{figure.6.98}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Espectro de densidade de potência do rolamento com dano na pista externa obtido com sensor PVDF. Vista ampliada da região de baixas frequências, onde o pico em 4,7Hz mostra-se presente.}}{124}{figure.6.99}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Comparação entre o sinal obtido com sensor acelerômetro, mostrado em a), e o sinal obtido com sensor PVDF, mostrado em b).}}{126}{figure.6.100}%
 \contentsline {figure}{\numberline {101}{\ignorespaces Microcontrolador STM32F103. Retirado de ST, 2021.}}{137}{figure.B.101}%
