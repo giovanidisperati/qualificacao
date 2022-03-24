@@ -1,0 +1,92 @@
+apresentação - banca final
+
+
+Materiais e métodos 
+
+Rolamentos autocompensadores
+Bancada Experimental
+Filme PVDF e os circuitos condicionadores de Sinal
+Aquisição de dados
+Métodos de análise dos dados
+Frequências esperadas
+Inserção dos danos nos rolamentos
+Definição e condução dos experimentos
+
+
+
+Resultados
+
+
+Caracterização das vibrações com Acelerômetro
+
+Primeiramente foi feita a caracterização dos sinais com sensor acelerômetro
+
+Caracterização do ruído com PVDF
+
+Caracterização das vibrações com PVDF
+
+Comparação dos sensores e discussão dos resultados
+
+Conclusões
+
+Sugestões de trabalhos futuros
+
+
+
+
+Quanto tempo? (Estava demorando 30 min; talvez 40 min esteja ótimo)
+
+
+
+------
+
+Capa
+
+Boa tarde a todos e todas. Meu nome é Giovani Fonseca Ravagnani Disperati, meu orientador é o professor Doutor Wilson Carlos da Silva Junior, minha coorientadora a professora Doutora Vanessa Seriacopi. 
+
+Agradeço a participação dos membros da banca, professor Doutor Marco Antonio Fumagalli e professor Doutor Emerson dos Reis, além do professor Paulo Cesar da Silva Emnauel e professor Doutor Francisco Yastami Nakamoto
+
+O título do trabalho que será apresentado é MONITORAMENTO DE DANOS EM ROLAMENTOS POR ANÁLISE DE VIBRAÇÃO COM UTILIZAÇÃO DE SENSOR FILME PVDF
+
+
+Roteiro
+
+Passando aqui por um breve roteiro da apresentação, iniciaremos com uma introdução sobre o tema, objetivos do trabalho, dissertaremos sobre a revisão bibliográfica, materiais e métodos adotados, para passarmos, então, aos resultados, discussões e sugestões de trabalhos futuros, apresentando ao final as referências bibliográficas
+
+
+Introdução
+
+Slide 02
+De acordo com a Conferederação Nacional das Indústrias, o setor industrial representava em outubro de 2019, 21,6% do PIB do Brasil
+
+Também respondia por quase 71% das exportações, 67% dos investimentos empresariais em pesquisa e 34% dos tributos federais
+
+Percebemos, portanto, que uma parcela significativa da riqueza nacional advém de atividades industriais produtivas
+
+Slide 03
+E em toda atividade produtiva há a necessidade de manutenção, sem a qual a produção colapsa, uma vez que sempre surgem questões como avarias, quebras, fraturas... dentre outras
+
+Slide 04
+
+Em relação aos processos de manutenção, eles se dividem em corretivos, preventivos e preditivos
+
+----> Na manutenção corretiva, há, como o nome diz, correção da falha após esta ser percebida - antes de causar uma parada da produção, ou no pior caso, depois de ocasionar paradas ou outros problemas
+
+Já na manutenção preventiva e na preditiva, tem-se por finalidade mitigar a ocorrência de falhas catastróficas, que ocasionam tanto perdas econômicas quanto, em pior caso, até mesmo acidentes de trabalho
+
+----> Na manutenção preventiva, normalmente as manutenções/trocas são programadas ou agendadas em períodos determinados de tempo 
+
+----> E, na manutenção preditiva, por sua vez, pretende-se predizer se um problema é iminente a partir do monitoramento do estado do elemento de máquina
+
+Slide 05
+
+Para que esse processo de manutenção preditiva possa ocorrer é necessário que sejam aplicadas técnicas sistemáticas de análise, conforme estabelecido pela NBR-5462. 
+
+
+Dentre as técnicas de manutenção preditiva, uma das mais empregadas é a análise de vibrações
+
+É possível, com análise de vibrações, que seja realizada a análise do estado do elemento de máquina, sendo este inclusive considerado um método eficiente para elementos rolantes
+
+
+Entretanto, é necessário como um pré-requisito a coleta das informações relativas ao estado dos elementos de máquina, para que se possa aplicar estas técnicas de análise. E para isso são utilizados diferentes sensores
+

@@ -45,11 +45,11 @@
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
-\usepackage[]{tocloft}
-  \cftsetindents{chapter}{-1cm}{1.0cm}        
-  \cftsetindents{section}{0cm}{1.0cm}      
-  \cftsetindents{subsection}{0cm}{1.0cm}   
-  \cftsetindents{subsubsection}{0cm}{1.0cm}
+%\usepackage[]{tocloft}
+%  \cftsetindents{chapter}{0cm}{0.0cm}        
+%  \cftsetindents{section}{1.0cm}{0.0cm}      
+%%  \cftsetindents{subsection}{1.0cm}{0.0cm}   
+% \cftsetindents{subsubsection}{1.0cm}{0.0cm}
 
 
 % --- 
@@ -1542,7 +1542,7 @@ Fonte: O autor (2022).
 \label{encapsulamento_sensor}
 \end{figure} 
 
-A Figura ~\ref{sensor_e_operacional} mostra o sensor e o circuito amplificador operacional, montados no encapsulamento de alumínio, onde se acomoda o filme PVDF, além de amplificador operacional LM2904.
+A Figura ~\ref{sensor_e_operacional} mostra o sensor e o circuito amplificador, montados no encapsulamento de alumínio, onde se acomoda o filme PVDF, além de amplificador operacional LM2904.
  
 \begin{figure}[H]
 \centering
@@ -1559,7 +1559,7 @@ A Figura~\ref{circuito_novo_certo} mostra o desenho esquemático do circuito de 
 \begin{figure}[H]
 \centering
 \caption {Circuito amplificador operacional do sensor piezoelétrico.}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{circuito_novo_certo} \\
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{circuito_novo_certo_sem_valores} \\
 Fonte: O autor (2022).
 \label{circuito_novo_certo}
 \end{figure} 
@@ -1614,7 +1614,7 @@ Fonte: O autor (2022).
 \label{encapsulamento_novo_usinagem}
 \end{figure} 
 
-Para uso com o novo encapsulamento, o circuito condicionador foi reconstruído com uso de componentes SMD de modo que pudesse ser montado próximo ao sensor, de forma que se mitigasse a possibilidade de interferências que ocorressem entre ambos. A Figura ~\ref{encapsulamento_novo_interno} mostra a versão final do encapsulamento desenvolvido. O circuito condicionador SMD encontra-se atrás do circuito e acima dos contatos deste, os quais foram isolados da base com elemento isolante. O circuito SMD, por sua vez, foi afixado com uso de cola macia, de forma que não houvesse interferências de vibrações geradas pelo mesmo ao entrar em contato com a base de alumínio.
+Para uso com o novo encapsulamento, o circuito condicionador foi reconstruído com uso de componentes SMD de modo que pudesse ser montado próximo ao sensor, de forma que se mitigasse a possibilidade de interferências que ocorressem entre ambos. A Figura ~\ref{encapsulamento_novo_interno} mostra a versão final do encapsulamento desenvolvido. As dimensões finais foram de 10,5cm de comprimento, 4,5cm de largura e 1,5cm de altura, excluindo-se a tampa. A espessura da base de alumínio, na qual o sensor PVDF é acoplado, é de 0,5cm. O circuito condicionador SMD encontra-se atrás do circuito e acima dos contatos deste, os quais foram isolados da base com elemento isolante. O circuito SMD, por sua vez, foi afixado com uso de cola macia, de forma que não houvesse interferências de vibrações geradas pelo mesmo ao entrar em contato com a base de alumínio.
 
 \begin{figure}[H]
 \centering
@@ -1628,13 +1628,13 @@ A Figura ~\ref{encapsulamento_novo_externo} mostra o encapsulamento de alumínio
 
 \begin{figure}[H]
 \centering
-\caption {Sensor acelerômetro conectado ao equipamento de captura dos dados.}
+\caption {Encapsulamento final com tampa e visualização do cabo blindado para transmissão do sinal.}
 \includegraphics[width=\textwidth,height=110mm,keepaspectratio]{encapsulamento_novo_externo} \\
 Fonte: O autor (2022).
 \label{encapsulamento_novo_externo}
 \end{figure} 
 
-Com estes tratamentos, diminuiu-se o nível pico a pico de ruído captado pelo sensor de {\SI{250}{\milli\volt}} para {\SI{20}{\milli\volt}}. A Figura~\ref{comparacao_antes_depois_ruido_circuito} a) mostra o ruído captado pela versão protótipo do conjunto de circuito condicionador e encapuslamento, enquanto a Figura~\ref{comparacao_antes_depois_ruido_circuito} b) mostra a diminuição do nível de ruído pico a pico na versão final do mesmo.
+Com estes tratamentos, diminuiu-se o nível pico a pico de ruído captado pelo sensor diminuiu consideravelmente, de {\SI{250}{\milli\volt}} em ensaios iniciais para um máximo de {\SI{20}{\milli\volt}}. A Figura~\ref{comparacao_antes_depois_ruido_circuito} a) mostra o ruído captado pela versão protótipo do conjunto de circuito condicionador e encapuslamento, enquanto a Figura~\ref{comparacao_antes_depois_ruido_circuito} b) mostra a diminuição do nível de ruído pico a pico na versão final do mesmo.
 
 \begin{figure}[H]
 \centering
@@ -1685,8 +1685,7 @@ Fonte: O autor (2022).
 \label{sistema_labview}
 \end{figure} 
 
-O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. Também foi desenvolvido um sistema baseado em STM32, de forma a que se possam conduzir experimentos em trabalhos futuros para que se verifique a possibilidade de um sistema completo de baixo custo com finalidades de manutenção preditiva, incluindo-se, aí, a aquisição e processamento dos dados. Este encontra-se disponível no Apêndice~\ref{secao:programastm}.
-
+O software desenvolvido na plataforma LabVIEW encontra-se disponível no Apêndice~\ref{secao:programalabview}. Também foi desenvolvido um sistema baseado em STM32, de forma a que se possam conduzir experimentos em trabalhos futuros para que se verifique a possibilidade de um sistema completo de baixo custo com finalidades de manutenção preditiva, incluindo-se, aí, a aquisição e processamento dos dados. 
 
 \section{\normalfont{\textbf{Métodos de análise dos dados}}}
 
@@ -1790,7 +1789,7 @@ O conhecimento prévio destas frequências é de grande importância na etapa de
 
 \section{\normalfont{\textbf{Inserção dos danos nos rolamentos}}}
 
-Para que se pudesse conduzir os ensaios, dois tipos distintos de danos foram introduzidos nos rolamentos, cada um em uma amostra distinta para que as frequências características de falhas não se sobrepusessem umas às outras. Os danos foram, respectivamente, inseridos na pista externa e no elemento rolante. Propunha-se também, originalmente, a inserção e avaliação de dano na pista interna, o que, por limitações de acesso ferramental, não foi possível realizar. 
+Para que se pudesse conduzir os ensaios, dois tipos distintos de danos foram introduzidos nos rolamentos, cada um em uma amostra distinta para que as frequências características de falhas não se sobrepusessem umas às outras. Os danos foram, respectivamente, inseridos na pista externa e no elemento rolante. Propunha-se também, originalmente, a inserção e avaliação de dano na pista interna, o que, por limitações de acesso ferramental, não foi possível realizar. Ressalta-se, entretanto, que isto em nada afetou o processo de investigação do sensor PVDF para a finalidade proposta de manutenção preditiva, tendo-se em vista que duas frequências características de defeitos distintas puderam ser investigadas.
 
 A Figura~\ref{dano_introduzido_rolante} mostra o dano introduzido no elemento rolante, onde é possível verificar o desbaste de um dos rolos. Para a inserção do dano foi utilizada uma retificadeira elétrica.
 
@@ -1836,11 +1835,11 @@ A definição dos experimentos se deu a partir de diferentes cenários de caract
 
 %Dentre os possíveis motivos para tal interferência, estima-se que estes sejam decorrentes de ruídos provenientes da própria fonte do computador utilizado para aquisição dos dados, a qual pode interferir na porta USB utilizada para conexão do dispositivo de aquisição. Entretanto verificou-se, após a inclusão do filtro digital, que o mesmo atenuou demasiadamente o sinal, tendo funcionado como um passa-baixa ao invés de um passa-faixa. 
 
-Para condução da aquisição dos distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como Kim et al., 2020, as quais respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela~\ref{tab:conjuntoDeTestes}, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, das frequências características dos danos nos rolamentos. 
+Para condução da aquisição dos distintos cenários as taxas de aquisição foram baseadas nos modelos encontrados em outros artigos, tais como Kim et al., 2020, as quais respeitam o critério de Nyquist para representação do espectro de frequências de interesse. Optou-se pela captura, nas taxas de aquisição descritas na Tabela~\ref{tab:conjuntoDeTestes}, por dois minutos ininterruptos em cada caso – tempo suficiente para captura de um conjunto de rotações do eixo e, portanto, das frequências características dos danos nos rolamentos. Para o caso da aquisição dos dados com sensor acelerômetro, utilizou-se a taxa selecionável por meio do equipamento utilizado para tanto.
 
-Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Contudo, após análise preliminar, as amostras obtidas apenas com amplificação e sem filtragem mostraram-se demasiadamente ruidosas, como descrito na seção~\ref{secao:CircuitosCondicionnadores}. Assim, os experimentos prosseguiram a partir da aquisição dos sinais filtrados.
+Inicialmente as análises foram feitas com os sinais obtidos com utilização do filtro analógico e sem qualquer filtragem, apenas com amplificação proveniente do amplificador operacional. Contudo, após análise preliminar, as amostras obtidas apenas com amplificação e sem filtragem mostraram-se demasiadamente ruidosas, como descrito na seção~\ref{secao:CircuitosCondicionnadores}. Assim, os experimentos prosseguiram a partir da aquisição dos sinais filtrados. Tendo-se em vista, também, que mesmo assim há presença de uma quantidade de ruídos de baixa amplitude espalhados pelo espectro FFT do sinal do sensor PVDF, optou-se pela apresentação, durante as análises desse, do PSD do sinal do mesmo, de modo a permitir a adequada visualização das informações apresentadas.
 
-Além disso, como mostrado na seção~\ref{secao:calculoFrequencias} as frequências características de defeito esperadas foram calculadas para duas rotações distintas: com o motor em sua rotação padrão e com uma rotação maior, induzida por dispositivo inversor de frequências, tendo-se a velocidade de saída para o eixo motriz foi confirmado com tacômetro. Após os testes iniciais verificou-se que a rotação do eixo motriz com frequência abaixo de \SI{1}{\hertz} gerou amplitudes de sinais baixíssimas quando se analisando os danos de rolamentos, inviabilizando sua detecção com ambos sensores adotados. Desta forma, adotou-se para os cenários apresentados a rotação do eixo em 61,3 RPM, que mostraram maior amplitude do sinal com os rolamentos e possibilitaram maior riqueza descritiva e contribuições análiticas.
+Além disso, como mostrado na seção~\ref{secao:calculoFrequencias} as frequências características de defeito esperadas foram calculadas para duas rotações distintas: com o motor em sua rotação padrão e com uma rotação maior, induzida por dispositivo inversor de frequências, tendo-se a velocidade de saída para o eixo motriz foi confirmado com tacômetro. Após os testes iniciais verificou-se que a rotação do eixo motriz com frequência abaixo de \SI{1}{\hertz} gerou amplitudes de sinais baixíssimas quando se analisando os danos de rolamentos, inviabilizando sua detecção com ambos sensores adotados. Desta forma, adotou-se para os cenários apresentados a rotação do eixo em 61,3 RPM, que mostraram maior amplitude do sinal com os rolamentos e possibilitaram maior riqueza descritiva e contribuições análiticas. 
 
 Desta forma, os parâmetros de aquisição dos dados analisados foram definidos e encontram-se na Tabela~\ref{tab:conjuntoDeTestes}.
 
@@ -2756,13 +2755,11 @@ WANG, D. H.; HUANG, S. L. \textbf{Health Monitoring and Diagnosis for Flexible S
 \let\cleardoublepage\clearpage
 \begin{apendicesenv}
 
-\chapter{Programa para aqusição de dados na plataforma LabView}
-\label{secao:programalabview}
 
 \chapter{Programa para aqusição de dados com microcontrolador STM32}
 \label{secao:programastm}
 
-Foi construído um sistema de aquisição baseado no microcontrolador STM32, modelo stm32f103, também conhecido como \textit{bluepill}, utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. 
+Foi construído um sistema de aquisição baseado no microcontrolador STM32, modelo stm32f103, também conhecido como \textit{bluepill}, utilizado por se tratar de um microcontrolador largamente disponível no mercado, de baixo custo, com \SI{72}{\mega\hertz} de velocidade de CPU e 20KB de memória RAM, também possuindo conversor analógico digital com resolução de 12 bits. É mostrado na Figura~\ref{stm32}.
 
 \begin{figure}[H]
 \centering
@@ -2773,13 +2770,47 @@ Foi construído um sistema de aquisição baseado no microcontrolador STM32, mod
 
 O software foi desenvolvido em linguagem C, com utilização do sistema operacional FreeRTOS, manipulação dos registradores do microcontrolador e testado com dispositivo gerador de função. A construção desse software justificou-se como um experimento a fim de se verificar a viabilidade conjunta de um sistema de aquisição de baixo custo com o sensor de baixo custo. 
 
-Os códigos são apresentados abaixo.
+Foi desenvolvido também um sistema de registro dos dados obtidos através de comunicação serial em Python, capaz de registrar os dados aquisitados e gravá-los em arquivos. 
 
-Foi desenvolvido também um sistema de registro dos dados obtidos através de comunicação serial em Python, capaz de registrar os dados aquisitados e gravá-los em arquivos. Ambos softwares encontram-se também no Apêndice~\ref{secao:programastm}.
+Os códigos são apresentados abaixo e também são disponibilizados, para consultas, por meio da plataforma github, podendo a versão base ser encontrada em https://github.com/pedro-ibs/systemAcquisitionStm32f103/ e demais aplicações em github.com/giovanidisperati/mestradopvdf. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/STM321}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/STM322}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/STM323}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/STM324}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/STM325}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/STM326}
+\end{figure} 
 
 \chapter{Programas para análise dos sinais dos rolamentos}
 \label{secao:programasAnalise}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/FFT}
+\end{figure} 
 
 \begin{figure}[H]
 \centering
@@ -2800,7 +2831,6 @@ Foi desenvolvido também um sistema de registro dos dados obtidos através de co
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{Apendices/envelope_6}
 \end{figure} 
-
 
 \chapter{Cálculo do isoamortecedor}
 \label{secao:apendiceIsoamortecedor}
@@ -2823,6 +2853,29 @@ Foi desenvolvido também um sistema de registro dos dados obtidos através de co
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{Apendices/gerb_4}
+\end{figure} 
+
+\chapter{Gráficos suplementares do sinal obtido com sensor PVDF}
+\label{secao:apendiceIsoamortecedor}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/FFT_PVDF_DANO_PISTA_EXTERNA}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/FFT_PVDF_DANO_ROLANTE}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/FFT_PVDF_MOTOR_ENERGIZADO}
+\end{figure} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{Apendices/FFT_PVDF_ROLAMENTO_BOM}
 \end{figure} 
 
 
