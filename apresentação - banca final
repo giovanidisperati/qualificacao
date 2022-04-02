@@ -85,8 +85,175 @@ Para que esse processo de manutenção preditiva possa ocorrer é necessário qu
 
 Dentre as técnicas de manutenção preditiva, uma das mais empregadas é a análise de vibrações
 
+Slide 06
+
 É possível, com análise de vibrações, que seja realizada a análise do estado do elemento de máquina, sendo este inclusive considerado um método eficiente para elementos rolantes
 
 
 Entretanto, é necessário como um pré-requisito a coleta das informações relativas ao estado dos elementos de máquina, para que se possa aplicar estas técnicas de análise. E para isso são utilizados diferentes sensores
 
+
+SLIDE 07
+
+Dentre os materiais utilizados em sensores, está o PVDF, fluoreto de polivinilideno, que é um polímero com características piezo e piroelétricas
+
+O PVDF possui uma série de características que o tornam um material promissor para o uso tecnológico, tal como baixo custo e fácil processamento
+
+
+SLIDE 08
+
+Então, o tema deste trabalho consiste em uma proposta de avaliação do filme PVDF como sensor de vibração, com finalidade de manutenção e, em particular aqui, aplicado a danos de rolamentos, que são um dos elementos de máquina mais comuns
+
+Uma vez que este sensor possui baixo custo, o componente econômico é basilar nesse trabalho, nossa motivação parte daí
+
+
+
+SLIDE 09
+
+Portanto, qual o objetivo geral do trabalho 
+
+Adquirir um sinal de vibração com o PVDF, de forma que seja realizada detecção de falhas em mancais de rolamentos por meio de análise de vibrações e através de um software supervisório com finalidade de manutenção preditiva
+
+Com base nos sinais captados pelo sensor, espera-se avaliar a viabilidade inicial de um sistema com PVDF para monitoramento de rolamentos
+
+
+SLIDE 10
+
+Os objetivos específicos propostos são 
+
+-- construção de uma bancada experimental, em que o sensor possa ser acoplado aos rolamentos escolhidos
+
+-- condicionamento do sinal de saída do sensor, de forma a ser capturado por um sistema de aquisição de dados
+
+-- desenvolvimento de um sistema de aquisição de dados, para o sensor PVDF, quando trabalhando com sinais de falha de rolamentos
+
+
+
+SLIDE 11
+
+-- A partir disto, desenvolver um sistema de análise dos dados capturados de forma a diferenciar as seguintes falhas:
+	- desgaste na pista do anel externo
+	- desgaste no elemento rolante
+
+
+
+SLIDE 12
+
+O PVDF é um material de baixo custo e dadas as características mencionadas, seu uso perpassa diversas aplicações, desde sensores, que no caso é o objeto deste trabalho, até construção de tubos e dutos para transporte de água ultrapura
+
+A cristalização do PVDF ocorre em quatro fases, alfa, beta, gama e delta, sendo que a fase beta é caracterizada por apresentar comportamentos piezo e piroelétricos
+
+
+SLIDE 13
+
+Em relação aos seus usos como sensor para análise de vibração, foi feita uma revisão baseada em Xin e outros, 2016; em Rastegari e outros, 2014, Jeon e outros, 2011, Kern e outros, 2016, Baumgartel e outros, 2016; dentre outros autores
+
+Jeon et al., 2011 acoplaram filmes PVDF em estruturas de alumínio e o testaram em um dispositivo shaker, ou agitador, aplicando excitações de varredura senoidal, demonstrando boa linearidade e performance na faixa de frequência até 5 kHz
+
+Liu et. al, 2011, mostraram a necessidade de se utilizar circuitos condicionadores de sinal para trabalho com o sensor PVDF dada sua natureza de alta impedância e propensão a captura de ruídos ambientes que dificultariam seu uso para análise de sinais de vibração. Após condicionamento do sinal, acoplaram diretamente o filme PVDF em um shaker e aplicaram uma vibração de 150Hz, demonstrando que após condicionamento do sinal ela pode ser captada pelo elemento sensor
+
+Rastegari et. al, 2014, desenvolveram um protótipo de acelerômetro com uso do filme PVDF e o compararam, com dispositivo shaker, a um acelerômetro de uso comercial demonstrando resultados promissores para seu estudo
+
+Kern et al., 2016 comparam o filme PVDF com um acelerômetro microeletromecânico para aplicação de monitoramento de rolamentos de aplicação automotiva.
+Após ensaios, os autores mostraram que foi possível diferenciar com o sensor PVDF os sinais de um rolamento em bom estado para um rolamento com defeitos 
+
+Baumgartel e outros, 2016, buscaram as características elétricas, de frequência e de deriva térmica do filme PVDF para avaliarem o potencial de utiidade deste material para sensores de ruídos estruturais, bem como seus limites de aplicabilidade. Após os ensaios os autores concluíram que o PVDF possui potencial para ser um material central de novos sensores, não apenas pesquisas, mas também em aplicações industriais
+
+Nesta revisão, e baseando-se em diversos outros autores, percebeu-se que o PVDF como sensor de vibração vem sendo estudado para aplicações em distintas áreas, tais como dispositivos médicos portáteis, monitoramento de saúde estrutural até monitoramento de maquinário, dentre outras
+
+O que justifica sua escolha enquanto objeto de estudo para a aplicação proposta
+
+
+
+
+SLIDE 17 - Componentes rolamento
+
+
+
+
+
+acoplamento elástico
+400nm são da redução / saída 
+
+colocar nos materiais e métodos
+fazer os apontamentos com setas para os ensaios
+
+falar que foi na vertical -> 
+
+
+
+slide 13
+primeiro falar sobre as aplicações
+
+
+slide 47
+legenda
+
+slide 53
+legenda
+
+
+tais autores mostram diversos usos do sensor aplicado a análise de vibrações 
+
+fazer uma Tabela
+
+
+surgirem sinais de fadiga -> substituir por sinais de danos
+
+
+
+slide 24
+
+falar sobre o desenvolvimento dos softwares
+
+
+
+-------------------
+conclusões ao invés de resultados
+
+
+
+mover o 68
+
+
+69 também é conclusão
+
+70 também é conclusão
+
+
+conclusões mover os resultados para lá
+
+
+maneiro de tapear os textos nos slides -> esconder o texto por parágrafo
+
+
+
+
+
+
+
+
+Por que está em m/s² no espectro demodulado? 
+
+- resposta: pois é uma medida de aceleração, obtida por meio do software de análise Virtual Unit da Adash 
+
+
+Poderia estar em outro eixo?
+
+- nesse caso não, pois o software da Adash só permite a visualização do sinal demodulado nessa unidade de medida
+
+
+O sensor PVDF, está em aceleração, velocidade ou deslocamento?
+
+- o sensor PVDF está fazendo a transdução de um impulso gerado pelos sinais de vibração e que é conduzido através do encapsulamento; esses impulsos são causados pela vibração que se  dá a partir do deslocamento dos componentes de seu estado inicial e que possue também velocidade e aceleração, que são derivadas desse deslocamento; 
+- entretanto, a calibragem do conjunto do sensor PVDF e encapsulamento, p/ melhor representação das frequências em um destes três eixos, não foi abordada durante o trabalho e pode ser realizado em pesquisas futuras
+
+
+E como você pode comparar com o acelerômetro sem abordar o eixo?
+
+- Observando o espectro de frequências, nós observamos que nos ensaios o PVDF apresenta similaridade ao acelerômetro, que é o dispositivo utilizado para análise de vibrações, então a partir disso, novamente, as contribuições servem de base inicial p/ trabalhos futuros que se proponham a estudar a calibragem do conjunto    
+
+
+
+
+Como funciona o método do envelope e por que você o utilizou?
